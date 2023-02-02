@@ -1,5 +1,3 @@
 # leetcode
 
-![Leetcode Stats](https://leetcard.jacoblin.cool/liver121888?theme=unicorn)
-
-I will add the solutions for the problems I solved later
+[![Leetcode Stats](https://leetcard.jacoblin.cool/liver121888?theme=nord&font=Roboto&ext=activity)](https://leetcode.com/liver121888)
