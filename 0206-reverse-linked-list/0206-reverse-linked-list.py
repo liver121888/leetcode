@@ -13,11 +13,6 @@ class Solution:
         while head:
             neck = head.next
             head.next = prev
-            if neck:
-                tmp = neck.next
-                neck.next = head
-                prev = neck
-            else:
-                return head
-            head = tmp
+            prev = head
+            head = neck
         return prev
