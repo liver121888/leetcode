@@ -9,19 +9,9 @@ class Solution:
         if root is None:
             return 0 
         
-        lDepth = self.calDepth(root.left)
-        rDepth = self.calDepth(root.right)
-        
-        # maxDepth must occur at root, so we don't need to traverse check like the 543 feDiameter of Binary Tree
-        return 1 + max(lDepth, rDepth)
-        
-        
-        
-    def calDepth(self, root):
-        if root is None:
-            return 0
-        
-        return 1 + max(self.calDepth(root.left), self.calDepth(root.right))
+        # maxDepth must occur at root, so we don't need to traverse check like 543 Diameter of Binary Tree
+                
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right)) 
         
         
         
