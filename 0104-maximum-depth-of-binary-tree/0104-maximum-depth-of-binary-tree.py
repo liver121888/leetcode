@@ -9,7 +9,8 @@ class Solution:
         if root is None:
             return 0 
         
-        # maxDepth must occur at root, so we don't need to traverse check like 543 Diameter of Binary Tree
+        # maxDepth must occur at root, so we don't need to 
+        # traverse check like 543 Diameter of Binary Tree
                 
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right)) 
         
