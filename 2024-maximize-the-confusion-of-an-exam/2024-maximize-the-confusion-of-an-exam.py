@@ -22,6 +22,6 @@ class Solution:
                 left += 1
         
         if min(tCnt, fCnt) <= k:
-            maxSameKeyLen = max(maxSameKeyLen, tCnt+fCnt);
+            maxSameKeyLen = max(maxSameKeyLen, tCnt + fCnt);
 
         return maxSameKeyLen
