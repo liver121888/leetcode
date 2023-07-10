@@ -9,8 +9,6 @@ class Solution:
         if not inserted:
             intervals.append(newInterval)
         
-        print(intervals)
-        print(n)
         i = 1
         while i < len(intervals):
             if intervals[i][0] <= intervals[i-1][1]:
