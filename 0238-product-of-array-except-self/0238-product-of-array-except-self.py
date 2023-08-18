@@ -12,9 +12,6 @@ class Solution:
         suff[n - 1] = 1
         for i in range(1, n):
             suff[n - 1 - i] = suff[n - i] * nums[n - i]
-        
-        print(pre)
-        print(suff)
     
         for i in range(n):
             ans[i] = pre[i] * suff[i]
