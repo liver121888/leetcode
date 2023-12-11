@@ -17,14 +17,12 @@ public:
                     return target;
                 } else if (val > target) {
                     r--;
-                    while (nums[r] == nums[r + 1] && l < r) {
+                    while (nums[r] == nums[r + 1] && l < r)
                         r--;
-                    }
                 } else {
                     l++;
-                    while (nums[l] == nums[l - 1] && l < r ) {
+                    while (nums[l] == nums[l - 1] && l < r)
                         l++;
-                    }
                 }
             }                
 
