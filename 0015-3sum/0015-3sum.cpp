@@ -1,29 +1,30 @@
-class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
-        nums.sort()
-        n = len(nums)
-        ans = []
-        # three pointers
-        for left in range(n - 2):
-            if left > 0 and nums[left] == nums[left - 1]:
-                continue 
-            mid = left + 1
-            right = n - 1
-            
-            while mid < right:
-                curSum = nums[left] + nums[right] + nums[mid]
-                if curSum > 0:
-                    right -= 1
-                elif curSum < 0:
-                    mid += 1
-                else:
-                    ans.append([nums[left], nums[mid], nums[right]])
-                    while mid < right and nums[mid] == nums[mid + 1]:
-                        mid += 1
-                    while mid < right and nums[right] == nums[right - 1]:
-                        right -= 1
-                    mid += 1
-                    right -= 1
-        return ans
-        
-                    
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+        sort(nums.begin(), nums.end());
+        int l;
+        int r;
+        int val;
+        vector<vector<int>> result;
+        for (int i = 0; i < nums.size(); i++) {
+            if (i > 0 && nums[i] == nums[i - 1])
+                continue;
+            l = i + 1;
+            r = nums.size() - 1;
+            while (l < r) {
+                val = nums[l] + nums[r] + nums[i];
+                if (val > 0) 
+                    r--;
+                else if (val == 0) {
+                    result.push_back(vector<int>{nums[i], nums[l], nums[r]});
+                    l++;
+                    while (nums[l] == nums[l - 1] && l < r)
+                        l++;
+                }
+                else
+                    l++;
+            }
+        }
+        return result;
+    }
+};
