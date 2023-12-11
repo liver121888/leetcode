@@ -9,7 +9,7 @@ public:
         
         // we could use vector.at() or indexing, at() method would do 
         // boundary check while indexing would not. Here we use indexing 
-        // because it's faster and 
+        // because it's faster 
         for (int i = 0; i < length; i++) {
             aMap[nums[i]] = i;            
         }
