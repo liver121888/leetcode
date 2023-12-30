@@ -1,15 +1,20 @@
 class Solution {
 public:
     bool makeEqual(vector<string>& words) {
-        unordered_map<char, int> aMap;
-        for (auto s : words) 
-            for (auto c : s)
-                aMap[c] += 1;  
+        vector<int> counts(26, 0);
+        for (string word : words) {
+            for (char c : word) {
+                counts[c - 'a']++;
+            }
+        }
         
-        for (auto pair : aMap)
-            if (pair.second % words.size() != 0)
+        int n = words.size();
+        for (int val : counts) {
+            if (val % n != 0) {
                 return false;
-        return true;
+            }
+        }
         
+        return true;
     }
 };
