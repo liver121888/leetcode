@@ -1,7 +1,7 @@
 class Solution {
 public:
     int numberOfBeams(vector<string>& bank) {
-        int lastRowCnt = -1;
+        int lastRowCnt = 0;
         int curRowCnt{};
         int ans = 0;
         for (auto row : bank) {
@@ -10,10 +10,10 @@ public:
                 if (c == '1')
                     curRowCnt++;
        
-            if (lastRowCnt == -1) {
-                lastRowCnt = curRowCnt;
-                continue;
-            }
+            // if (lastRowCnt == -1) {
+            //     lastRowCnt = curRowCnt;
+            //     continue;
+            // }
 
             if(curRowCnt == 0)
                 continue;
