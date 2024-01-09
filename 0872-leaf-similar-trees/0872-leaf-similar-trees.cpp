@@ -12,27 +12,19 @@
 class Solution {
 public:
     bool leafSimilar(TreeNode* root1, TreeNode* root2) {
-        vector<int> leavesSeq1;
-        traverse(root1, leavesSeq1);
-        vector<int> leavesSeq2;
-        traverse(root2, leavesSeq2); 
-        if (leavesSeq1.size() != leavesSeq2.size())
-            return false;    
-        for (int i = 0; i < leavesSeq1.size(); i++) {
-            if (leavesSeq1[i] != leavesSeq2[i])
-                return false;
-        }
-        return true;
+        vector<int> leaves1;
+        traverse(root1, leaves1);
+        vector<int> leaves2;
+        traverse(root2, leaves2); 
+        return leaves1 == leaves2;
     }
     
-    bool traverse(TreeNode* root, vector<int>& leavesSeq) {
+    void traverse(TreeNode* root, vector<int>& leaves) {
         if (!root)
-            return true;
-        // cout << root->val << endl;
-        bool isLeftEmpty = traverse(root->left, leavesSeq);
-        bool isRightEmpty = traverse(root->right, leavesSeq);
-        if (isLeftEmpty && isRightEmpty)
-            leavesSeq.push_back(root->val);
-        return false;        
+            return;
+        if (!root->left && !root->right)
+            leaves.push_back(root->val);
+        traverse(root->left, leaves);
+        traverse(root->right, leaves);
     }
 };
