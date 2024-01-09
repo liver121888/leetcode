@@ -18,17 +18,29 @@ public:
         queue<TreeNode*> bfs;
         bfs.push(root);
         while (!bfs.empty()) {
+            // int n = bfs.size();
+            // TreeNode* lastNode;
+            // for (int i = 0; i < n; i++) {
+            //     lastNode = bfs.front();
+            //     bfs.pop();
+            //     if (lastNode->left)
+            //         bfs.push(lastNode->left);
+            //     if (lastNode->right)
+            //         bfs.push(lastNode->right);                
+            // }            
+            // res.push_back(lastNode->val);         
+            
+            // another thought, bfs in different order
             int n = bfs.size();
-            TreeNode* lastNode;
+            res.push_back(bfs.front()->val);
             for (int i = 0; i < n; i++) {
-                lastNode = bfs.front();
+                TreeNode* node = bfs.front();
                 bfs.pop();
-                if (lastNode->left)
-                    bfs.push(lastNode->left);
-                if (lastNode->right)
-                    bfs.push(lastNode->right);                
-            }            
-            res.push_back(lastNode->val);            
+                if (node->right)
+                    bfs.push(node->right);     
+                if (node->left)
+                    bfs.push(node->left);
+            }         
         }
         return res;
     }
