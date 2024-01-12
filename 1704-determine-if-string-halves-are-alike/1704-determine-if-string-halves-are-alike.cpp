@@ -7,9 +7,7 @@ public:
         for (int i = 0; i < n/2; i++) {
             if (vowels.find(s[i]) != vowels.end())
                 cnt++;
-        }
-        for (int i = n/2; i < n; i++) {
-            if (vowels.find(s[i]) != vowels.end())
+            if (vowels.find(s[i + n/2]) != vowels.end())
                 cnt--;
         }
         return cnt == 0 ? true : false;
