@@ -4,7 +4,7 @@ public:
         
         int n = temperatures.size();
         
-        stack<pair<int,int>> st;
+        stack<pair<int, int>> st;
         vector<int> ans(n);
         
         for (int i = 0; i < n; i++) {
