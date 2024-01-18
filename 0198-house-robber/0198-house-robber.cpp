@@ -3,15 +3,6 @@ public:
     int rob(vector<int>& nums) {
         vector<int> dp(nums.size(), -1);
         
-        // base case
-        //         dp[nums.size() - 1] = nums[nums.size() - 1];
-
-        //         for (int i = nums.size() - 2; i >= 0; i--) {
-
-
-
-        //         }
-        
         return dfs(nums, dp, nums.size() - 1);
     }
     
