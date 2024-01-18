@@ -1,16 +1,12 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
-        if n == 1:
-            return 1;
-        
-        totalVariations = 0     
-        num2Steps = 0
-        while num2Steps <= n//2:
-            num1Steps = n - num2Steps*2
-            totalVariations += (math.factorial(num1Steps + num2Steps) 
-                                // (math.factorial(num2Steps) * math.factorial(num1Steps)))
-            num2Steps+=1
+
+        num1Steps, num2Steps = 1, 1
+        for i in range(n - 1):
+            temp = num1Steps
+            num1Steps = num1Steps + num2Steps
+            num2Steps = temp
             
-        return totalVariations
+        return num1Steps
         
         
