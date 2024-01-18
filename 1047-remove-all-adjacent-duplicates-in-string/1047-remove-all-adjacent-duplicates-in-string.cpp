@@ -14,9 +14,10 @@ public:
         }
         string ans = "";
         while (!st.empty()) {
-            ans.insert(ans.begin(), st.top());
+            ans += st.top();
             st.pop();
         }
+        reverse(ans.begin(), ans.end());
         
         return ans;
     }
