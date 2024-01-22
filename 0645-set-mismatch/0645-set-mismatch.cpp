@@ -2,21 +2,18 @@ class Solution {
 public:
     vector<int> findErrorNums(vector<int>& nums) {
         int n = nums.size();
-        set<int> aSet;
-        vector<int> ans;
-        
-        int numSum = 0;
+        long long x = 0;
+        long long y = 0;
 
-        for (auto n : nums) {
-            if (aSet.find(n) == aSet.end())
-                aSet.insert(n);
-            else {
-                ans.push_back(n);
-            }
-            numSum += n;
-        }
-        
-        ans.push_back(-(numSum - (n + 1) * n / 2 - ans[0]));
-        return ans;
+        for (int i = 1; i < n + 1; i++) {
+            x += nums[i - 1] - i;
+            y += nums[i - 1] * nums[i - 1] - i * i;
+        }     
+            
+            
+        int missing = (y - x * x) / (2 * x);
+        int duplicate = missing + x;
+
+        return {duplicate, missing};
     }
 };
