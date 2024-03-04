@@ -4,8 +4,10 @@ class Solution:
         res = 0;
         l = 0
         for r in range(len(s)):
+            # expand the window
             count[s[r]]+=1
             while (r - l + 1) - max(count.values()) > k:
+                # not valid contract window
                 count[s[l]]-=1
                 l+=1
             
