@@ -31,20 +31,11 @@ class Solution:
             prev = second
             second = tmp
             
-        second = prev
-        first = head
+        second, first = prev, head
         while second:
-            tmp1 = first.next
-            tmp2 = second.next
-            first.next = second
-            second.next = tmp1
-            first = tmp1
-            second = tmp2
+            tmp1, tmp2 = first.next, second.next
+            first.next, second.next = second, tmp1
+            first, second = tmp1, tmp2
             
-            
-            
-            
-            
-            
-            
+                
             
