@@ -15,13 +15,15 @@ public:
         if (!root)
             return 0;
         
-        TreeNode* leftSubTree = removeLeafNodes(root->left, target);
-        root->left = leftSubTree;
-        TreeNode* rightSubTree = removeLeafNodes(root->right, target);
-        root->right = rightSubTree;
-        if (!leftSubTree && !rightSubTree)
-            if (root->val == target)
-                root = nullptr;
+        // TreeNode* leftSubTree = removeLeafNodes(root->left, target);
+        // root->left = leftSubTree;
+        // TreeNode* rightSubTree = removeLeafNodes(root->right, target);
+        // root->right = rightSubTree;
+        root->left = removeLeafNodes(root->left, target);
+        root->right = removeLeafNodes(root->right, target);
+
+        if (!root->left && !root->right && root->val == target)
+            root = nullptr;
                 
         return root;        
     }
