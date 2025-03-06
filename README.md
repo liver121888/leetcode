@@ -9,6 +9,7 @@
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/liver121888/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
+| [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 ## Two Pointers
@@ -33,6 +34,7 @@
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
+| [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 ## Linked List
 |  |
@@ -54,4 +56,12 @@
 |  |
 | ------- |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
+## Sliding Window
+|  |
+| ------- |
+| [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
+## Prefix Sum
+|  |
+| ------- |
+| [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 <!---LeetCode Topics End-->
