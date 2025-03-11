@@ -28,8 +28,8 @@ public:
         for (int r = 0; r < n; r++) {
             cnts[s[r] - 'a']++;
             while (valid(cnts)) {
+                // this valid thinking is important!
                 result += n - r;
-
                 cnts[s[l] - 'a']--;
                 l++;
             }
