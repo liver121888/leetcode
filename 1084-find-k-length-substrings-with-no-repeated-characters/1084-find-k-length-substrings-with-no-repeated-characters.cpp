@@ -32,7 +32,7 @@ public:
 
             if (checkValid(freq) && r - l + 1 == k) {
                 result++;
-                cout << "l " << l << " r " << r << " result " << result << endl;
+                // cout << "l " << l << " r " << r << " result " << result << endl;
             }
 
             // expand
