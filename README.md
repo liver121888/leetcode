@@ -13,6 +13,7 @@
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2690-house-robber-iv](https://github.com/liver121888/leetcode/tree/master/2690-house-robber-iv) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/liver121888/leetcode/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
@@ -48,6 +49,7 @@
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/liver121888/leetcode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/liver121888/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 ## Linked List
 |  |
@@ -116,6 +118,7 @@
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/liver121888/leetcode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/liver121888/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/liver121888/leetcode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 ## Bit Manipulation
 |  |
@@ -125,4 +128,12 @@
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
+## Graph
+|  |
+| ------- |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+## Topological Sort
+|  |
+| ------- |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 <!---LeetCode Topics End-->
