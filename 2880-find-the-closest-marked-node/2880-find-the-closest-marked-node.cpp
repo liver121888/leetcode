@@ -1,45 +1,44 @@
 class Solution {
 public:
 
-    long long dijkstra(const vector<vector<pair<int, int>>>& adjLists, unordered_set<int> targets, int s) {
+    int dijkstra(const vector<vector<pair<int, int>>>& adjLists, unordered_set<int> targets, int s) {
 
         int n = adjLists.size();
-        auto result = vector<long long>(n, LLONG_MAX);
+        auto result = vector<int>(n, INT_MAX);
         result[s] = 0;
 
-        unordered_set<int> closed;
+        // can removed a closed set because result act like one!
+        // unordered_set<int> closed;
         // dist, id
-        priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
+        
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
         pq.push({0, s});
 
         while (!pq.empty()) {
             auto currPair = pq.top();
             pq.pop();
-            long long dist = currPair.first;
+            int dist = currPair.first;
             auto curr = currPair.second;
 
-            closed.insert(curr);
             if (targets.count(curr)) {
                 return result[curr];
             }
 
             // id, g
-            for (auto& [neighbor, g] : adjLists[curr]) {
+            for (const auto& [neighbor, g] : adjLists[curr]) {
+                int newDist = dist + g;
 
-                if (!closed.count(neighbor)) {
-                    if (dist + g < result[neighbor]) {
-                        // we found a shorter route!
-                        // update result
-                        result[neighbor] = dist + g;
-                    }
-
+                if (newDist < result[neighbor]) {
+                    // we found a shorter route!
+                    // update result
+                    result[neighbor] = newDist;
                     // push the current shortest path length and the id
                     pq.push({result[neighbor], neighbor});
                 }
 
             }
         }
-        return LLONG_MAX;
+        return INT_MAX;
     }
 
     int minimumDistance(int n, vector<vector<int>>& edges, int s, vector<int>& marked) {
@@ -57,6 +56,6 @@ public:
         // when I finish dijkstra, I should find the minimum dist from s to all marked
         // then return the minimum dist
         auto minDist = dijkstra(adjLists, targets, s);
-        return (minDist == LLONG_MAX) ? -1 : int(minDist);
+        return (minDist == INT_MAX) ? -1 : int(minDist);
     }
 };
