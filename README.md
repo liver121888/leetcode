@@ -17,6 +17,7 @@
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2690-house-robber-iv](https://github.com/liver121888/leetcode/tree/master/2690-house-robber-iv) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/liver121888/leetcode/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
+| [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3430-count-days-without-meetings](https://github.com/liver121888/leetcode/tree/master/3430-count-days-without-meetings) |
 | [3483-alternating-groups-ii](https://github.com/liver121888/leetcode/tree/master/3483-alternating-groups-ii) |
@@ -108,6 +109,7 @@
 | ------- |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
+| [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 ## Quickselect
 |  |
 | ------- |
@@ -136,8 +138,13 @@
 |  |
 | ------- |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+| [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 ## Topological Sort
 |  |
 | ------- |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+## Shortest Path
+|  |
+| ------- |
+| [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 <!---LeetCode Topics End-->
