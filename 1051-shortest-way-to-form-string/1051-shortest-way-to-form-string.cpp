@@ -9,19 +9,10 @@ public:
         // counting
 
         vector<int> sourceCnts(26);
-        vector<int> targetCnts(26);
 
         for (auto c : source) {
             sourceCnts[c - 'a']++;
         }
-        // for (auto c : target) {
-        //     targetCnts[c - 'a']++;
-        // }
-
-        // for (int i = 0; i < targetCnts.size(); i++) {
-        //     if (targetCnts[i] != 0 && sourceCnts[i] == 0)
-        //         return -1;
-        // }
 
         int j = 0;
         int result = 1;
@@ -31,19 +22,24 @@ public:
             if (sourceCnts[currC - 'a'] == 0)
                 return -1;
 
+            // find next match
             while (currC != source[j] && j < source.length()) {
                 j++;
             }
 
+            // if we deplete source 
             if (j == source.length()) {
+                // reset j and concatenate a new source
                 j = 0;
                 result += 1;
+                // will gurantee find a result
                 while (currC != source[j]) {
                     j++;
                 }
             }
-            // move to next target c by increment i
+            // increment j becaues we found a match
             j++;
+            // move to next target c by increment i
         }
 
         // abc abcbc
