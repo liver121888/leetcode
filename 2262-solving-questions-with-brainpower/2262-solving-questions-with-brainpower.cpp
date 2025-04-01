@@ -14,9 +14,8 @@ public:
         if (dp[currIdx] != -1)
             return dp[currIdx];
 
-        auto currQ = questions[currIdx];
-        int points = currQ[0];
-        int brainpower = currQ[1];
+        int points = questions[currIdx][0];
+        int brainpower = questions[currIdx][1];
 
         // two options
         // solve this problem
