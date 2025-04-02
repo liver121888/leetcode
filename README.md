@@ -8,6 +8,7 @@
 |  |
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/liver121888/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
+| [0046-permutations](https://github.com/liver121888/leetcode/tree/master/0046-permutations) |
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
@@ -159,4 +160,8 @@
 |  |
 | ------- |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
+## Backtracking
+|  |
+| ------- |
+| [0046-permutations](https://github.com/liver121888/leetcode/tree/master/0046-permutations) |
 <!---LeetCode Topics End-->
