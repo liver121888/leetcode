@@ -9,6 +9,7 @@
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/liver121888/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
+| [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
@@ -80,6 +81,7 @@
 ## Matrix
 |  |
 | ------- |
+| [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 ## Sliding Window
@@ -138,6 +140,7 @@
 ## Breadth-First Search
 |  |
 | ------- |
+| [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 ## Graph
 |  |
