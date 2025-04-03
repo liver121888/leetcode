@@ -49,6 +49,7 @@
 ## Math
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/liver121888/leetcode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2610-closest-prime-numbers-in-range](https://github.com/liver121888/leetcode/tree/master/2610-closest-prime-numbers-in-range) |
@@ -105,6 +106,7 @@
 ## Dynamic Programming
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 | [2262-solving-questions-with-brainpower](https://github.com/liver121888/leetcode/tree/master/2262-solving-questions-with-brainpower) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/liver121888/leetcode/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
@@ -173,9 +175,15 @@
 ## Tree
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 ## Binary Tree
 |  |
 | ------- |
+| [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
 <!---LeetCode Topics End-->
