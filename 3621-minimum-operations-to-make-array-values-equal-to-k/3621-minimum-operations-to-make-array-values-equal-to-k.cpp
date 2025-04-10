@@ -2,6 +2,17 @@ class Solution {
 public:
     int minOperations(vector<int>& nums, int k) {
 
+        unordered_set<int> st;
+        for (int x : nums) {
+            if (x < k) {
+                return -1;
+            } else if (x > k) {
+                st.insert(x);
+            }
+        }
+        return st.size();
+
+
         // sequence is not important
         // each operation: select h that is valid, set all number to h
 
@@ -61,6 +72,10 @@ public:
         // 3 -> ans++;
         // 5 -> ans++;
         // return 4
+
+        // m == 100
+        // O(n + m)
+        // O(m)
 
         return ans;
     }
