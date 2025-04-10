@@ -151,9 +151,11 @@
 | ------- |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
+| [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 ## Graph
 |  |
 | ------- |
+| [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 ## Topological Sort
@@ -186,4 +188,12 @@
 |  |
 | ------- |
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
+## Depth-First Search
+|  |
+| ------- |
+| [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
+## Union Find
+|  |
+| ------- |
+| [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 <!---LeetCode Topics End-->
