@@ -104,26 +104,40 @@
 
 class Solution {
 public:
-    int countPairs(vector<int>& nums, int k) {
-        unordered_map<int, vector<int>> num2Idx;
-        int n = nums.size();
-        
-        for (int i = 0; i < n; i++) {
-            num2Idx[nums[i]].push_back(i);
-        }
 
-        int ans = 0;
-        for (auto& [val, idxes] : num2Idx) {
-            int m = idxes.size();
-            for (int i = 0; i < m; i++) {
-                for (int j = i + 1; j < m; j++) {
-                    if ((idxes[i] * idxes[j]) % k == 0) {
-                        ans++;
-                    }
+    int countPairs(vector<int>& nums, int k) {
+        int n = nums.size();
+        int res = 0;  // number of pairs meeting the requirements
+        for (int i = 0; i < n - 1; ++i) {
+            for (int j = i + 1; j < n; ++j) {
+                if ((i * j) % k == 0 && nums[i] == nums[j]) {
+                    ++res;
                 }
             }
         }
-
-        return ans;
+        return res;
     }
+
+    // int countPairs(vector<int>& nums, int k) {
+    //     unordered_map<int, vector<int>> num2Idx;
+    //     int n = nums.size();
+        
+    //     for (int i = 0; i < n; i++) {
+    //         num2Idx[nums[i]].push_back(i);
+    //     }
+
+    //     int ans = 0;
+    //     for (auto& [val, idxes] : num2Idx) {
+    //         int m = idxes.size();
+    //         for (int i = 0; i < m; i++) {
+    //             for (int j = i + 1; j < m; j++) {
+    //                 if ((idxes[i] * idxes[j]) % k == 0) {
+    //                     ans++;
+    //                 }
+    //             }
+    //         }
+    //     }
+
+    //     return ans;
+    // }
 };
