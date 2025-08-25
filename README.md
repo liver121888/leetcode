@@ -143,6 +143,7 @@
 |  |
 | ------- |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 ## Quickselect
@@ -173,11 +174,13 @@
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
+| [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 ## Graph
 |  |
 | ------- |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
+| [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 ## Topological Sort
@@ -187,6 +190,7 @@
 ## Shortest Path
 |  |
 | ------- |
+| [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
 | [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 ## Greedy
 |  |
@@ -217,6 +221,7 @@
 |  |
 | ------- |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
+| [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 ## Union Find
 |  |
