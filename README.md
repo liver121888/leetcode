@@ -74,6 +74,7 @@
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/liver121888/leetcode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2610-closest-prime-numbers-in-range](https://github.com/liver121888/leetcode/tree/master/2610-closest-prime-numbers-in-range) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
+| [3279-alice-and-bob-playing-flower-game](https://github.com/liver121888/leetcode/tree/master/3279-alice-and-bob-playing-flower-game) |
 ## Hash Table
 |  |
 | ------- |
