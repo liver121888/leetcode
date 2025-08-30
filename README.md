@@ -8,6 +8,7 @@
 |  |
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/liver121888/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
+| [0036-valid-sudoku](https://github.com/liver121888/leetcode/tree/master/0036-valid-sudoku) |
 | [0046-permutations](https://github.com/liver121888/leetcode/tree/master/0046-permutations) |
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
@@ -78,6 +79,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/liver121888/leetcode/tree/master/0036-valid-sudoku) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
@@ -113,6 +115,7 @@
 ## Matrix
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/liver121888/leetcode/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
