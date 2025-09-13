@@ -20,7 +20,7 @@ public:
                 maxCFreq = max(freq[i], maxCFreq);
             }
         }
-        cout << "maxVFreq: " << maxVFreq << ", maxCFreq: " << maxCFreq << endl;
+        // cout << "maxVFreq: " << maxVFreq << ", maxCFreq: " << maxCFreq << endl;
         return maxVFreq + maxCFreq;
         
     }
