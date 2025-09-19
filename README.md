@@ -45,6 +45,7 @@
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/liver121888/leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/liver121888/leetcode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 | [3748-sort-matrix-by-diagonals](https://github.com/liver121888/leetcode/tree/master/3748-sort-matrix-by-diagonals) |
+| [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
 ## Two Pointers
 |  |
 | ------- |
@@ -98,6 +99,7 @@
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/liver121888/leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
+| [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/liver121888/leetcode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Linked List
 |  |
@@ -109,6 +111,7 @@
 | ------- |
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
+| [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -133,6 +136,7 @@
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/liver121888/leetcode/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3748-sort-matrix-by-diagonals](https://github.com/liver121888/leetcode/tree/master/3748-sort-matrix-by-diagonals) |
+| [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
 ## Sliding Window
 |  |
 | ------- |
@@ -196,6 +200,7 @@
 | [2887-sort-vowels-in-a-string](https://github.com/liver121888/leetcode/tree/master/2887-sort-vowels-in-a-string) |
 | [3396-valid-word](https://github.com/liver121888/leetcode/tree/master/3396-valid-word) |
 | [3462-vowels-game-in-a-string](https://github.com/liver121888/leetcode/tree/master/3462-vowels-game-in-a-string) |
+| [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/liver121888/leetcode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Bit Manipulation
 |  |
