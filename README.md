@@ -46,6 +46,7 @@
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/liver121888/leetcode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 | [3748-sort-matrix-by-diagonals](https://github.com/liver121888/leetcode/tree/master/3748-sort-matrix-by-diagonals) |
 | [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
+| [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Two Pointers
 |  |
 | ------- |
@@ -100,6 +101,7 @@
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/liver121888/leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
 | [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
+| [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/liver121888/leetcode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Linked List
 |  |
@@ -112,6 +114,7 @@
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
 | [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
+| [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -124,6 +127,7 @@
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/liver121888/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [2690-house-robber-iv](https://github.com/liver121888/leetcode/tree/master/2690-house-robber-iv) |
+| [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Matrix
 |  |
 | ------- |
@@ -294,4 +298,9 @@
 |  |
 | ------- |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
+| [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
+## Queue
+|  |
+| ------- |
+| [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 <!---LeetCode Topics End-->
