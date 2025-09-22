@@ -1,7 +1,7 @@
 class Solution:
     def maxFrequencyElements(self, nums: List[int]) -> int:
-        freq = defaultdict(list)
-        freq = {}
+        freq = defaultdict(int)
+        # freq = {}
         curr_max_freq = 0
         curr_max_freq_cnt = 0
 
@@ -19,10 +19,11 @@ class Solution:
 
         for num in nums:
             
-            if num in freq:
-                freq[num] += 1
-            else:
-                freq.update({num: 1})
+            # if num in freq:
+            #     freq[num] += 1
+            # else:
+            #     freq.update({num: 1})'
+            freq[num] += 1
             num_freq = freq[num]
             if num_freq == curr_max_freq:
                 curr_max_freq_cnt += 1
