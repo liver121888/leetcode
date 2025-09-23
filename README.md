@@ -52,6 +52,7 @@
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
+| [0165-compare-version-numbers](https://github.com/liver121888/leetcode/tree/master/0165-compare-version-numbers) |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 ## Simulation
@@ -196,6 +197,7 @@
 ## String
 |  |
 | ------- |
+| [0165-compare-version-numbers](https://github.com/liver121888/leetcode/tree/master/0165-compare-version-numbers) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
