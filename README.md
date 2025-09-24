@@ -76,6 +76,7 @@
 | ------- |
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
+| [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -92,6 +93,7 @@
 | [0036-valid-sudoku](https://github.com/liver121888/leetcode/tree/master/0036-valid-sudoku) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
+| [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
@@ -198,6 +200,7 @@
 |  |
 | ------- |
 | [0165-compare-version-numbers](https://github.com/liver121888/leetcode/tree/master/0165-compare-version-numbers) |
+| [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
