@@ -14,6 +14,7 @@
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0118-pascals-triangle](https://github.com/liver121888/leetcode/tree/master/0118-pascals-triangle) |
+| [0120-triangle](https://github.com/liver121888/leetcode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/liver121888/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0238-product-of-array-except-self](https://github.com/liver121888/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
@@ -166,6 +167,7 @@
 | ------- |
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0118-pascals-triangle](https://github.com/liver121888/leetcode/tree/master/0118-pascals-triangle) |
+| [0120-triangle](https://github.com/liver121888/leetcode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/liver121888/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/liver121888/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
