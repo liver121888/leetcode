@@ -25,6 +25,7 @@
 | [0498-diagonal-traverse](https://github.com/liver121888/leetcode/tree/master/0498-diagonal-traverse) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
+| [0830-largest-triangle-area](https://github.com/liver121888/leetcode/tree/master/0830-largest-triangle-area) |
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/liver121888/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
@@ -83,6 +84,7 @@
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
+| [0830-largest-triangle-area](https://github.com/liver121888/leetcode/tree/master/0830-largest-triangle-area) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/liver121888/leetcode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1448-maximum-69-number](https://github.com/liver121888/leetcode/tree/master/1448-maximum-69-number) |
@@ -185,6 +187,7 @@
 ## Geometry
 |  |
 | ------- |
+| [0830-largest-triangle-area](https://github.com/liver121888/leetcode/tree/master/0830-largest-triangle-area) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
