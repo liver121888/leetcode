@@ -39,6 +39,7 @@
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/liver121888/leetcode/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/liver121888/leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
+| [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2690-house-robber-iv](https://github.com/liver121888/leetcode/tree/master/2690-house-robber-iv) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/liver121888/leetcode/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
 | [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
@@ -99,6 +100,7 @@
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/liver121888/leetcode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/liver121888/leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2610-closest-prime-numbers-in-range](https://github.com/liver121888/leetcode/tree/master/2610-closest-prime-numbers-in-range) |
+| [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3279-alice-and-bob-playing-flower-game](https://github.com/liver121888/leetcode/tree/master/3279-alice-and-bob-playing-flower-game) |
 | [3462-vowels-game-in-a-string](https://github.com/liver121888/leetcode/tree/master/3462-vowels-game-in-a-string) |
@@ -116,6 +118,7 @@
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/liver121888/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+| [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/liver121888/leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
@@ -268,6 +271,7 @@
 | [1018-largest-perimeter-triangle](https://github.com/liver121888/leetcode/tree/master/1018-largest-perimeter-triangle) |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
 | [1448-maximum-69-number](https://github.com/liver121888/leetcode/tree/master/1448-maximum-69-number) |
+| [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 ## Backtracking
 |  |
 | ------- |
