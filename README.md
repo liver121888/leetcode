@@ -35,6 +35,7 @@
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/liver121888/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1656-count-good-triplets](https://github.com/liver121888/leetcode/tree/master/1656-count-good-triplets) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+| [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2262-solving-questions-with-brainpower](https://github.com/liver121888/leetcode/tree/master/2262-solving-questions-with-brainpower) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/liver121888/leetcode/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
@@ -99,6 +100,7 @@
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/liver121888/leetcode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1448-maximum-69-number](https://github.com/liver121888/leetcode/tree/master/1448-maximum-69-number) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/liver121888/leetcode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
+| [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/liver121888/leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2610-closest-prime-numbers-in-range](https://github.com/liver121888/leetcode/tree/master/2610-closest-prime-numbers-in-range) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
@@ -162,6 +164,7 @@
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0498-diagonal-traverse](https://github.com/liver121888/leetcode/tree/master/0498-diagonal-traverse) |
+| [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/liver121888/leetcode/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3748-sort-matrix-by-diagonals](https://github.com/liver121888/leetcode/tree/master/3748-sort-matrix-by-diagonals) |
@@ -231,6 +234,7 @@
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/liver121888/leetcode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/liver121888/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+| [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/liver121888/leetcode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2887-sort-vowels-in-a-string](https://github.com/liver121888/leetcode/tree/master/2887-sort-vowels-in-a-string) |
 | [3396-valid-word](https://github.com/liver121888/leetcode/tree/master/3396-valid-word) |
