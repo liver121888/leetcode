@@ -1,17 +1,40 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        # 48-57: 0-9, 65-90: A-Z, 97-122: a-z
-        s = s.lower()
-        end = len(s) - 1
-        start = 0
-        while start <= end:
-            if not s[start].isalnum():
-                start += 1
-            elif not  s[end].isalnum():
-                end -= 1
-            elif s[start] == s[end]:
-                start += 1
-                end -= 1
-            else:
-                return False                  
+        # Read from the back and front at the same time
+        # Skip any special character
+
+
+        # race a car
+
+        # l = 0, r = 9
+        # l = 1, r = 8
+        # l = 2, r = 7
+        # l = 3, r = 6
+        # l = 3, r = 5
+        # return False
+        
+        # " "
+        # l = 0, r = 0
+        # return True
+
+        l, r = 0, len(s) - 1
+        while l < r:
+            l_c = s[l]
+            r_c = s[r]
+
+            if not l_c.isalnum():
+                l += 1
+                continue
+            
+            if not r_c.isalnum():
+                r -= 1
+                continue
+
+            if l_c.lower() != r_c.lower():
+                return False
+
+            l += 1
+            r -= 1
+
         return True
+        
