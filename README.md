@@ -7,6 +7,7 @@
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/liver121888/leetcode/tree/master/0001-two-sum) |
 | [0033-search-in-rotated-sorted-array](https://github.com/liver121888/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0036-valid-sudoku](https://github.com/liver121888/leetcode/tree/master/0036-valid-sudoku) |
 | [0046-permutations](https://github.com/liver121888/leetcode/tree/master/0046-permutations) |
@@ -112,6 +113,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/liver121888/leetcode/tree/master/0001-two-sum) |
 | [0036-valid-sudoku](https://github.com/liver121888/leetcode/tree/master/0036-valid-sudoku) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
