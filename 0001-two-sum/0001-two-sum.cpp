@@ -1,27 +1,22 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        int length = nums.size();
-        int tmp {}, rest {};
-        vector<int> ans {};
-        
-        map<int, int> aMap;
-        
-        // we could use vector.at() or indexing, at() method would do 
-        // boundary check while indexing would not. Here we use indexing 
-        // because it's faster 
-        for (int i = 0; i < length; i++) {
-            aMap[nums[i]] = i;            
+
+        // cannot use same element twice
+
+        unordered_map<int, int> num2idx;
+
+        for (int i = 0; i < nums.size(); i++) {
+            num2idx[nums[i]] = i;
         }
-        
-        for (int i = 0; i < length; i++) {
-            rest = target - nums.at(i);
-            if (aMap.find(rest) != aMap.end() && aMap[rest] != i) {
-                ans.push_back(i);
-                ans.push_back(aMap[rest]);
-                return ans;
-            }
+
+        for (int i = 0; i < nums.size(); i++) {
+            int rest = target - nums[i];
+            if (num2idx.find(rest) != num2idx.end() && num2idx[rest] != i)
+                return {i, num2idx[rest]};
         }
-        return ans;
+
+        return {};
+        
     }
 };
