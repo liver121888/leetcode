@@ -230,6 +230,7 @@
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/liver121888/leetcode/tree/master/0020-valid-parentheses) |
 | [0125-valid-palindrome](https://github.com/liver121888/leetcode/tree/master/0125-valid-palindrome) |
 | [0165-compare-version-numbers](https://github.com/liver121888/leetcode/tree/master/0165-compare-version-numbers) |
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
@@ -324,6 +325,7 @@
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/liver121888/leetcode/tree/master/0020-valid-parentheses) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 ## Brainteaser
 |  |
