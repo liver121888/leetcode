@@ -1,15 +1,18 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        stack = []
-        for ch in s:
-            if len(stack) == 0:
-                stack.append(ch)
-            else:
-                if ord(stack[-1]) == ord(ch) - 1 or ord(stack[-1]) == ord(ch) - 2:
-                    stack.pop()
-                else:
-                    stack.append(ch)
-        if len(stack) == 0:
-            return True
-        else:
-            return False
+        st = []
+        pair = {')': '(', ']': '[', '}': '{'}
+
+        for c in s:
+            # Check if c is valid character
+            if c not in "()[]{}":
+                raise ValueError(f"Invalid character: {c}")
+
+            if c in pair.values():  # left bracket
+                st.append(c)
+            else:  # right bracket
+                if not st or st[-1] != pair[c]:
+                    return False
+                st.pop()
+
+        return not st
