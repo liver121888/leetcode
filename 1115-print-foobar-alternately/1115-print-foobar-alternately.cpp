@@ -1,38 +1,50 @@
 #include <mutex>
+#include <condition_variable>
+#include <functional>
 
 using namespace std;
 
 class FooBar {
 private:
     int n;
-    mutex m1,m2;
+    mutex mtx;
+    condition_variable cv;
+    bool fooTurn = true; // Flag to track which function should execute next
+
 public:
     FooBar(int n) {
         this->n = n;
-        m2.lock();
     }
 
     void foo(function<void()> printFoo) {
-        
         for (int i = 0; i < n; i++) {
-            m1.lock();
+            unique_lock<mutex> lock(mtx);
+            
+            // Wait until it's foo's turn
+            cv.wait(lock, [this]() { return fooTurn; });
 
-        	// printFoo() outputs "foo". Do not change or remove this line.
-        	printFoo();
+            // printFoo() outputs "foo". Do not change or remove this line.
+            printFoo();
 
-            m2.unlock();
+            // Set flag to false and notify the bar thread
+            fooTurn = false;
+            cv.notify_one();
         }
     }
 
     void bar(function<void()> printBar) {
-        
         for (int i = 0; i < n; i++) {
-            m2.lock();
+            unique_lock<mutex> lock(mtx);
 
-        	// printBar() outputs "bar". Do not change or remove this line.
-        	printBar();
+            // Wait until it's bar's turn (fooTurn is false)
+            cv.wait(lock, [this]() { return !fooTurn; });
 
-            m1.unlock();
+            // printBar() outputs "bar". Do not change or remove this line.
+            printBar();
+
+            // Set flag back to true and notify the foo thread
+            fooTurn = true;
+            cv.notify_one();
         }
     }
 };
