@@ -1,43 +1,35 @@
-#include <mutex>
-#include <atomic>
-
-using namespace std;
+#include <semaphore.h>
 
 class Foo {
+
+protected:
+    sem_t firstJobDone;
+    sem_t secondJobDone;
+
 public:
 
-    atomic<bool> firstCalled;
-    atomic<bool> secondCalled;
     Foo() {
-        // mutex mtx;
-        firstCalled = false;
-        secondCalled = false;
+        sem_init(&firstJobDone, 0, 0);
+        sem_init(&secondJobDone, 0, 0);
     }
 
     void first(function<void()> printFirst) {
-        
-        // printFirst() outputs "first". Do not change or remove this line.
+        // printFirst() outputs "first".
         printFirst();
-        firstCalled = true;
+        sem_post(&firstJobDone);
     }
 
     void second(function<void()> printSecond) {
-        
-        // printSecond() outputs "second". Do not change or remove this line.
-        while (!firstCalled) {
-            std::this_thread::sleep_for(std::chrono::milliseconds(10));
-        }
+        sem_wait(&firstJobDone);
+        // printSecond() outputs "second".
         printSecond();
-        secondCalled = true;
+        sem_post(&secondJobDone);
         
     }
 
     void third(function<void()> printThird) {
-        
-        // printThird() outputs "third". Do not change or remove this line.
-        while (!firstCalled || !secondCalled) {
-            std::this_thread::sleep_for(std::chrono::milliseconds(10));
-        }
+        sem_wait(&secondJobDone);
+        // printThird() outputs "third".
         printThird();
     }
 };
