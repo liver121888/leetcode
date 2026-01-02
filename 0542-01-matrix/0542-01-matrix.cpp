@@ -1,42 +1,64 @@
 class Solution {
 public:
+    int n;
+    int m;
+    bool valid(int row, int col) {
+        return 0 <= row && row < m && 0 <= col && col < n;
+    }
     vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
-        int m = mat.size();
-        int n = mat[0].size();
-        
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (mat[i][j] > 0) {
-                    int top; 
-                    int left;
 
-                    if (i == 0)
-                        top = 1e5;
-                    else
-                        top = mat[i - 1][j];
+        // bfs from current cell and see the nearest cell
+        // we can called this funciton by m*n times
 
-                    if (j == 0)
-                        left = 1e5;
-                    else
-                        left = mat[i][j - 1];
+        // time complexity: m*n*m*n = O(m*n)^2 in worst case
+        // space complexity: O(1)
 
-                    mat[i][j] = min(top, left) + 1;  
-                }
-            }            
-        }
-        
-        for (int i = m - 1; i >= 0; --i) {
-            for (int j = n - 1; j >= 0; --j) {
-                if (mat[i][j] > 0) {
-                    int bottom = (i < m - 1) ? mat[i + 1][j] : 1e5;
-                    int right = (j < n - 1) ? mat[i][j + 1] : 1e5;
-                    mat[i][j] = min(mat[i][j], min(bottom, right) + 1);
+        // some edges cases
+        // [1, 1, 0]
+        // [0, 1, 1]
+        // [1, 1, 1]
+        // bfs 0, 0
+        // [1, 1, 0]
+        // [0, 1, 1]
+        // [1, 2, 2]
+
+        // is there a way we do this space O(1) but O(mn)?
+
+        m = mat.size();
+        n = mat[0].size();
+        vector<vector<int>> directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
+
+        vector<vector<int>> matrix(m, vector<int>(n, 0));
+        vector<vector<bool>> seen(m, vector<bool>(n, false));
+
+        queue<vector<int>> q;
+
+        for (int row = 0; row < m; row++) {
+            for (int col = 0; col < n; col++) {
+                matrix[row][col] = mat[row][col];
+                if (matrix[row][col] == 0) {
+                    q.push({row, col, 0});
+                    seen[row][col] = true;
                 }
             }
         }
-        
-        
-        return mat;
+
+        while (!q.empty()) {
+            vector<int> curr = q.front();
+            q.pop();
+            int row = curr[0], col = curr[1], steps = curr[2];
+            
+            for (vector<int>& direction: directions) {
+                int nextRow = row + direction[0], nextCol = col + direction[1];
+                if (valid(nextRow, nextCol) && !seen[nextRow][nextCol]) {
+                    seen[nextRow][nextCol] = true;
+                    q.push({nextRow, nextCol, steps + 1});
+                    matrix[nextRow][nextCol] = steps + 1;
+                }
+            }
+        }
+
+        return matrix;
+
     }
-    
 };
