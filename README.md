@@ -33,6 +33,7 @@
 | [0733-flood-fill](https://github.com/liver121888/leetcode/tree/master/0733-flood-fill) |
 | [0830-largest-triangle-area](https://github.com/liver121888/leetcode/tree/master/0830-largest-triangle-area) |
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
+| [0994-rotting-oranges](https://github.com/liver121888/leetcode/tree/master/0994-rotting-oranges) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1018-largest-perimeter-triangle](https://github.com/liver121888/leetcode/tree/master/1018-largest-perimeter-triangle) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/liver121888/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
@@ -179,6 +180,7 @@
 | [0498-diagonal-traverse](https://github.com/liver121888/leetcode/tree/master/0498-diagonal-traverse) |
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/liver121888/leetcode/tree/master/0733-flood-fill) |
+| [0994-rotting-oranges](https://github.com/liver121888/leetcode/tree/master/0994-rotting-oranges) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/liver121888/leetcode/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
@@ -278,6 +280,7 @@
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/liver121888/leetcode/tree/master/0733-flood-fill) |
 | [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
+| [0994-rotting-oranges](https://github.com/liver121888/leetcode/tree/master/0994-rotting-oranges) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 ## Graph
 |  |
