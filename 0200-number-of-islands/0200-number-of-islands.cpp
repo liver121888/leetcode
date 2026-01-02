@@ -45,7 +45,7 @@ public:
                         int r = coords.first;
                         int c = coords.second;
     
-                        cout << r << " " << c << endl;
+                        // cout << r << " " << c << endl;
 
                         // an not visited island, traverse
                         for (auto direction : directions) {
