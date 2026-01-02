@@ -41,6 +41,7 @@ public:
                     dfs.push(make_pair(i, j));
                     // visit
                     // visited[i][j] = true;
+                    grid[i][j] = 0;
                     while (!dfs.empty()) {
                         auto coords = dfs.top();
                         dfs.pop();
