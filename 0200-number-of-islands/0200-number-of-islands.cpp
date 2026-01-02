@@ -23,7 +23,9 @@ public:
         int m = grid.size();
         int n = grid[0].size();
         // visited grid
-        auto visited = vector<vector<bool>>(m, vector<bool>(n, false));
+        // auto visited = vector<vector<bool>>(m, vector<bool>(n, false));
+        // instead of using a visited grid, we can sunk the island (set it to 0)
+
 
         // dfs stack
         stack<pair<int,int>> dfs;
@@ -33,12 +35,12 @@ public:
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 // check if its a land cell
-                if (grid[i][j] == '1' && !visited[i][j]) {
+                if (grid[i][j] == '1') {
 
                     ans++;
                     dfs.push(make_pair(i, j));
                     // visit
-                    visited[i][j] = true;
+                    // visited[i][j] = true;
                     while (!dfs.empty()) {
                         auto coords = dfs.top();
                         dfs.pop();
@@ -51,10 +53,11 @@ public:
                         for (auto direction : directions) {
                             int nr = r + direction.first;
                             int nc = c + direction.second;
-                            if (nr < m && nc < n && nr >= 0 && nc >= 0 && grid[nr][nc] == '1' && !visited[nr][nc]) {
+                            if (nr < m && nc < n && nr >= 0 && nc >= 0 && grid[nr][nc] == '1') {
                                 // inbound
                                 dfs.push(make_pair(nr,nc));
-                                visited[nr][nc] = true;
+                                // visited[nr][nc] = true;
+                                grid[nr][nc] = 0;
                             }
                         }
           
