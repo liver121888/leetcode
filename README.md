@@ -42,6 +42,7 @@
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/liver121888/leetcode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/liver121888/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1656-count-good-triplets](https://github.com/liver121888/leetcode/tree/master/1656-count-good-triplets) |
+| [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2262-solving-questions-with-brainpower](https://github.com/liver121888/leetcode/tree/master/2262-solving-questions-with-brainpower) |
@@ -184,6 +185,7 @@
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/liver121888/leetcode/tree/master/0733-flood-fill) |
 | [0994-rotting-oranges](https://github.com/liver121888/leetcode/tree/master/0994-rotting-oranges) |
+| [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/liver121888/leetcode/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
@@ -287,6 +289,7 @@
 | [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
 | [0994-rotting-oranges](https://github.com/liver121888/leetcode/tree/master/0994-rotting-oranges) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
 ## Graph
 |  |
 | ------- |
