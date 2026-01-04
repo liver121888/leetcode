@@ -64,67 +64,67 @@ public:
     // Top-down DP
     // Time: O(mn)
     // Space: O(mn)
-    bool canPartition(vector<int> &nums) {
-        int totalSum = 0;
-        for (int num : nums) {
-            totalSum += num;
-        }
-        
-        if (totalSum % 2 != 0) return false;
-        
-        int subSetSum = totalSum / 2;
-        int n = nums.size();
-        
-        // 修改點 1: 使用 int 矩陣，並初始化為 -1
-        vector<vector<int>> memo(n + 1, vector<int>(subSetSum + 1, -1));
-        
-        // Top-down dfs with memo
-        return dfs(nums, n - 1, subSetSum, memo);
-    }
-
-    // 修改點 2: memo 的型別改為 vector<vector<int>>
-    bool dfs(vector<int> &nums, int n, int subSetSum, vector<vector<int>> &memo) {
-        if (subSetSum == 0) return true;
-        if (n < 0 || subSetSum < 0) return false; // 注意這裡的 base case 修正
-        
-        // 修改點 3: 檢查是否為 -1
-        if (memo[n][subSetSum] != -1) {
-            return memo[n][subSetSum]; // int 會自動轉型為 bool (1->true, 0->false)
-        }
-        
-        bool result = dfs(nums, n - 1, subSetSum - nums[n], memo) || 
-                    dfs(nums, n - 1, subSetSum, memo);
-                    
-        // 修改點 4: 儲存時，bool 會自動轉為 1 或 0
-        return memo[n][subSetSum] = result;
-    }
-
-
-    // bottom-up
     // bool canPartition(vector<int> &nums) {
     //     int totalSum = 0;
-    //     // find sum of all array elements
     //     for (int num : nums) {
     //         totalSum += num;
     //     }
-    //     // if totalSum is odd, it cannot be partitioned into equal sum subset
+        
     //     if (totalSum % 2 != 0) return false;
+        
     //     int subSetSum = totalSum / 2;
     //     int n = nums.size();
-    //     bool dp[n + 1][subSetSum + 1];
-    //     memset(dp, 0, (n + 1) * (subSetSum + 1) * sizeof(bool));
-    //     dp[0][0] = true;
-    //     for (int i = 1; i <= n; i++) {
-    //         int curr = nums[i - 1];
-    //         for (int j = 0; j <= subSetSum; j++) {
-    //             if (j < curr)
-    //                 dp[i][j] = dp[i - 1][j];
-    //             else
-    //                 dp[i][j] = dp[i - 1][j] || (dp[i - 1][j - curr]);
-    //         }
-    //     }
-    //     return dp[n][subSetSum];
+        
+    //     // 修改點 1: 使用 int 矩陣，並初始化為 -1
+    //     vector<vector<int>> memo(n + 1, vector<int>(subSetSum + 1, -1));
+        
+    //     // Top-down dfs with memo
+    //     return dfs(nums, n - 1, subSetSum, memo);
     // }
+
+    // // 修改點 2: memo 的型別改為 vector<vector<int>>
+    // bool dfs(vector<int> &nums, int n, int subSetSum, vector<vector<int>> &memo) {
+    //     if (subSetSum == 0) return true;
+    //     if (n < 0 || subSetSum < 0) return false; // 注意這裡的 base case 修正
+        
+    //     // 修改點 3: 檢查是否為 -1
+    //     if (memo[n][subSetSum] != -1) {
+    //         return memo[n][subSetSum]; // int 會自動轉型為 bool (1->true, 0->false)
+    //     }
+        
+    //     bool result = dfs(nums, n - 1, subSetSum - nums[n], memo) || 
+    //                 dfs(nums, n - 1, subSetSum, memo);
+                    
+    //     // 修改點 4: 儲存時，bool 會自動轉為 1 或 0
+    //     return memo[n][subSetSum] = result;
+    // }
+
+
+    // bottom-up
+    bool canPartition(vector<int> &nums) {
+        int totalSum = 0;
+        // find sum of all array elements
+        for (int num : nums) {
+            totalSum += num;
+        }
+        // if totalSum is odd, it cannot be partitioned into equal sum subset
+        if (totalSum % 2 != 0) return false;
+        int subSetSum = totalSum / 2;
+        int n = nums.size();
+        bool dp[n + 1][subSetSum + 1];
+        memset(dp, 0, (n + 1) * (subSetSum + 1) * sizeof(bool));
+        dp[0][0] = true;
+        for (int i = 1; i <= n; i++) {
+            int curr = nums[i - 1];
+            for (int j = 0; j <= subSetSum; j++) {
+                if (j < curr)
+                    dp[i][j] = dp[i - 1][j];
+                else
+                    dp[i][j] = dp[i - 1][j] || (dp[i - 1][j - curr]);
+            }
+        }
+        return dp[n][subSetSum];
+    }
 
 
 
