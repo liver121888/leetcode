@@ -153,6 +153,7 @@
 ## Linked List
 |  |
 | ------- |
+| [0021-merge-two-sorted-lists](https://github.com/liver121888/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0024-swap-nodes-in-pairs](https://github.com/liver121888/leetcode/tree/master/0024-swap-nodes-in-pairs) |
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
 ## Design
@@ -369,6 +370,7 @@
 ## Recursion
 |  |
 | ------- |
+| [0021-merge-two-sorted-lists](https://github.com/liver121888/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0024-swap-nodes-in-pairs](https://github.com/liver121888/leetcode/tree/master/0024-swap-nodes-in-pairs) |
 ## Stack
 |  |
