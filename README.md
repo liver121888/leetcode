@@ -103,6 +103,7 @@
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
+| [0062-unique-paths](https://github.com/liver121888/leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/liver121888/leetcode/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
@@ -212,6 +213,7 @@
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/liver121888/leetcode/tree/master/0053-maximum-subarray) |
+| [0062-unique-paths](https://github.com/liver121888/leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/liver121888/leetcode/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0118-pascals-triangle](https://github.com/liver121888/leetcode/tree/master/0118-pascals-triangle) |
@@ -394,6 +396,7 @@
 ## Combinatorics
 |  |
 | ------- |
+| [0062-unique-paths](https://github.com/liver121888/leetcode/tree/master/0062-unique-paths) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/liver121888/leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
 ## Memoization
 |  |
