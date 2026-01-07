@@ -63,19 +63,19 @@ public:
         // get totalSum
         dfs(root);
 
-        cout << "totalSum: " << totalSum << endl;
+        // cout << "totalSum: " << totalSum << endl;
 
         long long maxResult = 0;
 
         // get possible product and see the max value
         const int m = pow(10, 9) + 7;
-        cout << "subTreeSum: [";
+        // cout << "subTreeSum: [";
         for (auto subTreeSum : subTreeSums) {
-            cout << subTreeSum << " ";
+            // cout << subTreeSum << " ";
             long long currResult = (totalSum - subTreeSum) * subTreeSum;
             maxResult = max(maxResult, currResult);
         }
-        cout << "]" << endl;
+        // cout << "]" << endl;
         return maxResult % m;        
     }
 };
