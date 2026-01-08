@@ -29,6 +29,19 @@ public:
         //         r++;
         //     }
         // }
+        
+
+        int l = 0, r = 0;
+        while (r < nums.size()) {
+            if (nums[r] != 0) {
+                // swap
+                int tmp = nums[l];
+                nums[l] = nums[r];
+                nums[r] = tmp;
+                l++;
+            }
+            r++;
+        }
 
         // [0,1,0,3,12], n = 5
         // l = 0, r = 1
@@ -40,13 +53,13 @@ public:
 
         // [1, 3, 5, 6, 7]
        
-        int l = 0;
-        for (int r = 0; r < nums.size(); r++) {
-            if (nums[r] != 0) {
-                swap(nums[l], nums[r]);
-                l++;
-            }
-        }
+        // int l = 0;
+        // for (int r = 0; r < nums.size(); r++) {
+        //     if (nums[r] != 0) {
+        //         swap(nums[l], nums[r]);
+        //         l++;
+        //     }
+        // }
 
         
     }
