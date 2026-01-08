@@ -162,6 +162,7 @@
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
+| [0232-implement-queue-using-stacks](https://github.com/liver121888/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
 | [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
 | [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
@@ -399,6 +400,7 @@
 | ------- |
 | [0020-valid-parentheses](https://github.com/liver121888/leetcode/tree/master/0020-valid-parentheses) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
+| [0232-implement-queue-using-stacks](https://github.com/liver121888/leetcode/tree/master/0232-implement-queue-using-stacks) |
 ## Brainteaser
 |  |
 | ------- |
@@ -420,6 +422,7 @@
 ## Queue
 |  |
 | ------- |
+| [0232-implement-queue-using-stacks](https://github.com/liver121888/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Combinatorics
 |  |
