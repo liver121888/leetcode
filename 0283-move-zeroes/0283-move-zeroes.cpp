@@ -11,24 +11,24 @@ class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
 
-        int l = 0, r = 0;
-        while (r < nums.size()) {
-            if (nums[l] != 0) {
-                l++;
-                r++;
-            } else {
-                while (r < nums.size() && nums[r] == 0) {
-                    r++;
-                }
-                if (r >= nums.size())
-                    break;
-                // swap
-                nums[l] = nums[r];
-                nums[r] = 0;
-                l++;
-                r++;
-            }
-        }
+        // int l = 0, r = 0;
+        // while (r < nums.size()) {
+        //     if (nums[l] != 0) {
+        //         l++;
+        //         r++;
+        //     } else {
+        //         while (r < nums.size() && nums[r] == 0) {
+        //             r++;
+        //         }
+        //         if (r >= nums.size())
+        //             break;
+        //         // swap
+        //         nums[l] = nums[r];
+        //         nums[r] = 0;
+        //         l++;
+        //         r++;
+        //     }
+        // }
 
         // [0,1,0,3,12], n = 5
         // l = 0, r = 1
@@ -39,8 +39,14 @@ public:
 
 
         // [1, 3, 5, 6, 7]
-
-
+       
+        int l = 0;
+        for (int r = 0; r < nums.size(); r++) {
+            if (nums[r] != 0) {
+                swap(nums[l], nums[r]);
+                l++;
+            }
+        }
 
         
     }
