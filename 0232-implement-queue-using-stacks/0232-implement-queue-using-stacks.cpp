@@ -1,8 +1,17 @@
 // I can use two stack to simulate a queue
 // when push, push to first stack
-// [1], [2]
+// [1], [2]. [3]
 // pop should be 1
 
+// 1
+// 2
+
+// 1
+// 2
+
+// 1
+// 2
+// 3
 
 
 class MyQueue {
@@ -17,47 +26,81 @@ public:
         
     }
     
-    void push(int x) {
+    // O(n)
+    // void push(int x) {
 
+    //     if (s1.empty())
+    //         front = x;
+
+    //     while (!s1.empty()) {
+    //         s2.push(s1.top());
+    //         s1.pop();
+    //     }
+    //     s2.push(x);
+    //     while (!s2.empty()) {
+    //         s1.push(s2.top());
+    //         s2.pop();
+    //     }
+        
+    // }
+    
+    // // O(1)
+    // int pop() {
+
+    //     int res = s1.top();
+    //     s1.pop();
+    //     if (!s1.empty())
+    //         front = s1.top();
+    //     return res;
+        
+    // }
+    
+    // // O(1)    
+    // int peek() {
+
+    //     return front;
+        
+    // }
+    
+    // // O(1)
+    // bool empty() {
+
+    //     return s1.empty();
+        
+    // }
+
+
+    void push(int x) {
         if (s1.empty())
             front = x;
-
-        while (!s1.empty()) {
-            s2.push(s1.top());
-            s1.pop();
-        }
-        s2.push(x);
-        while (!s2.empty()) {
-            s1.push(s2.top());
-            s2.pop();
-        }
-        
+        s1.push(x);
     }
-    
-    // O(1)
-    int pop() {
 
-        int res = s1.top();
-        s1.pop();
-        if (!s1.empty())
-            front = s1.top();
+   int pop() {
+        if (s2.empty()) {
+            while (!s1.empty()) {
+                s2.push(s1.top());
+                s1.pop();
+            }
+        }
+        int res = s2.top();
+        s2.pop();
         return res;
-        
     }
-    
-    // O(1)    
-    int peek() {
 
-        return front;
-        
-    }
-    
-    // O(1)
+    // Return whether the queue is empty.
     bool empty() {
-
-        return s1.empty();
-        
+        return s1.empty() && s2.empty();
     }
+
+    // Get the front element.
+    int peek() {
+        if (!s2.empty()) {
+            return s2.top();
+        }
+        return front;
+    }
+
 };
 
 /**
