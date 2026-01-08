@@ -13,6 +13,7 @@
 | [0046-permutations](https://github.com/liver121888/leetcode/tree/master/0046-permutations) |
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
 | [0053-maximum-subarray](https://github.com/liver121888/leetcode/tree/master/0053-maximum-subarray) |
+| [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0118-pascals-triangle](https://github.com/liver121888/leetcode/tree/master/0118-pascals-triangle) |
@@ -186,6 +187,7 @@
 | ------- |
 | [0036-valid-sudoku](https://github.com/liver121888/leetcode/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
+| [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/liver121888/leetcode/tree/master/0200-number-of-islands) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
@@ -265,6 +267,7 @@
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/liver121888/leetcode/tree/master/0020-valid-parentheses) |
+| [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/liver121888/leetcode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/liver121888/leetcode/tree/master/0127-word-ladder) |
 | [0165-compare-version-numbers](https://github.com/liver121888/leetcode/tree/master/0165-compare-version-numbers) |
@@ -342,6 +345,7 @@
 |  |
 | ------- |
 | [0046-permutations](https://github.com/liver121888/leetcode/tree/master/0046-permutations) |
+| [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 ## Tree
 |  |
 | ------- |
@@ -367,6 +371,7 @@
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 | [0133-clone-graph](https://github.com/liver121888/leetcode/tree/master/0133-clone-graph) |
 | [0200-number-of-islands](https://github.com/liver121888/leetcode/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/liver121888/leetcode/tree/master/0207-course-schedule) |
