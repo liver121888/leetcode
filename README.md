@@ -240,6 +240,7 @@
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/liver121888/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
+| [0818-race-car](https://github.com/liver121888/leetcode/tree/master/0818-race-car) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/liver121888/leetcode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/liver121888/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2262-solving-questions-with-brainpower](https://github.com/liver121888/leetcode/tree/master/2262-solving-questions-with-brainpower) |
