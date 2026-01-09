@@ -46,6 +46,7 @@
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1018-largest-perimeter-triangle](https://github.com/liver121888/leetcode/tree/master/1018-largest-perimeter-triangle) |
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/liver121888/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
+| [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/liver121888/leetcode/tree/master/1293-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/liver121888/leetcode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/liver121888/leetcode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/liver121888/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
@@ -204,6 +205,7 @@
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
 | [0733-flood-fill](https://github.com/liver121888/leetcode/tree/master/0733-flood-fill) |
 | [0994-rotting-oranges](https://github.com/liver121888/leetcode/tree/master/0994-rotting-oranges) |
+| [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/liver121888/leetcode/tree/master/1293-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
@@ -319,6 +321,7 @@
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1197-minimum-knight-moves](https://github.com/liver121888/leetcode/tree/master/1197-minimum-knight-moves) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/liver121888/leetcode/tree/master/1293-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
 ## Graph
 |  |
