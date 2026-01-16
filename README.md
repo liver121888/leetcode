@@ -23,6 +23,7 @@
 | [0120-triangle](https://github.com/liver121888/leetcode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/liver121888/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0134-gas-station](https://github.com/liver121888/leetcode/tree/master/0134-gas-station) |
+| [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
 | [0200-number-of-islands](https://github.com/liver121888/leetcode/tree/master/0200-number-of-islands) |
 | [0238-product-of-array-except-self](https://github.com/liver121888/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/liver121888/leetcode/tree/master/0283-move-zeroes) |
@@ -100,6 +101,7 @@
 | [0056-merge-intervals](https://github.com/liver121888/leetcode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/liver121888/leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
+| [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
@@ -148,6 +150,7 @@
 | [0133-clone-graph](https://github.com/liver121888/leetcode/tree/master/0133-clone-graph) |
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
+| [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
@@ -254,6 +257,7 @@
 | ------- |
 | [0053-maximum-subarray](https://github.com/liver121888/leetcode/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
+| [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Geometry
 |  |
@@ -433,6 +437,7 @@
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/liver121888/leetcode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Ordered Set
