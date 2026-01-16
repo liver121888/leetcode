@@ -1,19 +1,24 @@
+// we can create a hashmap and count through the array
+// time: O(n)
+// space: O(n)
+// The majority element is the element that appears more than ⌊n / 2⌋ times
+// we can do like a voting thing
+// the majority element will wins
+// everytime 
+
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        
-        unordered_map<int,int> mp;
-        int n = nums.size();
-        int res;
-        for(int i=0;i<nums.size();i++){
-            mp[nums[i]]++;
+        int count = 0;
+        int candidate;
+
+        for (int& num : nums) {
+            if (count == 0) {
+                candidate = num;
+            }
+            count += (num == candidate) ? 1 : -1;
         }
 
-        for(auto x:mp){
-            if(x.second > n/2){
-                res =  x.first;
-            }
-        }
-        return res;
+        return candidate;
     }
 };
