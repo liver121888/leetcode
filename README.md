@@ -322,6 +322,7 @@
 | [0207-course-schedule](https://github.com/liver121888/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/liver121888/leetcode/tree/master/0210-course-schedule-ii) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
+| [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
@@ -350,6 +351,7 @@
 | ------- |
 | [0207-course-schedule](https://github.com/liver121888/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/liver121888/leetcode/tree/master/0210-course-schedule-ii) |
+| [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 ## Shortest Path
 |  |
@@ -401,6 +403,7 @@
 | [0200-number-of-islands](https://github.com/liver121888/leetcode/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/liver121888/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/liver121888/leetcode/tree/master/0210-course-schedule-ii) |
+| [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0543-diameter-of-binary-tree](https://github.com/liver121888/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
@@ -470,4 +473,8 @@
 | ------- |
 | [1114-print-in-order](https://github.com/liver121888/leetcode/tree/master/1114-print-in-order) |
 | [1115-print-foobar-alternately](https://github.com/liver121888/leetcode/tree/master/1115-print-foobar-alternately) |
+## Graph Theory
+|  |
+| ------- |
+| [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
 <!---LeetCode Topics End-->
