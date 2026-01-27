@@ -1,40 +1,46 @@
+// this is a dynamic programming problem
+// we can do a dfs method, starting from index 0
+// all the way to the end
+// in each index, we can choose to rob or not to rob
+// rob(i) = max(rob(i-2) + nums[i], rob(i-1))
+// time: O(2^n) since we have 2 options in each position
+// space: O(n) since we recursive calls
+
+// a way to dp is store the rob(i-1) result
+// so next time we only O(1) the solution
+// time: O(n), every index calculate once
+// space: O(n), there is a dp array
+
+// bottom-up
+// if only 1 house
+// return nums[0]
+// if 2 houses
+// return max(nums[1], nums[0])
+
+// f(i) = max(nums[i] + dp[i - 2], dp[i-1])
+
+
 class Solution {
 public:
     int rob(vector<int>& nums) {
-        int rob1 = 0;
-        int rob2 = 0;
-        int temp {};
-        for (auto n : nums) {
-            temp = max(n + rob1, rob2);
-            rob1 = rob2;
-            rob2 = temp;            
-        }
-        return rob2;
         
-        // vector<int> dp(nums.size(), -1);
-        // return dfs(nums, dp, nums.size() - 1);
+        int n = nums.size();
+
+        // base case: size == 1
+        if (n == 1)
+            return nums[0];
+
+        // base case: size == 2
+        if (n == 2)
+            return max(nums[0], nums[1]);
+
+        vector<int> dp(n);
+        dp[0] = nums[0];
+        dp[1] = max(nums[0], nums[1]);
+        for (int i = 2; i < n; i++) {
+            dp[i] = max(dp[i - 2] + nums[i], dp[i-1]);
+        }
+        
+        return dp[n-1];
     }
-    
-    
-    //     int dfs(vector<int>& nums, vector<int>& dp, int i) {
-    //         if (i == 0) {
-    //             dp[i] = nums[i];
-    //             return nums[i];
-    //         }
-
-    //         if (i == 1) {
-    //             dp[i] = max(nums[0], nums[1]);
-    //             return dp[i];
-    //         }
-
-    //         if (i < 0)
-    //             return 0;        
-
-    //         if (dp[i] != -1)
-    //             return dp[i];
-    //         int firstChoice = nums[i] + dfs(nums, dp, i - 2);
-    //         int secondChoice = dfs(nums, dp, i - 1);
-    //         dp[i] = firstChoice > secondChoice ? firstChoice : secondChoice;
-    //         return dp[i];        
-    //     }
 };
