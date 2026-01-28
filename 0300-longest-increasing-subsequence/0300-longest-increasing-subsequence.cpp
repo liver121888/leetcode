@@ -38,30 +38,79 @@
 
 
 // bottom-up
+// class Solution {
+// public:
+//     int lengthOfLIS(vector<int>& nums) {
+//         int n = nums.size();
+//         if (n == 0) return 0;
+
+//         // dp[i] 初始化為 1，因為每個數字本身至少是一個長度為 1 的子序列
+//         vector<int> dp(n, 1);
+//         int maxAns = 1;
+
+//         // 外層迴圈：計算每個位置 i 的 dp 值
+//         for (int i = 1; i < n; i++) {
+//             // 內層迴圈：檢查 i 之前的所有位置 j
+//             for (int j = 0; j < i; j++) {
+//                 // 如果 nums[i] 能接在 nums[j] 後面
+//                 if (nums[i] > nums[j]) {
+//                     // 嘗試更新 dp[i]
+//                     dp[i] = max(dp[i], dp[j] + 1);
+//                 }
+//             }
+//             // 隨時更新全域最大值
+//             maxAns = max(maxAns, dp[i]);
+//         }
+
+//         return maxAns;
+//     }
+// };
+
+
+// binary serach to build the subarray
 class Solution {
+
 public:
-    int lengthOfLIS(vector<int>& nums) {
-        int n = nums.size();
-        if (n == 0) return 0;
 
-        // dp[i] 初始化為 1，因為每個數字本身至少是一個長度為 1 的子序列
-        vector<int> dp(n, 1);
-        int maxAns = 1;
 
-        // 外層迴圈：計算每個位置 i 的 dp 值
-        for (int i = 1; i < n; i++) {
-            // 內層迴圈：檢查 i 之前的所有位置 j
-            for (int j = 0; j < i; j++) {
-                // 如果 nums[i] 能接在 nums[j] 後面
-                if (nums[i] > nums[j]) {
-                    // 嘗試更新 dp[i]
-                    dp[i] = max(dp[i], dp[j] + 1);
-                }
+    // find the first >= target
+    // if we found equal, we want to move to the left because 
+    // we want to find the first >= target
+    // if we have [2 2 2] find 2
+    // r go back to -1, we return l;
+    int binarySearch(const vector<int>& subseq, int target) {
+
+        int l = 0, r = subseq.size()-1;
+
+        while (l <= r) {
+            int mid = l + (r-l)/2;
+            if (subseq[mid] >= target) {
+                r = mid - 1;
+            } else {
+                l = mid + 1;
             }
-            // 隨時更新全域最大值
-            maxAns = max(maxAns, dp[i]);
+        }
+        return l;
+    }
+
+    int lengthOfLIS(vector<int>& nums) {
+
+        vector<int> subseq;
+        subseq.push_back(nums[0]);
+
+        for (int i = 1; i < nums.size(); i++) {
+            int num = nums[i];
+            if (num > subseq[subseq.size()-1])
+                subseq.push_back(num);
+            else {
+                int j = binarySearch(subseq, num);
+                subseq[j] = num;
+            }
         }
 
-        return maxAns;
+        return subseq.size();
+
     }
+
+
 };
