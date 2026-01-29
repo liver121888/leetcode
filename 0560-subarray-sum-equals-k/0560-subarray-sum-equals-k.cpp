@@ -13,25 +13,39 @@ class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
 
-        vector<int> prefixSum;
-        prefixSum.push_back(0);
-        int currSum = 0;
-        for (auto num : nums) {
-            currSum += num;
-            prefixSum.push_back(currSum);
-        }
-        int count = 0;
-        for (int start = 0; start < nums.size(); start++) {
-            for (int end = start + 1; end <= nums.size(); end++) {
-                if (prefixSum[end] - prefixSum[start] == k)
-                    count++;
-            }
-        }
+        // vector<int> prefixSum;
+        // prefixSum.push_back(0);
+        // int currSum = 0;
+        // for (auto num : nums) {
+        //     currSum += num;
+        //     prefixSum.push_back(currSum);
+        // }
+        // int count = 0;
+        // for (int start = 0; start < nums.size(); start++) {
+        //     for (int end = start + 1; end <= nums.size(); end++) {
+        //         if (prefixSum[end] - prefixSum[start] == k)
+        //             count++;
+        //     }
+        // }
 
-        return count;
+        // return count;
 
         // time: O(n^2);
         // space: O(n);
+
+
+        int count = 0, sum = 0;
+        unordered_map<int, int> lookUp;
+        lookUp[0] = 1;
+        for (int i = 0; i < nums.size(); i++) {
+            sum += nums[i];
+            if (lookUp.find(sum - k) != lookUp.end()) {
+                count += lookUp[sum-k];
+            }
+            lookUp[sum]++;
+        }
+        return count;
+
 
 
 
