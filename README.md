@@ -46,6 +46,7 @@
 | [0735-asteroid-collision](https://github.com/liver121888/leetcode/tree/master/0735-asteroid-collision) |
 | [0752-open-the-lock](https://github.com/liver121888/leetcode/tree/master/0752-open-the-lock) |
 | [0830-largest-triangle-area](https://github.com/liver121888/leetcode/tree/master/0830-largest-triangle-area) |
+| [0874-walking-robot-simulation](https://github.com/liver121888/leetcode/tree/master/0874-walking-robot-simulation) |
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0994-rotting-oranges](https://github.com/liver121888/leetcode/tree/master/0994-rotting-oranges) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -98,6 +99,7 @@
 | ------- |
 | [0498-diagonal-traverse](https://github.com/liver121888/leetcode/tree/master/0498-diagonal-traverse) |
 | [0735-asteroid-collision](https://github.com/liver121888/leetcode/tree/master/0735-asteroid-collision) |
+| [0874-walking-robot-simulation](https://github.com/liver121888/leetcode/tree/master/0874-walking-robot-simulation) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/liver121888/leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/liver121888/leetcode/tree/master/3616-make-array-elements-equal-to-zero) |
@@ -161,6 +163,7 @@
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0752-open-the-lock](https://github.com/liver121888/leetcode/tree/master/0752-open-the-lock) |
+| [0874-walking-robot-simulation](https://github.com/liver121888/leetcode/tree/master/0874-walking-robot-simulation) |
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0981-time-based-key-value-store](https://github.com/liver121888/leetcode/tree/master/0981-time-based-key-value-store) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/liver121888/leetcode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
