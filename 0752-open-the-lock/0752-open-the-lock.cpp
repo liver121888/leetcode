@@ -70,6 +70,7 @@ public:
 
     int openLock(vector<string>& deadends, string target) {
 
+        // 把 vector 變成 set/unordered_set（去重+快速查詢）
         unordered_set<string> obstacles(deadends.begin(), deadends.end());
         // for (auto d : deadends) {
         //     obstacles.insert(d);
