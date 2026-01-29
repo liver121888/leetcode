@@ -1,51 +1,55 @@
 class Solution {
 public:
-    int ans = 0;
-    int rx = 0;
-    int ry = 0;
-    // N
-    int facing = 0;
-    
-    // Slightly larger than 2 * max coordinate value
-    static const int HASH_MULTIPLIER = 60013;
 
-    // Hash function to convert (x, y) coordinates to a unique integer value
-    int hashCoordinates(int x, int y) { return x + HASH_MULTIPLIER * y; }
-    
-    // N W S E
-    vector<vector<int>> directions = {{0, 1}, {-1, 0}, {0, -1}, {1, 0}};
-    
+    string hash(int y, int x) {
+        string hashStr = to_string(y) + " " + to_string(x);
+        return hashStr;
+    }
+
     int robotSim(vector<int>& commands, vector<vector<int>>& obstacles) {
-        unordered_set<int> obstacleSet;
-        for (auto& obstacle : obstacles) {
-            obstacleSet.insert(hashCoordinates(obstacle[0], obstacle[1]));
-        }        
-        
-        for (int command : commands) {
-            
+
+        int direction = 0;
+
+        int yDirs[4] = {1, 0, -1, 0};
+        int xDirs[4] = {0, 1, 0, -1};
+
+        unordered_set<string> obs;
+        for (auto obstacle : obstacles)
+            obs.insert(hash(obstacle[1], obstacle[0]));
+
+        int maxDist = 0;
+        int currY = 0;
+        int currX = 0;
+
+        for (auto command : commands) {
+
             if (command == -1) {
-                // Turn right
-                facing = (facing + 3) % 4;
-                continue;
-            }
-            if (command == -2) {
-                // Turn left
-                facing = (facing + 1) % 4;
-                continue;
-            }
-            
-            while (command != 0) {
-                int x = rx + directions[facing][0];
-                int y = ry + directions[facing][1];  
-                if (obstacleSet.contains(hashCoordinates(x, y))) {
-                    break;
+                direction = ((direction + 1) + 4) % 4;
+            } else if (command == -2) {
+                direction = ((direction - 1) + 4) % 4;
+            } else {
+                
+                while (command) {
+                    int ny = currY + yDirs[direction];
+                    int nx = currX + xDirs[direction];
+
+                    // cout << ny << "/" << nx << endl;
+                    
+                    // face obstacle
+                    string hashStr = hash(ny, nx);
+
+                    if (obs.find(hashStr) != obs.end()) {
+                        break;
+                    }
+                    currY = ny;
+                    currX = nx;
+                    command--;
                 }
-                rx = x;
-                ry = y;
-                ans = max(ans, rx*rx + ry*ry);
-                command -= 1;
-            }  
-        }               
-        return ans;
+            }
+            // cout << currY << " " << currX << " " << direction << endl;
+            maxDist = max(maxDist, currY * currY + currX * currX);
+        }
+
+        return maxDist;
     }
 };
