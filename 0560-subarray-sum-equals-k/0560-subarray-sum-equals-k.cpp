@@ -39,6 +39,8 @@ public:
         lookUp[0] = 1;
         for (int i = 0; i < nums.size(); i++) {
             sum += nums[i];
+            //  sums[i]−sums[j]=k
+            // so we find sums[i] - k = sums[j] in the lookUp
             if (lookUp.find(sum - k) != lookUp.end()) {
                 count += lookUp[sum-k];
             }
