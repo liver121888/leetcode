@@ -71,15 +71,15 @@ public:
 
 
 
-        cout << "[";
-        for (int i = 0; i < m; i++) {
-            cout << "[";
-            for (int j = 0; j < n; j++) {
-                cout << board[i][j] << " ";
-            }
-            cout << "]" << endl;
-        }
-        cout << "]" << endl;
+        // cout << "[";
+        // for (int i = 0; i < m; i++) {
+        //     cout << "[";
+        //     for (int j = 0; j < n; j++) {
+        //         cout << board[i][j] << " ";
+        //     }
+        //     cout << "]" << endl;
+        // }
+        // cout << "]" << endl;
 
 
 
