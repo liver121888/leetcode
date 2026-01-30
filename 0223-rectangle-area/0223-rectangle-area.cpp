@@ -37,7 +37,7 @@ public:
 
         // ax1 = -2, ay1 = -2, ax2 = 2, ay2 = 2, bx1 = -1, by1 = -1, bx2 = 1, by2 = 1
 
-        cout << w1 << " " << h1 << " " << w2 << " " << h2 << " " << wo << " " << ho << endl;
+        // cout << w1 << " " << h1 << " " << w2 << " " << h2 << " " << wo << " " << ho << endl;
         return w1*h1+w2*h2-wo*ho;
         
     }
