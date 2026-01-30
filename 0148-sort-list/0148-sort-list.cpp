@@ -3,7 +3,7 @@ class Solution {
 public:
     ListNode* sortList(ListNode* head) {
         if (!head || !head->next) return head;
-        ListNode* mid = getMid(head);
+        ListNode* mid = divide(head);
         ListNode* left = sortList(head);
         ListNode* right = sortList(mid);
         return merge(left, right);
@@ -30,7 +30,8 @@ public:
         return dummyHead.next;
     }
 
-    ListNode* getMid(ListNode* head) {
+    // finding the center and divide
+    ListNode* divide(ListNode* head) {
         ListNode* prev = nullptr;
         ListNode* slow = head;
         ListNode* fast = head;
@@ -42,7 +43,8 @@ public:
         }
 
         // slow 現在在 mid（偶數長度時是右邊那個 mid）
-        if (prev) prev->next = nullptr;  // cut 左半段
+        if (prev)
+            prev->next = nullptr;  // cut 左半段
         return slow;
     }
 };
