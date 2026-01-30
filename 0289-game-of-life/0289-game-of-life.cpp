@@ -40,7 +40,7 @@ public:
                     if (liveNum == 3)
                         tmp[i][j] = 1;
                 }
-                cout << i << " " << j << " " << liveNum << endl;
+                // cout << i << " " << j << " " << liveNum << endl;
             }
         }
         
