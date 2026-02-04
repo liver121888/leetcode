@@ -19,7 +19,7 @@ public:
     queue<pair<int,int>> snake;
 
     // use unordered_set to check collision
-    unordered_set<string> snakeBody;
+    unordered_set<int> snakeBody;
 
     // a hashmap for the direciton
     const unordered_map<string, pair<int,int>> directions = 
@@ -31,8 +31,9 @@ public:
     // food coords
     queue<pair<int,int>> foods;
 
-    string hash(int y, int x) {
-        return to_string(y) + " " + to_string(x);
+    int hash(int y, int x) {
+        return y * w + x; 
+        // return to_string(y) + " " + to_string(x);
     }
 
     SnakeGame(int width, int height, vector<vector<int>>& food) {
