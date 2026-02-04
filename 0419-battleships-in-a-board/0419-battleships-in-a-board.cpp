@@ -21,13 +21,14 @@ public:
         for (int r = 0; r < n; r++) {
             for (int c = 0; c < m; c++) {
                 if (board[r][c] == 'X') {
+
                     // if (r == 0)
                     //     ans++;
                     // else if (c == 0)
                     //     ans++;
                     // else if (board[r][c-1] == '.' && board[r-1][c] == '.')
                     //     ans++;
-
+                    // 並不試選說沒有，而是選說有的情況然後union取反例
                     bool hasUp = (r > 0 && board[r-1][c] == 'X');
                     bool hasLeft = (c > 0 && board[r][c-1] == 'X');
                     if (!hasUp && !hasLeft) 
