@@ -37,6 +37,7 @@
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
+| [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0416-partition-equal-subset-sum](https://github.com/liver121888/leetcode/tree/master/0416-partition-equal-subset-sum) |
@@ -107,6 +108,7 @@
 | ------- |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
+| [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [0498-diagonal-traverse](https://github.com/liver121888/leetcode/tree/master/0498-diagonal-traverse) |
 | [0735-asteroid-collision](https://github.com/liver121888/leetcode/tree/master/0735-asteroid-collision) |
 | [0874-walking-robot-simulation](https://github.com/liver121888/leetcode/tree/master/0874-walking-robot-simulation) |
@@ -175,6 +177,7 @@
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
+| [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [0560-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0752-open-the-lock](https://github.com/liver121888/leetcode/tree/master/0752-open-the-lock) |
@@ -209,6 +212,7 @@
 | [0155-min-stack](https://github.com/liver121888/leetcode/tree/master/0155-min-stack) |
 | [0232-implement-queue-using-stacks](https://github.com/liver121888/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
+| [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [0981-time-based-key-value-store](https://github.com/liver121888/leetcode/tree/master/0981-time-based-key-value-store) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
 | [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
@@ -503,6 +507,7 @@
 |  |
 | ------- |
 | [0232-implement-queue-using-stacks](https://github.com/liver121888/leetcode/tree/master/0232-implement-queue-using-stacks) |
+| [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Combinatorics
 |  |
