@@ -32,7 +32,7 @@ public:
 
         // count the mine around
         int mineCnt = 0;
-        for (auto& neighbor : neighbors) {
+        for (const auto& neighbor : neighbors) {
             int ny = y + neighbor.first;
             int nx = x + neighbor.second;
             if (ny < 0 || ny >= m || nx < 0 || nx >= n)
@@ -49,7 +49,7 @@ public:
         } else {
             board[y][x] = 'B';
             // update adjacent square
-            for (auto neighbor : neighbors)
+            for (const auto& neighbor : neighbors)
                 update(board, y + neighbor.first, x + neighbor.second);
         }
     }
