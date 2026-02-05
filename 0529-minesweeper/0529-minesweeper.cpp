@@ -25,8 +25,8 @@ public:
         if (y < 0 || y >= m || x < 0 || x >= n)
             return;
 
-        // we only update unreveal cell
-        if (!(board[y][x] == 'M' || board[y][x] == 'E'))
+        // we only update unreveal cell, and we don't update 'M'
+        if (board[y][x] != 'E')
             return;
 
 
