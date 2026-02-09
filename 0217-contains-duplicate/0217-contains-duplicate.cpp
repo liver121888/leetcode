@@ -1,14 +1,21 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        unordered_map<int, int> cnts;
-        for (auto num : nums) {
-            if (cnts.find(num) == cnts.end())
-                cnts[num]++;
-            else
+        // unordered_map<int, int> cnts;
+        // for (auto num : nums) {
+        //     if (cnts.find(num) == cnts.end())
+        //         cnts[num]++;
+        //     else
+        //         return true;
+        // }
+        // return false;
+
+        unordered_set<int> aSet;
+        for (const auto& num : nums) {
+            if (aSet.count(num))
                 return true;
+            aSet.insert(num);
         }
         return false;
-        
     }
 };
