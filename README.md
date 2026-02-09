@@ -31,6 +31,7 @@
 | [0200-number-of-islands](https://github.com/liver121888/leetcode/tree/master/0200-number-of-islands) |
 | [0217-contains-duplicate](https://github.com/liver121888/leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/liver121888/leetcode/tree/master/0238-product-of-array-except-self) |
+| [0252-meeting-rooms](https://github.com/liver121888/leetcode/tree/master/0252-meeting-rooms) |
 | [0283-move-zeroes](https://github.com/liver121888/leetcode/tree/master/0283-move-zeroes) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
@@ -129,6 +130,7 @@
 | [0148-sort-list](https://github.com/liver121888/leetcode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
 | [0217-contains-duplicate](https://github.com/liver121888/leetcode/tree/master/0217-contains-duplicate) |
+| [0252-meeting-rooms](https://github.com/liver121888/leetcode/tree/master/0252-meeting-rooms) |
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
