@@ -29,6 +29,7 @@
 | [0189-rotate-array](https://github.com/liver121888/leetcode/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/liver121888/leetcode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/liver121888/leetcode/tree/master/0200-number-of-islands) |
+| [0217-contains-duplicate](https://github.com/liver121888/leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/liver121888/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/liver121888/leetcode/tree/master/0283-move-zeroes) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
@@ -127,6 +128,7 @@
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
 | [0148-sort-list](https://github.com/liver121888/leetcode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/liver121888/leetcode/tree/master/0217-contains-duplicate) |
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
@@ -179,6 +181,7 @@
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
+| [0217-contains-duplicate](https://github.com/liver121888/leetcode/tree/master/0217-contains-duplicate) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
