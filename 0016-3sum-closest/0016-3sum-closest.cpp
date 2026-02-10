@@ -1,32 +1,36 @@
+// min(abs(nums[i] + nums[j] + nums[k] - target))
+// nums[j] + nums[k] should be close to -(nums[i] - target)
+// if to big, move to left
+// if to small move to right
+// brute force, find all possibilities then compare
+// O(n^3)
+
+// fix one number
+// binary the rest
 class Solution {
 public:
+
     int threeSumClosest(vector<int>& nums, int target) {
+        
+        int currMinDiff = INT_MAX;
         sort(nums.begin(), nums.end());
-        int val; int r; int l; int ans;
-        for (int i = 0; i < nums.size(); i++) {
-            if (i > 0 && nums[i] == nums[i - 1])
-                continue;
-            r = nums.size() - 1;
-            l = i + 1;
+        for (int i = 0; i < nums.size() && currMinDiff != 0; i++) {
+            int l = i + 1;
+            int r = nums.size()-1;
             while (l < r) {
-                val = nums[i] + nums[l] + nums[r];  
-                if (abs(target - val) < abs(target - ans))
-                    ans = val;
-                
-                if (val == target) {
-                    return target;
-                } else if (val > target) {
-                    r--;
-                    while (nums[r] == nums[r + 1] && l < r)
-                        r--;
-                } else {
-                    l++;
-                    while (nums[l] == nums[l - 1] && l < r)
-                        l++;
+                int sum = nums[i] + nums[l] + nums[r];
+                if (abs(target - sum) < abs(currMinDiff)) {
+                    currMinDiff = target - sum;
                 }
-            }                
+                if (sum < target) {
+                    ++l;
+                } else {
+                    --r;
+                } 
+
+            }
 
         }
-        return ans;        
+        return target-currMinDiff;
     }
 };
