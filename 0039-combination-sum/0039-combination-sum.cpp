@@ -16,12 +16,12 @@
 class Solution {
 public:
 
-    void dfs(const vector<int>& candidates, vector<vector<int>>& ans, vector<int> currState, int target) {
+    void dfs(const vector<int>& candidates, vector<vector<int>>& ans, vector<int> currState, int start, int target) {
 
         if (target == 0) {
-            sort(currState.begin(),currState.end());
-            if (find(ans.begin(), ans.end(), currState) == ans.end())
-                ans.push_back(currState);
+            // sort(currState.begin(),currState.end());
+            // if (find(ans.begin(), ans.end(), currState) == ans.end())
+            ans.push_back(currState);
             return;
         }
 
@@ -29,10 +29,12 @@ public:
             return;
         }
 
-        for (auto& candidate : candidates) {
+        for (int i = start; i < candidates.size(); i++) {
+            int candidate = candidates[i];
             // modify state
             currState.push_back(candidate);
-            dfs(candidates, ans, currState, target-candidate);
+            // put i means that we can reuse elements
+            dfs(candidates, ans, currState, i, target-candidate);
             // restore state
             currState.pop_back();
         }
@@ -42,7 +44,7 @@ public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
 
         vector<vector<int>> ans;
-        dfs(candidates, ans, {}, target);
+        dfs(candidates, ans, {}, 0, target);
         return ans;
     }
 };
