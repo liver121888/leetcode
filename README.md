@@ -250,6 +250,7 @@
 |  |
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/liver121888/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
+| [0278-first-bad-version](https://github.com/liver121888/leetcode/tree/master/0278-first-bad-version) |
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
@@ -572,4 +573,8 @@
 |  |
 | ------- |
 | [0148-sort-list](https://github.com/liver121888/leetcode/tree/master/0148-sort-list) |
+## Interactive
+|  |
+| ------- |
+| [0278-first-bad-version](https://github.com/liver121888/leetcode/tree/master/0278-first-bad-version) |
 <!---LeetCode Topics End-->
