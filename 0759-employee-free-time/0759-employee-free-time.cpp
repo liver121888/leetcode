@@ -132,7 +132,7 @@ public:
             }
         }
 
-        sort(result.begin(), result.end(), [](Interval a, Interval b) {
+        sort(result.begin(), result.end(), [](const Interval& a, const Interval& b) {
             if (a.start < b.start) {
                 return true;
             } else if (a.start > b.start) {
