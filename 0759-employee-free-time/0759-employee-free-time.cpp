@@ -146,21 +146,21 @@ public:
             }
         });
 
-        cout << "result: ";
-        for (const auto& r : result){
-            cout << "[" << r.start << "," << r.end << "]";
-        }
-        cout << "]" << endl;
+        // cout << "result: ";
+        // for (const auto& r : result){
+        //     cout << "[" << r.start << "," << r.end << "]";
+        // }
+        // cout << "]" << endl;
 
         int resultSize =  merge(result);
 
-        cout << resultSize << endl;
+        // cout << resultSize << endl;
 
-        cout << "result: ";
-        for (const auto& r : result){
-            cout << "[" << r.start << "," << r.end << "]";
-        }
-        cout << "]" << endl;
+        // cout << "result: ";
+        // for (const auto& r : result){
+        //     cout << "[" << r.start << "," << r.end << "]";
+        // }
+        // cout << "]" << endl;
 
 
         vector<Interval> ans;
