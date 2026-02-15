@@ -122,7 +122,7 @@ public:
         return l+1;
     }
 
-    vector<Interval> employeeFreeTime(vector<vector<Interval>> schedule) {
+    vector<Interval> employeeFreeTime(vector<vector<Interval>>& schedule) {
 
         vector<Interval> result;
 
@@ -133,17 +133,21 @@ public:
         }
 
         sort(result.begin(), result.end(), [](const Interval& a, const Interval& b) {
-            if (a.start < b.start) {
-                return true;
-            } else if (a.start > b.start) {
-                return false;
-            } else {
-                if (a.end < b.end) {
-                    return true;
-                } else {
-                    return false;
-                }
-            }
+            // if (a.start < b.start) {
+            //     return true;
+            // } else if (a.start > b.start) {
+            //     return false;
+            // } else {
+            //     if (a.end < b.end) {
+            //         return true;
+            //     } else {
+            //         return false;
+            //     }
+            // }
+            if (a.start != b.start) 
+                return a.start < b.start;
+            return a.end < b.end;
+
         });
 
         // cout << "result: ";
