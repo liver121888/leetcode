@@ -30,7 +30,7 @@ public:
                 int op1 = stoi(op1Str);
                 int op2 = stoi(op2Str);
 
-                cout << op1 << " " << op2 << endl;
+                // cout << op1 << " " << op2 << endl;
 
                 if (token == "+") {
                     st.push(to_string(op2+op1));
@@ -40,7 +40,6 @@ public:
                     st.push(to_string(op2*op1));
                 } else {
                     st.push(to_string(op2/op1));
-
                 }
             }
 
