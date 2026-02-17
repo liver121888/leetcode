@@ -63,6 +63,7 @@
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/liver121888/leetcode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/liver121888/leetcode/tree/master/0735-asteroid-collision) |
+| [0739-daily-temperatures](https://github.com/liver121888/leetcode/tree/master/0739-daily-temperatures) |
 | [0752-open-the-lock](https://github.com/liver121888/leetcode/tree/master/0752-open-the-lock) |
 | [0759-employee-free-time](https://github.com/liver121888/leetcode/tree/master/0759-employee-free-time) |
 | [0830-largest-triangle-area](https://github.com/liver121888/leetcode/tree/master/0830-largest-triangle-area) |
@@ -530,6 +531,7 @@
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/liver121888/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0735-asteroid-collision](https://github.com/liver121888/leetcode/tree/master/0735-asteroid-collision) |
+| [0739-daily-temperatures](https://github.com/liver121888/leetcode/tree/master/0739-daily-temperatures) |
 | [0844-backspace-string-compare](https://github.com/liver121888/leetcode/tree/master/0844-backspace-string-compare) |
 ## Brainteaser
 |  |
@@ -579,6 +581,7 @@
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/liver121888/leetcode/tree/master/0042-trapping-rain-water) |
+| [0739-daily-temperatures](https://github.com/liver121888/leetcode/tree/master/0739-daily-temperatures) |
 ## Union-Find
 |  |
 | ------- |
