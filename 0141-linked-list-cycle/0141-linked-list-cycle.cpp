@@ -26,7 +26,11 @@ public:
         ListNode* fast = head;
         ListNode* slow = head;
 
-        while (fast && fast->next && slow) {
+        // we don't need to check slow
+        // because if we check fast, slow is definitely safe
+        // while (fast && fast->next && slow) 
+
+        while (fast && fast->next) {
 
             fast = fast->next->next;
             slow = slow->next;
