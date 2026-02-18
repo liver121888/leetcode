@@ -213,6 +213,7 @@
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [0380-insert-delete-getrandom-o1](https://github.com/liver121888/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+| [0383-ransom-note](https://github.com/liver121888/leetcode/tree/master/0383-ransom-note) |
 | [0525-contiguous-array](https://github.com/liver121888/leetcode/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
@@ -383,6 +384,7 @@
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
+| [0383-ransom-note](https://github.com/liver121888/leetcode/tree/master/0383-ransom-note) |
 | [0394-decode-string](https://github.com/liver121888/leetcode/tree/master/0394-decode-string) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0752-open-the-lock](https://github.com/liver121888/leetcode/tree/master/0752-open-the-lock) |
@@ -552,6 +554,7 @@
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
+| [0383-ransom-note](https://github.com/liver121888/leetcode/tree/master/0383-ransom-note) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/liver121888/leetcode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Ordered Set
