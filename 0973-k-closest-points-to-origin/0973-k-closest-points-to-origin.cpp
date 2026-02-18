@@ -26,24 +26,17 @@ public:
 
             if (maxHeap.size() < k) {
                 maxHeap.push({dist, i});
-                continue;
-            }
-
-            int topDist = maxHeap.top().first;
-            if (dist < topDist) {
+            } else if (dist < maxHeap.top().first) {
+                maxHeap.pop();
                 maxHeap.push({dist, i});
             }
-
-            if (maxHeap.size() > k) {
-                maxHeap.pop();
-            }
-
-
+            // else 
+            // ignore
         }
 
         vector<vector<int>> ans;
         while (!maxHeap.empty()) {
-            auto [dist, idx] = maxHeap.top();
+            int idx = maxHeap.top().second;
             ans.push_back(points[idx]);
             maxHeap.pop();
         }
