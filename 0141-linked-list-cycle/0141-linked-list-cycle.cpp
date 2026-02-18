@@ -20,8 +20,9 @@ public:
     bool hasCycle(ListNode *head) {
 
         // The number of the nodes in the list is in the range [0, 104].
-        if (!head)
-            return false;
+        // don't need to check head because we check in the while loop
+        // if (!head)
+        //     return false;
 
         ListNode* fast = head;
         ListNode* slow = head;
