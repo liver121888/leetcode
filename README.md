@@ -14,6 +14,7 @@
 | [0033-search-in-rotated-sorted-array](https://github.com/liver121888/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0036-valid-sudoku](https://github.com/liver121888/leetcode/tree/master/0036-valid-sudoku) |
 | [0039-combination-sum](https://github.com/liver121888/leetcode/tree/master/0039-combination-sum) |
+| [0041-first-missing-positive](https://github.com/liver121888/leetcode/tree/master/0041-first-missing-positive) |
 | [0042-trapping-rain-water](https://github.com/liver121888/leetcode/tree/master/0042-trapping-rain-water) |
 | [0046-permutations](https://github.com/liver121888/leetcode/tree/master/0046-permutations) |
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
@@ -200,6 +201,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/liver121888/leetcode/tree/master/0001-two-sum) |
 | [0036-valid-sudoku](https://github.com/liver121888/leetcode/tree/master/0036-valid-sudoku) |
+| [0041-first-missing-positive](https://github.com/liver121888/leetcode/tree/master/0041-first-missing-positive) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0127-word-ladder](https://github.com/liver121888/leetcode/tree/master/0127-word-ladder) |
 | [0128-longest-consecutive-sequence](https://github.com/liver121888/leetcode/tree/master/0128-longest-consecutive-sequence) |
