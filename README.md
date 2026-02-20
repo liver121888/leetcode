@@ -222,6 +222,7 @@
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
+| [0359-logger-rate-limiter](https://github.com/liver121888/leetcode/tree/master/0359-logger-rate-limiter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/liver121888/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/liver121888/leetcode/tree/master/0383-ransom-note) |
 | [0525-contiguous-array](https://github.com/liver121888/leetcode/tree/master/0525-contiguous-array) |
@@ -261,6 +262,7 @@
 | [0232-implement-queue-using-stacks](https://github.com/liver121888/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
+| [0359-logger-rate-limiter](https://github.com/liver121888/leetcode/tree/master/0359-logger-rate-limiter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/liver121888/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0981-time-based-key-value-store](https://github.com/liver121888/leetcode/tree/master/0981-time-based-key-value-store) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
@@ -632,4 +634,8 @@
 |  |
 | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/liver121888/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+## Data Stream
+|  |
+| ------- |
+| [0359-logger-rate-limiter](https://github.com/liver121888/leetcode/tree/master/0359-logger-rate-limiter) |
 <!---LeetCode Topics End-->
