@@ -21,6 +21,13 @@
 // O(n) add
 // O(n) find median, just traverse
 
+// two heap method
+// time: O(logn)
+// space: O(n)
+
+
+
+// vector method
 class MedianFinder {
 public:
 
