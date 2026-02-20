@@ -25,33 +25,63 @@
 // time: O(logn)
 // space: O(n)
 
-
-
-// vector method
+// two heap method
 class MedianFinder {
 public:
 
-    vector<int> store; // resize-able container
+    priority_queue<int> maxHeap;
+    priority_queue<int, vector<int>, greater<int>> minHeap;
 
     MedianFinder() {
 
     }
     
+    // max-heap lo is allowed to store, at worst, one more element more than the min-heap
     void addNum(int num) {
 
-        if (store.empty())
-            store.push_back(num);
-        else
-            // find the first occurance of num
-            store.insert(lower_bound(store.begin(), store.end(), num), num);
+        maxHeap.push(num);
+        minHeap.push(maxHeap.top());
+
+        maxHeap.pop();
+        if (maxHeap.size() < minHeap.size()) {
+            maxHeap.push(minHeap.top());
+            minHeap.pop();
+        }
 
     }
     
     double findMedian() {
-        int n = store.size();
-        return n % 2 ? store[n / 2] : ((double) store[n / 2 - 1] + store[n / 2]) * 0.5;
+        // lo.size > hi.size() means that it is odd size
+        return maxHeap.size() > minHeap.size() ? maxHeap.top() :
+            ((double) maxHeap.top() + minHeap.top()) * 0.5;
     }
 };
+
+// vector method
+// class MedianFinder {
+// public:
+
+//     vector<int> store; // resize-able container
+
+//     MedianFinder() {
+
+//     }
+    
+//     void addNum(int num) {
+
+//         if (store.empty())
+//             store.push_back(num);
+//         else
+//             // find the first occurance of num
+//             store.insert(lower_bound(store.begin(), store.end(), num), num);
+
+//     }
+    
+//     double findMedian() {
+//         int n = store.size();
+//         return n % 2 ? store[n / 2] : ((double) store[n / 2 - 1] + store[n / 2]) * 0.5;
+//     }
+// };
 
 /**
  * Your MedianFinder object will be instantiated and called as such:
