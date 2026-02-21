@@ -43,7 +43,7 @@ public:
             return -1;
         }
 
-        cout << key << endl;
+        // cout << key << endl;
 
         int val = it->second->second;
         cache.erase(it->second);
