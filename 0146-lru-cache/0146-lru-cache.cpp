@@ -1,104 +1,96 @@
-// get and put both in O(1) average time complexity
-// capacity, need to query if the key exist
-// update if the key exist, otherwise put the pair into the cache
-// if after putting, exceed the the capacity, we remove the least recently used key
-// get and put both involve using a key
-// so we update the least recent used key
+// get O(1) key, value unorederd_map
+// put in O(1), random access, linkedlist
+// get -> update the recent used key, return value
+// put -> update the recent used key, we might need to 
+// remove least used key
 
-// need to have a queue structure, to find the least used key
-// but when we try to update a key in the structure, we still need O(1) time complexity
-// list data structure, unorederd_map<key, value>
-// when we get the value, we can just access it 
-// list of pair<key, value>, l, unordered_map<key, pointer to pair> m
+// unorederd_map -> O(1) get()
+// put -> X, priority_queue<time, key> minheap
+// O(log(n))
 
-// get -> m[key] -> ptr -> value;
-// pointer delete it and insert it in the back
-// update the list l, put this key to the back of the list -> most recent used key
+// key, value
+// list<pair<int,int>> l;
+// most recent used in front, least in the back
 
-// put -> we create a new pair and append to the list
-// save the pointer and the key in the unordereed_map
-// check the capacity, if over, envict
+// unorederd_map<key, ptr to the node> m;
 
-// O(1) -> hashmap for get
-// O(1) -> put, we are not travering the list, we use the pointer
+// get
+// query the map to get the ptr
+// use ptr to get the value from the list
+// if the key is not exsit in the map, we return -1;
 
-class LRUCache {
-public:
+// put function
+// search in the map to see if we have the key
+// Update or add key value
 
-    int capacity;
-    // key, value
-    list<pair<int, int>> cache;
-    // ptr
-    unordered_map<int, list<pair<int, int>>::iterator> table;
+// update the list so lru can be correct
+// check capacity
+// remove lru key if necessary
 
-    LRUCache(int capacity) {
-        this->capacity = capacity;
-    }
-    
-    int get(int key) {
-
-        auto it = table.find(key);
-
-        if (it == table.end()) {
-            return -1;
-        }
-
-        // cout << key << endl;
-
-        int val = it->second->second;
-        cache.erase(it->second);
-
-        
-        // front: most recent used key
-        cache.push_front({key,val});
-        table[key] = cache.begin();
-        return val;
-
-    }
-    
-    void put(int key, int value) {
-
-        auto it = table.find(key);
-
-        // if exists, remove old node first
-        if (it != table.end()) {
-            cache.erase(it->second);
-            table.erase(it);
-        }
-
-        // insert new to front
-        cache.push_front({key, value});
-        table[key] = cache.begin();
-
-        // evict LRU if over capacity
-        if (cache.size() > capacity) {
-            int oldKey = cache.back().first;
-            cache.pop_back();
-            table.erase(oldKey);
-        }
-    }
-};
-
-// Example 1:
-
-// Input
 // ["LRUCache", "put", "put", "get", "put", "get", "put", "get", "get", "get"]
 // [[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]
 // Output
 // [null, null, null, 1, null, -1, null, -1, 3, 4]
-// list
-// [_,_]
 
-// map
-
-// list
-// [3, 3, 4, 4]
-
-// map
-// [[3, ptr3], [4, ptr4]]
+// ["LRUCache","put","put","get","put","get","get"]
+// [[2],[2,1],[1,1],[2],[4,1],[1],[2]]
+// _, _, _, 1, _, -1, 1
 
 
+class LRUCache {
+public:
 
+    int cap;
+    // key, value
+    list<pair<int,int>> l;
+
+    // key, ptr
+    unordered_map<int,list<pair<int,int>>::iterator> m;
+
+    LRUCache(int capacity) {
+        cap = capacity;
+    }
+    
+    int get(int key) {
+
+        auto it = m.find(key);
+
+        if (it == m.end())
+            return -1;
+
+        // key, ptr
+        // it
+
+        int value = it->second->second;
+        // cout << value << endl;
+        
+        // update the list
+        l.erase(it->second);
+        l.push_front({key, value});
+        m[key] = l.begin();
+        return value;
+    }
+    
+    void put(int key, int value) {
+
+        auto it = m.find(key);
+
+        if (it != m.end()) {
+            l.erase(it->second);
+        } 
+
+        l.push_front({key, value});
+        m[key] = l.begin();
+
+        // check capacity
+        if (l.size() > cap) {
+            // lru
+            int lruKey = l.back().first;
+            m.erase(lruKey);
+            l.pop_back();
+        }
+    }
+};
 
 /**
  * Your LRUCache object will be instantiated and called as such:
