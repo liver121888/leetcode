@@ -1,148 +1,108 @@
-// class LRUCache {
-// public:
+// get and put both in O(1) average time complexity
+// capacity, need to query if the key exist
+// update if the key exist, otherwise put the pair into the cache
+// if after putting, exceed the the capacity, we remove the least recently used key
+// get and put both involve using a key
+// so we update the least recent used key
 
-//     // stores capacity
-//     int cap;
-//     // for O(1) access in get, put
-//     unordered_map<int, list<pair<int, int>>::iterator> cache;
-//     // for keeping the limit
-//     list<pair<int, int>> lru;
+// need to have a queue structure, to find the least used key
+// but when we try to update a key in the structure, we still need O(1) time complexity
+// list data structure, unorederd_map<key, value>
+// when we get the value, we can just access it 
+// list of pair<key, value>, l, unordered_map<key, pointer to pair> m
 
-//     // Removing from arbitrary positions is one of the few things 
-//     // that a linked list does better than an array.
-//     LRUCache(int capacity) {
-//         cap = capacity;
-//     }
+// get -> m[key] -> ptr -> value;
+// pointer delete it and insert it in the back
+// update the list l, put this key to the back of the list -> most recent used key
+
+// put -> we create a new pair and append to the list
+// save the pointer and the key in the unordereed_map
+// check the capacity, if over, envict
+
+// O(1) -> hashmap for get
+// O(1) -> put, we are not travering the list, we use the pointer
+
+class LRUCache {
+public:
+
+    int capacity;
+    // key, value
+    list<pair<int, int>> cache;
+    // ptr
+    unordered_map<int, list<pair<int, int>>::iterator> table;
+
+    LRUCache(int capacity) {
+        this->capacity = capacity;
+    }
     
-//     int get(int key) {
+    int get(int key) {
 
-//         // cout << "==get=="  << key << endl;
-//         auto it = cache.find(key);
+        auto it = table.find(key);
 
-//         if (it == cache.end())
-//             return -1;
+        if (it == table.end()) {
+            return -1;
+        }
 
-//         int value = it->second->second;
-//         lru.erase(it->second);
-//         lru.push_front({key, value});
-//         cache.erase(it);
-//         cache[key] = lru.begin();
-//         return value;
-//     }
+        cout << key << endl;
+
+        int val = it->second->second;
+        cache.erase(it->second);
+
+        
+        // front: most recent used key
+        cache.push_front({key,val});
+        table[key] = cache.begin();
+        return val;
+
+    }
     
-//     void put(int key, int value) {
+    void put(int key, int value) {
 
-//         // cout << "==put==" << endl;
-//         auto it = cache.find(key);
-//         if (it != cache.end()) {
-//             lru.erase(it->second);
-//             cache.erase(it);
-//         }
+        auto it = table.find(key);
 
-//         lru.push_front({key, value});
-//         cache[key] = lru.begin();
+        // if exists, remove old node first
+        if (it != table.end()) {
+            cache.erase(it->second);
+            table.erase(it);
+        }
 
-//         if (cache.size() > cap) {
-//             auto it = cache.find(lru.rbegin()->first);
-//             cache.erase(it);
-//             lru.pop_back();
-//         }
-//     }
-// };
+        // insert new to front
+        cache.push_front({key, value});
+        table[key] = cache.begin();
+
+        // evict LRU if over capacity
+        if (cache.size() > capacity) {
+            int oldKey = cache.back().first;
+            cache.pop_back();
+            table.erase(oldKey);
+        }
+    }
+};
+
+// Example 1:
+
+// Input
+// ["LRUCache", "put", "put", "get", "put", "get", "put", "get", "get", "get"]
+// [[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]
+// Output
+// [null, null, null, 1, null, -1, null, -1, 3, 4]
+// list
+// [_,_]
+
+// map
+
+// list
+// [3, 3, 4, 4]
+
+// map
+// [[3, ptr3], [4, ptr4]]
+
+
+
 
 /**
  * Your LRUCache object will be instantiated and called as such:
  * LRUCache* obj = new LRUCache(capacity);
  * int param_1 = obj->get(key);
  * obj->put(key,value);
- */
-
-// Customized version
-// Some requirements
-// Store a key-value pair
-// Update a key-value pair
-// Given a key, determine if it exists in the data structure. If it does, return the value. If it doesn't, return -1.
-// When a new key-value pair is added, create a new linked list node and put it at the back.
-// When an existing key is updated or fetched, find its associated linked list node. Move it to the back.
-// When a new key-value pair is added and the size of the data structure exceeds capacity, remove the linked list node at the front.
-
-struct Node {
-    int key, val;
-    Node* next;
-    Node* prev;
-    Node(int key, int val) : key(key), val(val), next(nullptr), prev(nullptr) {}
-};
-
-
-class LRUCache {
-
-public:
-
-    int capacity;
-    unordered_map<int, Node*> dic;
-    // we can use a queue but to remove a thing in a queue is O(n)
-    // thus we use linked list, to maintain the sequence but O(1) operation
-    Node* head = new Node(-1,-1);
-    Node* tail = new Node(-1,-1);
-
-    LRUCache(int capacity) {
-        this->capacity = capacity;
-        head->next = tail;
-        tail->prev = head;
-    }
-    
-    int get(int key) {
-        if (dic.find(key) == dic.end())
-            return -1;
-        
-        Node* node = dic[key];
-        // a key is used, we move the node to the back
-        remove(node);
-        add(node);
-        return node->val;
-        
-    }
-    
-    void put(int key, int value) {
-        // remove first if the node exist
-        if (dic.find(key) != dic.end()) {
-            Node *oldNode = dic[key];
-            remove(oldNode);
-        }
-
-        // put the node in the back of the list
-        Node *node = new Node(key, value);
-        dic[key] = node;
-        add(node);
-
-        // keep the capacity
-        if (dic.size() > capacity) {
-            Node *nodeToDelete = head->next;
-            remove(nodeToDelete);
-            dic.erase(nodeToDelete->key);
-        }
-    }
-
-    // append to the end
-    void add(Node* node) {
-        Node *previousEnd = tail->prev;
-        previousEnd->next = node;
-        node->prev = previousEnd;
-        node->next = tail;
-        tail->prev = node;
-    }
-
-    // remove a node
-    void remove(Node* node) {
-        node->prev->next = node->next;
-        node->next->prev = node->prev;
-    }
-
-};
-
-/**
- * Your LRUCache object will be instantiated and called as such:
- * LRUCache obj = new LRUCache(capacity);
- * int param_1 = obj.get(key);
- * obj.put(key,value);
  */
