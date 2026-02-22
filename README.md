@@ -32,6 +32,7 @@
 | [0134-gas-station](https://github.com/liver121888/leetcode/tree/master/0134-gas-station) |
 | [0149-max-points-on-a-line](https://github.com/liver121888/leetcode/tree/master/0149-max-points-on-a-line) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/liver121888/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0162-find-peak-element](https://github.com/liver121888/leetcode/tree/master/0162-find-peak-element) |
 | [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/liver121888/leetcode/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/liver121888/leetcode/tree/master/0198-house-robber) |
@@ -288,6 +289,7 @@
 |  |
 | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/liver121888/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
+| [0162-find-peak-element](https://github.com/liver121888/leetcode/tree/master/0162-find-peak-element) |
 | [0278-first-bad-version](https://github.com/liver121888/leetcode/tree/master/0278-first-bad-version) |
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
