@@ -48,44 +48,76 @@
 // O(nlogn) for sorting the key
 // O(n) for storing the keys and the map
 
+// class Solution {
+// public:
+//     bool isPossibleDivide(vector<int>& nums, int k) {
+
+//         if (nums.size() % k != 0)
+//             return false;
+
+//         unordered_map<int,int> freq;
+
+//         for (auto num : nums) {
+//             freq[num]++;
+//         }
+
+//         vector<int> keys;
+//         for (auto f : freq) {
+//             keys.push_back(f.first);
+//         }
+
+//         sort(keys.begin(), keys.end()); 
+
+//         for (int keyIdx = 0; keyIdx < keys.size(); keyIdx++) {
+//             int startKey = keys[keyIdx];
+//             if (freq.find(startKey) == freq.end())
+//                 continue;
+//             int minValue = INT_MAX;
+//             for (int i = startKey; i < startKey + k; i++) {
+//                 if (freq.find(i) == freq.end())
+//                     return false;
+//                 minValue = min(minValue, freq[i]);
+//             }
+//             for (int i = startKey; i < startKey + k; i++) {
+//                 freq[i] -= minValue;
+//                 if (freq[i] == 0)
+//                     freq.erase(i);
+//             }
+//         }
+
+//         return freq.size() == 0;
+        
+//     }
+// };
+
+
 class Solution {
 public:
-    bool isPossibleDivide(vector<int>& nums, int k) {
-
-        if (nums.size() % k != 0)
+    bool isPossibleDivide(vector<int>& nums, int k) 
+    {
+        if(nums.size()%k!=0)
             return false;
-
-        unordered_map<int,int> freq;
-
-        for (auto num : nums) {
-            freq[num]++;
-        }
-
-        vector<int> keys;
-        for (auto f : freq) {
-            keys.push_back(f.first);
-        }
-
-        sort(keys.begin(), keys.end()); 
-
-        for (int keyIdx = 0; keyIdx < keys.size(); keyIdx++) {
-            int startKey = keys[keyIdx];
-            if (freq.find(startKey) == freq.end())
-                continue;
-            int minValue = INT_MAX;
-            for (int i = startKey; i < startKey + k; i++) {
-                if (freq.find(i) == freq.end())
-                    return false;
-                minValue = min(minValue, freq[i]);
+        map<int,int> count;
+        map<int,int>::iterator it;
+        int freq;
+        for(int &i:nums) // Store the count of all numbers sorted.
+            count[i]++;
+        // 為什麽這方式厲害？ GREEDY!
+        // greedy take out the smallest, because using a map, so it's sorted
+        // don't care about taking the smallest, just subtract it out of the count
+        // if ever it's smaller than the smallets, we know it's impossible
+        for(it=count.begin();it!=count.end();it++)	// Start with the smallest number.
+            // If the count of smallest integer is non 0 check if next k numbers exist and have atleast same frequency.
+            if(it->second) {		
+                freq=it->second;
+                for(int i=0;i<k;i++)				// Checks for the next k-1 numbers.
+                    if(count[it->first+i] < freq)  {
+                        // We are unable to find ith consecutive number to the smallest(starting number) with atleast same frequency.
+                        return false;
+                    }
+                    else
+                        count[it->first+i] -= freq;       //Reduce the count of the numbers used.
             }
-            for (int i = startKey; i < startKey + k; i++) {
-                freq[i] -= minValue;
-                if (freq[i] == 0)
-                    freq.erase(i);
-            }
-        }
-
-        return freq.size() == 0;
-        
+        return true;
     }
 };
