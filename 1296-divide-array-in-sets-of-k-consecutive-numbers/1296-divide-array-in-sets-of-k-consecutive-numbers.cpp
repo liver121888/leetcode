@@ -106,7 +106,7 @@ public:
         // greedy take out the smallest, because using a map, so it's sorted
         // don't care about taking the smallest, just subtract it out of the count
         // if ever it's smaller than the smallets, we know it's impossible
-        for(it=count.begin();it!=count.end();it++)	// Start with the smallest number.
+        for(it=count.begin();it!=count.end();it++) {	// Start with the smallest number.
             // If the count of smallest integer is non 0 check if next k numbers exist and have atleast same frequency.
             if(it->second) {		
                 freq=it->second;
@@ -118,6 +118,7 @@ public:
                     else
                         count[it->first+i] -= freq;       //Reduce the count of the numbers used.
             }
+        }
         return true;
     }
 };
