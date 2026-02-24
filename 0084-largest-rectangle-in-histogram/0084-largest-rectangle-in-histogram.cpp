@@ -44,7 +44,8 @@ public:
         st.push(-1);
         int max_area = 0;
         for (int i = 0; i < heights.size(); i++) {
-
+            
+            // 新來的histogram沒有比較高的時候
             while (st.top() != -1 && heights[st.top()] >= heights[i]) {
                 int current_height = heights[st.top()];
                 st.pop();
