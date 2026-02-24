@@ -36,28 +36,55 @@ using namespace std;
 
 class Solution {
 public:
-  vector<int> canSeePersonsCount(vector<int>& heights) {
 
-    int n = heights.size();
-    vector<int> ans(n, 0);
-    stack<int> st;
+    // 從右到左
+    vector<int> canSeePersonsCount(vector<int>& heights) {
 
-    for (int j = 0; j < n; ++j) {
-        // 所有比 heights[j] 矮的，在 stack top 的那些都能看到 j
-        while (!st.empty() && heights[st.top()] < heights[j]) {
-            ans[st.top()]++;
-            st.pop();
+        int n = heights.size();
+        vector<int> ans(n, 0);
+        stack<int> st;
+
+        for (int i = n - 1; i >= 0; i--) {
+
+            // when we need to pop
+            while (!st.empty() && heights[st.top()] < heights[i]) {
+                st.pop();
+                ans[i]++;
+            }
+
+            if (!st.empty())
+                ans[i]++;
+
+            st.push(i);
+
         }
 
-        // 如果還有一個更高的在左邊（stack top），他也能看到 j
-        if (!st.empty()) {
-            ans[st.top()]++;
-        }
-
-        st.push(j);
+        return ans;
     }
 
 
-    return ans;
-  }
+    // 從左到右比較繞
+    // vector<int> canSeePersonsCount(vector<int>& heights) {
+
+    //     int n = heights.size();
+    //     vector<int> ans(n, 0);
+    //     stack<int> st;
+
+    //     for (int j = 0; j < n; ++j) {
+    //         // 所有比 heights[j] 矮的，在 stack top 的那些都能看到 j
+    //         while (!st.empty() && heights[st.top()] < heights[j]) {
+    //             ans[st.top()]++;
+    //             st.pop();
+    //         }
+
+    //         // 如果還有一個更高的在左邊（stack top），他也能看到 j
+    //         if (!st.empty()) {
+    //             ans[st.top()]++;
+    //         }
+
+    //         st.push(j);
+    //     }
+
+    //     return ans;
+    // }
 };
