@@ -38,6 +38,7 @@ public:
             if (num_space) {
                 // for (int i = 0; i < spaceLen; i++)
                 //     out << " ";
+                // 厲害，相當於python字串乘法
                 out << string(spaceLen, ' ');
                 num_space--;
             } 
@@ -62,7 +63,7 @@ public:
             if (currLine.size() + currWordLen + word.length() > maxWidth) {
                 // deal with the current line
                 string line = helper(currLine, currWordLen, maxWidth);
-                cout << line << endl;
+                // cout << line << endl;
                 ans.push_back(line);
                 currWordLen = 0;
                 currLine.clear();
