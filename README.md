@@ -21,6 +21,7 @@
 | [0053-maximum-subarray](https://github.com/liver121888/leetcode/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/liver121888/leetcode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/liver121888/leetcode/tree/master/0057-insert-interval) |
+| [0068-text-justification](https://github.com/liver121888/leetcode/tree/master/0068-text-justification) |
 | [0075-sort-colors](https://github.com/liver121888/leetcode/tree/master/0075-sort-colors) |
 | [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/liver121888/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
@@ -140,6 +141,7 @@
 ## Simulation
 |  |
 | ------- |
+| [0068-text-justification](https://github.com/liver121888/leetcode/tree/master/0068-text-justification) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
@@ -422,6 +424,7 @@
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/liver121888/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0020-valid-parentheses](https://github.com/liver121888/leetcode/tree/master/0020-valid-parentheses) |
+| [0068-text-justification](https://github.com/liver121888/leetcode/tree/master/0068-text-justification) |
 | [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/liver121888/leetcode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/liver121888/leetcode/tree/master/0127-word-ladder) |
