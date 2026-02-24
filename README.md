@@ -23,6 +23,7 @@
 | [0057-insert-interval](https://github.com/liver121888/leetcode/tree/master/0057-insert-interval) |
 | [0075-sort-colors](https://github.com/liver121888/leetcode/tree/master/0075-sort-colors) |
 | [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
+| [0084-largest-rectangle-in-histogram](https://github.com/liver121888/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0118-pascals-triangle](https://github.com/liver121888/leetcode/tree/master/0118-pascals-triangle) |
@@ -586,6 +587,7 @@
 | ------- |
 | [0020-valid-parentheses](https://github.com/liver121888/leetcode/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/liver121888/leetcode/tree/master/0042-trapping-rain-water) |
+| [0084-largest-rectangle-in-histogram](https://github.com/liver121888/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/liver121888/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/liver121888/leetcode/tree/master/0155-min-stack) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
@@ -643,6 +645,7 @@
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/liver121888/leetcode/tree/master/0042-trapping-rain-water) |
+| [0084-largest-rectangle-in-histogram](https://github.com/liver121888/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0739-daily-temperatures](https://github.com/liver121888/leetcode/tree/master/0739-daily-temperatures) |
 ## Union-Find
 |  |
