@@ -1,3 +1,12 @@
+// Clean
+// We can split creating a line into two subtasks:
+// Determine which words should be on the line.
+// Take the words from the first task and create a line.
+
+
+
+
+
 
 class Solution {
 public:
@@ -27,8 +36,9 @@ public:
         for (const auto& word : currLine) {
             out << word;
             if (num_space) {
-                for (int i = 0; i < spaceLen; i++)
-                    out << " ";
+                // for (int i = 0; i < spaceLen; i++)
+                //     out << " ";
+                out << string(spaceLen, ' ');
                 num_space--;
             } 
             if (extraSpace) {
