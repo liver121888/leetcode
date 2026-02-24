@@ -21,7 +21,6 @@
 // i = 0, [0,1,1,0,1,0] -> the number is 3
 // time complextiy: O(n^2)
 
-
 // stack, monotanic stack, decreasing stack
 // [0,1] <- 2
 // 6 < 8
@@ -39,26 +38,26 @@ public:
 
     // 從右到左
     vector<int> canSeePersonsCount(vector<int>& heights) {
-
         int n = heights.size();
         vector<int> ans(n, 0);
         stack<int> st;
-
         for (int i = n - 1; i >= 0; i--) {
 
             // when we need to pop
+            // 任何右邊比我矮的人都要算進來
             while (!st.empty() && heights[st.top()] < heights[i]) {
                 st.pop();
                 ans[i]++;
             }
 
+            // 如果右邊還有人比我高
+            // 要+1
             if (!st.empty())
                 ans[i]++;
 
             st.push(i);
 
         }
-
         return ans;
     }
 
