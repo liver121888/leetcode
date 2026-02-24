@@ -4,10 +4,6 @@
 // Take the words from the first task and create a line.
 
 
-
-
-
-
 class Solution {
 public:
 
