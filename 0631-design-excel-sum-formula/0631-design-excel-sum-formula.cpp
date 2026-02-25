@@ -1,6 +1,17 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// 我會用「線性公式 + 反向依賴圖」做，這題最精簡、專業、而且更新是 局部傳遞（不用每次掃全表）。
+// 核心想法：
+// 每個 cell 存：
+// val：目前值
+// refs：這格若是公式，引用了哪些 cell（含 multiplicity 次數，即這個cell被引用了幾次）
+// 再存一張 反向圖 rev[u] = { 所有依賴 u 的 cell }
+// 當某格被 set 或 sum 改變時，算出 delta = newVal - oldVal，用 BFS/queue 把 delta 沿著反向圖傳遞：
+// 若 d 依賴 u 且係數是 k = d.refs[u]，則 d.val += delta * k
+// 因為題目保證沒有環，線性傳遞就完事。
+// 下面是我會寫的 C++（精簡、LeetCode 風格、可直接交）：
+
 class Excel {
     struct Cell {
         int val = 0;
