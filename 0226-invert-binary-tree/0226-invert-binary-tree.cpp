@@ -21,13 +21,8 @@ public:
         if (!root)
             return nullptr;
 
-        TreeNode* leftSubtree = nullptr;
-        TreeNode* rightSubtree = nullptr;
-        if (root->left)
-            leftSubtree = invertTree(root->left);
-
-        if (root->right)
-            rightSubtree = invertTree(root->right);
+        TreeNode* leftSubtree = invertTree(root->left);
+        TreeNode* rightSubtree = invertTree(root->right);
         
         root->right = leftSubtree;
         root->left = rightSubtree;
