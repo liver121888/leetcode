@@ -10,61 +10,33 @@
  * };
  */
 
-
-// we need to find the logest path between any two nodes in the tree
-// how can this happen
-// deepest node on the left and the deepest node on the right
-// back to 1, we see the deepest of left subree is 2 right subtree is 1
-// 2 + 1 = 3
-
-// if it's
-//  1
-// /
-// 2
-// left depth is 1 and right depth is 0
-// ans is 1
-
-// root = [1,2,3,4,5]
-
-// 4
-// 2 - 2 + 2 - 2 = 0
-
-// 2
-// 2 + 2 - 1 - 1 = 2
-
-// 1
-// 2 + 1 - 0 - 0 = 3
-
-// root = [1,2]
-// 1 + 0 - 0 - 0 = 1
-
+// the deepest node in the left and the deepest node in the right 
+// we can have an ans check in every node
+// in every node, we take the deepest node on left and deepest on right
+// calculate their distance
 
 class Solution {
 public:
 
     int ans = 0;
-
-    int dfs(TreeNode* root, int level) {
+    int calculateDist(TreeNode* root) {
 
         if (!root)
-            return level-1;
+            return 0;
+        
+        int leftDist = calculateDist(root->left);
+        int rightDist = calculateDist(root->right);
 
-        // left level
-        int leftDeepestLevel = dfs(root->left, level+1);
+        cout << root->val << " " << leftDist << " " << rightDist << endl;
 
-        // right level
-        int rightDeepestLevel = dfs(root->right, level+1);
-
-        ans = max(ans, leftDeepestLevel - level + rightDeepestLevel - level);
-        return max(leftDeepestLevel, rightDeepestLevel);
+        ans = max(ans, leftDist + rightDist + 1);
+        return 1 + max(leftDist, rightDist);
     }
 
     int diameterOfBinaryTree(TreeNode* root) {
-
-        // we dfs to find the depth and sum them
-        // recrusively pass the ans and compare
-
-        dfs(root, 0);
-        return ans;
+        calculateDist(root);
+        // by the number of edges between them
+        // ans is the number of nodes
+        return ans - 1;
     }
 };
