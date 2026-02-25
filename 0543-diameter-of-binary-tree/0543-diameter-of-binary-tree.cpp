@@ -27,7 +27,7 @@ public:
         int leftDist = calculateDist(root->left);
         int rightDist = calculateDist(root->right);
 
-        cout << root->val << " " << leftDist << " " << rightDist << endl;
+        // cout << root->val << " " << leftDist << " " << rightDist << endl;
 
         ans = max(ans, leftDist + rightDist + 1);
         return 1 + max(leftDist, rightDist);
