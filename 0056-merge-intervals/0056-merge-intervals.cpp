@@ -1,50 +1,72 @@
 
-// we need to find overlapping intervals
-// the intervals are unsorted, it will be greate to first sort the intervals
-// now we can view the intervals by pair
 
-// [[1,3],[2,6],[8,10],[15,18]]
-// we check i1 and i0
-// 1. case i1[0] > i0[1]
-// no overlapping
-// 2. case i1[0] <= i0[1]
-// then we compare i1[1] and i0[1]
-// if i0[1] >= i1[1]
-// create new interval i0[0] i0[1]
-// else
-// create new interval i0[0] i1[1]
+// Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
+// Output: [[1,6],[8,10],[15,18]]
 
-// we only push into ans when we know there is no overlapping otherwise we keep compare
+// w = 0, t = 1
+// [[1,6],[2,6],[8,10],[15,18]]
+// w = 0, t = 2
+// [[1,6],[2,6],[8,10],[15,18]]
+// w = 1, t = 2
+// [[1,6],[8,10],[8,10],[15,18]]
+// w = 1, t = 3
+// [[1,6],[8,10],[15,18],[15,18]]
+// w = 2, t = 4
+// w = 3
+// [[1,6],[8,10],[15,18]
 
-// some edge cases
-// only one interval
-// we simply return
+// [[1,4],[4,5]]
+// [1, 5]
+// w = 1
+// [1, 5]
+
+// intervals = [[1,4],[4,5]]
+// Intervals [1,4] and [4,5] are considered overlapping.
+
+// Input: intervals = [[4,7],[1,4]]
+// Output: [[1,7]]
+
+// sort the interval according to the start
+// we can easily check if they overlap from interval[i+1][0] <= interval[i][1]
+// interval[i] interval[i+1]
+
+// we need to merge the interval
+// interval[i+1][0] >= interval[i][0]
+// the merged interval will start with interval[i][0]
+// merged interval will have max(interval[i], interval[i+1]) as the end
+// time O(nlogn)
+// space O(n) -> O(1)
+
 
 class Solution {
 public:
-
-    // [[1,3],[2,6],[8,10],[15,18]]
-    // a = 1, 3
-    // i = 1
-    // b = 2, 6
-
-
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
 
         sort(intervals.begin(), intervals.end());
-        vector<vector<int>> merged;
-        for (auto interval : intervals) {
-            // if the list of merged intervals is empty or if the current
-            // interval does not overlap with the previous, simply append it.
-            if (merged.empty() || merged.back()[1] < interval[0]) {
-                merged.push_back(interval);
-            }
-            // otherwise, there is overlap, so we merge the current and previous
-            // intervals.
-            else {
-                merged.back()[1] = max(merged.back()[1], interval[1]);
+
+        int takePtr = 1;
+        int writePtr = 0;
+        while (takePtr < intervals.size()) {
+            // check if overlap
+            if (intervals[takePtr][0] <= intervals[writePtr][1]) {
+               intervals[writePtr][1] = max(intervals[writePtr][1], intervals[takePtr][1]);
+               // merged a interval, move the takePtr
+               takePtr++;
+            } else {
+                writePtr++;
+                intervals[writePtr][0] = intervals[takePtr][0];
+                intervals[writePtr][1] = intervals[takePtr][1];
+                takePtr++;
             }
         }
-        return merged;
+
+
+        // the final size of the array
+        writePtr++;
+        while (intervals.size() != writePtr) {
+            intervals.pop_back();
+        }
+        
+        return intervals;
     }
 };
