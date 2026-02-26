@@ -1,130 +1,66 @@
-// when someone wins, on one side of the board we need to check
-// horizontal, vertical and the diagonal
-// we can init a 2d array
-// -1 player 1
-// 0 empty
-// 1 player 2
-// after each move we took we need to check the condition
-// space: O(n^2)
-// time: O(n)  
 
-// we can design horizontal, vertical and diagonal
-// and only mark there and check the squares related to that
+// brute-forece method
+// create n*n table
+// when put in a move, we check the row, col
+// if it's on diagonal, we also need to check the diag
+// so the time complexity is O(2n)?
 
 
-// class TicTacToe {
-// public:
+// Follow-up: Could you do better than O(n^2) per move() operation?
 
-//     vector<vector<int>> board;
-//     int n;
-
-//     TicTacToe(int n) {
-//         this->n = n;
-//         board.assign(n, vector<int>(n, 0));
-//     }
-    
-//     int move(int row, int col, int player) {
-//         board[row][col] = player;
-//         if (checkCol(col, player) || checkRow(row, player))
-//             return player;
-//         if (row == col) {
-//             if (checkDiagonal(player))
-//                 return player;
-//         }
-
-//         if (row == n - 1 - col) {
-//             if (checkAntiDiagonal(player))
-//                 return player;
-//         }
-
-//         return 0;
-//     }
-
-//     bool checkDiagonal(int player) {
-//         for (int row = 0; row < n; row++) {
-//             if (board[row][row] != player)
-//                 return false;
-//         }
-//         return true;
-//     }
-
-
-//     bool checkAntiDiagonal(int player) {
-//         for (int row = 0; row < n; row++) {
-//             if (board[row][n-1-row] != player)
-//                 return false;
-//         }
-//         return true;
-//     }
-
-//     bool checkCol(int col, int player) {
-//         for (int row = 0; row < n; row++) {
-//             if (board[row][col] != player) return false;
-//         }
-//         return true;
-//     }
-
-//     bool checkRow(int row, int player) {
-//         for (int col = 0; col < n; col++) {
-//             if (board[row][col] != player) return false;
-//         }
-//         return true;
-//     }
-// };
-
-/**
- * Your TicTacToe object will be instantiated and called as such:
- * TicTacToe* obj = new TicTacToe(n);
- * int param_1 = obj->move(row,col,player);
- */
-
-
-// one thing we can use is that for a player to win
-// determine whether a player has marked all of the cells in a row or column.
-// by the times a player has mark it
-
+// we can do an unordered_map
+// we record the row col that a player has played
+// if a certain row, a certain col, a certain diag has been place 
+// n times, we know the player wins
+// we can think of it as if player one plays it we +1
+// other wise we -1
+// if after any move, we find the number hits n
+// we know the player wins
 
 class TicTacToe {
 public:
 
-    vector<int> rows;
-    vector<int> cols;
-    int diagonal;
-    int antiDiagonal;
     int n;
+    // we choose unorderd_map because the input might be sparse
+    unordered_map<int, int> rowCnts;
+    unordered_map<int, int> colCnts;
+    vector<int> diagCnts;
 
     TicTacToe(int n) {
-        rows.assign(n, 0);
-        cols.assign(n, 0);
-        diagonal = 0;
-        antiDiagonal = 0;
         this->n = n;
+        diagCnts = vector<int>(2, 0);
     }
     
     int move(int row, int col, int player) {
-        int currentPlayer = (player == 1) ? 1 : -1;
 
-        // update currentPlayer in rows and cols arrays
-        rows[row] += currentPlayer;
-        cols[col] += currentPlayer;
+        // player is 1 or 2
+        int diff = player == 1 ? 1 : -1;
 
-        // update diagonal
-        if (row == col) {
-            diagonal += currentPlayer;
+        rowCnts[row] += diff;
+        if (abs(rowCnts[row]) == n) {
+            return rowCnts[row] > 0 ? 1 : 2;
         }
 
-        // update anti diagonal
-        if (col == (cols.size() - row - 1)) {
-            antiDiagonal += currentPlayer;
+        colCnts[col] += diff;
+        if (abs(colCnts[col]) == n) {
+            return colCnts[col] > 0 ? 1 : 2;
+        }
+
+        // diag: i - j = 0
+        // anti-diag: i + j = n - 1
+
+        if (row - col == 0) {
+            diagCnts[0] += diff;
+            if (abs(diagCnts[0]) == n)
+                return diagCnts[0] > 0 ? 1 : 2;
         }
         
-        // check if the current player wins
-        if (abs(rows[row]) == n ||
-            abs(cols[col]) == n ||
-            abs(diagonal) == n ||
-            abs(antiDiagonal) == n) {
-            return player;
+        if (row + col == n - 1) {
+            diagCnts[1] += diff;
+            if (abs(diagCnts[1]) == n)
+                return diagCnts[1] > 0 ? 1 : 2;
         }
+
         return 0;
     }
 };
