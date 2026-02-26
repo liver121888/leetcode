@@ -16,7 +16,7 @@ public:
         ListNode* prev = dummy;
         bool shouldSwap = false;
         while(head) {
-            cout << head->val << " " << prev->val << " " << shouldSwap << endl;
+            // cout << head->val << " " << prev->val << " " << shouldSwap << endl;
             if (shouldSwap) {
                 // swap value
                 int tmp = head->val;
