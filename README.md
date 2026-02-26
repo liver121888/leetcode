@@ -136,6 +136,7 @@
 | [0295-find-median-from-data-stream](https://github.com/liver121888/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
 | [0844-backspace-string-compare](https://github.com/liver121888/leetcode/tree/master/0844-backspace-string-compare) |
+| [0876-middle-of-the-linked-list](https://github.com/liver121888/leetcode/tree/master/0876-middle-of-the-linked-list) |
 | [0977-squares-of-a-sorted-array](https://github.com/liver121888/leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
@@ -273,6 +274,7 @@
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
 | [0148-sort-list](https://github.com/liver121888/leetcode/tree/master/0148-sort-list) |
 | [0206-reverse-linked-list](https://github.com/liver121888/leetcode/tree/master/0206-reverse-linked-list) |
+| [0876-middle-of-the-linked-list](https://github.com/liver121888/leetcode/tree/master/0876-middle-of-the-linked-list) |
 ## Design
 |  |
 | ------- |
