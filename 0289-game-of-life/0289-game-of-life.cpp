@@ -26,6 +26,7 @@ public:
                         int nr = r + i, nc = c + j;
                         if (nr < 0 || nr >= m || nc < 0 || nc >= n) continue;
 
+                        // 只要是abs = 1就代表原本是活的
                         // originally live if abs(...) == 1 (1 or -1)
                         if (std::abs(board[nr][nc]) == 1) {
                             ++liveNeighbors;
@@ -46,6 +47,7 @@ public:
         }
 
         // finalize: positive => live, otherwise dead
+        // 最終的 update to original definition with 1 and 0
         for (int r = 0; r < m; ++r) {
             for (int c = 0; c < n; ++c) {
                 board[r][c] = (board[r][c] > 0) ? 1 : 0;
