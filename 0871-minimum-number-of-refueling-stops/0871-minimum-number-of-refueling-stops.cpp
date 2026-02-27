@@ -53,8 +53,7 @@ public:
         // and now we added a station at location 10 with 30 liters of fuel, 
         // then we could potentially reach a distance of 45 with 2 refueling stops.
 
-        // for each station, we check whether we can reach this station
-        //
+        // we add station one by one
         for (int i = 0; i < n; i++) {
             for (int t = i; t >= 0; t--) {
                 if (dp[t] >= stations[i][0]) {
