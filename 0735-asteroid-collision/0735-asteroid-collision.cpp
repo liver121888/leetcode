@@ -34,37 +34,63 @@
 
 // [3,5,-6,2,-1,4]
 
+// class Solution {
+// public:
+//     vector<int> asteroidCollision(vector<int>& asteroids) {
+
+//         stack<int> st;
+//         for (const auto& asteroid : asteroids) {
+//             bool shouldPush = true;
+//             while (!st.empty() && st.top() > 0 && asteroid < 0) {
+//                 if (st.top() == abs(asteroid)) {
+//                     st.pop();
+//                     shouldPush = false;
+//                     break;
+//                 } else if (st.top() > abs(asteroid)) {
+//                     shouldPush = false;
+//                     break;
+//                 } else {
+//                     shouldPush = true;
+//                     st.pop();
+//                 }
+//             }
+
+//             if (shouldPush)
+//                 st.push(asteroid);
+//         }
+
+//         vector<int> ans;
+//         while (!st.empty()) {
+//             ans.push_back(st.top());
+//             st.pop();
+//         }
+//         reverse(ans.begin(), ans.end());
+//         return ans;
+//     }
+// };
+
+// 巨乾淨寫法
 class Solution {
 public:
     vector<int> asteroidCollision(vector<int>& asteroids) {
+        vector<int> st; // 用 vector 當 stack，最後不用再倒出來 reverse
+        for (int a : asteroids) {
+            bool alive = true;
 
-        stack<int> st;
-        for (const auto& asteroid : asteroids) {
-            bool shouldPush = true;
-            while (!st.empty() && st.top() > 0 && asteroid < 0) {
-                if (st.top() == abs(asteroid)) {
-                    st.pop();
-                    shouldPush = false;
-                    break;
-                } else if (st.top() > abs(asteroid)) {
-                    shouldPush = false;
-                    break;
-                } else {
-                    shouldPush = true;
-                    st.pop();
+            while (alive && !st.empty() && st.back() > 0 && a < 0) {
+                int top = st.back();
+                if (top < -a) {              // top 爆
+                    st.pop_back();
+                    continue;
+                } 
+                if (top == -a) {             // 兩個都爆
+                    st.pop_back();
                 }
+                alive = false;               // a 爆 or 已處理完(相等也算 a 爆)
             }
 
-            if (shouldPush)
-                st.push(asteroid);
+            if (alive) st.push_back(a);
         }
-
-        vector<int> ans;
-        while (!st.empty()) {
-            ans.push_back(st.top());
-            st.pop();
-        }
-        reverse(ans.begin(), ans.end());
-        return ans;
+        return st;
     }
 };
