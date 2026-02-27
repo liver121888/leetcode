@@ -40,8 +40,10 @@ public:
             head = nextHead;
         }
 
-        if (head)
-            prev->next = head;
+        // we don't need this because we alreayd connect nextHead
+        // if still node left
+        // if (head)
+        //     prev->next = head;
 
         return dummyHead->next;
 
