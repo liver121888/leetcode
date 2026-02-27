@@ -1,65 +1,70 @@
-// If two asteroids meet, the smaller one will explode. 
-// If both are the same size, both will explode. 
-// Two asteroids moving in the same direction will never meet.
+// Input: asteroids = [5,10,-5]
+// Output: [5,10]
+// positive means to the right
+// negative means to the left
 
-// why this is a stack problem
-// the cancellation reminds me of the parenthesis stack
+// Input: asteroids = [8,-8]
+// Output: []
+// Explanation: The 8 and -8 collide exploding each other.
 
-// we can use a stack
-// if stack is empty -> push
-// if not -> check sign -> if is a positive and curr is negative -> check
-// if same size -> both explode
-// if negative bigger -> pop until stopped or same sign
-// if positive bigger -> don't push
-// if a negative -> push
+// Example 3:
+// Input: asteroids = [10,2,-5]
+// Output: [10]
+// Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulting in 10.
+
+// Example 4:
+// Input: asteroids = [3,5,-6,2,-1,4]​​​​​​​
+// Output: [-6,2,4]
+// Explanation: The asteroid -6 makes the asteroid 3 and 5 explode, and then continues going left. On the other side, the asteroid 2 makes the asteroid -1 explode and then continues going right, without reaching asteroid 4.
+
+// we can solve this using a stack
+// stack.top() > 0 incoming is negative
+// check whether it can pop all the way or it will stop and maybe be destryed at some point
+
+// if < and incoming is negative or if < and the incoming is positive
+
+// logic
+// while the stack is non empty and stack.top > 0 and the incoming is negative
+// of same size pop and don't push
+// incoming is larger we pop
+// incoming is smaller just don't push
+// else 
+// push the stack in 
+
+
+// [3,5,-6,2,-1,4]
+
 class Solution {
 public:
     vector<int> asteroidCollision(vector<int>& asteroids) {
-        
-        stack<int> state;
-        for (int& asteroid : asteroids) {
-            int flag = 1;
-            while (!state.empty() && state.top() > 0 && asteroid < 0) {
 
-                if (abs(state.top()) < abs(asteroid)) {
-                    state.pop();
-                    continue;
+        stack<int> st;
+        for (const auto& asteroid : asteroids) {
+            bool shouldPush = true;
+            while (!st.empty() && st.top() > 0 && asteroid < 0) {
+                if (st.top() == abs(asteroid)) {
+                    st.pop();
+                    shouldPush = false;
+                    break;
+                } else if (st.top() > abs(asteroid)) {
+                    shouldPush = false;
+                    break;
+                } else {
+                    shouldPush = true;
+                    st.pop();
                 }
-                else if (abs(state.top()) == abs(asteroid)) {
-                    state.pop();
-                } 
-
-                // If we reach here, the current asteroid will be destroyed
-                // Hence, we should not add it to the stack
-                flag = 0;
-                break;
-            }
-            if (flag) {
-                state.push(asteroid);
             }
 
+            if (shouldPush)
+                st.push(asteroid);
         }
 
-        // [5,10,-5]
-        // 5, 10 
-
-        // [8,-8]
-        // []
-
-        // [10,2,-5]
-        // [10]
-
-        // [3,5,-6,2,-1,4]
-        // -6 2 4​​​​​​​
-
-        // Add the asteroids from the stack to the vector in the reverse order.
-        vector<int> remainingAsteroids (state.size());
-        for (int i = remainingAsteroids.size() - 1; i >= 0; i--){
-            remainingAsteroids[i] = state.top();
-            state.pop();
+        vector<int> ans;
+        while (!st.empty()) {
+            ans.push_back(st.top());
+            st.pop();
         }
-        
-        return remainingAsteroids;
-
+        reverse(ans.begin(), ans.end());
+        return ans;
     }
 };
