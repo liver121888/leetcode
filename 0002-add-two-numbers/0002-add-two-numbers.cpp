@@ -38,52 +38,84 @@
 // l1Len
 // 7 0 4 0 1
 
+// cleaner solution
+// just use l1, if l2 is longer just swtich to that and 
+// append the whole l2 to l1
 class Solution {
 public:
-
-    // each linked list is in the range [1, 100].
-    int getLen(ListNode* l) {
-        int result = 0;
-        while (l) {
-            result++;
-            l = l->next;
-        }
-        return result;
-    }
-
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-
-        int l1Len = getLen(l1);
-        int l2Len = getLen(l2);
-
-        ListNode* head = l1Len >= l2Len ? l1 : l2;
-        ListNode* takePtr = head == l1 ? l2 : l1;
-        int totalLen = head == l1 ? l1Len : l2Len;
-
+        ListNode* head = l1;     // 最終回傳 l1
+        ListNode* prev = nullptr;
         int carry = 0;
-        ListNode* curr = head;
-        while (totalLen) {
-            int currVal = curr->val;
-            if (takePtr) {
-                currVal += takePtr->val;
-                takePtr = takePtr->next;
+
+        while (l1 || l2) {
+            if (!l1) {                  // l1 不夠長：把 l2 剩下的接過來用
+                prev->next = l2;
+                l1 = l2;
+                l2 = nullptr;           // 後面只剩 l1 需要處理
             }
-            currVal += carry;
-            // cout << currVal << " " << l1Len << endl; 
-            // 14 1
-            // 1 4
-            carry = currVal / 10;
-            curr->val = currVal % 10;
-            totalLen--;
-            // deal with when we need to append a last node
-            if (totalLen == 0) {
-                if (carry) {
-                    curr->next = new ListNode(carry);
-                }
-            }
-            curr = curr->next;
+
+            int sum = l1->val + carry + (l2 ? l2->val : 0);
+            l1->val = sum % 10;
+            carry = sum / 10;
+
+            prev = l1;
+            l1 = l1->next;
+            if (l2) l2 = l2->next;
         }
 
+        if (carry) prev->next = new ListNode(carry);
         return head;
     }
 };
+
+
+// class Solution {
+// public:
+
+//     // each linked list is in the range [1, 100].
+//     int getLen(ListNode* l) {
+//         int result = 0;
+//         while (l) {
+//             result++;
+//             l = l->next;
+//         }
+//         return result;
+//     }
+
+//     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+
+//         int l1Len = getLen(l1);
+//         int l2Len = getLen(l2);
+
+//         ListNode* head = l1Len >= l2Len ? l1 : l2;
+//         ListNode* takePtr = head == l1 ? l2 : l1;
+//         int totalLen = head == l1 ? l1Len : l2Len;
+
+//         int carry = 0;
+//         ListNode* curr = head;
+//         while (totalLen) {
+//             int currVal = curr->val;
+//             if (takePtr) {
+//                 currVal += takePtr->val;
+//                 takePtr = takePtr->next;
+//             }
+//             currVal += carry;
+//             // cout << currVal << " " << l1Len << endl; 
+//             // 14 1
+//             // 1 4
+//             carry = currVal / 10;
+//             curr->val = currVal % 10;
+//             totalLen--;
+//             // deal with when we need to append a last node
+//             if (totalLen == 0) {
+//                 if (carry) {
+//                     curr->next = new ListNode(carry);
+//                 }
+//             }
+//             curr = curr->next;
+//         }
+
+//         return head;
+//     }
+// };
