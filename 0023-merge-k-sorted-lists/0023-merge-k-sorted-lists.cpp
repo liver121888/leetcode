@@ -34,17 +34,19 @@
 
 // dummy -> 1 -> 1 -> 2 -> 3 -> 4 -> 4 -> 5 -> 6
 
+// we create a compare struct with () oeprator
+// so that it's a custom compare
+struct compare {
+    // add const key word to make sure we are not modifying
+    bool operator()(const ListNode* a, const ListNode* b) const {
+        return a->val > b->val;
+    }
+};
+
 class Solution {
 public:
 
-    // we create a compare struct with () oeprator
-    // so that it's a custom compare
-    struct compare {
-        bool operator()(ListNode* a, ListNode* b) {
-            // node with smaller value has larger priority
-            return a->val > b->val;
-        } 
-    };
+
 
     ListNode* mergeKLists(vector<ListNode*>& lists) {
 
