@@ -3,7 +3,8 @@
 //     bool isPalindrome(string s) {
 
 //         // two pointers
-//         // we skip anny speical character
+//         // we skip any speical character
+//         // compare to lowercase
         
 //         // "A man, a plan, a canal: Panama"
 
