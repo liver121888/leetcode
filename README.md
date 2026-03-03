@@ -68,6 +68,7 @@
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
+| [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0704-binary-search](https://github.com/liver121888/leetcode/tree/master/0704-binary-search) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/liver121888/leetcode/tree/master/0733-flood-fill) |
@@ -139,6 +140,7 @@
 | [0283-move-zeroes](https://github.com/liver121888/leetcode/tree/master/0283-move-zeroes) |
 | [0295-find-median-from-data-stream](https://github.com/liver121888/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
+| [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0844-backspace-string-compare](https://github.com/liver121888/leetcode/tree/master/0844-backspace-string-compare) |
 | [0876-middle-of-the-linked-list](https://github.com/liver121888/leetcode/tree/master/0876-middle-of-the-linked-list) |
 | [0977-squares-of-a-sorted-array](https://github.com/liver121888/leetcode/tree/master/0977-squares-of-a-sorted-array) |
@@ -176,6 +178,7 @@
 | [0435-non-overlapping-intervals](https://github.com/liver121888/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
+| [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0759-employee-free-time](https://github.com/liver121888/leetcode/tree/master/0759-employee-free-time) |
 | [0939-minimum-area-rectangle](https://github.com/liver121888/leetcode/tree/master/0939-minimum-area-rectangle) |
@@ -314,6 +317,7 @@
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
+| [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0704-binary-search](https://github.com/liver121888/leetcode/tree/master/0704-binary-search) |
 | [0981-time-based-key-value-store](https://github.com/liver121888/leetcode/tree/master/0981-time-based-key-value-store) |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
@@ -353,6 +357,7 @@
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/liver121888/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0239-sliding-window-maximum](https://github.com/liver121888/leetcode/tree/master/0239-sliding-window-maximum) |
+| [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/liver121888/leetcode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/liver121888/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
@@ -421,6 +426,7 @@
 | [0239-sliding-window-maximum](https://github.com/liver121888/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0295-find-median-from-data-stream](https://github.com/liver121888/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
 | [0759-employee-free-time](https://github.com/liver121888/leetcode/tree/master/0759-employee-free-time) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/liver121888/leetcode/tree/master/0871-minimum-number-of-refueling-stops) |
