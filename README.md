@@ -35,6 +35,7 @@
 | [0134-gas-station](https://github.com/liver121888/leetcode/tree/master/0134-gas-station) |
 | [0149-max-points-on-a-line](https://github.com/liver121888/leetcode/tree/master/0149-max-points-on-a-line) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/liver121888/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0152-maximum-product-subarray](https://github.com/liver121888/leetcode/tree/master/0152-maximum-product-subarray) |
 | [0162-find-peak-element](https://github.com/liver121888/leetcode/tree/master/0162-find-peak-element) |
 | [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/liver121888/leetcode/tree/master/0189-rotate-array) |
@@ -379,6 +380,7 @@
 | [0118-pascals-triangle](https://github.com/liver121888/leetcode/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/liver121888/leetcode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/liver121888/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0152-maximum-product-subarray](https://github.com/liver121888/leetcode/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/liver121888/leetcode/tree/master/0198-house-robber) |
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
