@@ -14,32 +14,65 @@
 // every time we expand to the smallest possible numbers
 // r < n,  l >= 0
 
-// in the end we subarray l to r and return
-
+// find left boundary
+// O(log(N−k)+k) time
+// O(1) space
 class Solution {
 public:
-    // 從兩側開始
     vector<int> findClosestElements(vector<int>& arr, int k, int x) {
-        int n = (int)arr.size();
-        int r = lower_bound(arr.begin(), arr.end(), x) - arr.begin();
-        int l = r - 1;
-
-        while (k--) {
-            if (l < 0) {
-                r++;
-            } else if (r >= n) {
-                l--;
+        // Initialize binary search bounds
+        int left = 0;
+        int right = arr.size() - k;
+        
+        // Binary search against the criteria described
+        while (left < right) {
+            int mid = (left + right) / 2;
+            if (x - arr[mid] > arr[mid + k] - x) {
+                left = mid + 1;
             } else {
-                // tie -> pick left (smaller value)
-                if (x - arr[l] <= arr[r] - x) l--;
-                else r++;
+                right = mid;
             }
         }
-
-        // selected range is (l, r)
-        return vector<int>(arr.begin() + (l + 1), arr.begin() + r);
+        
+        // Create output in correct format
+        vector<int> result;
+        for (int i = left; i < left + k; i++) {
+            result.push_back(arr[i]);
+        }
+        
+        return result;
     }
 };
+
+// class Solution {
+// public:
+//     // 從兩側開始
+//     //     為什麼這版不會出錯？
+//     // 永遠只在 l>=0 時讀 arr[l]，只在 r<n 時讀 arr[r]
+//     // 區間語意固定：選到的元素永遠是 (l, r) 開區間
+//     // tie-break 明確：<= 代表距離一樣選左邊（較小）
+//     // 時間：O(log n + k)，因為我們先search然後linear擴張，空間：O(1)（不算輸出）
+//     vector<int> findClosestElements(vector<int>& arr, int k, int x) {
+//         int n = (int)arr.size();
+//         int r = lower_bound(arr.begin(), arr.end(), x) - arr.begin();
+//         int l = r - 1;
+
+//         while (k--) {
+//             if (l < 0) {
+//                 r++;
+//             } else if (r >= n) {
+//                 l--;
+//             } else {
+//                 // tie -> pick left (smaller value)
+//                 if (x - arr[l] <= arr[r] - x) l--;
+//                 else r++;
+//             }
+//         }
+
+//         // selected range is (l, r)
+//         return vector<int>(arr.begin() + (l + 1), arr.begin() + r);
+//     }
+// };
 
 
 // class Solution {
