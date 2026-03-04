@@ -55,10 +55,13 @@ public:
 
     vector<string> topKFrequent(vector<string>& words, int k) {
         unordered_map<string,int> freq;
-        for (auto &w : words) freq[w]++;
+        for (const auto &w : words) freq[w]++;
 
         priority_queue<pair<int,string>, vector<pair<int,string>>, CmpWorstTop> pq;
 
+        // always push to let the heap decide
+        // because it has better compare system
+        // then only compare cnt
         for (auto& [w, c] : freq) {
             pq.push({c, w});
             if ((int)pq.size() > k) pq.pop(); // 丟掉最差
