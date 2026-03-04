@@ -33,6 +33,7 @@
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/liver121888/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/liver121888/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0134-gas-station](https://github.com/liver121888/leetcode/tree/master/0134-gas-station) |
+| [0139-word-break](https://github.com/liver121888/leetcode/tree/master/0139-word-break) |
 | [0149-max-points-on-a-line](https://github.com/liver121888/leetcode/tree/master/0149-max-points-on-a-line) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/liver121888/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0152-maximum-product-subarray](https://github.com/liver121888/leetcode/tree/master/0152-maximum-product-subarray) |
@@ -241,6 +242,7 @@
 | [0127-word-ladder](https://github.com/liver121888/leetcode/tree/master/0127-word-ladder) |
 | [0128-longest-consecutive-sequence](https://github.com/liver121888/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/liver121888/leetcode/tree/master/0133-clone-graph) |
+| [0139-word-break](https://github.com/liver121888/leetcode/tree/master/0139-word-break) |
 | [0141-linked-list-cycle](https://github.com/liver121888/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
 | [0149-max-points-on-a-line](https://github.com/liver121888/leetcode/tree/master/0149-max-points-on-a-line) |
@@ -391,6 +393,7 @@
 | [0118-pascals-triangle](https://github.com/liver121888/leetcode/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/liver121888/leetcode/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/liver121888/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0139-word-break](https://github.com/liver121888/leetcode/tree/master/0139-word-break) |
 | [0152-maximum-product-subarray](https://github.com/liver121888/leetcode/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/liver121888/leetcode/tree/master/0198-house-robber) |
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
@@ -460,6 +463,7 @@
 | [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/liver121888/leetcode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/liver121888/leetcode/tree/master/0127-word-ladder) |
+| [0139-word-break](https://github.com/liver121888/leetcode/tree/master/0139-word-break) |
 | [0165-compare-version-numbers](https://github.com/liver121888/leetcode/tree/master/0165-compare-version-numbers) |
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0208-implement-trie-prefix-tree](https://github.com/liver121888/leetcode/tree/master/0208-implement-trie-prefix-tree) |
@@ -688,6 +692,7 @@
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/liver121888/leetcode/tree/master/0070-climbing-stairs) |
+| [0139-word-break](https://github.com/liver121888/leetcode/tree/master/0139-word-break) |
 ## Concurrency
 |  |
 | ------- |
@@ -739,5 +744,6 @@
 ## Trie
 |  |
 | ------- |
+| [0139-word-break](https://github.com/liver121888/leetcode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/liver121888/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 <!---LeetCode Topics End-->
