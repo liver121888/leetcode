@@ -43,7 +43,7 @@ public:
     // separate variable, we can avoid searching for it in the array. 
     // Not only that, but we can stop using the array altogether.
 
-
+    // clever as fk
     bool canJump(vector<int>& nums) {
         int lastPos = nums.size() - 1;
         for (int i = nums.size() - 1; i >= 0; i--) {
