@@ -12,32 +12,47 @@ public:
 
     // time: O(n^2)
     // sapce: O(n)
+    // bool canJump(vector<int>& nums) {
+
+    //     int n = nums.size();
+    //     // we want to reach n-1
+
+    //     vector<bool> dp(n, false);
+
+    //     // dp save true or false
+    //     dp[n-1] = true; // beacuse it can always reach it self
+
+    //     // dp[i] = (dp[i + 0] || dp[i + 1] || dp[i + nums[i]]);
+    //     // we also need to check if i + nums[0] .. nums[i] is valid
+
+    //     for (int i = n - 2; i >= 0; i--) {
+    //         bool canJump = false;
+    //         for (int j = 0; j <= nums[i]; j++) {
+    //             int idx = i+j;
+    //             // valid
+    //             if (idx < n)
+    //                 canJump = canJump || dp[idx]; 
+    //         }
+    //         dp[i] = canJump;
+    //     }
+    //     return dp[0];
+    // }
+
+
+    // the left-most one. If we keep track of this left-most GOOD position as a 
+    // separate variable, we can avoid searching for it in the array. 
+    // Not only that, but we can stop using the array altogether.
+
+
     bool canJump(vector<int>& nums) {
-
-        int n = nums.size();
-        // we want to reach n-1
-
-        vector<bool> dp(n, false);
-
-        // dp save true or false
-        dp[n-1] = true; // beacuse it can always reach it self
-
-        // dp[i] = (dp[i + 0] || dp[i + 1] || dp[i + nums[i]]);
-        // we also need to check if i + nums[0] .. nums[i] is valid
-
-        for (int i = n - 2; i >= 0; i--) {
-            bool canJump = false;
-            for (int j = 0; j <= nums[i]; j++) {
-                int idx = i+j;
-                // valid
-                if (idx < n)
-                    canJump = canJump || dp[idx]; 
+        int lastPos = nums.size() - 1;
+        for (int i = nums.size() - 1; i >= 0; i--) {
+            if (i + nums[i] >= lastPos) {
+                lastPos = i;
             }
-            dp[i] = canJump;
         }
-        return dp[0];
+        return lastPos == 0;
     }
-
 
     // bool bt(vector<int>& nums, vector<bool>& visited, int cur) {
 
