@@ -7,9 +7,10 @@ public:
     // 1 <= n <= 45
     int climbStairs(int n) {
 
-        if (n <= 3)
-            return n;
-
+        if (n == 1) {
+            return 1;
+        }
+        
         vector<int> memo(n + 1, 0);
         // base cases
         memo[0] = 0; memo[1] = 1; memo[2] = 2;
