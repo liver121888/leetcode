@@ -20,6 +20,7 @@
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
 | [0051-n-queens](https://github.com/liver121888/leetcode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/liver121888/leetcode/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/liver121888/leetcode/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/liver121888/leetcode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/liver121888/leetcode/tree/master/0057-insert-interval) |
 | [0068-text-justification](https://github.com/liver121888/leetcode/tree/master/0068-text-justification) |
@@ -395,6 +396,7 @@
 | [0010-regular-expression-matching](https://github.com/liver121888/leetcode/tree/master/0010-regular-expression-matching) |
 | [0042-trapping-rain-water](https://github.com/liver121888/leetcode/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/liver121888/leetcode/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/liver121888/leetcode/tree/master/0055-jump-game) |
 | [0062-unique-paths](https://github.com/liver121888/leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/liver121888/leetcode/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
@@ -560,6 +562,7 @@
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/liver121888/leetcode/tree/master/0011-container-with-most-water) |
+| [0055-jump-game](https://github.com/liver121888/leetcode/tree/master/0055-jump-game) |
 | [0134-gas-station](https://github.com/liver121888/leetcode/tree/master/0134-gas-station) |
 | [0435-non-overlapping-intervals](https://github.com/liver121888/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
