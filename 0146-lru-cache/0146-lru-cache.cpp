@@ -37,6 +37,7 @@
 // _, _, _, 1, _, -1, 1
 
 // always remember, set the list to be most recent used is in the front
+// it's easier, the below implementaiton is the opposite
 // and the lru is in the back
 class LRUCache {
 
