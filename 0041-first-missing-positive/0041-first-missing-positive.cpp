@@ -19,6 +19,7 @@
 // so all the positive number is in the front
 // O(2n) = O(n)
 
+// use index as unordered_set!
 class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {
@@ -47,6 +48,7 @@ public:
             }
         }
 
+        // scan the values that appeared
         for (int i = 1; i < n; i++) {
             if (nums[i] > 0)
                 return i;
