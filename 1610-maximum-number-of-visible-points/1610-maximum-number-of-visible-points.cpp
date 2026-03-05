@@ -90,6 +90,8 @@ public:
             while (ext[r] - ext[l] > (double)angle + EPS)
                 l++;
             // can't take more than n original points
+            // 同樣是 r-l +1, min(r - l + 1, n)限制了不可能超過n
+            // 因為最多就是整個array了所以這裡的min是合法的
             best = max(best, min(r - l + 1, n));
         }
 
