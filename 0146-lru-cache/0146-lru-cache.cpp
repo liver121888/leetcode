@@ -36,61 +36,115 @@
 // [[2],[2,1],[1,1],[2],[4,1],[1],[2]]
 // _, _, _, 1, _, -1, 1
 
-
+// always remember, set the list to be most recent used is in the front
+// and the lru is in the back
 class LRUCache {
+
+// key, ptr to the node in the list
+unordered_map<int, list<pair<int,int>>::iterator> m;
+list<pair<int,int>> l;
+int cap;
+
 public:
+  LRUCache(int capacity): cap(capacity) {}
 
-    int cap;
-    // key, value
-    list<pair<int,int>> l;
+  // O(1)
+  int get(int key) {
+    auto it = m.find(key);
+    if (it != m.end()) {
+      int result = it->second->second;
 
-    // key, ptr
-    unordered_map<int,list<pair<int,int>>::iterator> m;
-
-    LRUCache(int capacity) {
-        cap = capacity;
+      // move the list around to maintain lru
+      l.erase(it->second);
+      l.push_back({key, result});
+      
+      // update the map
+      //   m[key] = l.back();
+      // .back()是取得元素不是取的iter
+      // 可以用prev(end()) 即不存在位置的前一個來取最後的iter
+      m[key] = prev(l.end());
+      return result;
     }
-    
-    int get(int key) {
+    return -1;
+  }
 
-        auto it = m.find(key);
-
-        if (it == m.end())
-            return -1;
-
-        // key, ptr
-        // it
-
-        int value = it->second->second;
-        // cout << value << endl;
-        
-        // update the list
+  // O(1)
+  void put(int key, int value) {
+    auto it = m.find(key);
+    if (it != m.end()) {
         l.erase(it->second);
-        l.push_front({key, value});
-        m[key] = l.begin();
-        return value;
+        m.erase(key);   
     }
-    
-    void put(int key, int value) {
+    // push the key value
+    l.push_back({key, value});
+    m[key] = prev(l.end());
 
-        auto it = m.find(key);
-
-        if (it != m.end()) {
-            l.erase(it->second);
-        } 
-
-        l.push_front({key, value});
-        m[key] = l.begin();
-
-        // check capacity
-        if (l.size() > cap) {
-            // lru
-            int lruKey = l.back().first;
-            m.erase(lruKey);
-            l.pop_back();
-        }
+    // check the size of the lru
+    if (l.size() > cap) {
+      // envict least recent used
+      int oldKey = l.front().first;
+      l.pop_front();
+      m.erase(oldKey);
     }
+ }
 };
+
+
+
+// class LRUCache {
+// public:
+
+//     int cap;
+//     // key, value
+//     list<pair<int,int>> l;
+
+//     // key, ptr
+//     unordered_map<int,list<pair<int,int>>::iterator> m;
+
+//     LRUCache(int capacity) {
+//         cap = capacity;
+//     }
+    
+//     int get(int key) {
+
+//         auto it = m.find(key);
+
+//         if (it == m.end())
+//             return -1;
+
+//         // key, ptr
+//         // it
+
+//         int value = it->second->second;
+//         // cout << value << endl;
+        
+//         // update the list
+//         l.erase(it->second);
+//         l.push_front({key, value});
+//         m[key] = l.begin();
+//         return value;
+//     }
+    
+//     void put(int key, int value) {
+
+//         auto it = m.find(key);
+
+//         if (it != m.end()) {
+//             l.erase(it->second);
+//         } 
+
+//         l.push_front({key, value});
+//         m[key] = l.begin();
+
+//         // check capacity
+//         if (l.size() > cap) {
+//             // lru
+//             int lruKey = l.back().first;
+//             m.erase(lruKey);
+//             l.pop_back();
+//         }
+//     }
+// };
 
 /**
  * Your LRUCache object will be instantiated and called as such:
