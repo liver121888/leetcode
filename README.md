@@ -134,6 +134,7 @@
 | [0016-3sum-closest](https://github.com/liver121888/leetcode/tree/master/0016-3sum-closest) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/liver121888/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0042-trapping-rain-water](https://github.com/liver121888/leetcode/tree/master/0042-trapping-rain-water) |
+| [0061-rotate-list](https://github.com/liver121888/leetcode/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/liver121888/leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/liver121888/leetcode/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/liver121888/leetcode/tree/master/0125-valid-palindrome) |
@@ -296,6 +297,7 @@
 | [0021-merge-two-sorted-lists](https://github.com/liver121888/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0023-merge-k-sorted-lists](https://github.com/liver121888/leetcode/tree/master/0023-merge-k-sorted-lists) |
 | [0024-swap-nodes-in-pairs](https://github.com/liver121888/leetcode/tree/master/0024-swap-nodes-in-pairs) |
+| [0061-rotate-list](https://github.com/liver121888/leetcode/tree/master/0061-rotate-list) |
 | [0141-linked-list-cycle](https://github.com/liver121888/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/liver121888/leetcode/tree/master/0146-lru-cache) |
 | [0148-sort-list](https://github.com/liver121888/leetcode/tree/master/0148-sort-list) |
