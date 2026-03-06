@@ -30,44 +30,77 @@
 
 class Solution {
 public:
+
+
+
     ListNode* rotateRight(ListNode* head, int k) {
+        if (!head || !head->next || k == 0) return head;
 
-        if (!head)
-            return head;
-
-        ListNode* curr = head;
-        int n = 0;
-        while (curr) {
+        // set n = 1 so check the len can be correct
+        int n = 1;
+        // get the tail in the first run
+        ListNode* tail = head;
+        while (tail->next) {
+            tail = tail->next;
             n++;
-            curr = curr->next;
         }
 
-        int rotate = k % n;
+        k %= n;
+        if (k == 0) return head;
 
-        if (rotate == 0)
-            return head;
-        
-        // get last rotate nodes
-        ListNode* secondPart = head;
-        ListNode* secondPartPrev;
-        ListNode* prev;
-        curr = head;
-        while (rotate) {
-            curr = curr->next;
-            rotate--;
+        // make it circular
+        tail->next = head;
+
+        int stepsToNewTail = n - k - 1;
+        ListNode* newTail = head;
+        while (stepsToNewTail--) {
+            newTail = newTail->next;
         }
 
-        while(curr) {
-            secondPartPrev = secondPart;
-            prev = curr;
-            curr = curr->next;
-            secondPart = secondPart->next;
-        }
+        ListNode* newHead = newTail->next;
+        newTail->next = nullptr;
 
-        prev->next = head;
-        head = secondPartPrev->next;
-        secondPartPrev->next = nullptr;
-
-        return head;
+        return newHead;
     }
+
+    // ListNode* rotateRight(ListNode* head, int k) {
+
+    //     if (!head)
+    //         return head;
+
+    //     ListNode* curr = head;
+    //     int n = 0;
+    //     while (curr) {
+    //         n++;
+    //         curr = curr->next;
+    //     }
+
+    //     int rotate = k % n;
+
+    //     if (rotate == 0)
+    //         return head;
+        
+    //     // get last rotate nodes
+    //     ListNode* secondPart = head;
+    //     ListNode* secondPartPrev;
+    //     ListNode* prev;
+    //     curr = head;
+    //     while (rotate) {
+    //         curr = curr->next;
+    //         rotate--;
+    //     }
+
+    //     while(curr) {
+    //         secondPartPrev = secondPart;
+    //         prev = curr;
+    //         curr = curr->next;
+    //         secondPart = secondPart->next;
+    //     }
+
+    //     prev->next = head;
+    //     head = secondPartPrev->next;
+    //     secondPartPrev->next = nullptr;
+
+    //     return head;
+    // }
 };
