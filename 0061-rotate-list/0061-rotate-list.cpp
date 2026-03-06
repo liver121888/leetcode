@@ -38,7 +38,7 @@ public:
 
         // set n = 1 so check the len can be correct
         int n = 1;
-        // get the tail in the first run
+        // get the tail and the len at the same first run
         ListNode* tail = head;
         while (tail->next) {
             tail = tail->next;
