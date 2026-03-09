@@ -86,30 +86,54 @@ public:
 
     // prev = 3
 
+
+    // way cleaner version
     ListNode* oddEvenList(ListNode* head) {
-        
-        if (!head || !head->next)
+
+        if (!head || !head->next) 
             return head;
 
-        ListNode* evenHead = head->next;
-        ListNode* curr = head;
-        ListNode* prev = nullptr;
-        while (curr && curr->next) {
-            ListNode* nextCurr = curr->next->next;
-            ListNode* even = curr->next;
-            curr->next = nextCurr;
-            if (nextCurr)
-                even->next = nextCurr->next;
-            prev = curr;
-            curr = nextCurr;
+        ListNode* odd = head;
+        ListNode* even = head->next;
+        ListNode* evenHead = even;
+
+        while (even && even->next) {
+            odd->next = even->next;
+            odd = odd->next;
+
+            even->next = odd->next;
+            even = even->next;
         }
 
-        if (curr) {
-            prev->next = curr;
-            prev = curr;
-        }
-
-        prev->next = evenHead;
+        odd->next = evenHead;
         return head;
     }
+
+
+    // ListNode* oddEvenList(ListNode* head) {
+        
+    //     if (!head || !head->next)
+    //         return head;
+
+    //     ListNode* evenHead = head->next;
+    //     ListNode* curr = head;
+    //     ListNode* prev = nullptr;
+    //     while (curr && curr->next) {
+    //         ListNode* nextCurr = curr->next->next;
+    //         ListNode* even = curr->next;
+    //         curr->next = nextCurr;
+    //         if (nextCurr)
+    //             even->next = nextCurr->next;
+    //         prev = curr;
+    //         curr = nextCurr;
+    //     }
+
+    //     if (curr) {
+    //         prev->next = curr;
+    //         prev = curr;
+    //     }
+
+    //     prev->next = evenHead;
+    //     return head;
+    // }
 };
