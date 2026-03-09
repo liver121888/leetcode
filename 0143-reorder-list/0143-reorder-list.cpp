@@ -42,7 +42,7 @@ public:
         // 1 -> 5 -> 2 -> 4 -> 3
 
         while (l <= r) {
-            cout << l << " " << r << endl;
+            // cout << l << " " << r << endl;
             ListNode* frontNode = nodes[l];
             ListNode* backNode = nodes[r];
             if (prevBackNode) {
