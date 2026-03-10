@@ -38,9 +38,10 @@ public:
             return lowestCommonAncestor(root->right, p, q);
         } else if (pVal < parentVal && qVal < parentVal) {
             return lowestCommonAncestor(root->left, p, q);
-        } else { 
-             // We have found the split point, i.e. the LCA node.
-            return root;
         }
+
+        // We have found the split point, i.e. the LCA node.
+        return root;
+
     }
 };
