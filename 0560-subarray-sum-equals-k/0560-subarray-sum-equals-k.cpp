@@ -1,5 +1,4 @@
 // this is a subarray problem
-// we can solve using two pointers
 // we can calculate prefix sum
 // [1, 1, 1]
 // [1, 2, 3]
@@ -35,6 +34,7 @@ public:
 
 
         int count = 0, sum = 0;
+        // how many times a sum has appeared
         unordered_map<int, int> lookUp;
         lookUp[0] = 1;
         for (int i = 0; i < nums.size(); i++) {
