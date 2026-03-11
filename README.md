@@ -150,6 +150,7 @@
 | [0360-sort-transformed-array](https://github.com/liver121888/leetcode/tree/master/0360-sort-transformed-array) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
 | [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
+| [0696-count-binary-substrings](https://github.com/liver121888/leetcode/tree/master/0696-count-binary-substrings) |
 | [0844-backspace-string-compare](https://github.com/liver121888/leetcode/tree/master/0844-backspace-string-compare) |
 | [0876-middle-of-the-linked-list](https://github.com/liver121888/leetcode/tree/master/0876-middle-of-the-linked-list) |
 | [0977-squares-of-a-sorted-array](https://github.com/liver121888/leetcode/tree/master/0977-squares-of-a-sorted-array) |
@@ -503,6 +504,7 @@
 | [0409-longest-palindrome](https://github.com/liver121888/leetcode/tree/master/0409-longest-palindrome) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
 | [0692-top-k-frequent-words](https://github.com/liver121888/leetcode/tree/master/0692-top-k-frequent-words) |
+| [0696-count-binary-substrings](https://github.com/liver121888/leetcode/tree/master/0696-count-binary-substrings) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0752-open-the-lock](https://github.com/liver121888/leetcode/tree/master/0752-open-the-lock) |
 | [0844-backspace-string-compare](https://github.com/liver121888/leetcode/tree/master/0844-backspace-string-compare) |
