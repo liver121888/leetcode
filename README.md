@@ -286,6 +286,7 @@
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/liver121888/leetcode/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/liver121888/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/liver121888/leetcode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
+| [1740-find-distance-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1740-find-distance-in-a-binary-tree) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
@@ -552,6 +553,7 @@
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/liver121888/leetcode/tree/master/1293-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
+| [1740-find-distance-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1740-find-distance-in-a-binary-tree) |
 ## Graph
 |  |
 | ------- |
@@ -614,6 +616,7 @@
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/liver121888/leetcode/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/liver121888/leetcode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
+| [1740-find-distance-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1740-find-distance-in-a-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
@@ -630,6 +633,7 @@
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/liver121888/leetcode/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/liver121888/leetcode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
+| [1740-find-distance-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1740-find-distance-in-a-binary-tree) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -662,6 +666,7 @@
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/liver121888/leetcode/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/liver121888/leetcode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
+| [1740-find-distance-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1740-find-distance-in-a-binary-tree) |
 ## Union Find
 |  |
 | ------- |
