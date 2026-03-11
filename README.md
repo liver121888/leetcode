@@ -111,6 +111,7 @@
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2277-count-equal-and-divisible-pairs-in-an-array](https://github.com/liver121888/leetcode/tree/master/2277-count-equal-and-divisible-pairs-in-an-array) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/liver121888/leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
+| [2592-maximize-greatness-of-an-array](https://github.com/liver121888/leetcode/tree/master/2592-maximize-greatness-of-an-array) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2690-house-robber-iv](https://github.com/liver121888/leetcode/tree/master/2690-house-robber-iv) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/liver121888/leetcode/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
@@ -157,6 +158,7 @@
 | [0977-squares-of-a-sorted-array](https://github.com/liver121888/leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
+| [2592-maximize-greatness-of-an-array](https://github.com/liver121888/leetcode/tree/master/2592-maximize-greatness-of-an-array) |
 ## Simulation
 |  |
 | ------- |
@@ -203,6 +205,7 @@
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/liver121888/leetcode/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/liver121888/leetcode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1610-maximum-number-of-visible-points](https://github.com/liver121888/leetcode/tree/master/1610-maximum-number-of-visible-points) |
+| [2592-maximize-greatness-of-an-array](https://github.com/liver121888/leetcode/tree/master/2592-maximize-greatness-of-an-array) |
 | [2887-sort-vowels-in-a-string](https://github.com/liver121888/leetcode/tree/master/2887-sort-vowels-in-a-string) |
 | [3430-count-days-without-meetings](https://github.com/liver121888/leetcode/tree/master/3430-count-days-without-meetings) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/liver121888/leetcode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
@@ -597,6 +600,7 @@
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/liver121888/leetcode/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/liver121888/leetcode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1448-maximum-69-number](https://github.com/liver121888/leetcode/tree/master/1448-maximum-69-number) |
+| [2592-maximize-greatness-of-an-array](https://github.com/liver121888/leetcode/tree/master/2592-maximize-greatness-of-an-array) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 ## Backtracking
 |  |
