@@ -15,33 +15,60 @@
 
 class Solution {
 public:
+
+    // O(n)
     vector<int> topKFrequent(vector<int>& nums, int k) {
         unordered_map<int, int> freq;
-        for (const auto& num : nums) {
+        for (int num : nums) {
             freq[num]++;
         }
 
-        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
 
-
+        // 依照出現的freq幫num分組
+        vector<vector<int>> buckets(nums.size() + 1);
         for (const auto& [num, cnt] : freq) {
-
-            pq.push({cnt, num});
-
-            // if (pq.empty() || cnt > pq.top().first)
-
-            if (pq.size() > k)
-                pq.pop();
-
+            buckets[cnt].push_back(num);
         }
 
         vector<int> ans;
-        while (!pq.empty()) {
-            int num = pq.top().second;
-            ans.push_back(num);
-            pq.pop();
+        for (int cnt = nums.size(); cnt >= 1 && ans.size() < k; --cnt) {
+            for (int num : buckets[cnt]) {
+                ans.push_back(num);
+                if (ans.size() == k) break;
+            }
         }
-        return ans;
 
+        return ans;
     }
+
+
+    // vector<int> topKFrequent(vector<int>& nums, int k) {
+    //     unordered_map<int, int> freq;
+    //     for (const auto& num : nums) {
+    //         freq[num]++;
+    //     }
+
+    //     priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
+
+
+    //     for (const auto& [num, cnt] : freq) {
+
+    //         pq.push({cnt, num});
+
+    //         // if (pq.empty() || cnt > pq.top().first)
+
+    //         if (pq.size() > k)
+    //             pq.pop();
+
+    //     }
+
+    //     vector<int> ans;
+    //     while (!pq.empty()) {
+    //         int num = pq.top().second;
+    //         ans.push_back(num);
+    //         pq.pop();
+    //     }
+    //     return ans;
+
+    // }
 };
