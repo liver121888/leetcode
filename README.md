@@ -54,6 +54,7 @@
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [0360-sort-transformed-array](https://github.com/liver121888/leetcode/tree/master/0360-sort-transformed-array) |
@@ -369,6 +370,7 @@
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0419-battleships-in-a-board](https://github.com/liver121888/leetcode/tree/master/0419-battleships-in-a-board) |
@@ -428,6 +430,7 @@
 | [0198-house-robber](https://github.com/liver121888/leetcode/tree/master/0198-house-robber) |
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/liver121888/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/liver121888/leetcode/tree/master/0435-non-overlapping-intervals) |
@@ -546,6 +549,7 @@
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0529-minesweeper](https://github.com/liver121888/leetcode/tree/master/0529-minesweeper) |
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
@@ -580,6 +584,7 @@
 | [0207-course-schedule](https://github.com/liver121888/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/liver121888/leetcode/tree/master/0210-course-schedule-ii) |
 | [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 ## Shortest Path
@@ -666,6 +671,7 @@
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/liver121888/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0419-battleships-in-a-board](https://github.com/liver121888/leetcode/tree/master/0419-battleships-in-a-board) |
 | [0529-minesweeper](https://github.com/liver121888/leetcode/tree/master/0529-minesweeper) |
 | [0543-diameter-of-binary-tree](https://github.com/liver121888/leetcode/tree/master/0543-diameter-of-binary-tree) |
@@ -758,6 +764,7 @@
 | ------- |
 | [0070-climbing-stairs](https://github.com/liver121888/leetcode/tree/master/0070-climbing-stairs) |
 | [0139-word-break](https://github.com/liver121888/leetcode/tree/master/0139-word-break) |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 ## Concurrency
 |  |
 | ------- |
@@ -767,6 +774,7 @@
 |  |
 | ------- |
 | [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
+| [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
 | [3123-find-edges-in-shortest-paths](https://github.com/liver121888/leetcode/tree/master/3123-find-edges-in-shortest-paths) |
 ## Monotonic Stack
