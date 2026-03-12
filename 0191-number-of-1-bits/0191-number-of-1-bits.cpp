@@ -1,11 +1,20 @@
+
+// Follow up: If this function is called many times, 
+// how would you optimize it?
 class Solution {
 public:
-    int hammingWeight(uint32_t n) {
-        int res = 0;
-        while (n > 0) {
-            res += n % 2;
-            n = n >> 1;
+    int hammingWeight(int n) {
+
+        int ans = 0;
+        while (n) {
+            ans += n & 1;
+            n >>= 1;
         }
-        return res;
+
+        // hamming distance 
+        // int diff = n ^ 0;
+
+        return ans;
+        
     }
 };
