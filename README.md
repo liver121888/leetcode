@@ -457,6 +457,7 @@
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0148-sort-list](https://github.com/liver121888/leetcode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
+| [0191-number-of-1-bits](https://github.com/liver121888/leetcode/tree/master/0191-number-of-1-bits) |
 | [0347-top-k-frequent-elements](https://github.com/liver121888/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0973-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -545,6 +546,7 @@
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/liver121888/leetcode/tree/master/0067-add-binary) |
+| [0191-number-of-1-bits](https://github.com/liver121888/leetcode/tree/master/0191-number-of-1-bits) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [0338-counting-bits](https://github.com/liver121888/leetcode/tree/master/0338-counting-bits) |
 | [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
