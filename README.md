@@ -164,6 +164,7 @@
 ## Simulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/liver121888/leetcode/tree/master/0067-add-binary) |
 | [0068-text-justification](https://github.com/liver121888/leetcode/tree/master/0068-text-justification) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
@@ -219,6 +220,7 @@
 | [0002-add-two-numbers](https://github.com/liver121888/leetcode/tree/master/0002-add-two-numbers) |
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
 | [0062-unique-paths](https://github.com/liver121888/leetcode/tree/master/0062-unique-paths) |
+| [0067-add-binary](https://github.com/liver121888/leetcode/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/liver121888/leetcode/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0149-max-points-on-a-line](https://github.com/liver121888/leetcode/tree/master/0149-max-points-on-a-line) |
@@ -504,6 +506,7 @@
 | [0003-longest-substring-without-repeating-characters](https://github.com/liver121888/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0010-regular-expression-matching](https://github.com/liver121888/leetcode/tree/master/0010-regular-expression-matching) |
 | [0020-valid-parentheses](https://github.com/liver121888/leetcode/tree/master/0020-valid-parentheses) |
+| [0067-add-binary](https://github.com/liver121888/leetcode/tree/master/0067-add-binary) |
 | [0068-text-justification](https://github.com/liver121888/leetcode/tree/master/0068-text-justification) |
 | [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/liver121888/leetcode/tree/master/0125-valid-palindrome) |
@@ -540,6 +543,7 @@
 ## Bit Manipulation
 |  |
 | ------- |
+| [0067-add-binary](https://github.com/liver121888/leetcode/tree/master/0067-add-binary) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
 ## Breadth-First Search
