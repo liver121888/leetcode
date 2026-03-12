@@ -50,6 +50,9 @@ public:
     // }
 
     // dp with rightmost set bit
+    // p is the number of 1 in a number
+    // adding 1 in the back is not to restore the number
+    // but just to calculate the number of 1s
     // P(x)=P(x&(x−1))+1
     vector<int> countBits(int n) {
         vector<int> ans(n+1);
@@ -58,8 +61,6 @@ public:
         }
         return ans;
     }
-
-
 
     // O(n log n) solution
     // 因為13 需要 4 位二进制来表示，log_2(i) 给出了这个位数的估算。
