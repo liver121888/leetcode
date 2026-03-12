@@ -298,6 +298,7 @@
 | [1740-find-distance-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1740-find-distance-in-a-binary-tree) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
+| [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/liver121888/leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
@@ -443,6 +444,7 @@
 | [1388-greatest-sum-divisible-by-three](https://github.com/liver121888/leetcode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/liver121888/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [2262-solving-questions-with-brainpower](https://github.com/liver121888/leetcode/tree/master/2262-solving-questions-with-brainpower) |
+| [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/liver121888/leetcode/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
 ## Divide and Conquer
 |  |
@@ -539,6 +541,7 @@
 |  |
 | ------- |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
+| [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -640,6 +643,7 @@
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/liver121888/leetcode/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/liver121888/leetcode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [1740-find-distance-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1740-find-distance-in-a-binary-tree) |
+| [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
 ## Binary Tree
 |  |
 | ------- |
