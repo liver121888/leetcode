@@ -34,6 +34,7 @@
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/liver121888/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0128-longest-consecutive-sequence](https://github.com/liver121888/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0134-gas-station](https://github.com/liver121888/leetcode/tree/master/0134-gas-station) |
+| [0136-single-number](https://github.com/liver121888/leetcode/tree/master/0136-single-number) |
 | [0139-word-break](https://github.com/liver121888/leetcode/tree/master/0139-word-break) |
 | [0149-max-points-on-a-line](https://github.com/liver121888/leetcode/tree/master/0149-max-points-on-a-line) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/liver121888/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -546,6 +547,7 @@
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/liver121888/leetcode/tree/master/0067-add-binary) |
+| [0136-single-number](https://github.com/liver121888/leetcode/tree/master/0136-single-number) |
 | [0191-number-of-1-bits](https://github.com/liver121888/leetcode/tree/master/0191-number-of-1-bits) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [0338-counting-bits](https://github.com/liver121888/leetcode/tree/master/0338-counting-bits) |
