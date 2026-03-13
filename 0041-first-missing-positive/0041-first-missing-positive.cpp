@@ -22,42 +22,80 @@
 // use index as unordered_set!
 class Solution {
 public:
+
+    // int firstMissingPositive(vector<int>& nums) {
+
+    //     bool containsOne = false;
+    //     int n = nums.size();
+
+    //     // clever, we need to check of n also
+    //     for (auto& num : nums) {
+    //         if (num == 1)
+    //             containsOne = true;
+    //         else if (num <= 0 || num > n)
+    //             num = 1;
+    //     }
+
+    //     if (!containsOne)
+    //         return 1;
+
+    //     for (int i = 0; i < n; i++) {
+    //         int value = abs(nums[i]);
+    //         // use 0 as the n counter
+    //         if (value == n) {
+    //             nums[0] = -abs(nums[0]);
+    //         } else {
+    //             nums[value] = -abs(nums[value]);
+    //         }
+    //     }
+
+    //     // scan the values that appeared
+    //     for (int i = 1; i < n; i++) {
+    //         if (nums[i] > 0)
+    //             return i;
+    //     }
+
+    //     if (nums[0] > 0) {
+    //         return n;
+    //     }
+
+    //     return n + 1;    
+    // }
+
+    // Cycle Sort
+    // The numbers we need to check for are in the range 1 to n, 
+    // so we can utilize cycle sort. Cycle sort is a sorting algorithm 
+    // that can sort a given sequence in a range from a to n by putting each 
+    // element at the index that corresponds to its value.
+
+    // nums is a zero-indexed array, so an element with the value x 
+    // will be located at index x - 1
+
+    // This approach modifies the input. 
+    // It changes the order of nums, but not the values of nums. 
+    // In-place algorithms overwrite the input to save space, 
+    // but sometimes this can cause problems. Always check with your 
+    // interviewer before modifying the input.
+
     int firstMissingPositive(vector<int>& nums) {
 
-        bool containsOne = false;
         int n = nums.size();
-
-        // clever, we need to check of n also
-        for (auto& num : nums) {
-            if (num == 1)
-                containsOne = true;
-            else if (num <= 0 || num > n)
-                num = 1;
-        }
-
-        if (!containsOne)
-            return 1;
-
-        for (int i = 0; i < n; i++) {
-            int value = abs(nums[i]);
-            // use 0 as the n counter
-            if (value == n) {
-                nums[0] = -abs(nums[0]);
+        int i = 0;
+        while (i < n) {
+            if (nums[i] > 0 && nums[i] <= n && nums[i] != nums[nums[i] - 1]) {
+                swap(nums[i], nums[nums[i] - 1]);
             } else {
-                nums[value] = -abs(nums[value]);
+                i++;
             }
         }
 
-        // scan the values that appeared
-        for (int i = 1; i < n; i++) {
-            if (nums[i] > 0)
-                return i;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != i + 1)
+                return i + 1;
         }
+        return n + 1;
 
-        if (nums[0] > 0) {
-            return n;
-        }
-
-        return n + 1;    
     }
+
+
 };
