@@ -6,30 +6,16 @@ public:
 
     // we can take every bit
     // and build the number in the opposite way
-    // 
 
     int reverseBits(int n) {
         
         // 32 bit
         int ans = 0;
-        int cnt = 1;
-        while (n) {
-            int lsb = n & 1;
-            ans |= lsb;
-            ans <<= 1;
-            cnt++;
-            bitset<32> bits(ans);
-            std::cout << "bitset: " << bits << " " << cnt << std::endl;
-            n >>= 1;
+        for (int i = 0; i < 32; i++) {
+            int lsb = n & 1;  // 获取 n 的最低有效位
+            ans = (ans << 1) | lsb;  // 左移 ans，并将 lsb 加到 ans 中
+            n >>= 1;  // 将 n 右移，处理下一个位
         }
-        // n might become 0 before we hit 32 times
-        while (cnt < 32) {
-            ans <<= 1;
-            cnt++;
-        }
-        bitset<32> bits(ans);
-        std::cout << "bitset: " << bits << " " << cnt << std::endl;
-
         return ans;
     }
 };
