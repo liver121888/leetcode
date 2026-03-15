@@ -655,6 +655,7 @@
 |  |
 | ------- |
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
+| [0098-validate-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/liver121888/leetcode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/liver121888/leetcode/tree/master/0101-symmetric-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/liver121888/leetcode/tree/master/0102-binary-tree-level-order-traversal) |
@@ -678,6 +679,7 @@
 |  |
 | ------- |
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
+| [0098-validate-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/liver121888/leetcode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/liver121888/leetcode/tree/master/0101-symmetric-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/liver121888/leetcode/tree/master/0102-binary-tree-level-order-traversal) |
@@ -700,11 +702,13 @@
 |  |
 | ------- |
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
+| [0098-validate-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
+| [0098-validate-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/liver121888/leetcode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/liver121888/leetcode/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/liver121888/leetcode/tree/master/0104-maximum-depth-of-binary-tree) |
