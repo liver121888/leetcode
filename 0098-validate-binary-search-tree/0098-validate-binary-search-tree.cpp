@@ -23,28 +23,48 @@
 class Solution {
 public:
 
-    vector<int> result;
+    // vector<int> result;
 
-    void inorder(TreeNode* root) {
+    // void inorder(TreeNode* root) {
 
-        if (!root)
-            return;
+    //     if (!root)
+    //         return;
 
-        inorder(root->left);
-        result.push_back(root->val);
-        inorder(root->right);
-    }
+    //     inorder(root->left);
+    //     result.push_back(root->val);
+    //     inorder(root->right);
+    // }
 
-    bool isValidBST(TreeNode* root) {
+    // bool isValidBST(TreeNode* root) {
 
-        inorder(root);
-        for (int i = 1; i < result.size(); i++) {
+    //     inorder(root);
+    //     for (int i = 1; i < result.size(); i++) {
 
-            if (result[i] <= result[i-1])
-                return false;
-        }
+    //         if (result[i] <= result[i-1])
+    //             return false;
+    //     }
 
-        return true;
+    //     return true;
         
+    // }
+
+
+    TreeNode* prev = nullptr;
+
+    bool isValidBST(TreeNode* root) { return inorder(root); }
+
+    bool inorder(TreeNode* root) {
+        if (root == nullptr) {
+            return true;
+        }
+        if (!inorder(root->left)) {
+            return false;
+        }
+        if (prev != nullptr && root->val <= prev->val) {
+            return false;
+        }
+        prev = root;
+        return inorder(root->right);
     }
+
 };
