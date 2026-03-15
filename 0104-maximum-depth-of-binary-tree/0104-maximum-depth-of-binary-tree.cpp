@@ -12,23 +12,14 @@
 class Solution {
 public:
     int maxDepth(TreeNode* root) {
+
         if (!root)
             return 0;
-        int depth = 0;
-        queue<TreeNode*> bfs;
-        bfs.push(root);
-        while (!bfs.empty()) {
-            int curNodeN = bfs.size();
-            for (int i = 0; i < curNodeN; i++) {
-                TreeNode* node = bfs.front();
-                bfs.pop();
-                if (node->left)
-                    bfs.push(node->left);
-                if (node->right)
-                    bfs.push(node->right);
-            }
-            depth++;            
-        }
-        return depth;        
+
+        int leftDepth = maxDepth(root->left);
+        int rightDepth = maxDepth(root->right);
+
+        return 1 + max(leftDepth, rightDepth);
+        
     }
 };
