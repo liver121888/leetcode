@@ -33,27 +33,44 @@ public:
     }
 
 
+    // bool isSubtree(TreeNode* root, TreeNode* subRoot) {
+
+    //     queue<TreeNode*> bfs;
+
+    //     bfs.push(root);
+
+    //     while(!bfs.empty()) {
+    //         TreeNode* curr = bfs.front();
+    //         bfs.pop();
+
+    //         if (sameTree(curr, subRoot))
+    //             return true;
+
+    //         if (curr->left)
+    //             bfs.push(curr->left);
+
+    //         if (curr->right)
+    //             bfs.push(curr->right);
+    //     }
+
+    //     return false;        
+    // }
+
+
     bool isSubtree(TreeNode* root, TreeNode* subRoot) {
 
-        queue<TreeNode*> bfs;
+        // if subtree is a null, any tree can produce this
+        if (!subRoot)
+            return true;
+        // if not root, it's impossible to produce other subtree
+        // other than empty tree
+        if (!root)
+            return false;
 
-        bfs.push(root);
+        if (sameTree(root, subRoot))
+            return true;
 
-        while(!bfs.empty()) {
-            TreeNode* curr = bfs.front();
-            bfs.pop();
-
-            if (sameTree(curr, subRoot))
-                return true;
-
-            if (curr->left)
-                bfs.push(curr->left);
-
-            if (curr->right)
-                bfs.push(curr->right);
-        }
-
-        return false;        
+        return isSubtree(root->left, subRoot) || isSubtree(root->right, subRoot);
     }
 
 
