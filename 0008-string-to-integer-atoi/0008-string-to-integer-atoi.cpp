@@ -1,48 +1,58 @@
 class Solution {
 public:
-    int myAtoi(string s) {
-        int startReading = 0;
-        long long ans = 0;
-        bool isNegative = false;
-        for (auto c : s) {   
-            if ((c - '0' >= 0 && c - '0' <= 9) || c - '-' == 0 || c - '+' == 0  ) {
-                if (c - '0' >= 0 && c - '0' <= 9) {
-                    if (!isNegative) {
-                        ans = 10 * ans + (c - '0');
-                        if (ans > INT_MAX)
-                            ans = INT_MAX;  
-                    } else {
-                        ans = 10 * ans - (c - '0');
-                        if (ans < INT_MIN)
-                            ans = INT_MIN;                        
-                    }
 
+    // isDigit()
+    // not digit
+    // if not start reading
+    // is space -> continue;
+    // is sign -> get the sign
+    // if isReading
+    // break;
+
+    // if is Digit
+    // we start reading
+    // keep increasing
+
+    // "   +   " <- possible
+    // possible, return 0
+    int myAtoi(string s) {
+
+        long long result = 0;
+        int sign = 1;
+        bool isReading = false;
+        for (const auto& c : s) {
+
+            if (!isdigit(c)) {
+                if (isReading) {
+                    break;
                 } else {
-                    if (startReading == 0) {
-                        if (c - '-' == 0)
-                            isNegative = true;
-                    } 
+                    if (c == ' ')
+                        continue;
+                    else if (c == '+' || c == '-') {
+                        sign = c == '+' ? 1 : -1;
+                        isReading = true;
+                    }
                     else
-                        break;
+                        return 0;
                 }
-                if (startReading == 0)
-                    startReading = 1;
-                
-            } else if (startReading || c - ' ' != 0)
-                break;
-            // leading spaces
-            
+            } else {
+                if (!isReading)
+                    isReading = true;
+                // starts with 0 we need to skip
+                // this natrually skips first zeros
+                result = result * 10 + (c - '0') * sign;
+                // clamp
+                result = result > INT_MAX ? INT_MAX : result;
+                result = result < INT_MIN ? INT_MIN : result;
+
+            }
         }
 
-        //         if (isNegative)
-        //             ans = -ans;
+        return result;
 
-        //         if (ans > INT_MAX)
-        //             ans = INT_MAX;
-
-        //         if (ans = INT_MIN)
-        //             ans = INT_MIN;
-
-        return ans;        
     }
+
+
+
+
 };
