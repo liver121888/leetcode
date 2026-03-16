@@ -21,9 +21,6 @@
 class Solution {
 public:
 
-    TreeNode* ans;
-
-
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         
         int parentVal = root->val;
