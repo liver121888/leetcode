@@ -12,6 +12,8 @@
 
 class Solution {
 public:
+
+
     vector<int> findAnagrams(string s, string p) {
 
         int m = s.length();
@@ -49,4 +51,5 @@ public:
         return ans;
         
     }
+
 };
