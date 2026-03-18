@@ -32,7 +32,16 @@ public:
         int l = 0;
         for (int r = 0; r < m; r++) {
             currCnts[s[r] - 'a']++;
-            while (currCnts[s[r] - 'a'] > cnts[s[r] - 'a']) {
+
+            // don't need to remove by charater, just simply shrink to the same size
+            // while (currCnts[s[r] - 'a'] > cnts[s[r] - 'a']) {
+            //     currCnts[s[l] - 'a']--;
+            //     l++;
+            // }
+
+            // remove one letter 
+            // from the left side of the window
+            if (r - l + 1 > n) {
                 currCnts[s[l] - 'a']--;
                 l++;
             }
