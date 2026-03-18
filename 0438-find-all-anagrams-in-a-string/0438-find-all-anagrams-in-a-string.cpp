@@ -1,34 +1,52 @@
+// we can check every index on s to see if it includes p
+// O(m*n)
+// if s is of size m and if p is of size of n
+
+// if p.len > s.len, we know it's impossible
+
+// we can do a sliding window method
+// we count the freq in p
+// and traverse s using sliding window
+// O(max(m*O(1), n))
+
+
 class Solution {
 public:
     vector<int> findAnagrams(string s, string p) {
-        vector<int> pCnts(26, 0);
-        for (auto c : p) {
-            pCnts[c - 'a']++;
+
+        int m = s.length();
+        int n = p.length();
+
+        if (n > m)
+            return {};
+
+        // lowercase English letters.
+        vector<int> cnts(26);
+        for (const auto & c : p) 
+            cnts[c - 'a']++;
+
+        vector<int> ans;
+        vector<int> currCnts(26);
+        int l = 0;
+        for (int r = 0; r < m; r++) {
+            currCnts[s[r] - 'a']++;
+            while (currCnts[s[r] - 'a'] > cnts[s[r] - 'a']) {
+                currCnts[s[l] - 'a']--;
+                l++;
+            }
+
+            bool isAnagram = true;
+            for (int i = 0; i < 26; i++) {
+                if (currCnts[i] != cnts[i])
+                    isAnagram = false;
+            }
+            if (isAnagram)
+                ans.push_back(l);
+
         }
         
-        vector<int> sCnts(26, 0);
-        vector<int> ans;
-        int left  = 0;
-        bool valid = true;
-        for (int right = 0; right < s.length(); right++) {
-            
-            //contract
-            if (right - left + 1 > p.length()) {
-                sCnts[s[left] - 'a']--;
-                left++;
-            }
-            
-            sCnts[s[right] - 'a']++;
-            valid = true;
-            for (int i = 0; i < pCnts.size(); i ++)
-                if (sCnts[i] != pCnts[i]) {
-                    valid = false;
-                    break;
-                }
-            if (valid)
-                ans.push_back(left);            
-            
-        }
-        return ans;        
+
+        return ans;
+        
     }
 };
