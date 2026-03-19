@@ -30,7 +30,8 @@
 
 class Solution {
 public:
-
+    // 最重要公式
+    // windowSize−maxFrequency<=k
     int characterReplacement(string s, int k) {
         vector<int> freq(26, 0);
         int l = 0;
@@ -55,5 +56,17 @@ public:
         return ans;
     }
 
-    
+    // 進階冷知識：為什麼縮小 l 時不需要更新 maxFreq？
+    // 在上面的代碼中，當 l++ 時，freq[s[l]] 減少了，
+    // 理論上 maxFreq 可能會變小。但為什麼我們不重新掃描 freq 數組來找新的最大值呢？
+
+    // 因為：
+    // 我們的目標是找 「最大」 的視窗。
+    // 只有當 maxFreq 變得 「更大」 時，我們才有可能得到比目前 ans 更長的可行視窗。
+    // 如果當前的 maxFreq 減小了，視窗只會縮小或保持不變，不會產生新的紀錄。
+    // 所以，maxFreq 其實可以看作是 「歷史上曾出現過的最大頻率」。
+
+
+
+
 };
