@@ -235,6 +235,7 @@
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0189-rotate-array](https://github.com/liver121888/leetcode/tree/master/0189-rotate-array) |
 | [0223-rectangle-area](https://github.com/liver121888/leetcode/tree/master/0223-rectangle-area) |
+| [0224-basic-calculator](https://github.com/liver121888/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0268-missing-number](https://github.com/liver121888/leetcode/tree/master/0268-missing-number) |
 | [0360-sort-transformed-array](https://github.com/liver121888/leetcode/tree/master/0360-sort-transformed-array) |
@@ -538,6 +539,7 @@
 | [0165-compare-version-numbers](https://github.com/liver121888/leetcode/tree/master/0165-compare-version-numbers) |
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0208-implement-trie-prefix-tree](https://github.com/liver121888/leetcode/tree/master/0208-implement-trie-prefix-tree) |
+| [0224-basic-calculator](https://github.com/liver121888/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/liver121888/leetcode/tree/master/0242-valid-anagram) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
@@ -782,6 +784,7 @@
 | [0024-swap-nodes-in-pairs](https://github.com/liver121888/leetcode/tree/master/0024-swap-nodes-in-pairs) |
 | [0143-reorder-list](https://github.com/liver121888/leetcode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/liver121888/leetcode/tree/master/0206-reverse-linked-list) |
+| [0224-basic-calculator](https://github.com/liver121888/leetcode/tree/master/0224-basic-calculator) |
 | [0234-palindrome-linked-list](https://github.com/liver121888/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/liver121888/leetcode/tree/master/0394-decode-string) |
 ## Stack
@@ -793,6 +796,7 @@
 | [0143-reorder-list](https://github.com/liver121888/leetcode/tree/master/0143-reorder-list) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/liver121888/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/liver121888/leetcode/tree/master/0155-min-stack) |
+| [0224-basic-calculator](https://github.com/liver121888/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0232-implement-queue-using-stacks](https://github.com/liver121888/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/liver121888/leetcode/tree/master/0234-palindrome-linked-list) |
