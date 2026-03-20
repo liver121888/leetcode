@@ -23,6 +23,7 @@ public:
                 currentNumber = helper(s, i);
             }
 
+            // cout << c << endl;
             // 當前字元是運算子、右括號、或已到字串結尾 -> 該把前一個數字結算進 stack
             if ((!isdigit(c) && c != ' ' && c != '(') || i == s.length() - 1) {
                 if (operation == '+') {
