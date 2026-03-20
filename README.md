@@ -242,6 +242,7 @@
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0380-insert-delete-getrandom-o1](https://github.com/liver121888/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
+| [0772-basic-calculator-iii](https://github.com/liver121888/leetcode/tree/master/0772-basic-calculator-iii) |
 | [0830-largest-triangle-area](https://github.com/liver121888/leetcode/tree/master/0830-largest-triangle-area) |
 | [0939-minimum-area-rectangle](https://github.com/liver121888/leetcode/tree/master/0939-minimum-area-rectangle) |
 | [0973-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/0973-k-closest-points-to-origin) |
@@ -554,6 +555,7 @@
 | [0696-count-binary-substrings](https://github.com/liver121888/leetcode/tree/master/0696-count-binary-substrings) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0752-open-the-lock](https://github.com/liver121888/leetcode/tree/master/0752-open-the-lock) |
+| [0772-basic-calculator-iii](https://github.com/liver121888/leetcode/tree/master/0772-basic-calculator-iii) |
 | [0844-backspace-string-compare](https://github.com/liver121888/leetcode/tree/master/0844-backspace-string-compare) |
 | [0981-time-based-key-value-store](https://github.com/liver121888/leetcode/tree/master/0981-time-based-key-value-store) |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
@@ -787,6 +789,7 @@
 | [0224-basic-calculator](https://github.com/liver121888/leetcode/tree/master/0224-basic-calculator) |
 | [0234-palindrome-linked-list](https://github.com/liver121888/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/liver121888/leetcode/tree/master/0394-decode-string) |
+| [0772-basic-calculator-iii](https://github.com/liver121888/leetcode/tree/master/0772-basic-calculator-iii) |
 ## Stack
 |  |
 | ------- |
@@ -803,6 +806,7 @@
 | [0394-decode-string](https://github.com/liver121888/leetcode/tree/master/0394-decode-string) |
 | [0735-asteroid-collision](https://github.com/liver121888/leetcode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/liver121888/leetcode/tree/master/0739-daily-temperatures) |
+| [0772-basic-calculator-iii](https://github.com/liver121888/leetcode/tree/master/0772-basic-calculator-iii) |
 | [0844-backspace-string-compare](https://github.com/liver121888/leetcode/tree/master/0844-backspace-string-compare) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/liver121888/leetcode/tree/master/1944-number-of-visible-people-in-a-queue) |
 ## Brainteaser
