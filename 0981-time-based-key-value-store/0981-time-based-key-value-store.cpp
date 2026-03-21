@@ -1,74 +1,61 @@
 
-// for a single key, we might have multiple values
-// we return the value that has a timestamp <= query_timestamp
-
-// we can use an unordered_map
-// {string, vector{string}}
-// we also need a string -> time data structure
-// strictly increasing -> unique value
-// so we can use time value to link to string
-
-
-// unordered_map<string, vector<pair<int,int>> {timestamp, value}>
-
-// n query
-// time:
-// construct: O(1)
-// set: we can do find then insert (n*log(n)) or simply sort, it's the same
-// get: O(log(n)), we simply search
-// space: O(n)
+// All the timestamps timestamp of set are strictly increasing.
+// unordered_map<key, vector<pair<int, value>>> 
+// because the call is strictly increasing
+// but we might also want to find a value that is <=
+// we can have a vector and we binary search
+// time for set: O(1)
+// time for get: O(log(n))
 
 class TimeMap {
 public:
 
-    unordered_map<string, vector<pair<int,string>>> timeMap;
+    unordered_map<string, vector<pair<int, string>>> timeMap;
 
     TimeMap() {
-
         
     }
     
     void set(string key, string value, int timestamp) {
-        timeMap[key].push_back({timestamp, value});
-        // we don't need sorting because it's strictly increasing
+
+        timeMap[key].emplace_back(timestamp, value);
         
     }
-    
-    string get(string key, int timestamp) {
-        // 1. 檢查 Key 是否存在
-        if (timeMap.find(key) == timeMap.end()) {
-            return "";
-        }
 
-        // 加上引用 &，避免複製 vector (非常重要！)
-        const vector<pair<int,string>>& values = timeMap[key];
+    // timestamp_prev <= timestamp not larger than the target
+    // 3 4 5 6 7 10
+    // l = 3, r = 10
+    // 5 < 7
+    // l = 5
+    // 6
+    // 6 < 7
+    // l = 6
+    // l = 10, r = 10
+    // r 6
+    // return r
+    int findLastLE(const vector<pair<int, string>>& v, int target) {
 
-        // 2. 如果所有的 timestamp 都比 target 大，直接回傳空
-        if (values[0].first > timestamp) {
-            return "";
-        }
-
-        // 萬用模板開始
-        // find uppper bound, right boundary
-        int l = 0;
-        int r = values.size() - 1;
+        int l = 0, r = v.size() - 1;
 
         while (l <= r) {
             int mid = l + (r - l) / 2;
-            
-            if (values[mid].first <= timestamp) {
-                l = mid + 1; // 我們要找更大的，往右邊縮
-            } 
-            else {
-                r = mid - 1; // 目前的太大了，往左邊縮
+            if (v[mid].first <= target) {
+                l = mid + 1;
+            } else {
+                r = mid - 1;
             }
         }
+        return r;
+    }
+    
+    string get(string key, int timestamp) {
 
-        // 迴圈結束後：
-        // l 會在「第一個大於 target」的位置
-        // r 會在「最後一個小於 target」的位置 (這就是我們要的 <= 條件)
+        if (timeMap.find(key) == timeMap.end())
+            return "";
         
-        return values[r].second; 
+        const vector<pair<int, string>>& timeValues = timeMap[key];
+        int idx = findLastLE(timeValues, timestamp);
+        return idx == -1 ? "" : timeValues[idx].second;
     }
 };
 
