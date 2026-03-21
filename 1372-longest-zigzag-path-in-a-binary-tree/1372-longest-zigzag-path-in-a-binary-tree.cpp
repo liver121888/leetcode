@@ -30,30 +30,58 @@
 // we can dfs and keep a ans
 // always max the ans
 
+// class Solution {
+// public:
+//     int ans = 0;
+
+//     // return {leftLen, rightLen}
+//     // leftLen:  from this node, first go left
+//     // rightLen: from this node, first go right
+//     pair<int, int> dfs(TreeNode* node) {
+//         if (!node)
+//             return {-1, -1};
+
+//         auto [leftLeft, leftRight] = dfs(node->left);
+//         auto [rightLeft, rightRight] = dfs(node->right);
+
+//         int goLeft = leftRight + 1;   // node -> left -> right -> ...
+//         int goRight = rightLeft + 1;  // node -> right -> left -> ...
+
+//         ans = max(ans, max(goLeft, goRight));
+
+//         return {goLeft, goRight};
+//     }
+
+//     int longestZigZag(TreeNode* root) {
+//         dfs(root);
+//         return ans;
+//     }
+// };
+
+
+
+// from the top to the leaves
 class Solution {
 public:
-    int ans = 0;
-
-    // return {leftLen, rightLen}
-    // leftLen:  from this node, first go left
-    // rightLen: from this node, first go right
-    pair<int, int> dfs(TreeNode* node) {
-        if (!node)
-            return {-1, -1};
-
-        auto [leftLeft, leftRight] = dfs(node->left);
-        auto [rightLeft, rightRight] = dfs(node->right);
-
-        int goLeft = leftRight + 1;   // node -> left -> right -> ...
-        int goRight = rightLeft + 1;  // node -> right -> left -> ...
-
-        ans = max(ans, max(goLeft, goRight));
-
-        return {goLeft, goRight};
+    int pathLength = 0;
+    void dfs(TreeNode* node, bool goLeft, int steps) {
+        if (node == nullptr) {
+            return;
+        }
+        pathLength = max(pathLength, steps);
+        if (goLeft) {
+            dfs(node->left, false, steps + 1);
+            // restart
+            dfs(node->right, true, 1);
+        } else {
+            // restart
+            dfs(node->left, false, 1);
+            dfs(node->right, true, steps + 1);
+        }
     }
 
     int longestZigZag(TreeNode* root) {
-        dfs(root);
-        return ans;
+        dfs(root, true, 0);
+        return pathLength;
     }
 };
