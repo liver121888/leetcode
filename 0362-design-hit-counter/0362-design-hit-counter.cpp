@@ -26,7 +26,20 @@
 
 // n calls
 // space: O(1), always 300
-// time: O(1), we might need to envict 300
+// time: O(1), by amortization
+// Hence in the worst case, a "single" call to the getHits 
+// method can take O(n) time. However, we must notice 
+// that each timestamp is processed only twice (first 
+// while adding the timestamp in the queue in hit method 
+// and second while removing the timestamp from the queue 
+// in the getHits method). Hence if the total number of 
+// timestamps encountered throughout is N, the overall time 
+// taken by getHits method is O(N). This results in an amortized 
+// time complexity of O(1) for a single call to getHits method.
+
+
+
+// can use a deque to larger scale
 
 class HitCounter {
 public:
