@@ -62,6 +62,7 @@
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [0360-sort-transformed-array](https://github.com/liver121888/leetcode/tree/master/0360-sort-transformed-array) |
+| [0362-design-hit-counter](https://github.com/liver121888/leetcode/tree/master/0362-design-hit-counter) |
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0380-insert-delete-getrandom-o1](https://github.com/liver121888/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -354,6 +355,7 @@
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [0359-logger-rate-limiter](https://github.com/liver121888/leetcode/tree/master/0359-logger-rate-limiter) |
+| [0362-design-hit-counter](https://github.com/liver121888/leetcode/tree/master/0362-design-hit-counter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/liver121888/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
 | [0981-time-based-key-value-store](https://github.com/liver121888/leetcode/tree/master/0981-time-based-key-value-store) |
@@ -372,6 +374,7 @@
 | [0268-missing-number](https://github.com/liver121888/leetcode/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/liver121888/leetcode/tree/master/0278-first-bad-version) |
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
+| [0362-design-hit-counter](https://github.com/liver121888/leetcode/tree/master/0362-design-hit-counter) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
 | [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
@@ -852,6 +855,7 @@
 | [0232-implement-queue-using-stacks](https://github.com/liver121888/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0239-sliding-window-maximum](https://github.com/liver121888/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
+| [0362-design-hit-counter](https://github.com/liver121888/leetcode/tree/master/0362-design-hit-counter) |
 | [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Combinatorics
 |  |
@@ -916,6 +920,7 @@
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/liver121888/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0359-logger-rate-limiter](https://github.com/liver121888/leetcode/tree/master/0359-logger-rate-limiter) |
+| [0362-design-hit-counter](https://github.com/liver121888/leetcode/tree/master/0362-design-hit-counter) |
 ## Trie
 |  |
 | ------- |
