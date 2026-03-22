@@ -60,8 +60,8 @@ public:
 
     void solveSudoku(vector<vector<char>>& board) {
 
-        for (int i = 0; i < 9; i++) {
-            for (int j = 0; j < 9; j++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
                 if (board[i][j] != '.') {
                     int num = board[i][j] - '0';
                     rows[i].insert(num);
