@@ -51,6 +51,7 @@
 | [0239-sliding-window-maximum](https://github.com/liver121888/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0252-meeting-rooms](https://github.com/liver121888/leetcode/tree/master/0252-meeting-rooms) |
 | [0268-missing-number](https://github.com/liver121888/leetcode/tree/master/0268-missing-number) |
+| [0269-alien-dictionary](https://github.com/liver121888/leetcode/tree/master/0269-alien-dictionary) |
 | [0283-move-zeroes](https://github.com/liver121888/leetcode/tree/master/0283-move-zeroes) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
@@ -554,6 +555,7 @@
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/liver121888/leetcode/tree/master/0242-valid-anagram) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
+| [0269-alien-dictionary](https://github.com/liver121888/leetcode/tree/master/0269-alien-dictionary) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/liver121888/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0383-ransom-note](https://github.com/liver121888/leetcode/tree/master/0383-ransom-note) |
 | [0394-decode-string](https://github.com/liver121888/leetcode/tree/master/0394-decode-string) |
@@ -605,6 +607,7 @@
 | [0207-course-schedule](https://github.com/liver121888/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/liver121888/leetcode/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/liver121888/leetcode/tree/master/0226-invert-binary-tree) |
+| [0269-alien-dictionary](https://github.com/liver121888/leetcode/tree/master/0269-alien-dictionary) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/liver121888/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
@@ -647,6 +650,7 @@
 | ------- |
 | [0207-course-schedule](https://github.com/liver121888/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/liver121888/leetcode/tree/master/0210-course-schedule-ii) |
+| [0269-alien-dictionary](https://github.com/liver121888/leetcode/tree/master/0269-alien-dictionary) |
 | [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
@@ -763,6 +767,7 @@
 | [0226-invert-binary-tree](https://github.com/liver121888/leetcode/tree/master/0226-invert-binary-tree) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0269-alien-dictionary](https://github.com/liver121888/leetcode/tree/master/0269-alien-dictionary) |
 | [0285-inorder-successor-in-bst](https://github.com/liver121888/leetcode/tree/master/0285-inorder-successor-in-bst) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/liver121888/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
@@ -880,6 +885,7 @@
 ## Graph Theory
 |  |
 | ------- |
+| [0269-alien-dictionary](https://github.com/liver121888/leetcode/tree/master/0269-alien-dictionary) |
 | [0310-minimum-height-trees](https://github.com/liver121888/leetcode/tree/master/0310-minimum-height-trees) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
