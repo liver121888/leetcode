@@ -120,7 +120,7 @@ public:
             if (deg != 0)
                 return "";
         }
-
+        // both check works
         // if (ans.size() < indegree.size()) {
         //     return "";
         // }
