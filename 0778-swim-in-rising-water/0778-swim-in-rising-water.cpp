@@ -123,7 +123,8 @@ public:
                 int ny = y + dir[0];
                 int nx = x + dir[1];
 
-                if (ny >= 0 && ny < n && nx >= 0 && nx < n && !visited[ny][nx] && grid[ny][nx] <= t) {
+                if (ny >= 0 && ny < n && nx >= 0 && nx < n 
+                    && !visited[ny][nx] && grid[ny][nx] <= t) {
                     q.push({ny, nx});
                     visited[ny][nx] = true;
                 }
