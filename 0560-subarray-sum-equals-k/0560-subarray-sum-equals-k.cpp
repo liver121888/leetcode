@@ -12,6 +12,8 @@ class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
 
+        // time: O(n^2);
+        // space: O(n);
         // vector<int> prefixSum;
         // prefixSum.push_back(0);
         // int currSum = 0;
@@ -29,10 +31,9 @@ public:
 
         // return count;
 
-        // time: O(n^2);
+
+        // time: O(n);
         // space: O(n);
-
-
         int count = 0, sum = 0;
         // how many times a sum has appeared
         unordered_map<int, int> lookUp;
@@ -49,10 +50,8 @@ public:
         return count;
 
 
-
-
         // -1000 <= nums[i] <= 1000
-        // then we cannot use two pointers cuz shrink not necessnary decrease
+        // then we cannot use sliding window cuz shrink not necessnary decrease
 
         // int l = 0, curr = 0, cnt = 0;
         // for (int r = 0; r < nums.size(); r++) {
