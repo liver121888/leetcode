@@ -702,6 +702,7 @@
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/liver121888/leetcode/tree/master/0110-balanced-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/liver121888/leetcode/tree/master/0226-invert-binary-tree) |
+| [0230-kth-smallest-element-in-a-bst](https://github.com/liver121888/leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0285-inorder-successor-in-bst](https://github.com/liver121888/leetcode/tree/master/0285-inorder-successor-in-bst) |
@@ -732,6 +733,7 @@
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/liver121888/leetcode/tree/master/0110-balanced-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/liver121888/leetcode/tree/master/0226-invert-binary-tree) |
+| [0230-kth-smallest-element-in-a-bst](https://github.com/liver121888/leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0285-inorder-successor-in-bst](https://github.com/liver121888/leetcode/tree/master/0285-inorder-successor-in-bst) |
@@ -753,6 +755,7 @@
 | [0096-unique-binary-search-trees](https://github.com/liver121888/leetcode/tree/master/0096-unique-binary-search-trees) |
 | [0098-validate-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
+| [0230-kth-smallest-element-in-a-bst](https://github.com/liver121888/leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0285-inorder-successor-in-bst](https://github.com/liver121888/leetcode/tree/master/0285-inorder-successor-in-bst) |
 ## Depth-First Search
@@ -769,6 +772,7 @@
 | [0207-course-schedule](https://github.com/liver121888/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/liver121888/leetcode/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/liver121888/leetcode/tree/master/0226-invert-binary-tree) |
+| [0230-kth-smallest-element-in-a-bst](https://github.com/liver121888/leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/liver121888/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0269-alien-dictionary](https://github.com/liver121888/leetcode/tree/master/0269-alien-dictionary) |
