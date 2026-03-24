@@ -27,15 +27,18 @@ public:
     int ans = 0;
     int k_;
     int cnt = 0;
+    bool stopRecursion = false;
 
     void inorder(TreeNode* root) {
 
-        if (!root)
+        if (!root || stopRecursion)
             return;
 
         inorder(root->left);
-        if (cnt == k_ - 1)
+        if (cnt == k_ - 1) {
             ans = root->val;
+            stopRecursion = true;
+        }
         cnt++;
         inorder(root->right);
     }
