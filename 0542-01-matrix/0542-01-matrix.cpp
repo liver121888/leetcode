@@ -1,64 +1,68 @@
 class Solution {
 public:
-    int n;
-    int m;
-    bool valid(int row, int col) {
-        return 0 <= row && row < m && 0 <= col && col < n;
-    }
+
+    // bfs from each cell
+    // if it's zero then we keep it
+    // if it's one we bfs find the nearest zero
+    // bfs cost O(mn) and we called it O(mn) times
+    // how to optimize
+    
+    // we need to find the nearest zero
+    // we can multi-source bfs from every zero all together
+    // if we find a cell that is 1 -> set it to the current layer
+    // time: O(mn) space: O(mn) for bfs
+
     vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
 
-        // bfs from current cell and see the nearest cell
-        // we can called this funciton by m*n times
+        int m = mat.size();
+        int n = mat[0].size();
 
-        // time complexity: m*n*m*n = O(m*n)^2 in worst case
-        // space complexity: O(1)
-
-        // some edges cases
-        // [1, 1, 0]
-        // [0, 1, 1]
-        // [1, 1, 1]
-        // bfs 0, 0
-        // [1, 1, 0]
-        // [0, 1, 1]
-        // [1, 2, 2]
-
-        // is there a way we do this space O(1) but O(mn)?
-
-        m = mat.size();
-        n = mat[0].size();
-        vector<vector<int>> directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-
-        vector<vector<int>> matrix(m, vector<int>(n, 0));
-        vector<vector<bool>> seen(m, vector<bool>(n, false));
-
-        queue<vector<int>> q;
-
-        for (int row = 0; row < m; row++) {
-            for (int col = 0; col < n; col++) {
-                matrix[row][col] = mat[row][col];
-                if (matrix[row][col] == 0) {
-                    q.push({row, col, 0});
-                    seen[row][col] = true;
-                }
+        const int dirs[4][2] = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
+        queue<pair<int,int>> bfs;
+        
+        // 用 -1 當未訪問標記, 因為我們要寫1，可能會搞混
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (mat[i][j] == 0)
+                    bfs.push({i, j});
+                else
+                    mat[i][j] = -1;
             }
         }
 
-        while (!q.empty()) {
-            vector<int> curr = q.front();
-            q.pop();
-            int row = curr[0], col = curr[1], steps = curr[2];
-            
-            for (vector<int>& direction: directions) {
-                int nextRow = row + direction[0], nextCol = col + direction[1];
-                if (valid(nextRow, nextCol) && !seen[nextRow][nextCol]) {
-                    seen[nextRow][nextCol] = true;
-                    q.push({nextRow, nextCol, steps + 1});
-                    matrix[nextRow][nextCol] = steps + 1;
+        // 0 -> visited
+        // number changed -> visited
+        // push non-visited
+
+        int layer = 0;
+        while (!bfs.empty()) {
+            int currLayerSize = bfs.size();
+            while (currLayerSize) {
+
+                const auto [r, c] = bfs.front();
+                bfs.pop();
+
+                for (const auto dir : dirs) {
+                    int nr = r + dir[0];
+                    int nc = c + dir[1];
+
+                    if (nr < 0 || nr >= m || nc < 0 || nc >= n)
+                        continue;
+                    // if not visited
+                    if (mat[nr][nc] == -1) {
+                        bfs.push({nr, nc});
+                        // visit and change value
+                        mat[nr][nc] = layer + 1;
+                    }
+
                 }
+                currLayerSize--;
             }
+            layer++;
         }
 
-        return matrix;
-
+        return mat;
+        
     }
 };
+
