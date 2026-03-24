@@ -21,51 +21,58 @@
 // k-1 index on the tree
 // inorder and return the value on the kth nodes
 
-// class Solution {
-// public:
-
-//     int ans = 0;
-//     int k_;
-//     int cnt = 0;
-//     bool stopRecursion = false;
-
-//     void inorder(TreeNode* root) {
-
-//         if (!root || stopRecursion)
-//             return;
-
-//         inorder(root->left);
-//         if (cnt == k_ - 1) {
-//             ans = root->val;
-//             stopRecursion = true;
-//         }
-//         cnt++;
-//         inorder(root->right);
-//     }
-
-//     int kthSmallest(TreeNode* root, int k) {
-//         k_ = k;
-//         inorder(root);
-//         return ans;
-//     }
-// };
-
-// Iterative Inorder Traversal
 class Solution {
 public:
-    int kthSmallest(TreeNode* root, int k) {
-    stack<TreeNode*> st;
+    int ans = 0;
+    int k_ = 0;
+    int cnt = 0;
+    bool stopRecursion = false;
 
-        while (true) {
-            while (root) {
-            st.push(root);
-            root = root->left;
-            }
-            root = st.top();
-            st.pop();
-            if (--k == 0)
-            return root->val;
-            root = root->right;
+    void inorder(TreeNode* root) {
+        if (!root || stopRecursion) return;
+
+        inorder(root->left);
+        if (stopRecursion) return;
+
+        if (cnt == k_ - 1) {
+            ans = root->val;
+            stopRecursion = true;
+            return;
         }
+
+        cnt++;
+        inorder(root->right);
+    }
+
+    int kthSmallest(TreeNode* root, int k) {
+        // reset values here at the start of the funcitons
+        // so multiple calls can start fresh
+        ans = 0;
+        cnt = 0;
+        stopRecursion = false;
+        k_ = k;
+
+        inorder(root);
+        return ans;
     }
 };
+
+// Iterative Inorder Traversal
+// class Solution {
+// public:
+//     int kthSmallest(TreeNode* root, int k) {
+//     stack<TreeNode*> st;
+
+//         while (true) {
+//             while (root) {
+//             st.push(root);
+//             root = root->left;
+//             }
+//             root = st.top();
+//             st.pop();
+//             if (--k == 0)
+//             return root->val;
+//             root = root->right;
+//         }
+//     }
+// };
