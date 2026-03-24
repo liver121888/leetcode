@@ -1,43 +1,50 @@
 class Solution {
 public:
+    // bfs
+    // time: O(mn) -> we traverse at most whole image
+    // space: O(mn) -> we have a queue
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
-
-        // this is a grap problem and we can solve it with bfs
 
         int m = image.size();
         int n = image[0].size();
 
-        int oc = image[sr][sc];
-        if (oc == color)
+        if (sr >= m || sr < 0 || sc >= n || sc < 0)
+            return {{}};
+
+        int originalColor = image[sr][sc];
+        // one edge case is that if the color already the same
+        // then we don't even start the bfs
+        if (originalColor == color)
             return image;
 
-        vector<pair<int, int>> directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-        queue<pair<int, int>> bfs;
+        const vector<vector<int>> dirs = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
+        queue<pair<int,int>> bfs;
+        bfs.push({sr, sc});
         image[sr][sc] = color;
-        bfs.push(make_pair(sr, sc));
-        // r, c
-        while(!bfs.empty()){
-            pair<int, int> aPair = bfs.front();
-            cout << aPair.first << " " << aPair.second << endl;
+
+        // we don't need to mark visit
+        // because we are finding the originalColor
+        // we will color it to a new color, it marks visit naturally
+        while (!bfs.empty()) {
+            const auto [r, c] = bfs.front();
             bfs.pop();
-            for (auto dir : directions) {
-                int nr = aPair.first + dir.first;
-                int nc = aPair.second + dir.second;
-                // boundary check
-                if (nr < 0 || nc < 0 || nr >= m || nc >= n)
-                    continue;
-                if (image[nr][nc] == oc) {
-                    image[nr][nc] = color;
-                    bfs.push(make_pair(nr, nc));
+
+            for (const auto& dir : dirs) {
+                int nr = r + dir[0];
+                int nc = c + dir[1];
+                // check in-bound
+                if (nr >= 0 && nr < m && nc >= 0 && nc < n) {
+                    // check same color
+                    if (image[nr][nc] == originalColor) {
+                        bfs.push({nr, nc});
+                        image[nr][nc] = color;
+                    }
                 }
             }
+
         }
+
         return image;
+        
     }
 };
-
-// int main(vector<vector<int>>& map, int sr, int sc, int color) {
-
-
-//     return ans;
-// }
