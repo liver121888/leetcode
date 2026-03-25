@@ -233,6 +233,7 @@
 | [0002-add-two-numbers](https://github.com/liver121888/leetcode/tree/master/0002-add-two-numbers) |
 | [0013-roman-to-integer](https://github.com/liver121888/leetcode/tree/master/0013-roman-to-integer) |
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
+| [0050-powx-n](https://github.com/liver121888/leetcode/tree/master/0050-powx-n) |
 | [0062-unique-paths](https://github.com/liver121888/leetcode/tree/master/0062-unique-paths) |
 | [0067-add-binary](https://github.com/liver121888/leetcode/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/liver121888/leetcode/tree/master/0070-climbing-stairs) |
@@ -826,6 +827,7 @@
 | [0010-regular-expression-matching](https://github.com/liver121888/leetcode/tree/master/0010-regular-expression-matching) |
 | [0021-merge-two-sorted-lists](https://github.com/liver121888/leetcode/tree/master/0021-merge-two-sorted-lists) |
 | [0024-swap-nodes-in-pairs](https://github.com/liver121888/leetcode/tree/master/0024-swap-nodes-in-pairs) |
+| [0050-powx-n](https://github.com/liver121888/leetcode/tree/master/0050-powx-n) |
 | [0143-reorder-list](https://github.com/liver121888/leetcode/tree/master/0143-reorder-list) |
 | [0206-reverse-linked-list](https://github.com/liver121888/leetcode/tree/master/0206-reverse-linked-list) |
 | [0224-basic-calculator](https://github.com/liver121888/leetcode/tree/master/0224-basic-calculator) |
