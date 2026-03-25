@@ -38,29 +38,62 @@
 // we know we cannot simply write the current value
 // and should apply the subtraction
 
+// class Solution {
+// public:
+
+//     const unordered_map<char, int> lookUp = {{'I', 1}, {'V', 5}, {'X', 10}, {'L', 50},
+//                                              {'C', 100}, {'D', 500}, {'M', 1000}};
+
+//     int romanToInt(string s) {
+
+//         int ans = 0;
+//         int idx = 0;
+//         while (idx < s.size()) {
+//             int currVal = lookUp.at(s[idx]);
+//             int nextVal = 0;
+//             if (idx + 1 < s.size())
+//                 nextVal = lookUp.at(s[idx + 1]);
+            
+//             if (nextVal > currVal) {
+//                 ans += nextVal - currVal;
+//                 idx++;
+//             } else {
+//                 ans += currVal;
+//             }
+//             idx++;
+//         }
+
+//         return ans;
+//     }
+// };
+
+// 簡潔作法
+// 不用特判看兩個
+// 就是一個一個看如果下一個比現在的大
+// 把現在的變成負數
 class Solution {
 public:
-
-    const unordered_map<char, int> lookUp = {{'I', 1}, {'V', 5}, {'X', 10}, {'L', 50},
-                                             {'C', 100}, {'D', 500}, {'M', 1000}};
+    int value(char c) {
+        if (c == 'I') return 1;
+        if (c == 'V') return 5;
+        if (c == 'X') return 10;
+        if (c == 'L') return 50;
+        if (c == 'C') return 100;
+        if (c == 'D') return 500;
+        return 1000;
+    }
 
     int romanToInt(string s) {
-
         int ans = 0;
-        int idx = 0;
-        while (idx < s.size()) {
-            int currVal = lookUp.at(s[idx]);
-            int nextVal = 0;
-            if (idx + 1 < s.size())
-                nextVal = lookUp.at(s[idx + 1]);
-            
-            if (nextVal > currVal) {
-                ans += nextVal - currVal;
-                idx++;
+
+        for (int i = 0; i < s.size(); i++) {
+            int curr = value(s[i]);
+
+            if (i + 1 < s.size() && curr < value(s[i + 1])) {
+                ans -= curr;
             } else {
-                ans += currVal;
+                ans += curr;
             }
-            idx++;
         }
 
         return ans;
