@@ -1,36 +1,48 @@
 class Solution {
 public:
-    int dir[5] = {-1, 0, 1, 0, -1};
+    int dirs[5] = {-1, 0, 1, 0, -1};
 
-    bool dfs(vector<vector<char>> &grid, const string &word, int idx, int x, int y){
-        if(idx >= word.size()) 
-            return true;
+    bool dfs(vector<vector<char>>& board, string& word, int i, int j, int k) {
+        // 先檢查目前格子是否符合 word[k]
+        if (board[i][j] != word[k]) return false;
 
-        for(int i=0; i<4; i++){
-            int nx = x + dir[i], ny = y + dir[i+1];
-            if(nx < 0 || nx >= grid.size() || ny < 0 || ny >= grid[0].size() || grid[nx][ny] == ' ' || grid[nx][ny] != word[idx]) continue;
-            char tmp = grid[nx][ny];
-            grid[nx][ny] = ' ';
-            if(dfs(grid, word, idx+1, nx, ny))
+        // 如果已經匹配到最後一個字元，成功
+        if (k == word.size() - 1) return true;
+
+        char temp = board[i][j];
+        board[i][j] = '#';  // 標記已訪問
+
+        for (int d = 0; d < 4; d++) {
+            int ni = i + dirs[d];
+            int nj = j + dirs[d + 1];
+
+            if (ni < 0 || ni >= board.size() || nj < 0 || nj >= board[0].size())
+                continue;
+
+            if (board[ni][nj] == '#')
+                continue;
+
+            if (dfs(board, word, ni, nj, k + 1))
                 return true;
-            grid[nx][ny] = tmp;
         }
+
+        board[i][j] = temp;  // 回溯
         return false;
     }
 
-    bool exist(vector<vector<char>>& board, string word){
-        int m = board.size(), n = board[0].size();
-        for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){
-                if(board[i][j] == word[0]){
-                    char tmp = board[i][j];
-                    board[i][j] = ' ';
-                    if(dfs(board, word, 1, i, j)) return true;
-                    board[i][j] = tmp;
-                }
+    bool exist(vector<vector<char>>& board, string word) {
+        if (board.empty() || board[0].empty()) return false;
+
+        int m = board.size();
+        int n = board[0].size();
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (dfs(board, word, i, j, 0))
+                    return true;
             }
         }
+
         return false;
     }
-
 };
