@@ -924,6 +924,7 @@
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/liver121888/leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0778-swim-in-rising-water](https://github.com/liver121888/leetcode/tree/master/0778-swim-in-rising-water) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
