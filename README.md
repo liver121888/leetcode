@@ -26,6 +26,7 @@
 | [0056-merge-intervals](https://github.com/liver121888/leetcode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/liver121888/leetcode/tree/master/0057-insert-interval) |
 | [0068-text-justification](https://github.com/liver121888/leetcode/tree/master/0068-text-justification) |
+| [0073-set-matrix-zeroes](https://github.com/liver121888/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/liver121888/leetcode/tree/master/0075-sort-colors) |
 | [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 | [0084-largest-rectangle-in-histogram](https://github.com/liver121888/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
@@ -285,6 +286,7 @@
 | [0036-valid-sudoku](https://github.com/liver121888/leetcode/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/liver121888/leetcode/tree/master/0037-sudoku-solver) |
 | [0041-first-missing-positive](https://github.com/liver121888/leetcode/tree/master/0041-first-missing-positive) |
+| [0073-set-matrix-zeroes](https://github.com/liver121888/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/liver121888/leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0127-word-ladder](https://github.com/liver121888/leetcode/tree/master/0127-word-ladder) |
 | [0128-longest-consecutive-sequence](https://github.com/liver121888/leetcode/tree/master/0128-longest-consecutive-sequence) |
@@ -413,6 +415,7 @@
 | [0037-sudoku-solver](https://github.com/liver121888/leetcode/tree/master/0037-sudoku-solver) |
 | [0048-rotate-image](https://github.com/liver121888/leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/liver121888/leetcode/tree/master/0054-spiral-matrix) |
+| [0073-set-matrix-zeroes](https://github.com/liver121888/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0079-word-search](https://github.com/liver121888/leetcode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/liver121888/leetcode/tree/master/0200-number-of-islands) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
