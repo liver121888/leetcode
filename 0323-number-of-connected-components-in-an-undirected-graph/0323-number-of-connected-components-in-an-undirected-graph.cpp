@@ -43,4 +43,12 @@ public:
     // i = 3
     // i = 4
 
+    // O(V + E)
+    // space O
+
+    // Disjoint Set Union (DSU)
+    // Time complexity: O(V+E⋅α(n)).
+    // Space complexity: O(V).
+
+
 };
