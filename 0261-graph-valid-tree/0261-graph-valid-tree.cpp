@@ -22,9 +22,8 @@ class DSU {
 public:
     vector<int> parents;
     vector<int> ranks;
-    int numComponents;
 
-    DSU(int n): numComponents(n) {
+    DSU(int n) {
         parents.resize(n);
         ranks.resize(n);
         for (int i = 0; i < n; i++) {
@@ -40,12 +39,12 @@ public:
         return parents[i];
     }
 
-    void unionByRank(int a, int b) {
+    bool unionByRank(int a, int b) {
         int pa = findParent(a);
         int pb = findParent(b);
 
         if (pa == pb)
-            return;
+            return false;
         
         if (ranks[pa] >= pb) {
             parents[pb] = pa;
@@ -54,7 +53,7 @@ public:
             parents[pa] = pb;
             ranks[pb] += ranks[pa];
         }
-        numComponents--;
+        return true;
     }
 };
 
@@ -62,16 +61,23 @@ class Solution {
 public:
     bool validTree(int n, vector<vector<int>>& edges) {
 
-        if (edges.size() >= n || edges.size() < n - 1)
+        // if (edges.size() >= n || edges.size() < n - 1)
+        //     return false;
+
+        if (edges.size() != n - 1)
             return false;
 
 
         DSU dsu(n);
 
         for (const auto edge : edges) {
-            dsu.unionByRank(edge[0], edge[1]);
+            // 如果遭遇任何一個不能union by rank的話
+            // 代表最後一定沒辦法全部連起來
+            // 所以false
+            if (!dsu.unionByRank(edge[0], edge[1]))
+                return false;
         }
 
-        return dsu.numComponents == 1;
+        return true;
     }
 };
