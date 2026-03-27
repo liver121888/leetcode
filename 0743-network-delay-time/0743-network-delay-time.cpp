@@ -13,6 +13,12 @@
 // return -1
 // k > n k < 0 not in the graph
 
+// time complexity
+// V = n
+// E = times.size()
+// O(V + E), E on building the list, and V on the dijkstra
+// space: O(V + E), adjLis O(E) + delayTime O(V)
+
 class Solution {
 public:
     int networkDelayTime(vector<vector<int>>& times, int n, int k) {
