@@ -25,14 +25,16 @@ public:
 
         if (n == 0)
             return -1;
-        if (k > n || k < 0)
+        if (k > n || k <= 0)
             return -1;
 
         // 1 <= k <= n <= 100
         // 0 <= wi <= 100
 
         // so it's safe to use
-        const int inf = 100000;
+        // const int inf = 100000;
+        // a safer option
+        const int inf = INT_MAX / 2;
 
         // 1->n --> 0->n-1
         // label, w
@@ -48,13 +50,14 @@ public:
 
         // smaller delay at front
         priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> minHeap;
-        minHeap.push({k-1, 0});
+        // should be dist at front!
+        minHeap.push({0, k-1});
         delayTime[k-1] = 0;
 
         // dijkstra
         while(!minHeap.empty()) {
 
-            const auto [curr, dist] = minHeap.top();
+            const auto [dist, curr] = minHeap.top();
             minHeap.pop();
 
             if (delayTime[curr] != dist)
@@ -64,7 +67,7 @@ public:
 
                 if (dist + w < delayTime[neighbor]) {
                     delayTime[neighbor] = dist + w;
-                    minHeap.push({neighbor, dist + w});
+                    minHeap.push({dist + w, neighbor});
                 }
 
             }
