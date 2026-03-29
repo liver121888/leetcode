@@ -20,6 +20,10 @@
 // 3 -> 11
 // mid = 6
 
+// Let n be the length of the input array piles and m be 
+// the maximum number of bananas in a single pile from piles.
+// Time complexity: O(n⋅logm)
+
 class Solution {
 public:
 
@@ -27,8 +31,13 @@ public:
         long long timeTook = 0;
         for (const auto& pile : piles) {
             timeTook += pile/speed + (pile % speed == 0 ? 0 : 1);
+            // or
+            // timeTook += (pile + speed - 1) / speed;
+            if (timeTook > h) 
+                return false;
         }
-        return timeTook <= h;
+        // return timeTook <= h;
+        return true;
     }
 
     int minEatingSpeed(vector<int>& piles, int h) {
@@ -58,11 +67,5 @@ public:
         }
 
         return l;
-
-
-
-
-
-        
     }
 };
