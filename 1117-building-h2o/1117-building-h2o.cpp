@@ -53,7 +53,7 @@ public:
     // 「加一」和「檢查是否變成 3」要是同一段不可分割的動作
     void checkWater() {
         // LOCK guard is enough, we don't need to unlock in the middle
-        lock_guard<mutex> guard(mtx);
+        unique_lock<mutex> guard(mtx);
         cnt++;
         if (cnt == 3) {
             sem_post(&sem_h);
