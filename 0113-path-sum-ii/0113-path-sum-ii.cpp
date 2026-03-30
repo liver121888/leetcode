@@ -34,17 +34,18 @@ public:
             // cout << "leaves: " << root->val << endl;
             if (currSum == target)
                 ans.push_back(state);
+            state.pop_back();
             return;
         }
 
-        if (root->left) {
+        if (root->left)
             preorder(state, currSum, root->left, target);
-            state.pop_back();
-        }
-        if (root->right) {
+
+        if (root->right)
             preorder(state, currSum, root->right, target);
-            state.pop_back();
-        }
+
+        state.pop_back();
+
 
     }
 
