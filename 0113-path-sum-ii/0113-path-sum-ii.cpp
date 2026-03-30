@@ -31,7 +31,7 @@ public:
 
         // leaf node
         if (!root->left && !root->right) {
-            cout << "leaves: " << root->val << endl;
+            // cout << "leaves: " << root->val << endl;
             if (currSum == target)
                 ans.push_back(state);
             return;
