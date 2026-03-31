@@ -87,13 +87,18 @@
 //     }
 // };
 
+// 我們要找最小值
+// 如果沒rotation 直接找index 0
+// 有rotation的話，在array裡找第一個 < nums[0]的
 class Solution {
 public:
     int findMin(vector<int>& nums) {
+
         int n = nums.size();
 
-        // no rotation
-        if (nums[0] <= nums[n - 1]) return nums[0];
+        // no rotation 特判
+        if (nums[0] <= nums[n - 1]) 
+            return nums[0];
 
         int l = 0, r = n - 1;
 
