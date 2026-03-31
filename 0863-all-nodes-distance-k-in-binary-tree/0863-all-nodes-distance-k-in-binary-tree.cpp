@@ -73,6 +73,26 @@ public:
             k--;
         }
 
+        // 不用走到k == 0
+        // 因為當我們選k > 0我們自然break後
+        // q裡的就是這層！
+        // while (!q.empty() && k > 0) {
+        //     int sz = q.size();
+        //     while (sz--) {
+        //         TreeNode* cur = q.front();
+        //         q.pop();
+
+        //         ...
+        //     }
+        //     k--;
+        // }
+
+        // while (!q.empty()) {
+        //     ans.push_back(q.front()->val);
+        //     q.pop();
+        // }
+
+
         return ans;
         
     }
