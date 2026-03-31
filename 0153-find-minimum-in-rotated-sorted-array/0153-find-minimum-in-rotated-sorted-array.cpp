@@ -87,22 +87,46 @@
 //     }
 // };
 
-
 class Solution {
 public:
     int findMin(vector<int>& nums) {
-        int l = 0, r = nums.size() - 1;
+        int n = nums.size();
 
-        while (l < r) {
+        // no rotation
+        if (nums[0] <= nums[n - 1]) return nums[0];
+
+        int l = 0, r = n - 1;
+
+        // find first index with nums[i] < nums[0]
+        while (l <= r) {
             int mid = l + (r - l) / 2;
-
-            if (nums[mid] > nums[r]) {
-                l = mid + 1;
+            if (nums[mid] < nums[0]) {
+                r = mid - 1;
             } else {
-                r = mid;
+                l = mid + 1;
             }
         }
 
         return nums[l];
     }
 };
+
+
+// class Solution {
+// public:
+//     int findMin(vector<int>& nums) {
+//         int l = 0, r = nums.size() - 1;
+
+//         while (l < r) {
+//             int mid = l + (r - l) / 2;
+
+//             if (nums[mid] > nums[r]) {
+//                 l = mid + 1;
+//             } else {
+//                 r = mid;
+//             }
+//         }
+
+//         return nums[l];
+//     }
+// };
