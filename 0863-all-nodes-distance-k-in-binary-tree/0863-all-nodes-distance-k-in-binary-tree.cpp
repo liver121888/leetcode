@@ -10,7 +10,8 @@
 
 // can traverse the tree and build a graph
 // and find nodes with dist k
-// space: O(E) then it's O(n) because E = n - 
+// space: O(E) then it's O(n) because E = n - 1
+// time: traverse once and bfs: O(n)
 
 // All the values Node.val are unique.
 
