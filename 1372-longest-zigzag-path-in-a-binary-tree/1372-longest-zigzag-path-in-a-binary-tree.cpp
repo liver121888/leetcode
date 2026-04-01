@@ -60,28 +60,59 @@
 
 
 
-// from the top to the leaves
 class Solution {
-public:
+
     int pathLength = 0;
-    void dfs(TreeNode* node, bool goLeft, int steps) {
-        if (node == nullptr) {
+
+public:
+    // left = 目前到這個 node 為止，最後一步是往左走 的 zigzag 長度
+    // right = 目前到這個 node 為止，最後一步是往右走 的 zigzag 長度
+     void dfs(TreeNode* root, int left, int right) {
+
+        if (!root) {
             return;
         }
-        pathLength = max(pathLength, steps);
-        if (goLeft) {
-            dfs(node->left, false, steps + 1);
-            // restart
-            dfs(node->right, true, 1);
-        } else {
-            // restart
-            dfs(node->left, false, 1);
-            dfs(node->right, true, steps + 1);
+
+        pathLength = max(pathLength, max(left, right));
+
+        if (root->left) {
+            dfs(root->left, right + 1, 0);
+        } 
+        
+        if (root->right) {
+            dfs(root->right, 0, left + 1);
         }
     }
 
     int longestZigZag(TreeNode* root) {
-        dfs(root, true, 0);
+        dfs(root, 0, 0);
         return pathLength;
     }
 };
+
+
+// from the top to the leaves
+// class Solution {
+// public:
+//     int pathLength = 0;
+//     void dfs(TreeNode* node, bool goLeft, int steps) {
+//         if (node == nullptr) {
+//             return;
+//         }
+//         pathLength = max(pathLength, steps);
+//         if (goLeft) {
+//             dfs(node->left, false, steps + 1);
+//             // restart
+//             dfs(node->right, true, 1);
+//         } else {
+//             // restart
+//             dfs(node->left, false, 1);
+//             dfs(node->right, true, steps + 1);
+//         }
+//     }
+
+//     int longestZigZag(TreeNode* root) {
+//         dfs(root, true, 0);
+//         return pathLength;
+//     }
+// };
