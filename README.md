@@ -504,6 +504,7 @@
 | [0416-partition-equal-subset-sum](https://github.com/liver121888/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/liver121888/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0818-race-car](https://github.com/liver121888/leetcode/tree/master/0818-race-car) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/liver121888/leetcode/tree/master/0871-minimum-number-of-refueling-stops) |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1372-longest-zigzag-path-in-a-binary-tree) |
@@ -555,6 +556,7 @@
 | [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
 | [0759-employee-free-time](https://github.com/liver121888/leetcode/tree/master/0759-employee-free-time) |
 | [0778-swim-in-rising-water](https://github.com/liver121888/leetcode/tree/master/0778-swim-in-rising-water) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/liver121888/leetcode/tree/master/0871-minimum-number-of-refueling-stops) |
 | [0973-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -667,6 +669,7 @@
 | [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
 | [0752-open-the-lock](https://github.com/liver121888/leetcode/tree/master/0752-open-the-lock) |
 | [0778-swim-in-rising-water](https://github.com/liver121888/leetcode/tree/master/0778-swim-in-rising-water) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0815-bus-routes](https://github.com/liver121888/leetcode/tree/master/0815-bus-routes) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/liver121888/leetcode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0994-rotting-oranges](https://github.com/liver121888/leetcode/tree/master/0994-rotting-oranges) |
@@ -704,6 +707,7 @@
 | ------- |
 | [0743-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0743-network-delay-time) |
 | [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 | [3123-find-edges-in-shortest-paths](https://github.com/liver121888/leetcode/tree/master/3123-find-edges-in-shortest-paths) |
 ## Greedy
@@ -849,6 +853,7 @@
 | [0743-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0743-network-delay-time) |
 | [0744-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0744-network-delay-time) |
 | [0778-swim-in-rising-water](https://github.com/liver121888/leetcode/tree/master/0778-swim-in-rising-water) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/liver121888/leetcode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
@@ -964,6 +969,7 @@
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
 | [0743-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0743-network-delay-time) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [3123-find-edges-in-shortest-paths](https://github.com/liver121888/leetcode/tree/master/3123-find-edges-in-shortest-paths) |
 ## Monotonic Stack
 |  |
