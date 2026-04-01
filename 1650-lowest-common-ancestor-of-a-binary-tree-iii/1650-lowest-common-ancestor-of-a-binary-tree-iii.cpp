@@ -63,7 +63,7 @@ public:
         // This solution is mind blowing. The idea is this say p to root is path length 
         // is a + c and q to root path length is b + c where c is the length of the common 
         // path to root after they meet. Then we are just making them both travel the same 
-        // distance a + b +c by this swapping when root trick. So they exactly meet at that 
+        // distance a + b + c by this swapping when root trick. So they exactly meet at that 
         // common merging point which is the LCA.
         Node* p1 = p, *p2 = q;
         while (p1 != p2) {
