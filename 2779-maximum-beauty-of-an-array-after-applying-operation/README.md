@@ -1,9 +1,9 @@
-<h2><a href="https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation/">2779. Maximum Beauty of an Array After Applying Operation</a></h2><h3>Medium</h3><hr><div><p>You are given a <strong>0-indexed</strong> array <code>nums</code> and a <strong>non-negative</strong> integer <code>k</code>.</p>
+<h2><a href="https://leetcode.com/problems/maximum-beauty-of-an-array-after-applying-operation">2891. Maximum Beauty of an Array After Applying Operation</a></h2><h3>Medium</h3><hr><p>You are given a <strong>0-indexed</strong> array <code>nums</code> and a <strong>non-negative</strong> integer <code>k</code>.</p>
 
 <p>In one operation, you can do the following:</p>
 
 <ul>
-	<li>Choose an index <code>i</code> that <strong>hasn't been chosen before</strong> from the range <code>[0, nums.length - 1]</code>.</li>
+	<li>Choose an index <code>i</code> that <strong>hasn&#39;t been chosen before</strong> from the range <code>[0, nums.length - 1]</code>.</li>
 	<li>Replace <code>nums[i]</code> with any integer from the range <code>[nums[i] - k, nums[i] + k]</code>.</li>
 </ul>
 
@@ -18,7 +18,8 @@
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
-<pre><strong>Input:</strong> nums = [4,6,1,2], k = 2
+<pre>
+<strong>Input:</strong> nums = [4,6,1,2], k = 2
 <strong>Output:</strong> 3
 <strong>Explanation:</strong> In this example, we apply the following operations:
 - Choose index 1, replace it with 4 (from range [4,8]), nums = [4,4,1,2].
@@ -29,9 +30,10 @@ It can be proven that 3 is the maximum possible length we can achieve.
 
 <p><strong class="example">Example 2:</strong></p>
 
-<pre><strong>Input:</strong> nums = [1,1,1,1], k = 10
+<pre>
+<strong>Input:</strong> nums = [1,1,1,1], k = 10
 <strong>Output:</strong> 4
-<strong>Explanation:</strong> In this example we don't have to apply any operations.
+<strong>Explanation:</strong> In this example we don&#39;t have to apply any operations.
 The beauty of the array nums is 4 (whole array).
 </pre>
 
@@ -42,4 +44,3 @@ The beauty of the array nums is 4 (whole array).
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= nums[i], k &lt;= 10<sup>5</sup></code></li>
 </ul>
-</div>
