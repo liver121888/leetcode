@@ -27,15 +27,25 @@ public:
         sort(nums.begin(), nums.end());
 
         int l = 0;
+        int r = 0;
         int ans = 0;
-        for (int r = 0; r < nums.size(); r++) {
-            while (nums[r] - nums[l] > 2 * k) {
-                // shrink
+        for (; r < nums.size(); r++) {
+            // why u don't need to shrink
+            // The reason why we don't need to keep track of max length, 
+            // is that even the actual valid interval is smaller than the 
+            // current one. We have a previously valid answer. 
+            // When there're no bigger intervals behind, we'll just submit 
+            // this max length. Or when there're bigger result, we will update it.
+            // In short, we only care about the max length.
+            // while (nums[r] - nums[l] > 2 * k) {
+            //     // shrink
+            //     l++;
+            // }
+            // ans = max(ans, r - l + 1);
+            if (nums[r] - nums[l] > 2 * k)       
                 l++;
-            }
-            ans = max(ans, r - l + 1);
         }
 
-        return ans;        
+        return r-l;        
     }
 };
