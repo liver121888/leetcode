@@ -680,6 +680,7 @@
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1197-minimum-knight-moves](https://github.com/liver121888/leetcode/tree/master/1197-minimum-knight-moves) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1242-web-crawler-multithreaded](https://github.com/liver121888/leetcode/tree/master/1242-web-crawler-multithreaded) |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/liver121888/leetcode/tree/master/1293-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
@@ -861,6 +862,7 @@
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/liver121888/leetcode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
+| [1242-web-crawler-multithreaded](https://github.com/liver121888/leetcode/tree/master/1242-web-crawler-multithreaded) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/liver121888/leetcode/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1372-longest-zigzag-path-in-a-binary-tree) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
@@ -963,6 +965,7 @@
 | [1188-design-bounded-blocking-queue](https://github.com/liver121888/leetcode/tree/master/1188-design-bounded-blocking-queue) |
 | [1195-fizz-buzz-multithreaded](https://github.com/liver121888/leetcode/tree/master/1195-fizz-buzz-multithreaded) |
 | [1226-the-dining-philosophers](https://github.com/liver121888/leetcode/tree/master/1226-the-dining-philosophers) |
+| [1242-web-crawler-multithreaded](https://github.com/liver121888/leetcode/tree/master/1242-web-crawler-multithreaded) |
 | [1279-traffic-light-controlled-intersection](https://github.com/liver121888/leetcode/tree/master/1279-traffic-light-controlled-intersection) |
 ## Graph Theory
 |  |
