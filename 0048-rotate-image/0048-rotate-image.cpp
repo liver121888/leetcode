@@ -1,44 +1,55 @@
-// matrix is always square
-// we take the index i, j
-// let new matrix be mat_n, old matrix is m
-// m[0][0] -> mat_n[0][n-1]
-// m[1][2] -> mat_n[2][2]
-// m[i][j] -> mat_n[n-j][]
-// we can view it as 5, 11, 16, 15 as a group
-// we move it 
-
-// n-1 = 3
-// [0][0] <- [3][0] <- [3][3] <- [0][3]
-// [0][1] <- [2][0] <- [2][3] <- [1][3]
-// [0][2] <- [1][0] <- [1][3] <- [2][3]
-// [0][3] <- [0][0] <- [0][3] <- [3][3]
-
-// [1][1] <- [2][1] <- [2][2] <- [1][2]
-
+// an n x n 2D matrix
+// always square
+// we have two way to rotate
+// one way to do this is to do rotation on group of 4
+// another way is to transpose then mirror vertically
 
 class Solution {
 public:
-    void rotate(vector<vector<int>>& matrix) {
+
+    // n = 2
+    // diag = 1
+    // i = 0
+    // j = 0
+
+    // i = 1
+    // j = 1
+
+    // transpose
+    void transpose(vector<vector<int>> & matrix) {
+
         int n = matrix.size();
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = i; j < n - 1 - i; j++) {
-                int tmp = matrix[i][j];
-                matrix[i][j] = matrix[n-1-j][i];
-                matrix[n-1-j][i] = matrix[n-1-i][n-1-j];
-                matrix[n-1-i][n-1-j] = matrix[j][n-1-i];
-                matrix[j][n-1-i] = tmp;
+        // diag traverse
+        // main diagonal: i - j = same number
+        // i >= diag
+        for (int diag = 0; diag < n; diag++) {
+            for (int i = diag; i < n; i++) {
+                int j = i - diag;
+                swap(matrix[i][j], matrix[j][i]);
             }
         }
     }
 
-    // i = 0, j = 0
-    // mat[0][0], mat[2][0], mat[2][2], mat[0][2]
-    // i = 1 j = 0
+    void mirrorVertical(vector<vector<int>> & matrix) {
+        int n = matrix.size();
+        int l = 0;
+        int r = n - 1;
+        while (l < r) {
+            for (int i = 0; i < n; i++) {
+                swap(matrix[i][l], matrix[i][r]);
+            }
+            l++;
+            r--;
+        }
+    }
 
-    // [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
-    // i = 0, j = 0
-    // mat[0]0], mat[3][0], mat[3][3], mat[0][3]
-    // i = 1 j = 0
 
-
+    void rotate(vector<vector<int>>& matrix) {
+        transpose(matrix);
+        // for (int i = 0; i < matrix.size(); i++)
+        //     for (int j = 0; j< matrix.size(); j++)
+        //         cout << matrix[i][j] << " ";
+        // cout << endl;
+        mirrorVertical(matrix);        
+    }
 };
