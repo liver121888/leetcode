@@ -1,27 +1,29 @@
-// All messages will come in chronological order. Several messages may arrive at the same timestamp.
-// we can have a hash map, message, last time
-// if the message is not in the map, put it in with timestamp
-// if it's in, check if the timestamp has passed 10 sec,
-// if yes, print and update
-// if not, don't update
+
+
+// Every timestamp will be passed in non-decreasing order (chronological order).
+// we can save a time that a message is print
+// we can use an unordered_map to achieve this
 
 class Logger {
 public:
 
-    unordered_map<string, int> lastTime;
-
+    unordered_map<string, int> eventLog;
+    const int coolDown = 10;
 
     Logger() {
         
     }
     
     bool shouldPrintMessage(int timestamp, string message) {
-        
-        if (lastTime.find(message) == lastTime.end() || timestamp - lastTime.at(message) >= 10) {
-            lastTime[message] = timestamp;
-            return true;
+
+        if (eventLog.find(message) != eventLog.end() 
+            && timestamp < eventLog[message] + coolDown) {
+            return false;
         }
-        return false;
+
+        eventLog[message] = timestamp;
+        return true;
+        
     }
 };
 
