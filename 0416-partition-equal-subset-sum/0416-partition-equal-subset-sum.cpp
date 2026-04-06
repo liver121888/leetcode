@@ -101,29 +101,92 @@ public:
 
 
     // bottom-up
-    bool canPartition(vector<int> &nums) {
-        int totalSum = 0;
-        // find sum of all array elements
+    // bool canPartition(vector<int> &nums) {
+    //     int totalSum = 0;
+    //     // find sum of all array elements
+    //     for (int num : nums) {
+    //         totalSum += num;
+    //     }
+    //     // if totalSum is odd, it cannot be partitioned into equal sum subset
+    //     if (totalSum % 2 != 0) return false;
+    //     int subSetSum = totalSum / 2;
+    //     int n = nums.size();
+    //     bool dp[n + 1][subSetSum + 1];
+    //     memset(dp, 0, (n + 1) * (subSetSum + 1) * sizeof(bool));
+    //     dp[0][0] = true;
+    //     for (int i = 1; i <= n; i++) {
+    //         int curr = nums[i - 1];
+    //         for (int j = 0; j <= subSetSum; j++) {
+    //             if (j < curr)
+    //                 dp[i][j] = dp[i - 1][j];
+    //             else
+    //                 dp[i][j] = dp[i - 1][j] || (dp[i - 1][j - curr]);
+    //         }
+    //     }
+    //     return dp[n][subSetSum];
+    // }
+
+    // the ans
+    bool canPartition(vector<int>& nums) {
+        int sum = 0;
+        for (int n : nums) sum += n;
+
+        if (sum % 2 != 0) return false;
+
+
+        int target = sum / 2;
+
+        // 其實這個 1D DP 是從 2D DP 壓縮來的。
+
+        // 本來可以定義：
+
+        // dp[k][i]
+
+        // 表示：
+
+        // 前 k 個數字能不能湊出和 i
+
+        // 那轉移會是：
+
+        // dp[k][i]=dp[k−1][i]∨dp[k−1][i−nums[k−1]]
+
+        // 意思：
+
+        // 不選第 k 個數
+        // 或選第 k 個數
+
+
+
+        vector<bool> dp(target + 1, false);
+        // dp[i] 表示：
+        // 目前處理到某些數字時，能不能選出一部分數，使它們的和剛好等於 i。
+        dp[0] = true;
+
+
+        // 意思是：
+        // 要湊出 i，有兩種可能：
+        // 情況 1：不選 num
+        // 那如果原本 dp[i] 就是 true，現在仍然可以是 true
+        // 情況 2：選 num
+        // 那你前面必須先能湊出 i-num
+
+        // 如果正著跑：
+
+        // for (int i = num; i <= target; i++)
+
+        // 那同一個 num 可能會被重複使用多次。
+
+        // 這就變成 完全背包 了，不是這題要的 0/1 背包。
+
+        // 這題每個數只能用一次，所以要倒著更新。
+
         for (int num : nums) {
-            totalSum += num;
-        }
-        // if totalSum is odd, it cannot be partitioned into equal sum subset
-        if (totalSum % 2 != 0) return false;
-        int subSetSum = totalSum / 2;
-        int n = nums.size();
-        bool dp[n + 1][subSetSum + 1];
-        memset(dp, 0, (n + 1) * (subSetSum + 1) * sizeof(bool));
-        dp[0][0] = true;
-        for (int i = 1; i <= n; i++) {
-            int curr = nums[i - 1];
-            for (int j = 0; j <= subSetSum; j++) {
-                if (j < curr)
-                    dp[i][j] = dp[i - 1][j];
-                else
-                    dp[i][j] = dp[i - 1][j] || (dp[i - 1][j - curr]);
+            for (int i = target; i >= num; i--) {
+                dp[i] = dp[i] || dp[i - num];
             }
         }
-        return dp[n][subSetSum];
+
+        return dp[target];
     }
 
 
