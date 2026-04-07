@@ -12,35 +12,72 @@
 // every permutation for each num we do a linear search
 // so (n^2)
 
+// class Solution {
+// public:
+
+//     void backtrack(vector<vector<int>>& ans, vector<int>& currState, const vector<int>& nums) {
+        
+//         // base case
+//         if (currState.size() == nums.size()) {
+//             ans.push_back(currState);
+//             return;
+//         }
+
+
+//         for (const int& num : nums) {
+//             if (find(currState.begin(), currState.end(), num) == currState.end()) {
+//                 // modify state
+//                 currState.push_back(num);
+//                 // backtrack
+//                 backtrack(ans, currState, nums);
+//                 // reset state
+//                 currState.pop_back();
+//             }
+//         }
+//     }
+
+//     vector<vector<int>> permute(vector<int>& nums) {
+
+//         vector<vector<int>> ans;
+//         vector<int> currState;
+//         backtrack(ans, currState, nums);
+//         return ans;        
+//     }
+// };
+
+// use a used array to indicate
+// 這份程式的複雜度是：
+// 時間： O(n * n!)
+// 額外空間： O(n)
 class Solution {
 public:
-
-    void backtrack(vector<vector<int>>& ans, vector<int>& currState, const vector<int>& nums) {
+    void backtrack(vector<vector<int>>& ans, vector<int>& curr, 
+                   vector<bool>& used, vector<int>& nums) {
         
-        // base case
-        if (currState.size() == nums.size()) {
-            ans.push_back(currState);
+        if (curr.size() == nums.size()) {
+            ans.push_back(curr);
             return;
         }
 
+        for (int i = 0; i < nums.size(); i++) {
+            if (used[i]) continue;
 
-        for (const int& num : nums) {
-            if (find(currState.begin(), currState.end(), num) == currState.end()) {
-                // modify state
-                currState.push_back(num);
-                // backtrack
-                backtrack(ans, currState, nums);
-                // reset state
-                currState.pop_back();
-            }
+            used[i] = true;
+            curr.push_back(nums[i]);
+
+            backtrack(ans, curr, used, nums);
+
+            curr.pop_back();
+            used[i] = false;
         }
     }
 
     vector<vector<int>> permute(vector<int>& nums) {
-
         vector<vector<int>> ans;
-        vector<int> currState;
-        backtrack(ans, currState, nums);
-        return ans;        
+        vector<int> curr;
+        vector<bool> used(nums.size(), false);
+
+        backtrack(ans, curr, used, nums);
+        return ans;
     }
 };
