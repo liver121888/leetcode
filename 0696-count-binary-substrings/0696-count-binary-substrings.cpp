@@ -51,6 +51,12 @@
 class Solution {
 public:
     int countBinarySubstrings(string s) {
+        // curr: 目前這一段連續相同字元的長度
+        // prev: 前一段連續相同字元的長度
+        // 0001111
+        // in here, prev = 3, curr = 4
+        // 最多就是組三組相同數量的零一string
+        // so ans += min(prev, curr)
         int ans = 0, prev = 0, curr = 1;
         for (int i = 1; i < s.size(); i++) {
             if (s[i-1] != s[i]) {
@@ -64,3 +70,5 @@ public:
         return ans += min(prev, curr);
     }
 };
+
+
