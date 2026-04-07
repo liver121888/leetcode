@@ -12,6 +12,8 @@
 // check if we meet the food
 // everytime we return the size of the queue
 
+// you list out the condition, but u still did not sequence it right
+
 class SnakeGame {
 public:
 
@@ -61,7 +63,7 @@ public:
         int ny = coords.first + directions.at(direction).first;
         int nx = coords.second + directions.at(direction).second;
 
-        cout << "ny: " << ny << " nx: " << nx << endl;
+        // cout << "ny: " << ny << " nx: " << nx << endl;
 
         if (ny < 0 || nx < 0 || ny >= h || nx >= w)
             return -1;
