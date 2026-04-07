@@ -1,48 +1,40 @@
-// time: O((n * n - 1 * ... 1  = n!) * n)
+
+// backtrack to list out all possibilities
+// state vector
+// every step we pick a number that we haven't use
+// and put it in the vector
 
 class Solution {
-
-    int n = -1;
 public:
 
-    void dfs(const vector<int>& nums, vector<int>& state, vector<vector<int>>& ans) {
+    void backtrack(vector<vector<int>>& ans, vector<int>& currState, const vector<int>& nums) {
         
-        if (state.size() == n) {
-            // cout << "ans insert state: [";
-            // for (auto num : state)
-            //     cout << num << " ";
-            // cout << "]" << endl;
-            ans.push_back(state);
+        // base case
+        if (currState.size() == nums.size()) {
+            ans.push_back(currState);
             return;
         }
 
-        // cout << "dict: [";
-        // for (auto num : dict)
-        //     cout << num << " ";
-        // cout << "]" << endl;
 
-        // cout << "state: [";
-        // for (auto num : state)
-        //     cout << num << " ";
-        // cout << "]" << endl;
-
-        for (int num : nums) {
-            if (find(state.begin(), state.end(), num) == state.end()) {
-                state.push_back(num);
-                dfs(nums, state, ans);
+        for (const int& num : nums) {
+            if (find(currState.begin(), currState.end(), num) == currState.end()) {
+                // modify state
+                currState.push_back(num);
+                // backtrack
+                backtrack(ans, currState, nums);
                 // reset state
-                state.pop_back();
+                currState.pop_back();
             }
         }
-
     }
+
+
 
     vector<vector<int>> permute(vector<int>& nums) {
 
-        n = nums.size();
         vector<vector<int>> ans;
-        vector<int> curr = {};
-        dfs(nums, curr, ans);
-        return ans;
+        vector<int> currState;
+        backtrack(ans, currState, nums);
+        return ans;        
     }
 };
