@@ -21,9 +21,9 @@ public:
 
         // Step 2：定義 DP
         // dp[i] = 從第 i 個 job 開始能拿到的最大 profit
-        // 所以從尾巴走到0
+        // job 只有到n-1
+        // dp[n] = base case = 0 代表沒有job了profit是0
         vector<int> dp(n + 1, 0);
-
     
         // Step 3：轉移（最核心）
         // 對於每個 job i：
@@ -33,10 +33,23 @@ public:
         // 你要找：
         // 👉 下一個 start >= end[i] 的 job
         // 用 binary search 找到 index j
+
+        // 為什麽從後往前填表
+        // 因為狀態依賴「未來」
+        // 看轉移式：
+        // dp[i] = max(dp[i+1], profit[i] + dp[j])
+        // where j is the index of the next job that has start time > e
+
         for (int i = n - 1; i >= 0; i--) {
             const auto& [s, e, p] = jobs[i];
             // find >= end, j is the index
             int j = lower_bound(starts.begin(), starts.end(), e) - starts.begin();
+
+            // dp[i + 1]
+            // 不選這個 job
+
+            // p + dp[j]
+            // 選這個job，那接下來就是取j的dp讓start time < 現在job的end time
 
             dp[i] = max(dp[i+1], p + dp[j]);
         }
