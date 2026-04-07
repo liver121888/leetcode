@@ -51,23 +51,26 @@ public:
 
         // search both at the same time
         int distance = 0, depth = 0;
-        bool foundp = 0, foundq = 0;
-        while (!bfs.empty() or (foundp == 0 and foundq == 0)) {
+        bool foundp = false, foundq = false;
+        while (!bfs.empty() || (!foundp && !foundq)) {
+
             int size = bfs.size();
 
             // Traverse all nodes at the height level.
             while (size--) {
                 TreeNode* front = bfs.front();
                 bfs.pop();
+
                 // Add the current height to the distance if p or q is found.
                 if (front->val == p) {
                     distance += depth;
-                    foundp = 1;
+                    foundp = true;
                 }
                 if (front->val == q) {
                     distance += depth;
-                    foundq = 1;
+                    foundq = true;
                 }
+                
                 // Add the children to the queue. These will be traversed in the
                 // next height level.
                 if (front->left != nullptr) {
