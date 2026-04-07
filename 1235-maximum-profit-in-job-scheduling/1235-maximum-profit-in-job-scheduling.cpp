@@ -1,56 +1,46 @@
-#include <vector>
-#include <algorithm>
-#include <numeric>
-
 class Solution {
 public:
-    int n;
-    std::vector<int> dp;  // Use a vector instead of a pointer
+    int jobScheduling(vector<int>& startTime, vector<int>& endTime, vector<int>& profit) {
+        
+        // Step 1：排序（關鍵！）
+        // 先按照 startTime 排序
+        int n = startTime.size();
 
-    int jobScheduling(std::vector<int>& startTime, std::vector<int>& endTime, std::vector<int>& profit) {
-        n = startTime.size();
-
-        // Create an index array for sorting
-        std::vector<int> index(n);
-        std::iota(index.begin(), index.end(), 0);
-
-        // Sort index based on the values in vector1
-        std::sort(index.begin(), index.end(), [&](int a, int b) {
-            return startTime[a] < startTime[b];
-        });
-
-        // Rearrange vectors based on the sorted order
-        std::vector<int> sortedStartTime(n);
-        std::vector<int> sortedEndTime(n);
-        std::vector<int> sortedProfit(n);
-
+        vector<tuple<int,int,int>> jobs;
         for (int i = 0; i < n; i++) {
-            sortedStartTime[i] = startTime[index[i]];
-            sortedEndTime[i] = endTime[index[i]];
-            sortedProfit[i] = profit[index[i]];
+            jobs.emplace_back(startTime[i], endTime[i], profit[i]);
         }
 
-        // Initialize dp vector with size n + 1, all elements set to -1
-        dp.assign(n + 1, -1);
+        sort(jobs.begin(), jobs.end());
 
-        return dfs(0, sortedStartTime, sortedEndTime, sortedProfit);
-    }
+        // create start time array so we can find next available job quickly
+        vector<int> starts;
+        for (const auto& [s,e,p] : jobs) {
+            starts.push_back(s);
+        }
 
-    int dfs(int i, std::vector<int>& startTime, std::vector<int>& endTime, std::vector<int>& profit) {
-        // base case
-        if (i == n)
-            return 0;
+        // Step 2：定義 DP
+        // dp[i] = 從第 i 個 job 開始能拿到的最大 profit
+        // 所以從尾巴走到0
+        vector<int> dp(n + 1, 0);
 
-        if (dp[i] != -1)
-            return dp[i];
+    
+        // Step 3：轉移（最核心）
+        // 對於每個 job i：
+        // 你有兩個選擇：
+        // 1️⃣ 不選這個 job
+        // 2️⃣ 選這個 job
+        // 你要找：
+        // 👉 下一個 start >= end[i] 的 job
+        // 用 binary search 找到 index j
+        for (int i = n - 1; i >= 0; i--) {
+            const auto& [s, e, p] = jobs[i];
+            // find >= end, j is the index
+            int j = lower_bound(starts.begin(), starts.end(), e) - starts.begin();
 
-        int res = dfs(i + 1, startTime, endTime, profit);
-
-        auto it = std::lower_bound(startTime.begin() + i, startTime.end(), endTime[i]);
-
-        int j = std::distance(startTime.begin(), it);
-        res = std::max(res, profit[i] + dfs(j, startTime, endTime, profit));
-
-        return dp[i] = res;
+            dp[i] = max(dp[i+1], p + dp[j]);
+        }
+        return dp[0];
+    
     }
 };
