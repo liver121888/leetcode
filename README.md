@@ -336,6 +336,7 @@
 | [0815-bus-routes](https://github.com/liver121888/leetcode/tree/master/0815-bus-routes) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/liver121888/leetcode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0874-walking-robot-simulation](https://github.com/liver121888/leetcode/tree/master/0874-walking-robot-simulation) |
+| [0895-maximum-frequency-stack](https://github.com/liver121888/leetcode/tree/master/0895-maximum-frequency-stack) |
 | [0939-minimum-area-rectangle](https://github.com/liver121888/leetcode/tree/master/0939-minimum-area-rectangle) |
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0981-time-based-key-value-store](https://github.com/liver121888/leetcode/tree/master/0981-time-based-key-value-store) |
@@ -392,6 +393,7 @@
 | [0362-design-hit-counter](https://github.com/liver121888/leetcode/tree/master/0362-design-hit-counter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/liver121888/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
+| [0895-maximum-frequency-stack](https://github.com/liver121888/leetcode/tree/master/0895-maximum-frequency-stack) |
 | [0981-time-based-key-value-store](https://github.com/liver121888/leetcode/tree/master/0981-time-based-key-value-store) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
 | [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
@@ -926,6 +928,7 @@
 | [0739-daily-temperatures](https://github.com/liver121888/leetcode/tree/master/0739-daily-temperatures) |
 | [0772-basic-calculator-iii](https://github.com/liver121888/leetcode/tree/master/0772-basic-calculator-iii) |
 | [0844-backspace-string-compare](https://github.com/liver121888/leetcode/tree/master/0844-backspace-string-compare) |
+| [0895-maximum-frequency-stack](https://github.com/liver121888/leetcode/tree/master/0895-maximum-frequency-stack) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/liver121888/leetcode/tree/master/1944-number-of-visible-people-in-a-queue) |
 ## Brainteaser
 |  |
@@ -947,6 +950,7 @@
 ## Ordered Set
 |  |
 | ------- |
+| [0895-maximum-frequency-stack](https://github.com/liver121888/leetcode/tree/master/0895-maximum-frequency-stack) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
 | [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Queue
