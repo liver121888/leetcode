@@ -4,6 +4,14 @@
 // every step we pick a number that we haven't use
 // and put it in the vector
 
+// 這份程式的複雜度是：
+// 時間： O(n^2 * n!)
+// 額外空間： O(n)
+
+// n! comes from all the permutation possibilities
+// every permutation for each num we do a linear search
+// so (n^2)
+
 class Solution {
 public:
 
@@ -27,8 +35,6 @@ public:
             }
         }
     }
-
-
 
     vector<vector<int>> permute(vector<int>& nums) {
 
