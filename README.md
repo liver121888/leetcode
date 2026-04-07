@@ -117,6 +117,7 @@
 | [1388-greatest-sum-divisible-by-three](https://github.com/liver121888/leetcode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/liver121888/leetcode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
+| [1584-min-cost-to-connect-all-points](https://github.com/liver121888/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/liver121888/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1610-maximum-number-of-visible-points](https://github.com/liver121888/leetcode/tree/master/1610-maximum-number-of-visible-points) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
@@ -984,6 +985,7 @@
 | [0743-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0743-network-delay-time) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [1168-optimize-water-distribution-in-a-village](https://github.com/liver121888/leetcode/tree/master/1168-optimize-water-distribution-in-a-village) |
+| [1584-min-cost-to-connect-all-points](https://github.com/liver121888/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 | [3123-find-edges-in-shortest-paths](https://github.com/liver121888/leetcode/tree/master/3123-find-edges-in-shortest-paths) |
 ## Monotonic Stack
 |  |
@@ -1002,6 +1004,7 @@
 | [0778-swim-in-rising-water](https://github.com/liver121888/leetcode/tree/master/0778-swim-in-rising-water) |
 | [1168-optimize-water-distribution-in-a-village](https://github.com/liver121888/leetcode/tree/master/1168-optimize-water-distribution-in-a-village) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
+| [1584-min-cost-to-connect-all-points](https://github.com/liver121888/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 ## Merge Sort
 |  |
@@ -1054,4 +1057,5 @@
 |  |
 | ------- |
 | [1168-optimize-water-distribution-in-a-village](https://github.com/liver121888/leetcode/tree/master/1168-optimize-water-distribution-in-a-village) |
+| [1584-min-cost-to-connect-all-points](https://github.com/liver121888/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 <!---LeetCode Topics End-->
