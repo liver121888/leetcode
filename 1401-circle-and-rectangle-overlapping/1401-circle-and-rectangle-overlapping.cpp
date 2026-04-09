@@ -19,9 +19,22 @@ public:
 
         // Check if x1 and x2 are both in same side of y axis(left and right side)
         // If not then min possible point lies on y-axis.
-        int minX = x1 * x2 > 0 ? min(x1*x1, x2*x2) : 0;
-        int minY = y1 * y2 > 0 ? min(y1*y1, y2*y2) : 0;
-        return minY + minX <= radius * radius;
+
+        // 情形 A：矩形完全在圓心的一側（最遠）
+        // 當 $x_1$ 與 $x_2$ 同號時（即 $x_1 \cdot x_2 > 0$），
+        // 代表矩形整個落在 $Y$ 軸的左側或右側。此時，離圓心最近的 $x$ 距離一定是 $\min(x_1^2, x_2^2)$。
+
+        // 情形 B：圓心在矩形的 $x$ 範圍內（跨越座標軸）
+        // 當 $x_1$ 與 $x_2$ 異號或其中之一為 0 時（即 $x_1 \cdot x_2 \le 0$），
+        // 代表矩形橫跨了 $Y$ 軸。此時，矩形上離圓心最近的 $x$ 座標點其實就在 $x=0$ 的位置，因此 $minX = 0$。
+
+        // 情形 C：圓心在矩形內部
+        // 如果 $x$ 方向和 $y$ 方向都跨越了座標軸（$minX=0$ 且 $minY=0$），
+        // 則 $0 + 0 \le r^2$ 必定成立，正確反映了圓心在矩形內部的重疊狀態。
+
+        int minXsquared = x1 * x2 > 0 ? min(x1*x1, x2*x2) : 0;
+        int minYsquared = y1 * y2 > 0 ? min(y1*y1, y2*y2) : 0;
+        return minYsquared + minXsquared <= radius * radius;
 
     }
 };
