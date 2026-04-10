@@ -6,13 +6,19 @@
 // dp[amount] = sum(for i to nums.size() dp[amount - nums[i]])
 // the larger amount is depend on lower amount
 // what would be the base case?
-// dp[0] = 0 because 1 <= nums[i] <= 1000
+// dp[0] = 1 because 1 <= nums[i] <= 1000
+// exactly one way which is not choose to get amount 0
 
 // dp [target + 1] to include 0
 
 // Follow up: What if negative numbers are allowed in the given array? 
 // How does it change the problem? 
 // What limitation we need to add to the question to allow negative numbers?
+
+// 所以如果允許負數，必須加限制
+// 最常見限制是：
+// 限制「可以選的數字個數」
+// 例如最多選 k 個數。
 
 class Solution {
 public:
