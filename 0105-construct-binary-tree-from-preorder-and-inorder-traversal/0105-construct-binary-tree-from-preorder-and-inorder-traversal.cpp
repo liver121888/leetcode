@@ -76,46 +76,36 @@
 
 class Solution {
 public:
-    // inroder val -> idx
-    unordered_map<int,int> inorderIds;
-    int preorderIdx;
-    int n;
 
-    // r is the idx that inclusively right tree ends
-    // l is the idx that inclusively left tree begin
-    // mid is the one that divide it
-    TreeNode* helper(const vector<int>& preorder, vector<int>& inorder, int l, int r) {
+    int preorderIdx = 0;
 
-        // cout << preorderIdx << endl;        
+    TreeNode* dfs(const vector<int>& preorder, 
+        const vector<int>& inorder, 
+        const unordered_map<int,int>& val2InorderIdx,
+        int l, int r) {
+
         if (l > r)
             return nullptr;
-
-        int preorderVal = preorder[preorderIdx];
-        TreeNode* root = new TreeNode(preorderVal);
+        int rootVal = preorder[preorderIdx];
         preorderIdx++;
+        TreeNode* root = new TreeNode(rootVal);
+        int i = val2InorderIdx.at(rootVal);
+        root->left = dfs(preorder,inorder,val2InorderIdx, l, i-1);
+        root->right = dfs(preorder,inorder,val2InorderIdx, i+1, r);
+        return root;
+    }
 
-        int midIdx = inorderIds[preorderVal];
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
 
-        TreeNode* lNode = helper(preorder, inorder, l, midIdx-1);
-        TreeNode* rNode = helper(preorder, inorder, midIdx+1, r);
+        int n = inorder.size();
+        unordered_map<int, int> val2InorderIdx;
+        for(int i = 0; i < n; i++){
+            val2InorderIdx[inorder[i]] = i;
+        }
 
-        root->left = lNode;
-        root->right = rNode;
-
+        TreeNode* root = dfs(preorder, inorder, val2InorderIdx, 0, n-1);
         return root;
     }
 
 
-    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
-
-        n = inorder.size();
-        for (int i = 0; i < n; i++) {
-            inorderIds[inorder[i]] = i;
-        }
-
-        // cnt for which root
-        preorderIdx = 0;
-        TreeNode* head = helper(preorder, inorder, 0, n-1);
-        return head;
-    }
 };
