@@ -50,6 +50,7 @@ public:
         if (x < 2) 
             return x;
         // 不用搜到x, 只要收到x/2就夠
+        // 特判0所以後面可以安全的去做除法
         int l = 1, r = x / 2;
         int ans = 0;
 
