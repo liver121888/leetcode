@@ -35,7 +35,7 @@ public:
     //         unsigned long long mid = l + (r-l)/2;
     //         // 容易overflow
     //         // if (mid*mid > x)
-    //         // 安全
+    //         // 安全，但會有divide by 0 問題
     //         if (mid > x/mid) {
     //             r = mid - 1;
     //         } else {
