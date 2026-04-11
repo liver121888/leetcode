@@ -28,17 +28,49 @@ public:
     // signed integer overflow: 1073697799 * 1073697799 
     // cannot be represented in type 'int'
 
-    int mySqrt(int x) {
+    // int mySqrt(int x) {
 
-        unsigned long long l = 0, r = x;
+    //     unsigned long long l = 0, r = x;
+    //     while (l <= r) {
+    //         unsigned long long mid = l + (r-l)/2;
+    //         // 容易overflow
+    //         // if (mid*mid > x)
+    //         // 安全
+    //         if (mid > x/mid) {
+    //             r = mid - 1;
+    //         } else {
+    //             l = mid + 1;
+    //         }
+    //     }
+    //     return r;        
+    // }
+
+    // 更好寫法, 不用型別提昇
+    int mySqrt(int x) {
+        if (x < 2) 
+            return x;
+        // 不用搜到x, 只要收到x/2就夠
+        int l = 1, r = x / 2;
+        int ans = 0;
+
         while (l <= r) {
-            unsigned long long mid = l + (r-l)/2;       
-            if (mid*mid > x) {
-                r = mid - 1;
+            int mid = l + (r - l) / 2;
+
+            if (mid <= x / mid) {
+                // 這個想法也不錯
+                // 在可能是答案的範圍內就先記住答案
+                ans = mid;      // mid^2 <= x，先記住
+                l = mid + 1;    // 試更大
             } else {
-                l = mid + 1;
+                r = mid - 1;
             }
         }
-        return r;        
+
+        return ans;
     }
+
+
 };
+
+
+
