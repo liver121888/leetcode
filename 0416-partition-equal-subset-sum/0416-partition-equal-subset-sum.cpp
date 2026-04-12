@@ -171,13 +171,10 @@ public:
         // 那你前面必須先能湊出 i-num
 
         // 如果正著跑：
-
         // for (int i = num; i <= target; i++)
-
         // 那同一個 num 可能會被重複使用多次。
-
+        // 變成coin change ii
         // 這就變成 完全背包 了，不是這題要的 0/1 背包。
-
         // 這題每個數只能用一次，所以要倒著更新。
 
         for (int num : nums) {
