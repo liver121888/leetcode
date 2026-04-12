@@ -24,6 +24,7 @@
 #include <string>
 using namespace std;
 
+// bottom up dp
 // class Solution {
 // public:
 
@@ -65,29 +66,76 @@ using namespace std;
 //     }
 // };
 
+
+// top down dp
 class Solution {
+    // memo[i][j] 的含義：
+    // -1 : 尚未計算 (Unvisited)
+    //  0 : 結果為 false
+    //  1 : 結果為 true
+    vector<vector<int>> memo;
+
 public:
-    bool isMatch(string text, string pattern) {
-        // 基底情況：如果 pattern 用完了，text 也必須剛好用完才算匹配
-        if (pattern.empty()) return text.empty();
+    bool isMatch(string s, string p) {
+        // 初始化 memo table，大小為 (s.len + 1) x (p.len + 1)，初始值全部為 -1
+        memo.assign(s.length() + 1, vector<int>(p.length() + 1, -1));
+        return dp(0, 0, s, p);
+    }
 
-        // 檢查第一個字元是否匹配
-        bool first_match = (!text.empty() && 
-                           (pattern[0] == text[0] || pattern[0] == '.'));
-
-        // 情況一：如果 pattern 的第二個字元是 '*'
-        if (pattern.length() >= 2 && pattern[1] == '*') {
-            return (
-                // 1. 跳過「字元 + *」，代表該字元出現 0 次
-                isMatch(text, pattern.substr(2)) ||
-                // 2. 如果第一個字元匹配，則 text 往後移一格，
-                // 繼續用同一個 pattern 比對 (代表出現 1 次或多次)
-                (first_match && isMatch(text.substr(1), pattern))
-            );
-        } 
-        // 情況二：普通匹配 (沒有 '*' 或只有單一字元)
-        else {
-            return first_match && isMatch(text.substr(1), pattern.substr(1));
+    bool dp(int i, int j, const string& s, const string& p) {
+        // 1. 檢查 memo，如果不是 -1 代表已經算過了，直接回傳
+        if (memo[i][j] != -1) {
+            return memo[i][j] == 1;
         }
+
+        bool ans;
+        // 2. 基底情況：如果 pattern 走完了，text 也必須剛好走完
+        if (j == p.length()) {
+            ans = (i == s.length());
+        } else {
+            // 檢查當前字元是否匹配
+            bool first_match = (i < s.length() && 
+                               (p[j] == s[i] || p[j] == '.'));
+
+            // 3. 處理 '*' 的邏輯
+            if (j + 1 < p.length() && p[j + 1] == '*') {
+                ans = (dp(i, j + 2, s, p) ||               // 情況 A: 出現 0 次
+                      (first_match && dp(i + 1, j, s, p))); // 情況 B: 出現 1 次以上
+            } else {
+                // 4. 一般字元匹配
+                ans = first_match && dp(i + 1, j + 1, s, p);
+            }
+        }
+
+        // 5. 將結果存入 memo：true 存成 1，false 存成 0
+        memo[i][j] = ans ? 1 : 0;
+        return ans;
     }
 };
+
+// class Solution {
+// public:
+//     bool isMatch(string text, string pattern) {
+//         // 基底情況：如果 pattern 用完了，text 也必須剛好用完才算匹配
+//         if (pattern.empty()) return text.empty();
+
+//         // 檢查第一個字元是否匹配
+//         bool first_match = (!text.empty() && 
+//                            (pattern[0] == text[0] || pattern[0] == '.'));
+
+//         // 情況一：如果 pattern 的第二個字元是 '*'
+//         if (pattern.length() >= 2 && pattern[1] == '*') {
+//             return (
+//                 // 1. 跳過「字元 + *」，代表該字元出現 0 次
+//                 isMatch(text, pattern.substr(2)) ||
+//                 // 2. 如果第一個字元匹配，則 text 往後移一格，
+//                 // 繼續用同一個 pattern 比對 (代表出現 1 次或多次)
+//                 (first_match && isMatch(text.substr(1), pattern))
+//             );
+//         } 
+//         // 情況二：普通匹配 (沒有 '*' 或只有單一字元)
+//         else {
+//             return first_match && isMatch(text.substr(1), pattern.substr(1));
+//         }
+//     }
+// };
