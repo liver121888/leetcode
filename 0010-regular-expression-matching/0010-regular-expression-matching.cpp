@@ -25,93 +25,103 @@
 using namespace std;
 
 // bottom up dp
-// class Solution {
-// public:
+class Solution {
+public:
 
-//     // Step 1：先看現在字元能不能 match -> first_match
-//     // Step 2：看 pattern[j+1] 是不是 *
-//     // 情況 A：沒有 *，只能「吃一個字元」
-//     // 情況 B：有 *
-//     // 有兩種選擇：
-//     // 1. 把 x* 當成 0 次 match(i, j+2)
-//     // 2. 用 1 次以上，前提是 first_match && match(i+1, j)
-//     // 所以dp
+    // Step 1：先看現在字元能不能 match -> first_match
+    // Step 2：看 pattern[j+1] 是不是 *
+    // 情況 A：沒有 *，只能「吃一個字元」
+    // 情況 B：有 *
+    // 有兩種選擇：
+    // 1. 把 x* 當成 0 次 match(i, j+2)
+    // 2. 用 1 次以上，前提是 first_match && match(i+1, j)
+    // 所以dp
 
-//     bool isMatch(string text, string pattern) {
-//         int n = (int)text.size();
-//         int m = (int)pattern.size();
+    // 填表順序：在程式碼中，dp[i][j] 的結果依賴於其右方或下方的格子：dp[i][j + 2]
+    //  (右方兩格)dp[i + 1][j] (下方一格)dp[i + 1][j + 1] (右下方一格)
+    //  結論：為了確保計算 dp[i][j] 時，它所依賴的那些「未來狀態」都已經算好了，
+    //  我們必須從右往左 ($j$ 從 $m-1$ 到 $0$)、從下往上 ($i$ 從 $n$ 到 $0$) 填表。
 
-//         vector<vector<bool>> dp(n + 1, vector<bool>(m + 1, false));
-//         // 從後面match回來，字串由後慢慢長回來
-//         // base case: 代表兩個都走到尾巴：空字串 match 空 pattern
-//         dp[n][m] = true;
+    // 當 $i = n$ (第一輪 call) 會發生什麼？這是這題最精妙的地方。
+    // 當 $i = n$ 時，代表 text 已經是空字串了。
+    // 這時候 first_match 永遠會是 false（因為 i < n 不成立）。
+    
+    bool isMatch(string text, string pattern) {
+        int n = (int)text.size();
+        int m = (int)pattern.size();
 
-//         for (int i = n; i >= 0; --i) {
-//             for (int j = m - 1; j >= 0; --j) {
+        vector<vector<bool>> dp(n + 1, vector<bool>(m + 1, false));
+        // 從後面match回來，字串由後慢慢長回來
+        // base case: 代表兩個都走到尾巴：空字串 match 空 pattern
+        dp[n][m] = true;
 
-//                 bool first_match = (i < n) &&
-//                     (pattern[j] == text[i] || pattern[j] == '.');
+        for (int i = n; i >= 0; --i) {
+            // 從m-1開始看因為可能是*在最後那並不適合法的
+            for (int j = m - 1; j >= 0; --j) {
 
-//                 if (j + 1 < m && pattern[j + 1] == '*') {
-//                     // 1) 用 0 次：跳過 "x*"
-//                     // 2) 用 >=1 次：first_match 且 text 往前吃一個，
-//                     // 但 pattern 留在 j (因為還能繼續用 x*)
-//                     dp[i][j] = dp[i][j + 2] || (first_match && dp[i + 1][j]);
-//                 } else {
-//                     dp[i][j] = first_match && dp[i + 1][j + 1];
-//                 }
-//             }
-//         }
-//         return dp[0][0];
-//     }
-// };
+                bool first_match = (i < n) &&
+                    (pattern[j] == text[i] || pattern[j] == '.');
+
+                if (j + 1 < m && pattern[j + 1] == '*') {
+                    // 1) 用 0 次：跳過 "x*"
+                    // 2) 用 >=1 次：first_match 且 text 往前吃一個，
+                    // 但 pattern 留在 j (因為還能繼續用 x*)
+                    dp[i][j] = dp[i][j + 2] || (first_match && dp[i + 1][j]);
+                } else {
+                    dp[i][j] = first_match && dp[i + 1][j + 1];
+                }
+            }
+        }
+        return dp[0][0];
+    }
+};
 
 
 // top down dp
-class Solution {
-    // memo[i][j] 的含義：
-    // -1 : 尚未計算 (Unvisited)
-    //  0 : 結果為 false
-    //  1 : 結果為 true
-    vector<vector<int>> memo;
+// class Solution {
+//     // memo[i][j] 的含義：
+//     // -1 : 尚未計算 (Unvisited)
+//     //  0 : 結果為 false
+//     //  1 : 結果為 true
+//     vector<vector<int>> memo;
 
-public:
-    bool isMatch(string s, string p) {
-        // 初始化 memo table，大小為 (s.len + 1) x (p.len + 1)，初始值全部為 -1
-        memo.assign(s.length() + 1, vector<int>(p.length() + 1, -1));
-        return dp(0, 0, s, p);
-    }
+// public:
+//     bool isMatch(string s, string p) {
+//         // 初始化 memo table，大小為 (s.len + 1) x (p.len + 1)，初始值全部為 -1
+//         memo.assign(s.length() + 1, vector<int>(p.length() + 1, -1));
+//         return dp(0, 0, s, p);
+//     }
 
-    bool dp(int i, int j, const string& s, const string& p) {
-        // 1. 檢查 memo，如果不是 -1 代表已經算過了，直接回傳
-        if (memo[i][j] != -1) {
-            return memo[i][j] == 1;
-        }
+//     bool dp(int i, int j, const string& s, const string& p) {
+//         // 1. 檢查 memo，如果不是 -1 代表已經算過了，直接回傳
+//         if (memo[i][j] != -1) {
+//             return memo[i][j] == 1;
+//         }
 
-        bool ans;
-        // 2. 基底情況：如果 pattern 走完了，text 也必須剛好走完
-        if (j == p.length()) {
-            ans = (i == s.length());
-        } else {
-            // 檢查當前字元是否匹配
-            bool first_match = (i < s.length() && 
-                               (p[j] == s[i] || p[j] == '.'));
+//         bool ans;
+//         // 2. 基底情況：如果 pattern 走完了，text 也必須剛好走完
+//         if (j == p.length()) {
+//             ans = (i == s.length());
+//         } else {
+//             // 檢查當前字元是否匹配
+//             bool first_match = (i < s.length() && 
+//                                (p[j] == s[i] || p[j] == '.'));
 
-            // 3. 處理 '*' 的邏輯
-            if (j + 1 < p.length() && p[j + 1] == '*') {
-                ans = (dp(i, j + 2, s, p) ||               // 情況 A: 出現 0 次
-                      (first_match && dp(i + 1, j, s, p))); // 情況 B: 出現 1 次以上
-            } else {
-                // 4. 一般字元匹配
-                ans = first_match && dp(i + 1, j + 1, s, p);
-            }
-        }
+//             // 3. 處理 '*' 的邏輯
+//             if (j + 1 < p.length() && p[j + 1] == '*') {
+//                 ans = (dp(i, j + 2, s, p) ||               // 情況 A: 出現 0 次
+//                       (first_match && dp(i + 1, j, s, p))); // 情況 B: 出現 1 次以上
+//             } else {
+//                 // 4. 一般字元匹配
+//                 ans = first_match && dp(i + 1, j + 1, s, p);
+//             }
+//         }
 
-        // 5. 將結果存入 memo：true 存成 1，false 存成 0
-        memo[i][j] = ans ? 1 : 0;
-        return ans;
-    }
-};
+//         // 5. 將結果存入 memo：true 存成 1，false 存成 0
+//         memo[i][j] = ans ? 1 : 0;
+//         return ans;
+//     }
+// };
 
 // class Solution {
 // public:
