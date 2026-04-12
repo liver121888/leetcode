@@ -58,8 +58,8 @@ public:
                 dp[i] += dp[i - coins[j]];
             }
         }
-
-        return (int) dp[amount];
+        
+        // Return -1 if the result exceeds the maximum int value
+        return dp[amount] <= INT_MAX ? dp[amount] : -1;
     }
-
 };
