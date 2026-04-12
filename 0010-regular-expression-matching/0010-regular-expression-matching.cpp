@@ -68,6 +68,7 @@ public:
                     // 但 pattern 留在 j (因為還能繼續用 x*)
                     dp[i][j] = dp[i][j + 2] || (first_match && dp[i + 1][j]);
                 } else {
+                    // 正常 同時progress 兩 ptr 
                     dp[i][j] = first_match && dp[i + 1][j + 1];
                 }
             }
