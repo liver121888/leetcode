@@ -59,7 +59,7 @@ public:
             }
         }
 
-        return dp[amount];
+        return (int) dp[amount];
     }
 
 };
