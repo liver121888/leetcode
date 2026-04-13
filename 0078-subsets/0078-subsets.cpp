@@ -6,8 +6,9 @@
 // all numbers are unique
 // at every position we can either choose to put in 
 // or not put in
-// time complexity O(2^n)
-// space: O(n) because of the recursion stack 
+// time complexity O(n*2^n) beacuase we need 2^n to generate each subset
+// and O(n) time to copy from the state to ans
+// space: O(n) because of the recursion stack, and the state array 
 class Solution {
 public:
 
@@ -16,6 +17,7 @@ public:
 
         // base case
         if (i == nums.size()) {
+            // this is O(n)
             ans.push_back(state);
             return;
         }
