@@ -50,6 +50,9 @@ public:
 
     vector<string> letterCombinations(string digits) {
         ans.clear();
+        if (digits.length() == 0) {
+            return ans;
+        }
         vector<char> state;
         backtrack(state, digits, 0);
         return ans;
