@@ -26,15 +26,25 @@ public:
         }
 
 
-        if (openCnt == n) {
-            backtrack(s+')', n, openCnt, closeCnt+1);
-            return;
-        }
+        // if (openCnt == n) {
+        //     backtrack(s+')', n, openCnt, closeCnt+1);
+        //     return;
+        // }
 
-        if (closeCnt <= openCnt) {
-            backtrack(s+')', n, openCnt, closeCnt+1);
+        // if (closeCnt <= openCnt) {
+        //     backtrack(s+')', n, openCnt, closeCnt+1);
+        //     backtrack(s+'(', n, openCnt+1, closeCnt);
+        // }
+
+        // clean version
+        if (openCnt < n) {
             backtrack(s+'(', n, openCnt+1, closeCnt);
         }
+
+        if (openCnt > closeCnt) {
+            backtrack(s+')', n, openCnt, closeCnt+1);
+        }
+
 
     }
 
