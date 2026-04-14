@@ -68,6 +68,7 @@
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0303-range-sum-query-immutable](https://github.com/liver121888/leetcode/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/liver121888/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
+| [0308-range-sum-query-2d-mutable](https://github.com/liver121888/leetcode/tree/master/0308-range-sum-query-2d-mutable) |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
@@ -403,6 +404,7 @@
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/liver121888/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0303-range-sum-query-immutable](https://github.com/liver121888/leetcode/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/liver121888/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
+| [0308-range-sum-query-2d-mutable](https://github.com/liver121888/leetcode/tree/master/0308-range-sum-query-2d-mutable) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [0355-design-twitter](https://github.com/liver121888/leetcode/tree/master/0355-design-twitter) |
@@ -463,6 +465,7 @@
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
 | [0304-range-sum-query-2d-immutable](https://github.com/liver121888/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
+| [0308-range-sum-query-2d-mutable](https://github.com/liver121888/leetcode/tree/master/0308-range-sum-query-2d-mutable) |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
@@ -1114,4 +1117,12 @@
 | ------- |
 | [1168-optimize-water-distribution-in-a-village](https://github.com/liver121888/leetcode/tree/master/1168-optimize-water-distribution-in-a-village) |
 | [1584-min-cost-to-connect-all-points](https://github.com/liver121888/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [0308-range-sum-query-2d-mutable](https://github.com/liver121888/leetcode/tree/master/0308-range-sum-query-2d-mutable) |
+## Segment Tree
+|  |
+| ------- |
+| [0308-range-sum-query-2d-mutable](https://github.com/liver121888/leetcode/tree/master/0308-range-sum-query-2d-mutable) |
 <!---LeetCode Topics End-->
