@@ -66,6 +66,7 @@
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
+| [0304-range-sum-query-2d-immutable](https://github.com/liver121888/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0322-coin-change](https://github.com/liver121888/leetcode/tree/master/0322-coin-change) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
@@ -399,6 +400,7 @@
 | [0232-implement-queue-using-stacks](https://github.com/liver121888/leetcode/tree/master/0232-implement-queue-using-stacks) |
 | [0295-find-median-from-data-stream](https://github.com/liver121888/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/liver121888/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0304-range-sum-query-2d-immutable](https://github.com/liver121888/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
 | [0353-design-snake-game](https://github.com/liver121888/leetcode/tree/master/0353-design-snake-game) |
 | [0355-design-twitter](https://github.com/liver121888/leetcode/tree/master/0355-design-twitter) |
@@ -458,6 +460,7 @@
 | [0221-maximal-square](https://github.com/liver121888/leetcode/tree/master/0221-maximal-square) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
+| [0304-range-sum-query-2d-immutable](https://github.com/liver121888/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0348-design-tic-tac-toe](https://github.com/liver121888/leetcode/tree/master/0348-design-tic-tac-toe) |
@@ -501,6 +504,7 @@
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/liver121888/leetcode/tree/master/0238-product-of-array-except-self) |
+| [0304-range-sum-query-2d-immutable](https://github.com/liver121888/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0363-max-sum-of-rectangle-no-larger-than-k](https://github.com/liver121888/leetcode/tree/master/0363-max-sum-of-rectangle-no-larger-than-k) |
 | [0525-contiguous-array](https://github.com/liver121888/leetcode/tree/master/0525-contiguous-array) |
