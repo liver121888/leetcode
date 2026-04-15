@@ -95,6 +95,7 @@
 | [0529-minesweeper](https://github.com/liver121888/leetcode/tree/master/0529-minesweeper) |
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0560-subarray-sum-equals-k) |
+| [0587-erect-the-fence](https://github.com/liver121888/leetcode/tree/master/0587-erect-the-fence) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
@@ -283,6 +284,7 @@
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0380-insert-delete-getrandom-o1](https://github.com/liver121888/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0528-random-pick-with-weight](https://github.com/liver121888/leetcode/tree/master/0528-random-pick-with-weight) |
+| [0587-erect-the-fence](https://github.com/liver121888/leetcode/tree/master/0587-erect-the-fence) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0772-basic-calculator-iii](https://github.com/liver121888/leetcode/tree/master/0772-basic-calculator-iii) |
 | [0830-largest-triangle-area](https://github.com/liver121888/leetcode/tree/master/0830-largest-triangle-area) |
@@ -585,6 +587,7 @@
 | ------- |
 | [0149-max-points-on-a-line](https://github.com/liver121888/leetcode/tree/master/0149-max-points-on-a-line) |
 | [0223-rectangle-area](https://github.com/liver121888/leetcode/tree/master/0223-rectangle-area) |
+| [0587-erect-the-fence](https://github.com/liver121888/leetcode/tree/master/0587-erect-the-fence) |
 | [0830-largest-triangle-area](https://github.com/liver121888/leetcode/tree/master/0830-largest-triangle-area) |
 | [0836-rectangle-overlap](https://github.com/liver121888/leetcode/tree/master/0836-rectangle-overlap) |
 | [0939-minimum-area-rectangle](https://github.com/liver121888/leetcode/tree/master/0939-minimum-area-rectangle) |
