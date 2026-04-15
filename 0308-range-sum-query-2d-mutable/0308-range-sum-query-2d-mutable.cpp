@@ -15,7 +15,8 @@ private:
     vector<vector<int>> bit; // The BIT matrix
 
     int lsb(int n) {
-        // the line below allows us to directly capture the right most non-zero bit of a number
+        // the line below allows us to directly 
+        // capture the right most non-zero bit of a number
         return n & (-n);
     }
 
@@ -31,7 +32,8 @@ private:
 
     int queryBIT(int r, int c) {
         int sum = 0;
-        // keep subtracting lsb(i) to i, lsb(j) to j and obtain the final sum as the sum of non-overlapping sub-rectangles
+        // keep subtracting lsb(i) to i, lsb(j) to j and obtain the final sum as 
+        // the sum of non-overlapping sub-rectangles
         // Using two nested for loops, one for the rows and one for the columns
         for (int i = r; i > 0; i -= lsb(i)) {
             for (int j = c; j > 0; j -= lsb(j)) {
