@@ -15,18 +15,20 @@ public:
         if (words[startIndex] == target)
             return 0;
         int n = words.size();
-        int minDist = INT_MAX;
+        int minDist = n;
         for (int i = 0; i < n; i++) {
             if (words[i] == target) {
-                if (i > startIndex) {
-                    minDist = min(i - startIndex, minDist);
-                    minDist = min(startIndex + n - i, minDist);
-                } else {
-                    minDist = min(startIndex - i, minDist);
-                    minDist = min(i + n - startIndex,minDist);
-                }
+                // if (i > startIndex) {
+                //     minDist = min(i - startIndex, minDist);
+                //     minDist = min(startIndex + n - i, minDist);
+                // } else {
+                //     minDist = min(startIndex - i, minDist);
+                //     minDist = min(i + n - startIndex,minDist);
+                // }
+                int dist = abs(i - startIndex);
+                minDist = min(minDist, min(dist, n - dist));
             }
         }
-        return minDist == INT_MAX ? -1 : minDist;
+        return minDist == n ? -1 : minDist;
     }
 };
