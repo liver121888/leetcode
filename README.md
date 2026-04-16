@@ -157,6 +157,7 @@
 | [3430-count-days-without-meetings](https://github.com/liver121888/leetcode/tree/master/3430-count-days-without-meetings) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/liver121888/leetcode/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3483-alternating-groups-ii](https://github.com/liver121888/leetcode/tree/master/3483-alternating-groups-ii) |
+| [3488-closest-equal-element-queries](https://github.com/liver121888/leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3592-inverse-coin-change](https://github.com/liver121888/leetcode/tree/master/3592-inverse-coin-change) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/liver121888/leetcode/tree/master/3616-make-array-elements-equal-to-zero) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/liver121888/leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
@@ -373,6 +374,7 @@
 | [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
+| [3488-closest-equal-element-queries](https://github.com/liver121888/leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/liver121888/leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
 | [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
@@ -455,6 +457,7 @@
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [2690-house-robber-iv](https://github.com/liver121888/leetcode/tree/master/2690-house-robber-iv) |
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/liver121888/leetcode/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
+| [3488-closest-equal-element-queries](https://github.com/liver121888/leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Matrix
 |  |
