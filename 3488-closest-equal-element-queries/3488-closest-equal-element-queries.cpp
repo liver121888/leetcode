@@ -75,22 +75,27 @@ public:
             if (pos - 1 >= 0) {
                 // then there is a left that we should check
                 int d = q - indices[pos - 1];
-                minDist = min(min(minDist, d), n - d); 
+                // minDist = min(min(minDist, d), n - d); 
+                minDist = min(minDist, d); 
             } else {
                 // then we should check the end because it's circular
                 int d = indices.back() - q;
-                minDist = min(min(minDist, d), n-d); 
+                // minDist = min(min(minDist, d), n-d); 
+                minDist = min(minDist, n-d); 
             }
-
 
             if (pos + 1 < idxSize) {
                 // then there is a right that we should check
                 int d = indices[pos + 1] - q;
-                minDist = min(min(minDist, d), n-d); 
+                // minDist = min(min(minDist, d), n-d);
+                minDist = min(minDist, d); 
+
             } else {
                 // then we should check the fronnt because it's circular
                 int d = q - indices.front();
-                minDist = min(min(minDist, d), n-d); 
+                // minDist = min(min(minDist, d), n-d); 
+                minDist = min(minDist, n-d); 
+
             }
 
             ans[j] = minDist;
