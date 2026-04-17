@@ -93,6 +93,7 @@ public:
 
         int n = nums.size();
         unordered_map<int, int> prev;
+        // impossible value
         int ans = n;
         for (int i = 0; i < n; ++i) {
             int x = nums[i];
