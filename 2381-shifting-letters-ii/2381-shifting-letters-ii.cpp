@@ -1,8 +1,8 @@
 class Solution {
 public:
 
-    string shiftingLetters(string s, vector<vector<int>>& shifts)
-    {
+    string shiftingLetters(string s, vector<vector<int>>& shifts) {
+        
         int n = s.size();
         vector<int> diff(n);
 
