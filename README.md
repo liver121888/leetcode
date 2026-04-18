@@ -80,6 +80,7 @@
 | [0362-design-hit-counter](https://github.com/liver121888/leetcode/tree/master/0362-design-hit-counter) |
 | [0363-max-sum-of-rectangle-no-larger-than-k](https://github.com/liver121888/leetcode/tree/master/0363-max-sum-of-rectangle-no-larger-than-k) |
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
+| [0370-range-addition](https://github.com/liver121888/leetcode/tree/master/0370-range-addition) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/liver121888/leetcode/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0377-combination-sum-iv](https://github.com/liver121888/leetcode/tree/master/0377-combination-sum-iv) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
@@ -530,6 +531,7 @@
 | [0304-range-sum-query-2d-immutable](https://github.com/liver121888/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0325-maximum-size-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0325-maximum-size-subarray-sum-equals-k) |
 | [0363-max-sum-of-rectangle-no-larger-than-k](https://github.com/liver121888/leetcode/tree/master/0363-max-sum-of-rectangle-no-larger-than-k) |
+| [0370-range-addition](https://github.com/liver121888/leetcode/tree/master/0370-range-addition) |
 | [0525-contiguous-array](https://github.com/liver121888/leetcode/tree/master/0525-contiguous-array) |
 | [0528-random-pick-with-weight](https://github.com/liver121888/leetcode/tree/master/0528-random-pick-with-weight) |
 | [0560-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0560-subarray-sum-equals-k) |
