@@ -33,11 +33,14 @@ public:
 
         }
 
-        int runningSum = 0;
-        for (int i = 0; i < length; i++) {
-            runningSum += ans[i];
-            ans[i] = runningSum;
-        }
+        // int runningSum = 0;
+        // for (int i = 0; i < length; i++) {
+        //     runningSum += ans[i];
+        //     ans[i] = runningSum;
+        // }
+
+        partial_sum(ans.begin(), ans.end(), ans.begin());
+
 
         return ans;
         
