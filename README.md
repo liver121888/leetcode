@@ -140,6 +140,7 @@
 | [1656-count-good-triplets](https://github.com/liver121888/leetcode/tree/master/1656-count-good-triplets) |
 | [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/liver121888/leetcode/tree/master/1944-number-of-visible-people-in-a-queue) |
+| [2078-two-furthest-houses-with-different-colors](https://github.com/liver121888/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2262-solving-questions-with-brainpower](https://github.com/liver121888/leetcode/tree/master/2262-solving-questions-with-brainpower) |
@@ -811,6 +812,7 @@
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/liver121888/leetcode/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/liver121888/leetcode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1448-maximum-69-number](https://github.com/liver121888/leetcode/tree/master/1448-maximum-69-number) |
+| [2078-two-furthest-houses-with-different-colors](https://github.com/liver121888/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2592-maximize-greatness-of-an-array](https://github.com/liver121888/leetcode/tree/master/2592-maximize-greatness-of-an-array) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 ## Backtracking
