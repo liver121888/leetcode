@@ -52,41 +52,100 @@
 //     }
 // };
 
+// O(nlogk)
+// O(k)
+// class Solution {
+// public:
+//     vector<int> smallestRange(vector<vector<int>>& nums) {
+//         // Priority queue to store (value, list index, element index)
+//         priority_queue<pair<int, pair<int, int>>,
+//                        vector<pair<int, pair<int, int>>>, greater<>> pq;
+                    
+//         int maxVal = INT_MIN, rangeStart = 0, rangeEnd = INT_MAX;
+
+//         // Insert the first element from each list into the min-heap
+//         for (int i = 0; i < nums.size(); i++) {
+//             pq.push({nums[i][0], {i, 0}});
+//             maxVal = max(maxVal, nums[i][0]);
+//         }
+
+//         // Continue until we can't proceed further
+//         while (pq.size() == nums.size()) {
+//             auto [minVal, indices] = pq.top();
+//             pq.pop();
+//             int row = indices.first, col = indices.second;
+
+//             // Update the smallest range
+//             if (maxVal - minVal < rangeEnd - rangeStart) {
+//                 rangeStart = minVal;
+//                 rangeEnd = maxVal;
+//             }
+
+//             // If possible, add the next element from the same row to the heap
+//             if (col + 1 < nums[row].size()) {
+//                 int nextVal = nums[row][col + 1];
+//                 pq.push({nextVal, {row, col + 1}});
+//                 maxVal = max(maxVal, nextVal);
+//             }
+//         }
+
+//         return {rangeStart, rangeEnd};
+//     }
+// };
+
+// Since we need a range that includes one number from each of the k lists, 
+// we can think of this as a subarray problem. However, the numbers are spread 
+// across multiple lists. To simplify, we can combine all the lists into a single 
+// sorted list of numbers. When merging, we also keep track of which list each 
+// number came from, since the problem requires at least one number from each 
+// original list in the final range.
+
+// Time complexity: O(nlogn)
+// Space complexity: O(n)
+
 class Solution {
 public:
     vector<int> smallestRange(vector<vector<int>>& nums) {
-        // Priority queue to store (value, list index, element index)
-        priority_queue<pair<int, pair<int, int>>,
-                       vector<pair<int, pair<int, int>>>, greater<>> pq;
-                    
-        int maxVal = INT_MIN, rangeStart = 0, rangeEnd = INT_MAX;
 
-        // Insert the first element from each list into the min-heap
-        for (int i = 0; i < nums.size(); i++) {
-            pq.push({nums[i][0], {i, 0}});
-            maxVal = max(maxVal, nums[i][0]);
+        vector<pair<int, int>> merged;
+        int k = nums.size();
+
+        // Merge all lists with their list index
+        for (int i = 0; i < k; i++) {
+            for (int num : nums[i]) {
+                merged.push_back({num, i});
+            }
         }
 
-        // Continue until we can't proceed further
-        while (pq.size() == nums.size()) {
-            auto [minVal, indices] = pq.top();
-            pq.pop();
-            int row = indices.first, col = indices.second;
+        // Sort the merged list, nlongn
+        sort(merged.begin(), merged.end());
 
-            // Update the smallest range
-            if (maxVal - minVal < rangeEnd - rangeStart) {
-                rangeStart = minVal;
-                rangeEnd = maxVal;
-            }
+        // Two pointers to track the smallest range
+        unordered_map<int, int> freq;
+        int left = 0, count = 0;
+        int rangeStart = 0, rangeEnd = INT_MAX;
 
-            // If possible, add the next element from the same row to the heap
-            if (col + 1 < nums[row].size()) {
-                int nextVal = nums[row][col + 1];
-                pq.push({nextVal, {row, col + 1}});
-                maxVal = max(maxVal, nextVal);
+        for (int right = 0; right < merged.size(); right++) {
+            freq[merged[right].second]++;
+            if (freq[merged[right].second] == 1)
+                count++;
+
+            // When all lists are represented, try to shrink the window
+            while (count == k) {
+                int curRange = merged[right].first - merged[left].first;
+                if (curRange < rangeEnd - rangeStart) {
+                    rangeStart = merged[left].first;
+                    rangeEnd = merged[right].first;
+                }
+
+                freq[merged[left].second]--;
+                if (freq[merged[left].second] == 0)
+                    count--;
+                left++;
             }
         }
 
         return {rangeStart, rangeEnd};
     }
 };
+
