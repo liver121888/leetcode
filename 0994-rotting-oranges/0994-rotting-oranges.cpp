@@ -46,7 +46,7 @@ public:
                 const auto [y, x] = bfs.front();
                 bfs.pop();
 
-                cout << y << " " << x << " " << elapseMinute << endl;
+                // cout << y << " " << x << " " << elapseMinute << endl;
 
                 for (int i = 0; i < 4; i++) {
                     int ny = y + dirs[i];
