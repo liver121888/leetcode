@@ -1,73 +1,70 @@
-// graph problem
-// bfs
-// 3 states, 0, 1, 2
-// there might be multiple sources of rotten 
-// return minimum number of minutes
-// we can bfs from non-rotten oranges at the same time
-// the dist of it from the nearest rotten will be the time it goes rotten
-// time complexity: O(mn) because we mark visit
-// space complexity: O(mn) we need to mark visit 
 
-// 
+// multi-source bfs
 
 class Solution {
 public:
 
-    queue<vector<int>> bfs;
-    vector<vector<int>> directions = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
-    int m;
-    int n;
 
-    // state: 0 empty 1 non-rotten 2 rotten
+    // we count the fresh orages
+    // and push rotten orange to our bfs queue
+    // every time step (bfs level) we bfs
 
     int orangesRotting(vector<vector<int>>& grid) {
-        m = grid.size();
-        n = grid[0].size();
-        int freshOranges = 0;
-        int minutesElapsed = -1;
+
+        if (grid.size() == 0 || grid[0].size() == 0) {
+            return -1;
+        }
+
+        const int dirs[5] = {-1, 0, 1, 0, -1};
+
+        int m = grid.size();
+        int n = grid[0].size(); 
+
+        queue<pair<int,int>> bfs;
+        int freshNum = 0;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                // non-rotten
                 if (grid[i][j] == 1) {
-                    freshOranges++;
+                    freshNum += 1;
                 } else if (grid[i][j] == 2) {
                     bfs.push({i, j});
                 }
             }
         }
 
-        // end token for one round
-        bfs.push({-1,-1});
+        // no cell has a fresh orange
+        // the grid is entirely empty
+        // or has rotten oranges but no fresh oranges
+        if (freshNum == 0)
+            return 0;
 
-        while(!bfs.empty()) {
-            auto coords = bfs.front();
-            bfs.pop();
+        int elapseMinute = 0;
+        while (!bfs.empty() && freshNum > 0) {
+            int currLayerSize = bfs.size();
+            while (currLayerSize) {
 
-            if (coords[0] == -1) {
-                minutesElapsed++;
-                if (!bfs.empty())
-                    bfs.push({-1,-1});
-            } else {
-                // check neighbors
-                for (auto direction : directions) {
-                    int nr = coords[0] + direction[0];
-                    int nc = coords[1] + direction[1];
-                    if (nr >= 0 && nr < m && nc >= 0 && nc < n) {
-                        if (grid[nr][nc] == 1) {
-                            // this orange would be contaminated
-                            grid[nr][nc] = 2;
-                            freshOranges--;
-                            // this orange would then contaminate other oranges
-                            bfs.push({nr, nc});
-                        }
+                const auto [y, x] = bfs.front();
+                bfs.pop();
+
+                cout << y << " " << x << " " << elapseMinute << endl;
+
+                for (int i = 0; i < 4; i++) {
+                    int ny = y + dirs[i];
+                    int nx = x + dirs[i+1];
+
+                    if (ny >= 0 && ny < m && nx >= 0 && nx < n && grid[ny][nx] == 1) {
+                        // rot the orange
+                        freshNum--;
+                        grid[ny][nx] = 2;
+                        bfs.push({ny, nx});
                     }
+
                 }
+                currLayerSize--;
             }
+            elapseMinute++;
         }
 
-        // cout << minutesElapsed << endl;
-
-        return freshOranges == 0 ? minutesElapsed : -1;
-        
+        return freshNum == 0 ? elapseMinute : -1;
     }
 };
