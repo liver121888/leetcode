@@ -39,6 +39,9 @@ public:
             return 0;
 
         int elapseMinute = 0;
+        // freshNum > 0 停止條件避免最後多算一層
+        // 是一種「停止條件」
+        // 只要還有擴散來源 && 還有新鮮橘子沒被感染，就繼續
         while (!bfs.empty() && freshNum > 0) {
             int currLayerSize = bfs.size();
             while (currLayerSize) {
@@ -68,3 +71,4 @@ public:
         return freshNum == 0 ? elapseMinute : -1;
     }
 };
+
