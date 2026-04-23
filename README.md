@@ -141,6 +141,7 @@
 | [1610-maximum-number-of-visible-points](https://github.com/liver121888/leetcode/tree/master/1610-maximum-number-of-visible-points) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1656-count-good-triplets](https://github.com/liver121888/leetcode/tree/master/1656-count-good-triplets) |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/liver121888/leetcode/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/liver121888/leetcode/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/liver121888/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -977,6 +978,7 @@
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1644-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/liver121888/leetcode/tree/master/1644-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/liver121888/leetcode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/liver121888/leetcode/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [1740-find-distance-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1740-find-distance-in-a-binary-tree) |
 | [3123-find-edges-in-shortest-paths](https://github.com/liver121888/leetcode/tree/master/3123-find-edges-in-shortest-paths) |
 ## Union Find
@@ -1113,6 +1115,7 @@
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1584-min-cost-to-connect-all-points](https://github.com/liver121888/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
+| [1722-minimize-hamming-distance-after-swap-operations](https://github.com/liver121888/leetcode/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 ## Merge Sort
 |  |
 | ------- |
