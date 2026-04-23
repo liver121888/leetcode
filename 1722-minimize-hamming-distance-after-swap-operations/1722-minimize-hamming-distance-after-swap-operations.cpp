@@ -25,7 +25,10 @@ public:
         }
     }
 
-
+    // The Hamming distance of two arrays of the same length, 
+    // source and target, is the number of positions where the elements 
+    // are different. Formally, it is the number of indices i for 0 <= i <= n-1 
+    // where source[i] != target[i] (0-indexed).
 
     int minimumHammingDistance(vector<int>& source, 
         vector<int>& target, vector<vector<int>>& allowedSwaps) {
