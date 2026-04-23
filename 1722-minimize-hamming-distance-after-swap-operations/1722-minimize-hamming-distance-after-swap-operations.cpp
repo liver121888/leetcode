@@ -45,16 +45,24 @@ public:
 
         // Additionally, we use a hash table to record the frequency of 
         // each element within every set.
+        // this stores, in this index's connected component,
+        // the occur frequency of a number
         unordered_map<int, unordered_map<int, int>> sets;
         for (int i = 0; i < n; i++) {
+            // find the component
             int f = find(i);
+            // increment the freqency of this number in this component
             sets[f][source[i]]++;
         }
         int ans = 0;
         for (int i = 0; i < n; i++) {
             int f = find(i);
-            if (sets[f][target[i]] > 0) {
-                sets[f][target[i]]--;
+            if (sets[f].find(target[i]) != sets[f].end()) {
+                if (sets[f][target[i]] > 0)
+                    sets[f][target[i]]--;
+                else {
+                    ans++;
+                }
             } else {
                 ans++;
             }
