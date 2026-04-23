@@ -154,6 +154,7 @@
 | [2452-words-within-two-edits-of-dictionary](https://github.com/liver121888/leetcode/tree/master/2452-words-within-two-edits-of-dictionary) |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/liver121888/leetcode/tree/master/2515-shortest-distance-to-target-string-in-a-circular-array) |
 | [2592-maximize-greatness-of-an-array](https://github.com/liver121888/leetcode/tree/master/2592-maximize-greatness-of-an-array) |
+| [2615-sum-of-distances](https://github.com/liver121888/leetcode/tree/master/2615-sum-of-distances) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2690-house-robber-iv](https://github.com/liver121888/leetcode/tree/master/2690-house-robber-iv) |
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/liver121888/leetcode/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
@@ -388,6 +389,7 @@
 | [1676-lowest-common-ancestor-of-a-binary-tree-iv](https://github.com/liver121888/leetcode/tree/master/1676-lowest-common-ancestor-of-a-binary-tree-iv) |
 | [1740-find-distance-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1740-find-distance-in-a-binary-tree) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+| [2615-sum-of-distances](https://github.com/liver121888/leetcode/tree/master/2615-sum-of-distances) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
@@ -551,6 +553,7 @@
 | [1094-car-pooling](https://github.com/liver121888/leetcode/tree/master/1094-car-pooling) |
 | [1109-corporate-flight-bookings](https://github.com/liver121888/leetcode/tree/master/1109-corporate-flight-bookings) |
 | [2381-shifting-letters-ii](https://github.com/liver121888/leetcode/tree/master/2381-shifting-letters-ii) |
+| [2615-sum-of-distances](https://github.com/liver121888/leetcode/tree/master/2615-sum-of-distances) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/liver121888/leetcode/tree/master/3616-make-array-elements-equal-to-zero) |
 ## Dynamic Programming
 |  |
