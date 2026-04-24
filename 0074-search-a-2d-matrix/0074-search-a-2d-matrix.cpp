@@ -9,7 +9,7 @@
 // find lower bound of target
 // and then we search for that row
 
-// complexity O(logm + log(n))
+// complexity O(logm + log(n)) = O(log(m*n))
 // space: O(1)
 
 // 1 10 23
@@ -30,6 +30,33 @@
 // target 61
 // 1 10 23
 
+// 直覺理解（很重要🔥）
+
+// 你現在做的是：
+
+// 先找 row，再找 column
+
+// 但另一種寫法是：
+
+// 把 matrix 當成一個「長度 m×n 的排序 array」
+
+// 例如：
+
+// [1,3,5,7,
+//  10,11,16,20,
+//  23,30,34,60]
+
+// 👉 直接 binary search 一次：
+
+// 範圍：0 ~ m*n-1
+// mid → 映射回 matrix：
+// row = mid / n
+// col = mid % n
+
+// 👉 這樣 complexity：
+
+// O(log(m×n))
+
 
 class Solution {
 public:
@@ -42,6 +69,7 @@ public:
         int n = matrix[0].size();
 
         // binary search first column's element to find the row
+        // I want to find the last one that is <＝ target
         int l = 0, r = m - 1;
         while (l <= r) {
             int mid = l + (r - l) / 2;
@@ -52,7 +80,8 @@ public:
             }
         }
 
-        // r will be our ans
+        // r will be our ans, beacuase r is finding the last one
+        // l is finding the first one
 
         // search on that row
         int row = r;
