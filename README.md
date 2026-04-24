@@ -722,6 +722,7 @@
 | [2452-words-within-two-edits-of-dictionary](https://github.com/liver121888/leetcode/tree/master/2452-words-within-two-edits-of-dictionary) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/liver121888/leetcode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/liver121888/leetcode/tree/master/2515-shortest-distance-to-target-string-in-a-circular-array) |
+| [2833-furthest-point-from-origin](https://github.com/liver121888/leetcode/tree/master/2833-furthest-point-from-origin) |
 | [2887-sort-vowels-in-a-string](https://github.com/liver121888/leetcode/tree/master/2887-sort-vowels-in-a-string) |
 | [3396-valid-word](https://github.com/liver121888/leetcode/tree/master/3396-valid-word) |
 | [3462-vowels-game-in-a-string](https://github.com/liver121888/leetcode/tree/master/3462-vowels-game-in-a-string) |
@@ -1042,6 +1043,7 @@
 | [0347-top-k-frequent-elements](https://github.com/liver121888/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/liver121888/leetcode/tree/master/0383-ransom-note) |
 | [0692-top-k-frequent-words](https://github.com/liver121888/leetcode/tree/master/0692-top-k-frequent-words) |
+| [2833-furthest-point-from-origin](https://github.com/liver121888/leetcode/tree/master/2833-furthest-point-from-origin) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/liver121888/leetcode/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Ordered Set
