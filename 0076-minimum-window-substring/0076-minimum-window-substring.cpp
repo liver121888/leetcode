@@ -7,7 +7,7 @@ class Solution {
 public:
 
     // s and t consist of uppercase and lowercase English letters.
-    // time: O(n * 52)
+    // time: O(n * 52 + O(n))
     // space: O(t)
 
     bool isMatch(const unordered_map<char,int>& currFreq, const unordered_map<char,int>& freq) {
@@ -39,7 +39,9 @@ public:
 
         for (int r = 0; r < s.size(); r++) {
             currFreq[s[r]]++;
-            cout << r << endl;
+            // cout << r << endl;
+            // don;t have to check the whole window, only need to check 
+            // the changed one
             while (isMatch(currFreq, freq)) {
                 // record ans;
                 if (r - l + 1 < minLen) {
