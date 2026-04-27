@@ -81,50 +81,92 @@
 // 在 encoded string 裡一定是原始資料的一個 /。
 // 所以 decoder 每次看到 / 都可以唯一判斷，沒有 ambiguity。
 
+// class Codec {
+// public:
+//     string encode(vector<string>& strs) {
+//         string encoded;
+
+//         for (const string& s : strs) {
+//             for (char c : s) {
+//                 if (c == '/') {
+//                     encoded += "//";   // escape slash
+//                 } else {
+//                     encoded += c;
+//                 }
+//             }
+
+//             encoded += "/:";           // delimiter
+//         }
+
+//         return encoded;
+//     }
+
+//     vector<string> decode(string s) {
+//         vector<string> ans;
+//         string curr;
+
+//         int i = 0;
+//         while (i < s.size()) {
+//             if (s[i] == '/') {
+//                 if (s[i + 1] == '/') {
+//                     curr += '/';       // escaped slash
+//                     i += 2;
+//                 } else if (s[i + 1] == ':') {
+//                     ans.push_back(curr); // delimiter
+//                     curr.clear();
+//                     i += 2;
+//                 }
+//             } else {
+//                 curr += s[i];
+//                 i++;
+//             }
+//         }
+
+//         return ans;
+//     }
+// };
+// Your Codec object will be instantiated and called as such:
+// Codec codec;
+// codec.decode(codec.encode(strs));
+
+
+// length-prefix 解法
+// 比較推薦
+// length-prefix 解法是：
+// 7#abc#def
+// 這裡的 # 只用來分隔「長度區」和「內容區」。
+// 一旦長度被讀出來，後面的內容完全不需要 parse delimiter。
 class Codec {
 public:
+
+    // this can also encode and decode empty string
     string encode(vector<string>& strs) {
         string encoded;
-
-        for (const string& s : strs) {
-            for (char c : s) {
-                if (c == '/') {
-                    encoded += "//";   // escape slash
-                } else {
-                    encoded += c;
-                }
-            }
-
-            encoded += "/:";           // delimiter
+        for (const auto& str : strs) {
+            int strLen = str.size();
+            encoded += to_string(strLen) + '#' + str;
         }
-
         return encoded;
     }
 
     vector<string> decode(string s) {
-        vector<string> ans;
-        string curr;
-
+        vector<string> res;
         int i = 0;
-        while (i < s.size()) {
-            if (s[i] == '/') {
-                if (s[i + 1] == '/') {
-                    curr += '/';       // escaped slash
-                    i += 2;
-                } else if (s[i + 1] == ':') {
-                    ans.push_back(curr); // delimiter
-                    curr.clear();
-                    i += 2;
-                }
-            } else {
-                curr += s[i];
-                i++;
-            }
-        }
 
-        return ans;
+        while (i < s.size()) {
+            int j = i;
+
+            while (s[j] != '#') {
+                j++;
+            }
+
+            int len = stoi(s.substr(i, j - i));
+
+            res.push_back(s.substr(j + 1, len));
+
+            i = j + 1 + len;
+        }
+        return res;
     }
+
 };
-// Your Codec object will be instantiated and called as such:
-// Codec codec;
-// codec.decode(codec.encode(strs));
