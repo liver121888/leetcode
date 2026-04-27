@@ -135,6 +135,7 @@
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/liver121888/leetcode/tree/master/1293-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/liver121888/leetcode/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/liver121888/leetcode/tree/master/1388-greatest-sum-divisible-by-three) |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/liver121888/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/liver121888/leetcode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1584-min-cost-to-connect-all-points](https://github.com/liver121888/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
@@ -516,6 +517,7 @@
 | [0778-swim-in-rising-water](https://github.com/liver121888/leetcode/tree/master/0778-swim-in-rising-water) |
 | [0994-rotting-oranges](https://github.com/liver121888/leetcode/tree/master/0994-rotting-oranges) |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/liver121888/leetcode/tree/master/1293-shortest-path-in-a-grid-with-obstacles-elimination) |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/liver121888/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
@@ -785,6 +787,7 @@
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1242-web-crawler-multithreaded](https://github.com/liver121888/leetcode/tree/master/1242-web-crawler-multithreaded) |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/liver121888/leetcode/tree/master/1293-shortest-path-in-a-grid-with-obstacles-elimination) |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/liver121888/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
@@ -978,6 +981,7 @@
 | [1242-web-crawler-multithreaded](https://github.com/liver121888/leetcode/tree/master/1242-web-crawler-multithreaded) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/liver121888/leetcode/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1372-longest-zigzag-path-in-a-binary-tree) |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/liver121888/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1644-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/liver121888/leetcode/tree/master/1644-lowest-common-ancestor-of-a-binary-tree-ii) |
@@ -1117,6 +1121,7 @@
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0778-swim-in-rising-water](https://github.com/liver121888/leetcode/tree/master/0778-swim-in-rising-water) |
 | [1168-optimize-water-distribution-in-a-village](https://github.com/liver121888/leetcode/tree/master/1168-optimize-water-distribution-in-a-village) |
+| [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/liver121888/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1584-min-cost-to-connect-all-points](https://github.com/liver121888/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
