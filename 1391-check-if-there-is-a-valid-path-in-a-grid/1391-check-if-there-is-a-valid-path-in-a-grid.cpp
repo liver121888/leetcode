@@ -68,10 +68,87 @@
 //     }
 // };
 
+// dfs solution
+// time: O(mn) traverse whole grid
+// space: O(mn) for call stack
+// class Solution {
+// public:
+//     vector<vector<pair<int, int>>> dirs = {
+//         {},                         // dummy, street type starts from 1
+//         {{0, -1}, {0, 1}},          // 1: left, right
+//         {{-1, 0}, {1, 0}},          // 2: up, down
+//         {{0, -1}, {1, 0}},          // 3: left, down
+//         {{1, 0}, {0, 1}},           // 4: down, right
+//         {{0, -1}, {-1, 0}},         // 5: left, up
+//         {{0, 1}, {-1, 0}}           // 6: right, up
+//     };
+
+//     bool hasDirection(int type, int dy, int dx) {
+//         for (auto [a, b] : dirs[type]) {
+//             if (a == dy && b == dx)
+//                 return true;
+//         }
+//         return false;
+//     }
+
+//     bool dfs(vector<vector<int>>& grid,
+//              vector<vector<int>>& visited,
+//              int y,
+//              int x) {
+        
+//         int m = grid.size();
+//         int n = grid[0].size();
+
+//         if (y == m - 1 && x == n - 1)
+//             return true;
+
+//         visited[y][x] = true;
+
+//         int type = grid[y][x];
+
+//         for (auto [dy, dx] : dirs[type]) {
+//             int ny = y + dy;
+//             int nx = x + dx;
+
+//             if (ny < 0 || ny >= m || nx < 0 || nx >= n)
+//                 continue;
+
+//             if (visited[ny][nx])
+//                 continue;
+
+//             int nextType = grid[ny][nx];
+
+//             // next cell must be able to connect back to current cell
+//             if (!hasDirection(nextType, -dy, -dx))
+//                 continue;
+
+//             if (dfs(grid, visited, ny, nx))
+//                 return true;
+//         }
+
+//         return false;
+//     }
+
+//     bool hasValidPath(vector<vector<int>>& grid) {
+//         int m = grid.size();
+//         int n = grid[0].size();
+
+//         vector<vector<int>> visited(m, vector<int>(n, 0));
+
+//         return dfs(grid, visited, 0, 0);
+//     }
+// };
+
+// dsu
+// time: O(mn)
+// space: O(mn)
 class Solution {
 public:
+    vector<int> parent;
+    vector<int> sz;
+
     vector<vector<pair<int, int>>> dirs = {
-        {},                         // dummy, street type starts from 1
+        {},                         // dummy
         {{0, -1}, {0, 1}},          // 1: left, right
         {{-1, 0}, {1, 0}},          // 2: up, down
         {{0, -1}, {1, 0}},          // 3: left, down
@@ -79,6 +156,26 @@ public:
         {{0, -1}, {-1, 0}},         // 5: left, up
         {{0, 1}, {-1, 0}}           // 6: right, up
     };
+
+    int find(int x) {
+        if (parent[x] != x)
+            parent[x] = find(parent[x]);
+        return parent[x];
+    }
+
+    void unite(int a, int b) {
+        int pa = find(a);
+        int pb = find(b);
+
+        if (pa == pb)
+            return;
+
+        if (sz[pa] < sz[pb])
+            swap(pa, pb);
+
+        parent[pb] = pa;
+        sz[pa] += sz[pb];
+    }
 
     bool hasDirection(int type, int dy, int dx) {
         for (auto [a, b] : dirs[type]) {
@@ -88,50 +185,40 @@ public:
         return false;
     }
 
-    bool dfs(vector<vector<int>>& grid,
-             vector<vector<int>>& visited,
-             int y,
-             int x) {
-        
-        int m = grid.size();
-        int n = grid[0].size();
-
-        if (y == m - 1 && x == n - 1)
-            return true;
-
-        visited[y][x] = true;
-
-        int type = grid[y][x];
-
-        for (auto [dy, dx] : dirs[type]) {
-            int ny = y + dy;
-            int nx = x + dx;
-
-            if (ny < 0 || ny >= m || nx < 0 || nx >= n)
-                continue;
-
-            if (visited[ny][nx])
-                continue;
-
-            int nextType = grid[ny][nx];
-
-            // next cell must be able to connect back to current cell
-            if (!hasDirection(nextType, -dy, -dx))
-                continue;
-
-            if (dfs(grid, visited, ny, nx))
-                return true;
-        }
-
-        return false;
-    }
-
     bool hasValidPath(vector<vector<int>>& grid) {
         int m = grid.size();
         int n = grid[0].size();
 
-        vector<vector<int>> visited(m, vector<int>(n, 0));
+        parent.resize(m * n);
+        sz.resize(m * n, 1);
 
-        return dfs(grid, visited, 0, 0);
+        for (int i = 0; i < m * n; i++)
+            parent[i] = i;
+
+        for (int y = 0; y < m; y++) {
+            for (int x = 0; x < n; x++) {
+                int type = grid[y][x];
+                int id1 = y * n + x;
+
+                for (auto [dy, dx] : dirs[type]) {
+                    int ny = y + dy;
+                    int nx = x + dx;
+
+                    if (ny < 0 || ny >= m || nx < 0 || nx >= n)
+                        continue;
+
+                    int nextType = grid[ny][nx];
+
+                    // next cell must be able to connect back
+                    if (!hasDirection(nextType, -dy, -dx))
+                        continue;
+
+                    int id2 = ny * n + nx;
+                    unite(id1, id2);
+                }
+            }
+        }
+
+        return find(0) == find(m * n - 1);
     }
 };
