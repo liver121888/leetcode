@@ -1,47 +1,59 @@
-#define MAP_SIZE 60 //(65-90) + (97-122), ASCII
-
+// can we use sliding window on this?
+// is there monotonic
+// so we expanding until we have all the from t
+// if that ever occurs, we shrink l
+// see the minimum
 class Solution {
 public:
-    string minWindow(string s, string t) {
-        vector<int> cnts(MAP_SIZE, 0);
-        vector<int> windowCnts(MAP_SIZE, 0);;
-        int ansLeft = 0;
-        int ansRight = 1e6;
-        
-        for (auto c : t)
-            cnts[c - 'A']++;
-        
-        int left = 0;
-        for (int right = 0; right < s.size(); right++) {
-            windowCnts[s[right] - 'A']++;
-            
-            // contract left
-            while (left <= right && checkValid(cnts, windowCnts) == true) {
-                if (right - left + 1 < ansRight - ansLeft + 1) {
-                    ansLeft = left;
-                    ansRight = right;
-                }
 
-                windowCnts[s[left] - 'A']--;
-                left++;
-            }
+    // s and t consist of uppercase and lowercase English letters.
+    // time: O(n * 52)
+    // space: O(t)
 
+    bool isMatch(const unordered_map<char,int>& currFreq, const unordered_map<char,int>& freq) {
+
+        for (const auto& [c, cnt] : freq) {
+            // if there is still char not matched
+            // we can over match
+            if (currFreq.find(c) == currFreq.end())
+                return false;
+            if (currFreq.at(c) < cnt)
+                return false;
         }
-        
-        if (ansRight - ansLeft == 1e6)
-            return "";
-        
-        return s.substr(ansLeft, ansRight - ansLeft + 1);
-    }
-
-    bool checkValid(vector<int>& cnts, vector<int>& windowCnts)
-    {
-       for(int i=0; i < MAP_SIZE; i++)
-       {
-           if(windowCnts[i] < cnts[i])
-               return false;               
-       }
         return true;
     }
 
+    string minWindow(string s, string t) {
+        unordered_map<char, int> freq;
+        for (const auto& c : t) {
+            freq[c]++;
+        }
+        // we need substring 
+        // so we need to save idx
+
+        int l = 0;
+        int minLen = INT_MAX/2;
+        int lResult = INT_MAX/2;
+        int rResult = INT_MAX/2;
+        unordered_map<char, int> currFreq;
+
+        for (int r = 0; r < s.size(); r++) {
+            currFreq[s[r]]++;
+            cout << r << endl;
+            while (isMatch(currFreq, freq)) {
+                // record ans;
+                if (r - l + 1 < minLen) {
+                    lResult = l;
+                    rResult = r;
+                    minLen = r - l + 1;
+                }
+                
+                // shrink
+                currFreq[s[l]]--;
+                l++;
+            }
+        }
+        
+        return lResult == INT_MAX/2 ? "" : s.substr(lResult, rResult - lResult + 1);
+    }
 };
