@@ -40,9 +40,10 @@ public:
         for (int r = 0; r < s.size(); r++) {
             currFreq[s[r]]++;
             // cout << r << endl;
-            // don;t have to check the whole window, only need to check 
-            // the changed one
+            // actually don't have to check the whole window, 
+            // only need to check the changed one
             while (isMatch(currFreq, freq)) {
+
                 // record ans;
                 if (r - l + 1 < minLen) {
                     lResult = l;
