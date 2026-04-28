@@ -35,13 +35,13 @@ public:
                 nums[i*n + j] = grid[i][j];
             }
         }
-        
+
         // In C++, we can avoid fully sorting the array by using the nth_element 
         // function. This operation runs in linear time and ensures that the desired 
         // element is placed at the index it would occupy in a fully sorted array. 
         // For the median, this means the element will be placed at the middle index.
-        // nth_element(nums.begin(), nums.begin() + m*n/2, nums.end());
-        sort(nums.begin(), nums.end());
+        nth_element(nums.begin(), nums.begin() + m*n/2, nums.end());
+        // sort(nums.begin(), nums.end());
         int finalCommonNumber = nums[m*n/2];
 
         for (int number : nums) {
