@@ -147,6 +147,7 @@
 | [1656-count-good-triplets](https://github.com/liver121888/leetcode/tree/master/1656-count-good-triplets) |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/liver121888/leetcode/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/liver121888/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/liver121888/leetcode/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/liver121888/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/liver121888/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -215,6 +216,7 @@
 | [0977-squares-of-a-sorted-array](https://github.com/liver121888/leetcode/tree/master/0977-squares-of-a-sorted-array) |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
 | [1650-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/liver121888/leetcode/tree/master/1650-lowest-common-ancestor-of-a-binary-tree-iii) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/liver121888/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2337-move-pieces-to-obtain-a-string](https://github.com/liver121888/leetcode/tree/master/2337-move-pieces-to-obtain-a-string) |
 | [2592-maximize-greatness-of-an-array](https://github.com/liver121888/leetcode/tree/master/2592-maximize-greatness-of-an-array) |
@@ -489,6 +491,7 @@
 | [1056-capacity-to-ship-packages-within-d-days](https://github.com/liver121888/leetcode/tree/master/1056-capacity-to-ship-packages-within-d-days) |
 | [1235-maximum-profit-in-job-scheduling](https://github.com/liver121888/leetcode/tree/master/1235-maximum-profit-in-job-scheduling) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
+| [1855-maximum-distance-between-a-pair-of-values](https://github.com/liver121888/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2690-house-robber-iv](https://github.com/liver121888/leetcode/tree/master/2690-house-robber-iv) |
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/liver121888/leetcode/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [3488-closest-equal-element-queries](https://github.com/liver121888/leetcode/tree/master/3488-closest-equal-element-queries) |
