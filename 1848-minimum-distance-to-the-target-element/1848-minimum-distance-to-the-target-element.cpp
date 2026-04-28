@@ -15,15 +15,24 @@ public:
         return n;
     }
 
-
     int getMinDistance(vector<int>& nums, int target, int start) {
 
         // we can start from the start and expand to see target
         // it is guaranteed that target exist
 
-        int result1 = search(nums, target, start, -1);
-        int result2 = search(nums, target, start, 1);
-        return min(result1, result2);
+        // int result1 = search(nums, target, start, -1);
+        // int result2 = search(nums, target, start, 1);
+        // return min(result1, result2);
         
+        // this is more simple haha
+        int res = nums.size();
+        for (int i = 0; i < nums.size(); ++i) {
+            if (nums[i] == target) {
+                res = min(res, abs(i - start));
+            }
+        }
+        return res;
+
+
     }
 };
