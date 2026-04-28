@@ -393,6 +393,7 @@
 | [0874-walking-robot-simulation](https://github.com/liver121888/leetcode/tree/master/0874-walking-robot-simulation) |
 | [0895-maximum-frequency-stack](https://github.com/liver121888/leetcode/tree/master/0895-maximum-frequency-stack) |
 | [0939-minimum-area-rectangle](https://github.com/liver121888/leetcode/tree/master/0939-minimum-area-rectangle) |
+| [0947-most-stones-removed-with-same-row-or-column](https://github.com/liver121888/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [0981-time-based-key-value-store](https://github.com/liver121888/leetcode/tree/master/0981-time-based-key-value-store) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/liver121888/leetcode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
@@ -994,6 +995,7 @@
 | [0778-swim-in-rising-water](https://github.com/liver121888/leetcode/tree/master/0778-swim-in-rising-water) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/liver121888/leetcode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
+| [0947-most-stones-removed-with-same-row-or-column](https://github.com/liver121888/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/liver121888/leetcode/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1242-web-crawler-multithreaded](https://github.com/liver121888/leetcode/tree/master/1242-web-crawler-multithreaded) |
@@ -1120,6 +1122,7 @@
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
 | [0743-network-delay-time](https://github.com/liver121888/leetcode/tree/master/0743-network-delay-time) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
+| [0947-most-stones-removed-with-same-row-or-column](https://github.com/liver121888/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [1168-optimize-water-distribution-in-a-village](https://github.com/liver121888/leetcode/tree/master/1168-optimize-water-distribution-in-a-village) |
 | [1584-min-cost-to-connect-all-points](https://github.com/liver121888/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 | [3123-find-edges-in-shortest-paths](https://github.com/liver121888/leetcode/tree/master/3123-find-edges-in-shortest-paths) |
@@ -1138,6 +1141,7 @@
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0778-swim-in-rising-water](https://github.com/liver121888/leetcode/tree/master/0778-swim-in-rising-water) |
+| [0947-most-stones-removed-with-same-row-or-column](https://github.com/liver121888/leetcode/tree/master/0947-most-stones-removed-with-same-row-or-column) |
 | [1168-optimize-water-distribution-in-a-village](https://github.com/liver121888/leetcode/tree/master/1168-optimize-water-distribution-in-a-village) |
 | [1391-check-if-there-is-a-valid-path-in-a-grid](https://github.com/liver121888/leetcode/tree/master/1391-check-if-there-is-a-valid-path-in-a-grid) |
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
