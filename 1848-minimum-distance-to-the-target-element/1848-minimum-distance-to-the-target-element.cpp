@@ -1,19 +1,19 @@
 class Solution {
 public:
 
-    int search(const vector<int>& nums, int target, int start, int dir) {
+    // int search(const vector<int>& nums, int target, int start, int dir) {
 
-        int n = nums.size();
-        int boundary = n;
-        if (dir == -1)
-            boundary = -1;
+    //     int n = nums.size();
+    //     int boundary = n;
+    //     if (dir == -1)
+    //         boundary = -1;
 
-        for (int i = start; i != boundary; i += dir) {
-            if (nums[i] == target)
-                return abs(i - start);
-        }
-        return n;
-    }
+    //     for (int i = start; i != boundary; i += dir) {
+    //         if (nums[i] == target)
+    //             return abs(i - start);
+    //     }
+    //     return n;
+    // }
 
     int getMinDistance(vector<int>& nums, int target, int start) {
 
