@@ -147,6 +147,7 @@
 | [1656-count-good-triplets](https://github.com/liver121888/leetcode/tree/master/1656-count-good-triplets) |
 | [1722-minimize-hamming-distance-after-swap-operations](https://github.com/liver121888/leetcode/tree/master/1722-minimize-hamming-distance-after-swap-operations) |
 | [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
+| [1779-find-nearest-point-that-has-the-same-x-or-y-coordinate](https://github.com/liver121888/leetcode/tree/master/1779-find-nearest-point-that-has-the-same-x-or-y-coordinate) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/liver121888/leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/liver121888/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/liver121888/leetcode/tree/master/1944-number-of-visible-people-in-a-queue) |
