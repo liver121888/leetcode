@@ -175,6 +175,7 @@
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3251-maximum-area-of-longest-diagonal-rectangle](https://github.com/liver121888/leetcode/tree/master/3251-maximum-area-of-longest-diagonal-rectangle) |
 | [3430-count-days-without-meetings](https://github.com/liver121888/leetcode/tree/master/3430-count-days-without-meetings) |
+| [3453-separate-squares-i](https://github.com/liver121888/leetcode/tree/master/3453-separate-squares-i) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/liver121888/leetcode/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
 | [3483-alternating-groups-ii](https://github.com/liver121888/leetcode/tree/master/3483-alternating-groups-ii) |
 | [3488-closest-equal-element-queries](https://github.com/liver121888/leetcode/tree/master/3488-closest-equal-element-queries) |
@@ -499,6 +500,7 @@
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/liver121888/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
 | [2690-house-robber-iv](https://github.com/liver121888/leetcode/tree/master/2690-house-robber-iv) |
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/liver121888/leetcode/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
+| [3453-separate-squares-i](https://github.com/liver121888/leetcode/tree/master/3453-separate-squares-i) |
 | [3488-closest-equal-element-queries](https://github.com/liver121888/leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Matrix
