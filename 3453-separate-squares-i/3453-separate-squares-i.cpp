@@ -119,42 +119,39 @@ public:
 
         // get total area first
         // get min(y_i) and max(y_i + side_i)
-        int l = INT_MAX/2;
-        int r = INT_MIN/2;
-        long long total_area = 0;
+        double l = INT_MAX/2;
+        double r = INT_MIN/2;
+        double total_area = 0;
         for (const auto& square : squares) {
             int y_i = square[1];
             int side_i = square[2];
-            l = min(y_i, l);
-            r = max(y_i + side_i, r);
-            total_area += (long long)side_i * side_i;
+            l = min((double)y_i, l);
+            r = max((double)y_i + side_i, r);
+            total_area += (double)side_i * side_i;
         }
 
         double target_area = total_area/2.0;
 
-        double lBound = (double)l;
-        double rBound = (double)r;
-        double mid = lBound;
         // a better way is to use tol
         double tol = 1e-5;
         // use for loop without tol is TLE
         // because it will always try to compare two numbers
         // for (int i = 0; i < 10000; i++) {
-        while (abs(lBound - rBound) > tol) {
-            mid = (lBound + rBound)/2.0;
+        while (abs(l - r) > tol) {
+            double mid = (l + r)/2.0;
             double bottomArea = calculateBottomArea(squares, mid);
             // cout << "mid: " << mid << " bottomArea: " << bottomArea << endl;
             // double currResult = total_area - 2.0 * bottomArea;
             // if equal we can still move lower
             if (bottomArea < target_area) {
                 // move the line higher
-                lBound = mid;
+                l = mid;
             } else {
                 // move the line lower
-                rBound = mid;
+                r = mid;
             }
         }
-        return mid;
+        return r;
 
     }
 };
