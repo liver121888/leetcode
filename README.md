@@ -742,6 +742,7 @@
 | [0721-accounts-merge](https://github.com/liver121888/leetcode/tree/master/0721-accounts-merge) |
 | [0752-open-the-lock](https://github.com/liver121888/leetcode/tree/master/0752-open-the-lock) |
 | [0772-basic-calculator-iii](https://github.com/liver121888/leetcode/tree/master/0772-basic-calculator-iii) |
+| [0796-rotate-string](https://github.com/liver121888/leetcode/tree/master/0796-rotate-string) |
 | [0844-backspace-string-compare](https://github.com/liver121888/leetcode/tree/master/0844-backspace-string-compare) |
 | [0981-time-based-key-value-store](https://github.com/liver121888/leetcode/tree/master/0981-time-based-key-value-store) |
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
@@ -1207,6 +1208,7 @@
 |  |
 | ------- |
 | [0572-subtree-of-another-tree](https://github.com/liver121888/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [0796-rotate-string](https://github.com/liver121888/leetcode/tree/master/0796-rotate-string) |
 ## Hash Function
 |  |
 | ------- |
