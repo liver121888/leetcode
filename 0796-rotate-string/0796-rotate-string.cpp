@@ -16,7 +16,11 @@
 // O(n * n), n here is to traverse to check
 // O(1) space, we only traverse
 
-// concate, some extra space but easy to understand
+// concatenation, some extra space but easy to understand
+// Time: O(n^2) worst case
+// Space: O(n)
+// 原因是 (s + s) 需要 O(n) 空間，而 find 在標準意義下 
+// worst case 可能是 naive substring search，所以最壞可以到 O(n²)
 class Solution {
 public:
     bool rotateString(string s, string goal) {
