@@ -50,11 +50,14 @@ public:
             return true;
 
         int n = s.length();
-        bool valid = false;
+        // bool valid = false;
         for (int i = 0; i < n; i++) {
+            // if (s[i] == goal[0])
+            //     valid |= checkString(s, goal, i);
             if (s[i] == goal[0])
-                valid |= checkString(s, goal, i);
+                if (checkString(s, goal, i))
+                    return true;
         }
-        return valid;
+        return false;
     }
 };
