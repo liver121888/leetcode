@@ -321,6 +321,7 @@
 | [0587-erect-the-fence](https://github.com/liver121888/leetcode/tree/master/0587-erect-the-fence) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0772-basic-calculator-iii](https://github.com/liver121888/leetcode/tree/master/0772-basic-calculator-iii) |
+| [0788-rotated-digits](https://github.com/liver121888/leetcode/tree/master/0788-rotated-digits) |
 | [0830-largest-triangle-area](https://github.com/liver121888/leetcode/tree/master/0830-largest-triangle-area) |
 | [0836-rectangle-overlap](https://github.com/liver121888/leetcode/tree/master/0836-rectangle-overlap) |
 | [0939-minimum-area-rectangle](https://github.com/liver121888/leetcode/tree/master/0939-minimum-area-rectangle) |
@@ -620,6 +621,7 @@
 | [0518-coin-change-ii](https://github.com/liver121888/leetcode/tree/master/0518-coin-change-ii) |
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
+| [0788-rotated-digits](https://github.com/liver121888/leetcode/tree/master/0788-rotated-digits) |
 | [0818-race-car](https://github.com/liver121888/leetcode/tree/master/0818-race-car) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/liver121888/leetcode/tree/master/0871-minimum-number-of-refueling-stops) |
 | [1235-maximum-profit-in-job-scheduling](https://github.com/liver121888/leetcode/tree/master/1235-maximum-profit-in-job-scheduling) |
