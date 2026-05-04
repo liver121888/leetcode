@@ -21,63 +21,63 @@
 // Space: O(n)
 // 原因是 (s + s) 需要 O(n) 空間，而 find 在標準意義下 
 // worst case 可能是 naive substring search，所以最壞可以到 O(n²)
-class Solution {
-public:
-    bool rotateString(string s, string goal) {
-        return s.size() == goal.size() &&
-               (s + s).find(goal) != string::npos;
-    }
-};
+// class Solution {
+// public:
+//     bool rotateString(string s, string goal) {
+//         return s.size() == goal.size() &&
+//                (s + s).find(goal) != string::npos;
+//     }
+// };
 
 
 // prune: we only start checking if the start character is the same
-// class Solution {
-// public:
+class Solution {
+public:
 
-//     bool checkString(const string& s, const string& g, int i) {
+    bool checkString(const string& s, const string& g, int i) {
 
-//         int n = s.size();
-//         // int windowLen = 0;
-//         // int j = 0;
-//         // while (windowLen < n) {
+        int n = s.size();
+        // int windowLen = 0;
+        // int j = 0;
+        // while (windowLen < n) {
 
-//         //     if (i >= n)
-//         //         i = 0;
+        //     if (i >= n)
+        //         i = 0;
 
-//         //     if (s[i] != g[j])
-//         //         return false;
-//         //     j++;
-//         //     i++;
-//         //     windowLen++;
-//         // }
-//         // return true;
+        //     if (s[i] != g[j])
+        //         return false;
+        //     j++;
+        //     i++;
+        //     windowLen++;
+        // }
+        // return true;
 
-//         for (int k = 0; k < n; k++) {
-//             if (s[(i + k) % n] != g[k])
-//                 return false;
-//         }
-//         return true;
-//     }
+        for (int k = 0; k < n; k++) {
+            if (s[(i + k) % n] != g[k])
+                return false;
+        }
+        return true;
+    }
 
 
-//     bool rotateString(string s, string goal) {
+    bool rotateString(string s, string goal) {
 
-//         if (s.length() != goal.length())
-//             return false;
+        if (s.length() != goal.length())
+            return false;
 
-//         // check empty string
-//         if (s.empty() && goal.empty())
-//             return true;
+        // check empty string
+        if (s.empty() && goal.empty())
+            return true;
 
-//         int n = s.length();
-//         // bool valid = false;
-//         for (int i = 0; i < n; i++) {
-//             // if (s[i] == goal[0])
-//             //     valid |= checkString(s, goal, i);
-//             if (s[i] == goal[0])
-//                 if (checkString(s, goal, i))
-//                     return true;
-//         }
-//         return false;
-//     }
-// };
+        int n = s.length();
+        // bool valid = false;
+        for (int i = 0; i < n; i++) {
+            // if (s[i] == goal[0])
+            //     valid |= checkString(s, goal, i);
+            if (s[i] == goal[0])
+                if (checkString(s, goal, i))
+                    return true;
+        }
+        return false;
+    }
+};
