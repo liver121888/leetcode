@@ -22,19 +22,26 @@ class Solution {
 public:
 
     bool checkString(const string& s, const string& g, int i) {
+
         int n = s.size();
-        int windowLen = 0;
-        int j = 0;
-        while (windowLen < n) {
+        // int windowLen = 0;
+        // int j = 0;
+        // while (windowLen < n) {
 
-            if (i >= n)
-                i = 0;
+        //     if (i >= n)
+        //         i = 0;
 
-            if (s[i] != g[j])
+        //     if (s[i] != g[j])
+        //         return false;
+        //     j++;
+        //     i++;
+        //     windowLen++;
+        // }
+        // return true;
+
+        for (int k = 0; k < n; k++) {
+            if (s[(i + k) % n] != g[k])
                 return false;
-            j++;
-            i++;
-            windowLen++;
         }
         return true;
     }
