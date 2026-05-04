@@ -40,55 +40,58 @@
 // 16
 // [6, 4,3,2]
 
-// class Solution {
-// public:
-//     int maxRotateFunction(vector<int>& nums) {
-
-//         int n = nums.size();
-//         if (n <= 1)
-//             return 0;
-
-//         long long totalSum = accumulate(nums.begin(), nums.end(), 0);
-//         long long weightedSum = 0;
-//         // O(n)
-//         for (int i = 0; i < n; i++)
-//             weightedSum += i * nums[i];
-
-//         long long result = weightedSum;
-
-//         // cout << weightedSum << " " << totalSum << endl;
-
-//         // at least size 2
-//         // O(n)
-//         for (int i = n-1; i >= 0; i--) {
-
-//             int lastNum = nums[i];
-//             int firstNum = nums[0];
-//             if (i+1 < n)
-//                 firstNum = nums[i+1];
-
-//             weightedSum = weightedSum + totalSum - lastNum*n;
-//             // cout << firstNum << " " << lastNum << " " << weightedSum << endl;
-//             result = max(result, weightedSum);
-//         }
-
-//         return result;
-//     }
-// };
-
 class Solution {
 public:
     int maxRotateFunction(vector<int>& nums) {
-        int f = 0, n = nums.size();
-        int numSum = accumulate(nums.begin(), nums.end(), 0);
+
+        int n = nums.size();
+        if (n <= 1)
+            return 0;
+
+        // long long totalSum = accumulate(nums.begin(), nums.end(), 0);
+        // specify 0LL to prevent overflow
+        long long totalSum = accumulate(nums.begin(), nums.end(), 0LL);
+        long long weightedSum = 0;
+        // O(n)
         for (int i = 0; i < n; i++) {
-            f += i * nums[i];
+            // might overflow
+            // weightedSum += i * nums[i];
+            weightedSum += 1LL * i * nums[i];
         }
-        int res = f;
-        for (int i = n - 1; i > 0; i--) {
-            f += numSum - n * nums[i];
-            res = max(res, f);
+
+        long long result = weightedSum;
+
+        // cout << weightedSum << " " << totalSum << endl;
+
+        // at least size 2
+        // O(n)
+        for (int i = n-1; i > 0; i--) {
+
+            int lastNum = nums[i];
+
+            weightedSum = weightedSum + totalSum - lastNum*n;
+            // cout << firstNum << " " << lastNum << " " << weightedSum << endl;
+            result = max(result, weightedSum);
         }
-        return res;
+
+        return result;
     }
 };
+
+// dp idea
+// class Solution {
+// public:
+//     int maxRotateFunction(vector<int>& nums) {
+//         int f = 0, n = nums.size();
+//         int numSum = accumulate(nums.begin(), nums.end(), 0);
+//         for (int i = 0; i < n; i++) {
+//             f += i * nums[i];
+//         }
+//         int res = f;
+//         for (int i = n - 1; i > 0; i--) {
+//             f += numSum - n * nums[i];
+//             res = max(res, f);
+//         }
+//         return res;
+//     }
+// };
