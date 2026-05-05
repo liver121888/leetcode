@@ -9,98 +9,86 @@
  * };
  */
 
-// we can do k times
-// we can get the len first
-// so we know where we need to cut
-// we can use two pointers
+// we need to find the new head
+// also find the new tail
+// so that we can connect the old head to the new tail
+// we get the size of the list first, n
+// k % n to get how many times we need to rotate
+// rotate k means the new head would be the  k element cnt from the back
 
-// one pass to get the len
-// len 5 2
-// we take the last k and put it to the front
-// what if len 3 k = 4
-// we take the % 
+// O(n) to find the len of the list
+// find the tail too
+// k % n so we know the new head
+// n-k and we traverse the list
+// take the new head as the head, connect tail to the old head
+// return new head
 
-// 4 % 3 = 1
-// 2 -> 0 -> 1
+// nullptr for the head
+// or just a single node
+// k might = 0
+// return head
 
-// edge cases
-// empty -> empty
-// 1 node -> 1 node rotate 0 return head
-// 2 nodes -> should be fine
+// time: O(n)
+// space: O(1)
 
 class Solution {
 public:
 
-
+    // 1 2 3 4 5 k = 2
+    // n = 5, tail = 5, k = 2
+    // k = 2
+    // cnt = 3
+    // newHead is 4 and prev is 3
+    // 0 1 2 k = 4
+    // [] k = 1
+    // 1 k = 10 -> 1
+    // 1 2 k = 1
+    // tail = 2, k = 1
+    // prev = 1, newHead = 2
+    // 1 2 k = 0
 
     ListNode* rotateRight(ListNode* head, int k) {
-        if (!head || !head->next || k == 0) return head;
 
-        // set n = 1 so check the len can be correct
+        // edge cases
+        if (!head || !head->next || k == 0)
+            return head;
+
+        // find the size of the list
         int n = 1;
-        // get the tail and the len at the same first run
         ListNode* tail = head;
+        // 0 -> 1, so our len is correct and we stop at the tail
         while (tail->next) {
-            tail = tail->next;
             n++;
+            tail = tail->next;
         }
 
-        k %= n;
-        if (k == 0) return head;
+        // so we don't rotate too many times
+        k = k % n;
 
-        // make it circular
+        if (k == 0)
+            return head;
+        
+        int cnt = n - k;
+        // count to find the kth node from the back
+        ListNode* newHead = head;
+        ListNode* prev = nullptr;
+
+        // cnt = 2;
+        // prev = 1
+        // newHead = 2
+        //cnt = 1
+        // prev = 2
+        // newHead = nullptr
+
+        while (cnt) {
+            prev = newHead;
+            newHead = newHead->next;
+            cnt--;
+        }
+
+        // break the link
+        prev->next = nullptr;
         tail->next = head;
-
-        int stepsToNewTail = n - k - 1;
-        ListNode* newTail = head;
-        while (stepsToNewTail--) {
-            newTail = newTail->next;
-        }
-
-        ListNode* newHead = newTail->next;
-        newTail->next = nullptr;
-
         return newHead;
     }
-
-    // ListNode* rotateRight(ListNode* head, int k) {
-
-    //     if (!head)
-    //         return head;
-
-    //     ListNode* curr = head;
-    //     int n = 0;
-    //     while (curr) {
-    //         n++;
-    //         curr = curr->next;
-    //     }
-
-    //     int rotate = k % n;
-
-    //     if (rotate == 0)
-    //         return head;
-        
-    //     // get last rotate nodes
-    //     ListNode* secondPart = head;
-    //     ListNode* secondPartPrev;
-    //     ListNode* prev;
-    //     curr = head;
-    //     while (rotate) {
-    //         curr = curr->next;
-    //         rotate--;
-    //     }
-
-    //     while(curr) {
-    //         secondPartPrev = secondPart;
-    //         prev = curr;
-    //         curr = curr->next;
-    //         secondPart = secondPart->next;
-    //     }
-
-    //     prev->next = head;
-    //     head = secondPartPrev->next;
-    //     secondPartPrev->next = nullptr;
-
-    //     return head;
-    // }
 };
