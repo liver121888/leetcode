@@ -18,7 +18,7 @@
 // #, _, *,_
 // vector<stirng>
 // "1", ""
-
+// 此作法太複雜了，下面使用two pointers的作法才是最乾淨的
 // class Solution {
 // public:
 
