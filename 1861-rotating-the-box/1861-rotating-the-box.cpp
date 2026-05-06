@@ -52,7 +52,7 @@ public:
                 }
             }
             int k = n;
-            cout << stoneCnt << " " << k << endl;
+            // cout << stoneCnt << " " << k << endl;
             // clear unfinish stoneCnt
             while (stoneCnt) {
                 ans[k-stoneCnt][m-1-i] = '#';
@@ -63,3 +63,6 @@ public:
         return ans;
     }
 };
+
+
+// thinking about 
