@@ -152,6 +152,7 @@
 | [1779-find-nearest-point-that-has-the-same-x-or-y-coordinate](https://github.com/liver121888/leetcode/tree/master/1779-find-nearest-point-that-has-the-same-x-or-y-coordinate) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/liver121888/leetcode/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/liver121888/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
+| [1861-rotating-the-box](https://github.com/liver121888/leetcode/tree/master/1861-rotating-the-box) |
 | [1944-number-of-visible-people-in-a-queue](https://github.com/liver121888/leetcode/tree/master/1944-number-of-visible-people-in-a-queue) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/liver121888/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/liver121888/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -223,6 +224,7 @@
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
 | [1650-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/liver121888/leetcode/tree/master/1650-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1855-maximum-distance-between-a-pair-of-values](https://github.com/liver121888/leetcode/tree/master/1855-maximum-distance-between-a-pair-of-values) |
+| [1861-rotating-the-box](https://github.com/liver121888/leetcode/tree/master/1861-rotating-the-box) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/liver121888/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2337-move-pieces-to-obtain-a-string](https://github.com/liver121888/leetcode/tree/master/2337-move-pieces-to-obtain-a-string) |
 | [2592-maximize-greatness-of-an-array](https://github.com/liver121888/leetcode/tree/master/2592-maximize-greatness-of-an-array) |
@@ -545,6 +547,7 @@
 | [1559-detect-cycles-in-2d-grid](https://github.com/liver121888/leetcode/tree/master/1559-detect-cycles-in-2d-grid) |
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [1730-shortest-path-to-get-food](https://github.com/liver121888/leetcode/tree/master/1730-shortest-path-to-get-food) |
+| [1861-rotating-the-box](https://github.com/liver121888/leetcode/tree/master/1861-rotating-the-box) |
 | [2033-minimum-operations-to-make-a-uni-value-grid](https://github.com/liver121888/leetcode/tree/master/2033-minimum-operations-to-make-a-uni-value-grid) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
