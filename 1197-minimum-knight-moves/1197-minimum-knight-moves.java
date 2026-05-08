@@ -12,6 +12,7 @@ class Solution {
         } else if (x + y == 2) {
             return 2;
         } else {
+            // abs here: 我反向跳一步後，如果跳到負座標，不要真的去處理負座標，因為它跟對稱的正座標答案一樣。
             Integer ret = Math.min(dfs(Math.abs(x - 1), Math.abs(y - 2)),
                     dfs(Math.abs(x - 2), Math.abs(y - 1))) + 1;
             memo.put(key, ret);
