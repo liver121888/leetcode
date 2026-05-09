@@ -25,11 +25,21 @@
 // 2 is the entry point
 // why?
 
-// traverse a
-// still has b
-// 2(c+a) = c + a + b + a
-// 2c + 2a = c + 2a + b
-// c = c + b
+// Let's define a as the length of the path from the start of the list to the entrance of the cycle.
+// Let's define b as the length of the path from the cycle's entrance to the meeting point of the hare 
+// and the tortoise inside the cycle.
+// Let's define c as the total length of the cycle.
+// a + b = k * c
+// fast may have walk the cycle a lot of time
+// 2 * (a + b) = a + b + k*c
+// k * c = a + b
+// so when we start frome the head
+// hare now has a distance to travel to the entrance of the cycle
+// rearrange to get a = k*c - b
+// let's say we walk the turtle k*c - b steps
+// relative to the cycle entrace will be 
+// (k*c - b) + b = k*c = the entrance
+// so we find the entrance
 
 class Solution {
 public:
