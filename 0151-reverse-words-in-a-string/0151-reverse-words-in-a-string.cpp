@@ -15,37 +15,35 @@
 class Solution {
 public:
     string reverseWords(string s) {
-
         stack<string> st;
-        string currString = "";
-        bool isCollectingChar = false;
-        for (auto c : s) {
-            if (!iswspace(c)) {
-                currString += c;
-                if (!isCollectingChar) {
-                    isCollectingChar = true;
-                }
+        string curr = "";
+
+        for (char c : s) {
+            if (c != ' ') {
+                curr += c;
             } else {
-                if (!currString.empty()) {
-                    st.push(currString);
-                    currString = "";
+                if (!curr.empty()) {
+                    st.push(curr);
+                    curr = "";
                 }
-                isCollectingChar = false;
             }
         }
-        // we need to clear the last string 
-        if (!currString.empty())
-            st.push(currString);
-        string ans = "";
-        int n = st.size();
-        if (n == 0)
-            return ans;
-        for (int i = 0; i < n-1; ++i) {
-            ans += st.top() + " ";
-            st.pop();
+
+        if (!curr.empty()) {
+            st.push(curr);
         }
-        ans+=st.top();
-        st.pop();
+
+        string ans = "";
+
+        while (!st.empty()) {
+            ans += st.top();
+            st.pop();
+
+            if (!st.empty()) {
+                ans += " ";
+            }
+        }
+
         return ans;
     }
 };
