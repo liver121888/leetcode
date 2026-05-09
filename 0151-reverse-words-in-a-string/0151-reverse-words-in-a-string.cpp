@@ -12,41 +12,41 @@
 // space: O(n)
 // edge case: s = ""
 // edge case: s = "           "
-class Solution {
-public:
-    string reverseWords(string s) {
-        stack<string> st;
-        string curr = "";
+// class Solution {
+// public:
+//     string reverseWords(string s) {
+//         stack<string> st;
+//         string curr = "";
 
-        for (char c : s) {
-            if (c != ' ') {
-                curr += c;
-            } else {
-                if (!curr.empty()) {
-                    st.push(curr);
-                    curr = "";
-                }
-            }
-        }
+//         for (char c : s) {
+//             if (c != ' ') {
+//                 curr += c;
+//             } else {
+//                 if (!curr.empty()) {
+//                     st.push(curr);
+//                     curr = "";
+//                 }
+//             }
+//         }
 
-        if (!curr.empty()) {
-            st.push(curr);
-        }
+//         if (!curr.empty()) {
+//             st.push(curr);
+//         }
 
-        string ans = "";
+//         string ans = "";
 
-        while (!st.empty()) {
-            ans += st.top();
-            st.pop();
+//         while (!st.empty()) {
+//             ans += st.top();
+//             st.pop();
 
-            if (!st.empty()) {
-                ans += " ";
-            }
-        }
+//             if (!st.empty()) {
+//                 ans += " ";
+//             }
+//         }
 
-        return ans;
-    }
-};
+//         return ans;
+//     }
+// };
 
 // built-in
 // time: O(n)
@@ -77,41 +77,41 @@ public:
 
 
 // Reverse the Whole String and Then Reverse Each Word
-// class Solution {
-// public:
-//     void reverseStr(string &s, int l, int r){
-//         while(l<r){
-//             swap(s[l], s[r]);
-//             l++, r--;
-//         }
-//     }
+class Solution {
+public:
+    void reverseStr(string &s, int l, int r){
+        while(l<r){
+            swap(s[l], s[r]);
+            l++, r--;
+        }
+    }
 
-//     string reverseWords(string s) {
-//         int n = s.size();
-//         reverse(s.begin(), s.end());
+    string reverseWords(string s) {
+        int n = s.size();
+        reverse(s.begin(), s.end());
 
-//         int start = 0;
-//         for(int end=0; end<=n; end++){
-//             if(end==n || s[end]==' '){
-//                 reverseStr(s, start, end-1);
-//                 start = end+1;
-//             }
-//         }
+        int start = 0;
+        for(int end=0; end<=n; end++){
+            if(end==n || s[end]==' '){
+                reverseStr(s, start, end-1);
+                start = end+1;
+            }
+        }
 
-//         string ans = "";
-//         int i=0;
+        string ans = "";
+        int i=0;
 
-//         while(i<n){
-//             while(i<n && s[i]==' ') i++;
+        while(i<n){
+            while(i<n && s[i]==' ') i++;
 
-//             if(i>=n) break;
-//             if(!ans.empty()) ans += " ";
+            if(i>=n) break;
+            if(!ans.empty()) ans += " ";
 
-//             while(i<n && s[i]!=' ') {
-//                 ans += s[i];
-//                 i++;
-//             }
-//         }
-//         return ans;
-//     }
-// };
+            while(i<n && s[i]!=' ') {
+                ans += s[i];
+                i++;
+            }
+        }
+        return ans;
+    }
+};
