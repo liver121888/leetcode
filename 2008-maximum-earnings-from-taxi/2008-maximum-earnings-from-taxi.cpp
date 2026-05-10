@@ -4,15 +4,6 @@
 // assume no ride have start == end
 // assume size of rides can fit in an int
 
-// sort by the start time
-// dp array, dp[i] the maximum profit that you can have endding here
-// once we select the interval and take the profit
-// we need to find the next possible interval quickly
-// we can use a binary search here
-// m is the size of the rides
-// time: O(m*log(m))
-// space: O(m)
-
 using pii = pair<int,int>;
 
 class Solution {
