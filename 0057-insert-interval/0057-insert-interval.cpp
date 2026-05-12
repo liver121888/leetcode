@@ -1,44 +1,74 @@
-// we want to insert newInterval into the intervals
-// the intervals are sorted
-// after insertion, we need to merge overlapping intervals
-// we can make a new array and return
+
+// let's say the interval are not sorted
+// we first need to sort the interval by start
+// then we can find where does the interval overlaps
+// create an ans array does not count toward the space complexity
+// if we find the intersect
+// then we keep merging until no overlap
+// time: O(n)
+// space: O(1)
+
+// assume intervals.size() can fit in int
+
+// edge case size 0
+// size 1
 
 // some cases
-// Case 1. The current interval ends before the new interval starts.
-// Case 2. There is an overlap, and the intervals need merging.
-// Case 3. The current interval starts after the new interval ends.
+
+// 1,3 6,9
+// 2,5
+
+// define non overlap
+// max(start1, start2) >  min(end1, end2)
+// overlap
+// max(start1, start2) <=  min(end1, end2)
+
+// [[1,3],[6,9]], newInterval = [2,5]
+// i = 0, n = 2
+// [1, 5], [6, 9]
+// intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
+// 1,2, 3, 10, 12,16
 
 class Solution {
 public:
-
-
-
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
 
-        int n = intervals.size(), i = 0;
-        vector<vector<int>> res;
+        vector<vector<int>> ans;
+        int i = 0;
+        int n = intervals.size();
 
-        // Case 1: no overlapping case before the merge intervals
-        // Compare ending point of intervals to starting point of newInterval
-        while (i < n && intervals[i][1] < newInterval[0]) {
-            res.push_back(intervals[i]);
+        // if (n == 0) {
+        //     ans.push_back(newInterval);
+        //     return ans;
+        // }
+
+        while (i < n && intervals[i][1] < newInterval[0]){
+            ans.push_back(intervals[i]);
             i++;
         }
 
-        // Case 2: overlapping case and merging of intervals
-        while (i < n && intervals[i][0] <= newInterval[1]) {
-            newInterval[0] = min(newInterval[0], intervals[i][0]);
-            newInterval[1] = max(newInterval[1], intervals[i][1]);
+        // means intervals[i][1] >= newInterval[0]
+
+        // start merging
+        int newStart = newInterval[0];
+        int newEnd = newInterval[1];
+        while (i < n && newInterval[1] >= intervals[i][0]) {
+            newStart = min(intervals[i][0], newStart);
+            newEnd = max(intervals[i][1], newEnd);
             i++;
         }
-        res.push_back(newInterval);
 
-        // Case 3: no overlapping of intervals after newinterval being merged
+        // means intervals[i][1] > newInterval[0]
+        ans.push_back({newStart, newEnd});
+
+        // no overlap, we simply push
         while (i < n) {
-            res.push_back(intervals[i]);
-            i++;
+           ans.push_back(intervals[i]);
+           i++;
         }
 
-        return res;
+        return ans;
+
+        
     }
 };
