@@ -53,7 +53,6 @@ public:
         int newStart = newInterval[0];
         int newEnd = newInterval[1];
         while (i < n && intervals[i][0] <= newEnd) {
-
             newStart = min(intervals[i][0], newStart);
             newEnd = max(intervals[i][1], newEnd);
             i++;
