@@ -136,6 +136,7 @@
 | [1232-check-if-it-is-a-straight-line](https://github.com/liver121888/leetcode/tree/master/1232-check-if-it-is-a-straight-line) |
 | [1235-maximum-profit-in-job-scheduling](https://github.com/liver121888/leetcode/tree/master/1235-maximum-profit-in-job-scheduling) |
 | [1266-minimum-time-visiting-all-points](https://github.com/liver121888/leetcode/tree/master/1266-minimum-time-visiting-all-points) |
+| [1274-number-of-ships-in-a-rectangle](https://github.com/liver121888/leetcode/tree/master/1274-number-of-ships-in-a-rectangle) |
 | [1293-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/liver121888/leetcode/tree/master/1293-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/liver121888/leetcode/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/liver121888/leetcode/tree/master/1388-greatest-sum-divisible-by-three) |
@@ -659,6 +660,7 @@
 | [0347-top-k-frequent-elements](https://github.com/liver121888/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0973-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/0973-k-closest-points-to-origin) |
 | [1014-k-closest-points-to-origin](https://github.com/liver121888/leetcode/tree/master/1014-k-closest-points-to-origin) |
+| [1274-number-of-ships-in-a-rectangle](https://github.com/liver121888/leetcode/tree/master/1274-number-of-ships-in-a-rectangle) |
 ## Geometry
 |  |
 | ------- |
@@ -1187,6 +1189,7 @@
 |  |
 | ------- |
 | [0278-first-bad-version](https://github.com/liver121888/leetcode/tree/master/0278-first-bad-version) |
+| [1274-number-of-ships-in-a-rectangle](https://github.com/liver121888/leetcode/tree/master/1274-number-of-ships-in-a-rectangle) |
 ## Sweep Line
 |  |
 | ------- |
