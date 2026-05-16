@@ -34,7 +34,7 @@ public:
                 if (y == n - 1 && x == n - 1)
                     return pathLen;
                 
-                for (const auto dir : dirs) {
+                for (const auto& dir : dirs) {
                     int ny = y + dir[0];
                     int nx = x + dir[1];
 
