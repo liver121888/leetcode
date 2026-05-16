@@ -1,5 +1,11 @@
 
 // can do simple bfs on the grid
+// O(n^2)
+// space O(n^2) for the queue
+
+// grid is always square
+// 
+
 class Solution {
 public:
     int shortestPathBinaryMatrix(vector<vector<int>>& grid) {
@@ -7,14 +13,14 @@ public:
         int m = grid.size();
         int n = grid[0].size();
 
+        if (grid[0][0] == 1 || grid[m-1][n-1] == 1)
+            return -1;
+
         const vector<vector<int>> dirs = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}, {-1, -1}, {1, 1}, {-1, 1}, {1, -1}};
 
         int pathLen = 1;
 
         queue<pair<int,int>> bfs;
-
-        if (grid[0][0] == 1 || grid[m-1][n-1] == 1)
-            return -1;
 
         bfs.push({0, 0});
         grid[0][0] = 1;
