@@ -4,16 +4,15 @@
 // space O(n^2) for the queue
 
 // grid is always square
-// 
 
 class Solution {
 public:
     int shortestPathBinaryMatrix(vector<vector<int>>& grid) {
 
-        int m = grid.size();
-        int n = grid[0].size();
+        int n = grid.size();
+        // int n = grid[0].size();
 
-        if (grid[0][0] == 1 || grid[m-1][n-1] == 1)
+        if (grid[0][0] == 1 || grid[n-1][n-1] == 1)
             return -1;
 
         const vector<vector<int>> dirs = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}, {-1, -1}, {1, 1}, {-1, 1}, {1, -1}};
@@ -32,14 +31,14 @@ public:
                 auto [y, x] = bfs.front();
                 bfs.pop();
 
-                if (y == m - 1 && x == n - 1)
+                if (y == n - 1 && x == n - 1)
                     return pathLen;
                 
                 for (const auto dir : dirs) {
                     int ny = y + dir[0];
                     int nx = x + dir[1];
 
-                    if (ny >= m || ny < 0 || nx >= n || nx < 0)
+                    if (ny >= n || ny < 0 || nx >= n || nx < 0)
                         continue;
                     
                     if (grid[ny][nx] != 1) {
