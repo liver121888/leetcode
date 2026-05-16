@@ -18,10 +18,6 @@ public:
 
         int n = nums.size();
 
-        // no rotation 特判
-        if (nums[0] < nums[n - 1]) 
-            return nums[0];
-
         // has rotation
         // so the array becomes 2 segments
         // first increase seq
