@@ -69,6 +69,7 @@
 | [0283-move-zeroes](https://github.com/liver121888/leetcode/tree/master/0283-move-zeroes) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
+| [0296-best-meeting-point](https://github.com/liver121888/leetcode/tree/master/0296-best-meeting-point) |
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0303-range-sum-query-immutable](https://github.com/liver121888/leetcode/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/liver121888/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
@@ -270,6 +271,7 @@
 | [0259-3sum-smaller](https://github.com/liver121888/leetcode/tree/master/0259-3sum-smaller) |
 | [0268-missing-number](https://github.com/liver121888/leetcode/tree/master/0268-missing-number) |
 | [0295-find-median-from-data-stream](https://github.com/liver121888/leetcode/tree/master/0295-find-median-from-data-stream) |
+| [0296-best-meeting-point](https://github.com/liver121888/leetcode/tree/master/0296-best-meeting-point) |
 | [0347-top-k-frequent-elements](https://github.com/liver121888/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0360-sort-transformed-array](https://github.com/liver121888/leetcode/tree/master/0360-sort-transformed-array) |
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
@@ -322,6 +324,7 @@
 | [0224-basic-calculator](https://github.com/liver121888/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0268-missing-number](https://github.com/liver121888/leetcode/tree/master/0268-missing-number) |
+| [0296-best-meeting-point](https://github.com/liver121888/leetcode/tree/master/0296-best-meeting-point) |
 | [0360-sort-transformed-array](https://github.com/liver121888/leetcode/tree/master/0360-sort-transformed-array) |
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0380-insert-delete-getrandom-o1](https://github.com/liver121888/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -536,6 +539,7 @@
 | [0221-maximal-square](https://github.com/liver121888/leetcode/tree/master/0221-maximal-square) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
+| [0296-best-meeting-point](https://github.com/liver121888/leetcode/tree/master/0296-best-meeting-point) |
 | [0304-range-sum-query-2d-immutable](https://github.com/liver121888/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0308-range-sum-query-2d-mutable](https://github.com/liver121888/leetcode/tree/master/0308-range-sum-query-2d-mutable) |
 | [0317-shortest-distance-from-all-buildings](https://github.com/liver121888/leetcode/tree/master/0317-shortest-distance-from-all-buildings) |
