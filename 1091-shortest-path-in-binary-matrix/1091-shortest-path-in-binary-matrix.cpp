@@ -6,6 +6,7 @@
 // grid is always square
 
 class Solution {
+
 public:
     int shortestPathBinaryMatrix(vector<vector<int>>& grid) {
 
@@ -15,7 +16,10 @@ public:
         if (grid[0][0] == 1 || grid[n-1][n-1] == 1)
             return -1;
 
-        const vector<vector<int>> dirs = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}, {-1, -1}, {1, 1}, {-1, 1}, {1, -1}};
+        // const vector<vector<int>> dirs = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}, {-1, -1}, {1, 1}, {-1, 1}, {1, -1}};
+
+        const int dy[8] = {0, -1, 0, 1, -1, 1, 1, -1};
+        const int dx[8] = {-1, 0, 1, 0, -1, 1, -1, 1};
 
         int pathLen = 1;
 
@@ -34,9 +38,9 @@ public:
                 if (y == n - 1 && x == n - 1)
                     return pathLen;
                 
-                for (const auto& dir : dirs) {
-                    int ny = y + dir[0];
-                    int nx = x + dir[1];
+                for (int i = 0; i < 8; i++) {
+                    int ny = y + dy[i];
+                    int nx = x + dx[i];
 
                     if (ny >= n || ny < 0 || nx >= n || nx < 0)
                         continue;
