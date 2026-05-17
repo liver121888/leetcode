@@ -178,6 +178,7 @@
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/liver121888/leetcode/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/liver121888/leetcode/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
 | [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
+| [3102-minimize-manhattan-distances](https://github.com/liver121888/leetcode/tree/master/3102-minimize-manhattan-distances) |
 | [3152-maximum-value-of-an-ordered-triplet-ii](https://github.com/liver121888/leetcode/tree/master/3152-maximum-value-of-an-ordered-triplet-ii) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
@@ -299,6 +300,7 @@
 | [2592-maximize-greatness-of-an-array](https://github.com/liver121888/leetcode/tree/master/2592-maximize-greatness-of-an-array) |
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/liver121888/leetcode/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [2887-sort-vowels-in-a-string](https://github.com/liver121888/leetcode/tree/master/2887-sort-vowels-in-a-string) |
+| [3102-minimize-manhattan-distances](https://github.com/liver121888/leetcode/tree/master/3102-minimize-manhattan-distances) |
 | [3430-count-days-without-meetings](https://github.com/liver121888/leetcode/tree/master/3430-count-days-without-meetings) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/liver121888/leetcode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 | [3748-sort-matrix-by-diagonals](https://github.com/liver121888/leetcode/tree/master/3748-sort-matrix-by-diagonals) |
@@ -354,6 +356,7 @@
 | [2324-find-triangular-sum-of-an-array](https://github.com/liver121888/leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2610-closest-prime-numbers-in-range](https://github.com/liver121888/leetcode/tree/master/2610-closest-prime-numbers-in-range) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
+| [3102-minimize-manhattan-distances](https://github.com/liver121888/leetcode/tree/master/3102-minimize-manhattan-distances) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3279-alice-and-bob-playing-flower-game](https://github.com/liver121888/leetcode/tree/master/3279-alice-and-bob-playing-flower-game) |
 | [3462-vowels-game-in-a-string](https://github.com/liver121888/leetcode/tree/master/3462-vowels-game-in-a-string) |
@@ -685,6 +688,7 @@
 | [1401-circle-and-rectangle-overlapping](https://github.com/liver121888/leetcode/tree/master/1401-circle-and-rectangle-overlapping) |
 | [1610-maximum-number-of-visible-points](https://github.com/liver121888/leetcode/tree/master/1610-maximum-number-of-visible-points) |
 | [2101-detonate-the-maximum-bombs](https://github.com/liver121888/leetcode/tree/master/2101-detonate-the-maximum-bombs) |
+| [3102-minimize-manhattan-distances](https://github.com/liver121888/leetcode/tree/master/3102-minimize-manhattan-distances) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -1117,6 +1121,7 @@
 | ------- |
 | [0363-max-sum-of-rectangle-no-larger-than-k](https://github.com/liver121888/leetcode/tree/master/0363-max-sum-of-rectangle-no-larger-than-k) |
 | [0895-maximum-frequency-stack](https://github.com/liver121888/leetcode/tree/master/0895-maximum-frequency-stack) |
+| [3102-minimize-manhattan-distances](https://github.com/liver121888/leetcode/tree/master/3102-minimize-manhattan-distances) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
 | [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Queue
