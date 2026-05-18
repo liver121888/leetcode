@@ -11,7 +11,8 @@
 
 // we sort the position
 // and see the arrival time
-
+// O(NlogN)
+// O(N)
 class Solution {
 public:
     int carFleet(int target, vector<int>& position, vector<int>& speed) {
