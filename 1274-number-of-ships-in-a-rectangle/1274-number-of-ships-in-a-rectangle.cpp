@@ -12,6 +12,29 @@
 // we can get the exact number until we have the topRight point == bottomLeft point
 // if this is true then we know there is one point
 
+// Let M be the range of possible x-coordinate values between bottomLeft[0] and topRight[0] and let N be the range of possible y-coordinate values 
+// between bottomLeft[1] and topRight[1]. Thus, the maximum possible number of points in the rectangle is M⋅N. Finally, 
+// let S be the maximum number of ships in the sea.
+
+// Time Complexity: O(S⋅(log_2(max(M,N))−log_4(S)))
+// Space Complexity: O(log_2(max(M,N))), recursion call stack 
+
+// 為什麼是減掉 log_4(S)？
+// 整個 recursion 最大深度是：
+// log_2(max(M, N))
+// 因為每次 x/y range 都大約砍半。
+// 但是前面這些層：
+// log_4(S)
+// 是在「把 S 艘船分散到不同區塊」的過程。
+// 之後才進入這個狀態：
+// 每個 non-empty region 裡面最多只有 1 艘船
+// 一旦一個區域裡只有 1 艘船，剩下的事情就是繼續二分/四分，直到精確找到那個 ship 的座標。
+// 所以每艘船後面還需要走的深度大概是：
+// total depth - already split depth
+// 也就是：
+// log_2(max(M, N)) - log_4(S)
+// 這就是 -log_4(S) 的來源。
+
 class Solution {
 public:
 
