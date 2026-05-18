@@ -12,7 +12,8 @@
 // 4 = a+b O
 
 // the change in a is the same
-// 
+// check atan2
+
 
 
 class Solution {
@@ -23,12 +24,16 @@ public:
             return 1;
         }
         int result = 2;
+
+        // O(n^2 * O(1))
+        // because we check atan2
         for (int i = 0; i < n; i++) {
 
             // angle, freq
             unordered_map<double, int> cnt;
             for (int j = 0; j < n; j++) {
                 if (j != i) {
+                    // y/x
                     double angle = atan2(points[j][1] - points[i][1], 
                         points[j][0] - points[i][0]);
                     cnt[angle]++;
