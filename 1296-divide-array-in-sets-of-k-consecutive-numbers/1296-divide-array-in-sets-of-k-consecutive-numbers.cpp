@@ -91,6 +91,7 @@
 // };
 
 // time: O(nlogn)
+// space: O(n)
 class Solution {
 public:
     bool isPossibleDivide(vector<int>& nums, int k) 
@@ -115,9 +116,9 @@ public:
                     if(count[it->first+i] < freq)  {
                         // We are unable to find ith consecutive number to the smallest(starting number) with atleast same frequency.
                         return false;
-                    }
-                    else
+                    } else {
                         count[it->first+i] -= freq;       //Reduce the count of the numbers used.
+                    }
                 }			
             }
         }
