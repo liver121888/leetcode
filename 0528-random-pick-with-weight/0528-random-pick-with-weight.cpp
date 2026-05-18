@@ -20,6 +20,7 @@ public:
     
     int pickIndex() {
         float randNum = (float) rand() / RAND_MAX;
+        // last element is the total sum
         float target =  randNum * prefixSums[prefixSums.size()-1];
 
         // run a linear search to find the target zone
@@ -36,14 +37,14 @@ public:
 
         // run binary search
         int l = 0, r = prefixSums.size()-1;
-        while (l <= r) {
-            int mid = l + (r-l)/2;
+        while (l < r) {
+            int mid = l + (r - l) / 2;
             if (prefixSums[mid] < target)
                 l = mid + 1;
             else 
-                r = mid - 1;
+                r = mid;
         }
-        return l == prefixSums.size() ? prefixSums.size() - 1 : l;
+        return r == prefixSums.size() ? prefixSums.size() - 1 : l;
     }
 };
 
