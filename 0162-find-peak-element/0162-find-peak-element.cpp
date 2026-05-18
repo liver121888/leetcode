@@ -58,8 +58,7 @@ public:
 
         while (l < r) {
             int mid = l + (r - l)/2;
-            int midNext = mid + 1 < n ? nums[mid+1] : INT_MIN/2;
-            if (nums[mid] < midNext) {
+            if (nums[mid] < nums[mid+1]) {
                 l = mid + 1;
             } else {
                 r = mid;
