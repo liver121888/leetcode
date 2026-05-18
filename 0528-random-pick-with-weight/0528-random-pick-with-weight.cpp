@@ -36,15 +36,17 @@ public:
         // return upperBound
 
         // run binary search
+        // find the last occurance of <= target
+        // 找第一個 prefixSums[i] >= target 的位置。
         int l = 0, r = prefixSums.size()-1;
-        while (l < r) {
+        while (l <= r) {
             int mid = l + (r - l) / 2;
             if (prefixSums[mid] < target)
                 l = mid + 1;
             else 
-                r = mid;
+                r = mid - 1;
         }
-        return r == prefixSums.size() ? prefixSums.size() - 1 : l;
+        return l == prefixSums.size() ? prefixSums.size() - 1 : l;
     }
 };
 
