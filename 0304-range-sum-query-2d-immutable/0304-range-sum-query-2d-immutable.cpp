@@ -16,7 +16,7 @@ public:
         // instead of keeping a currSum and keep putting it
         // use the dp relation to calculate
         for (int i = 0; i < m; i++) {
-            dp[i].resize(n + 1);
+            // dp[i].resize(n + 1);
             for (int j = 0; j < n; j++) {
                 dp[i + 1][j + 1] = dp[i + 1][j] + dp[i][j + 1] + matrix[i][j] - dp[i][j];
             }
