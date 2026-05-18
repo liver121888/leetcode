@@ -100,8 +100,8 @@ public:
         map<int,int> count;
         map<int,int>::iterator it;
         int freq;
-        for(int &i:nums) // Store the count of all numbers sorted.
-            count[i]++;
+        for(int& e : nums) // Store the count of all numbers sorted.
+            count[e]++;
         // 為什麽這方式厲害？ GREEDY!
         // greedy take out the smallest, because using a map, so it's sorted
         // don't care about taking the smallest, just subtract it out of the count
