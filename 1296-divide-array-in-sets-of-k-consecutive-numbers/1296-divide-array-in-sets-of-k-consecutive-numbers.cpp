@@ -90,7 +90,7 @@
 //     }
 // };
 
-
+// time: O(nlogn)
 class Solution {
 public:
     bool isPossibleDivide(vector<int>& nums, int k) 
@@ -100,23 +100,25 @@ public:
         map<int,int> count;
         map<int,int>::iterator it;
         int freq;
-        for(int& e : nums) // Store the count of all numbers sorted.
+        for (int& e : nums) // Store the count of all numbers sorted.
             count[e]++;
         // 為什麽這方式厲害？ GREEDY!
         // greedy take out the smallest, because using a map, so it's sorted
         // don't care about taking the smallest, just subtract it out of the count
         // if ever it's smaller than the smallets, we know it's impossible
-        for(it=count.begin();it!=count.end();it++) {	// Start with the smallest number.
+        for (it = count.begin(); it != count.end(); it++) {	// Start with the smallest number.
             // If the count of smallest integer is non 0 check if next k numbers exist and have atleast same frequency.
             if(it->second) {		
-                freq=it->second;
-                for(int i=0;i<k;i++)				// Checks for the next k-1 numbers.
+                freq = it->second;
+                for(int i = 0; i < k;i++)	{
+                    // Checks for the next k-1 numbers.
                     if(count[it->first+i] < freq)  {
                         // We are unable to find ith consecutive number to the smallest(starting number) with atleast same frequency.
                         return false;
                     }
                     else
                         count[it->first+i] -= freq;       //Reduce the count of the numbers used.
+                }			
             }
         }
         return true;
