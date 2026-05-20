@@ -834,6 +834,7 @@
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/liver121888/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0417-pacific-atlantic-water-flow](https://github.com/liver121888/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0515-find-largest-value-in-each-tree-row](https://github.com/liver121888/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0529-minesweeper](https://github.com/liver121888/leetcode/tree/master/0529-minesweeper) |
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
 | [0662-maximum-width-of-binary-tree](https://github.com/liver121888/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
@@ -945,6 +946,7 @@
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/liver121888/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0337-house-robber-iii](https://github.com/liver121888/leetcode/tree/master/0337-house-robber-iii) |
 | [0437-path-sum-iii](https://github.com/liver121888/leetcode/tree/master/0437-path-sum-iii) |
+| [0515-find-largest-value-in-each-tree-row](https://github.com/liver121888/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0543-diameter-of-binary-tree](https://github.com/liver121888/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/liver121888/leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/liver121888/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
@@ -981,6 +983,7 @@
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/liver121888/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0337-house-robber-iii](https://github.com/liver121888/leetcode/tree/master/0337-house-robber-iii) |
 | [0437-path-sum-iii](https://github.com/liver121888/leetcode/tree/master/0437-path-sum-iii) |
+| [0515-find-largest-value-in-each-tree-row](https://github.com/liver121888/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0543-diameter-of-binary-tree](https://github.com/liver121888/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/liver121888/leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/liver121888/leetcode/tree/master/0662-maximum-width-of-binary-tree) |
@@ -1033,6 +1036,7 @@
 | [0417-pacific-atlantic-water-flow](https://github.com/liver121888/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0419-battleships-in-a-board](https://github.com/liver121888/leetcode/tree/master/0419-battleships-in-a-board) |
 | [0437-path-sum-iii](https://github.com/liver121888/leetcode/tree/master/0437-path-sum-iii) |
+| [0515-find-largest-value-in-each-tree-row](https://github.com/liver121888/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0529-minesweeper](https://github.com/liver121888/leetcode/tree/master/0529-minesweeper) |
 | [0543-diameter-of-binary-tree](https://github.com/liver121888/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/liver121888/leetcode/tree/master/0572-subtree-of-another-tree) |
