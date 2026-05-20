@@ -31,6 +31,16 @@ public:
     // r = 0
     // l = 0
 
+    // 你的 code 可以簡化的地方
+    // 這段其實不用特別處理：
+    // if (n == 1)
+    //     return nums[0] == target ? vector<int>({0, 0}) : vector<int>({-1, -1});
+
+    // 因為 binary search 本身就可以處理 n == 1。
+
+    // 另外這個檢查：
+    // if (l >= 0 && l < n)
+    // l >= 0 永遠成立，因為 l 從 0 開始，而且只會增加。
 
     vector<int> searchRange(vector<int>& nums, int target) {
 
@@ -43,8 +53,8 @@ public:
         int n = nums.size();
         if (n == 0)
             return {-1, -1};
-        if (n == 1)
-            return nums[0] == target ? vector<int>({0, 0}) : vector<int>({-1, -1});
+        // if (n == 1)
+        //     return nums[0] == target ? vector<int>({0, 0}) : vector<int>({-1, -1});
         
         int l = 0, r = n;
 
@@ -59,7 +69,7 @@ public:
         }
 
         int firstAns = -1;
-        if (l >= 0 && l < n)
+        if (l < n)
             firstAns = nums[l] == target ? l : -1;
 
 
