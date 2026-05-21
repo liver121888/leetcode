@@ -65,19 +65,23 @@ public:
         // and N is the length of the input task list, which is the dominating term.
 
         // Calculate the maximum frequency of any task
-        int maxFreq = freq[25] - 1;
+        // 最多頻率 task 之間有幾個 gap / block
+        int maxBlocks = freq[25] - 1;
+        
         // Calculate the number of idle slots that will be required
-        int idleSlots = maxFreq * n;
+        int idleSlots = maxBlocks * n;
 
         // Iterate over the frequency array from the second highest frequency to the lowest frequency
         for (int i = 24; i >= 0 && freq[i] > 0; i--) {
             // Subtract the minimum of the maximum frequency and the current frequency from the idle slots
-            idleSlots -= min(maxFreq, freq[i]);
+            // 意思是每一種其他 task 最多只能填進這些 gap 裡面一次。
+            idleSlots -= min(maxBlocks, freq[i]);
         }
 
         // If there are any idle slots left, add them to the total number of tasks
         // If there are more tasks than slots left, return the task size
-        // task的數量多到我們不用刻意留idle slots
+        // idleSlots > 0 代表還需要補 idle, so return idleSlots + tasks.size()
+        // idleSlots <= 0 代表 task 本身夠多，沒有 idle，答案就是 task 數量。
         return idleSlots > 0 ? idleSlots + tasks.size() : tasks.size();
     }
 };
