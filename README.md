@@ -109,6 +109,7 @@
 | [0587-erect-the-fence](https://github.com/liver121888/leetcode/tree/master/0587-erect-the-fence) |
 | [0609-find-duplicate-file-in-system](https://github.com/liver121888/leetcode/tree/master/0609-find-duplicate-file-in-system) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
+| [0621-task-scheduler](https://github.com/liver121888/leetcode/tree/master/0621-task-scheduler) |
 | [0622-design-circular-queue](https://github.com/liver121888/leetcode/tree/master/0622-design-circular-queue) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
@@ -285,6 +286,7 @@
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0435-non-overlapping-intervals](https://github.com/liver121888/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
+| [0621-task-scheduler](https://github.com/liver121888/leetcode/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/liver121888/leetcode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
@@ -414,6 +416,7 @@
 | [0525-contiguous-array](https://github.com/liver121888/leetcode/tree/master/0525-contiguous-array) |
 | [0560-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0609-find-duplicate-file-in-system](https://github.com/liver121888/leetcode/tree/master/0609-find-duplicate-file-in-system) |
+| [0621-task-scheduler](https://github.com/liver121888/leetcode/tree/master/0621-task-scheduler) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/liver121888/leetcode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0692-top-k-frequent-words](https://github.com/liver121888/leetcode/tree/master/0692-top-k-frequent-words) |
@@ -710,6 +713,7 @@
 | [0355-design-twitter](https://github.com/liver121888/leetcode/tree/master/0355-design-twitter) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/liver121888/leetcode/tree/master/0373-find-k-pairs-with-smallest-sums) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
+| [0621-task-scheduler](https://github.com/liver121888/leetcode/tree/master/0621-task-scheduler) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/liver121888/leetcode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/liver121888/leetcode/tree/master/0692-top-k-frequent-words) |
@@ -905,6 +909,7 @@
 | [0409-longest-palindrome](https://github.com/liver121888/leetcode/tree/master/0409-longest-palindrome) |
 | [0435-non-overlapping-intervals](https://github.com/liver121888/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
+| [0621-task-scheduler](https://github.com/liver121888/leetcode/tree/master/0621-task-scheduler) |
 | [0632-smallest-range-covering-elements-from-k-lists](https://github.com/liver121888/leetcode/tree/master/0632-smallest-range-covering-elements-from-k-lists) |
 | [0871-minimum-number-of-refueling-stops](https://github.com/liver121888/leetcode/tree/master/0871-minimum-number-of-refueling-stops) |
 | [1018-largest-perimeter-triangle](https://github.com/liver121888/leetcode/tree/master/1018-largest-perimeter-triangle) |
@@ -1131,6 +1136,7 @@
 | [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/liver121888/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/liver121888/leetcode/tree/master/0383-ransom-note) |
+| [0621-task-scheduler](https://github.com/liver121888/leetcode/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/liver121888/leetcode/tree/master/0692-top-k-frequent-words) |
 | [2833-furthest-point-from-origin](https://github.com/liver121888/leetcode/tree/master/2833-furthest-point-from-origin) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
