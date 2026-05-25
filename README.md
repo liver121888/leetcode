@@ -603,6 +603,7 @@
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/liver121888/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/liver121888/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1610-maximum-number-of-visible-points](https://github.com/liver121888/leetcode/tree/master/1610-maximum-number-of-visible-points) |
+| [1871-jump-game-vii](https://github.com/liver121888/leetcode/tree/master/1871-jump-game-vii) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/liver121888/leetcode/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/liver121888/leetcode/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [3483-alternating-groups-ii](https://github.com/liver121888/leetcode/tree/master/3483-alternating-groups-ii) |
@@ -621,6 +622,7 @@
 | [0966-binary-subarrays-with-sum](https://github.com/liver121888/leetcode/tree/master/0966-binary-subarrays-with-sum) |
 | [1094-car-pooling](https://github.com/liver121888/leetcode/tree/master/1094-car-pooling) |
 | [1109-corporate-flight-bookings](https://github.com/liver121888/leetcode/tree/master/1109-corporate-flight-bookings) |
+| [1871-jump-game-vii](https://github.com/liver121888/leetcode/tree/master/1871-jump-game-vii) |
 | [2381-shifting-letters-ii](https://github.com/liver121888/leetcode/tree/master/2381-shifting-letters-ii) |
 | [2615-sum-of-distances](https://github.com/liver121888/leetcode/tree/master/2615-sum-of-distances) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/liver121888/leetcode/tree/master/3616-make-array-elements-equal-to-zero) |
@@ -665,6 +667,7 @@
 | [1372-longest-zigzag-path-in-a-binary-tree](https://github.com/liver121888/leetcode/tree/master/1372-longest-zigzag-path-in-a-binary-tree) |
 | [1388-greatest-sum-divisible-by-three](https://github.com/liver121888/leetcode/tree/master/1388-greatest-sum-divisible-by-three) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/liver121888/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
+| [1871-jump-game-vii](https://github.com/liver121888/leetcode/tree/master/1871-jump-game-vii) |
 | [2008-maximum-earnings-from-taxi](https://github.com/liver121888/leetcode/tree/master/2008-maximum-earnings-from-taxi) |
 | [2262-solving-questions-with-brainpower](https://github.com/liver121888/leetcode/tree/master/2262-solving-questions-with-brainpower) |
 | [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
@@ -797,6 +800,7 @@
 | [1051-shortest-way-to-form-string](https://github.com/liver121888/leetcode/tree/master/1051-shortest-way-to-form-string) |
 | [1084-find-k-length-substrings-with-no-repeated-characters](https://github.com/liver121888/leetcode/tree/master/1084-find-k-length-substrings-with-no-repeated-characters) |
 | [1460-number-of-substrings-containing-all-three-characters](https://github.com/liver121888/leetcode/tree/master/1460-number-of-substrings-containing-all-three-characters) |
+| [1871-jump-game-vii](https://github.com/liver121888/leetcode/tree/master/1871-jump-game-vii) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/liver121888/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2337-move-pieces-to-obtain-a-string](https://github.com/liver121888/leetcode/tree/master/2337-move-pieces-to-obtain-a-string) |
