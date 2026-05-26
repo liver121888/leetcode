@@ -37,53 +37,97 @@
 // root -> right = helper(root, backList)
 // return root
 
-// O(nlogn)
-// O(logn)
 
+// Approach 3: Inorder Simulation
+// O(n)
+// O(logn)
 class Solution {
 public:
-    pair<ListNode*, ListNode*> split(ListNode* head) {
-        if (!head) return {nullptr, nullptr};
-
-        ListNode* slow = head;
-        ListNode* fast = head;
-        ListNode* prev = nullptr;
-
-        while (fast && fast->next) {
-            prev = slow;
-            slow = slow->next;
-            fast = fast->next->next;
+    ListNode* head;
+    int findSize(ListNode* head) {
+        ListNode* ptr = head;
+        int c = 0;
+        while (ptr != NULL) {
+            ptr = ptr->next;
+            c += 1;
         }
-
-        // slow is middle node
-        if (prev) {
-            prev->next = nullptr; // cut left list
-        }
-
-        // return leftHead and middle node
-        if (slow == head) {
-            return {nullptr, slow};
-        }
-
-        return {head, slow};
+        return c;
     }
-
+    TreeNode* convertListToBST(int l, int r) {
+        // Invalid case
+        if (l > r) {
+            return NULL;
+        }
+        int mid = (l + r) / 2;
+        // First step of simulated inorder traversal. Recursively form
+        // the left half
+        TreeNode* left = this->convertListToBST(l, mid - 1);
+        // Once left half is traversed, process the current node
+        TreeNode* node = new TreeNode(this->head->val);
+        node->left = left;
+        // Maintain the invariance mentioned in the algorithm
+        this->head = this->head->next;
+        // Recurse on the right hand side and form BST out of them
+        node->right = this->convertListToBST(mid + 1, r);
+        return node;
+    }
     TreeNode* sortedListToBST(ListNode* head) {
-        if (!head) return nullptr;
-
-        auto [leftHead, mid] = split(head);
-
-        ListNode* rightHead = mid->next;
-        // cut mid and right
-        mid->next = nullptr;
-
-        TreeNode* root = new TreeNode(mid->val);
-        root->left = sortedListToBST(leftHead);
-        root->right = sortedListToBST(rightHead);
-
-        return root;
+        // Get the size of the linked list first
+        int size = this->findSize(head);
+        this->head = head;
+        // Form the BST now that we know the size
+        return convertListToBST(0, size - 1);
     }
 };
+
+
+
+// O(nlogn)
+// O(logn)
+// class Solution {
+// public:
+//     pair<ListNode*, ListNode*> split(ListNode* head) {
+//         if (!head) return {nullptr, nullptr};
+
+//         ListNode* slow = head;
+//         ListNode* fast = head;
+//         ListNode* prev = nullptr;
+
+//         while (fast && fast->next) {
+//             prev = slow;
+//             slow = slow->next;
+//             fast = fast->next->next;
+//         }
+
+//         // slow is middle node
+//         if (prev) {
+//             prev->next = nullptr; // cut left list
+//         }
+
+//         // return leftHead and middle node
+//         if (slow == head) {
+//             return {nullptr, slow};
+//         }
+
+//         return {head, slow};
+//     }
+
+//     TreeNode* sortedListToBST(ListNode* head) {
+//         if (!head) return nullptr;
+
+//         auto [leftHead, mid] = split(head);
+
+//         ListNode* rightHead = mid->next;
+//         // cut mid and right
+//         mid->next = nullptr;
+
+//         TreeNode* root = new TreeNode(mid->val);
+//         root->left = sortedListToBST(leftHead);
+//         root->right = sortedListToBST(rightHead);
+
+//         return root;
+//     }
+// };
 
 // class Solution {
 // public:
