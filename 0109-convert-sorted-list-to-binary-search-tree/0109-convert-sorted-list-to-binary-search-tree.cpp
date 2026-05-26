@@ -37,49 +37,97 @@
 // root -> right = helper(root, backList)
 // return root
 
+// O(nlogn)
+// O(logn)
+
 class Solution {
 public:
-
     pair<ListNode*, ListNode*> split(ListNode* head) {
-        
-        if (!head)
-            return {nullptr, nullptr};
+        if (!head) return {nullptr, nullptr};
 
-        // find the middle and middle prev
-        ListNode* fast = head;
         ListNode* slow = head;
-        ListNode* prev;
+        ListNode* fast = head;
+        ListNode* prev = nullptr;
+
         while (fast && fast->next) {
-            fast = fast->next->next;
-            prev = slow; 
+            prev = slow;
             slow = slow->next;
+            fast = fast->next->next;
         }
-        // break the chain
-        if (head == slow)
+
+        // slow is middle node
+        if (prev) {
+            prev->next = nullptr; // cut left list
+        }
+
+        // return leftHead and middle node
+        if (slow == head) {
             return {nullptr, slow};
-        prev->next = nullptr;
+        }
+
         return {head, slow};
     }
 
-    // []
-    // [10]
-    // [10, 12]
-    // [10, 12, 11]
-    // [-10 -3 0 5 9]
-
     TreeNode* sortedListToBST(ListNode* head) {
+        if (!head) return nullptr;
 
-        if (!head)
-            return nullptr;
+        auto [leftHead, mid] = split(head);
 
-        auto [firstList, secondList] = split(head);
+        ListNode* rightHead = mid->next;
+        // cut mid and right
+        mid->next = nullptr;
 
-        TreeNode* root = new TreeNode(secondList->val);
-        // cout << root->val << endl;
+        TreeNode* root = new TreeNode(mid->val);
+        root->left = sortedListToBST(leftHead);
+        root->right = sortedListToBST(rightHead);
 
-        root->left = sortedListToBST(firstList);
-        root->right = sortedListToBST(secondList->next);
-        
         return root;
     }
 };
+
+// class Solution {
+// public:
+
+//     pair<ListNode*, ListNode*> split(ListNode* head) {
+        
+//         if (!head)
+//             return {nullptr, nullptr};
+
+//         // find the middle and middle prev
+//         ListNode* fast = head;
+//         ListNode* slow = head;
+//         ListNode* prev;
+//         while (fast && fast->next) {
+//             fast = fast->next->next;
+//             prev = slow; 
+//             slow = slow->next;
+//         }
+//         // break the chain
+//         if (head == slow)
+//             return {nullptr, slow};
+//         prev->next = nullptr;
+//         return {head, slow};
+//     }
+
+//     // []
+//     // [10]
+//     // [10, 12]
+//     // [10, 12, 11]
+//     // [-10 -3 0 5 9]
+
+//     TreeNode* sortedListToBST(ListNode* head) {
+
+//         if (!head)
+//             return nullptr;
+
+//         auto [firstList, secondList] = split(head);
+
+//         TreeNode* root = new TreeNode(secondList->val);
+//         // cout << root->val << endl;
+
+//         root->left = sortedListToBST(firstList);
+//         root->right = sortedListToBST(secondList->next);
+        
+//         return root;
+//     }
+// };
