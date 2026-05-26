@@ -57,6 +57,7 @@
 | [0189-rotate-array](https://github.com/liver121888/leetcode/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/liver121888/leetcode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/liver121888/leetcode/tree/master/0200-number-of-islands) |
+| [0204-count-primes](https://github.com/liver121888/leetcode/tree/master/0204-count-primes) |
 | [0212-word-search-ii](https://github.com/liver121888/leetcode/tree/master/0212-word-search-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/liver121888/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/liver121888/leetcode/tree/master/0217-contains-duplicate) |
@@ -338,6 +339,7 @@
 | [0150-evaluate-reverse-polish-notation](https://github.com/liver121888/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0189-rotate-array](https://github.com/liver121888/leetcode/tree/master/0189-rotate-array) |
+| [0204-count-primes](https://github.com/liver121888/leetcode/tree/master/0204-count-primes) |
 | [0223-rectangle-area](https://github.com/liver121888/leetcode/tree/master/0223-rectangle-area) |
 | [0224-basic-calculator](https://github.com/liver121888/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/liver121888/leetcode/tree/master/0227-basic-calculator-ii) |
@@ -755,6 +757,7 @@
 ## Number Theory
 |  |
 | ------- |
+| [0204-count-primes](https://github.com/liver121888/leetcode/tree/master/0204-count-primes) |
 | [2610-closest-prime-numbers-in-range](https://github.com/liver121888/leetcode/tree/master/2610-closest-prime-numbers-in-range) |
 ## String
 |  |
@@ -1103,6 +1106,7 @@
 ## Enumeration
 |  |
 | ------- |
+| [0204-count-primes](https://github.com/liver121888/leetcode/tree/master/0204-count-primes) |
 | [1656-count-good-triplets](https://github.com/liver121888/leetcode/tree/master/1656-count-good-triplets) |
 | [1925-count-square-sum-triples](https://github.com/liver121888/leetcode/tree/master/1925-count-square-sum-triples) |
 ## Recursion
