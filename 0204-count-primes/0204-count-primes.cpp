@@ -13,6 +13,15 @@
 // This is because by that point we will have considered all 
 // of the possible multiples of all the prime numbers below n.
 // Sieve of Eratosthenes method
+
+// Space Complexity: O(n)
+// Time Complexity: O(sqrt(n) * loglogn + n), 
+// +n is from traverse to get ans
+// log(log(n)) comes from
+//   For 2, we have to cross out n/2 numbers.
+//   For 3, we have to cross out n/3 numbers.
+//   For 5, we have to cross out n/5 numbers.
+//   ...etc for each prime less than n.
 class Solution {
 public:
     int countPrimes(int n) {
