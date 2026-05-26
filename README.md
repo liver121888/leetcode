@@ -70,6 +70,7 @@
 | [0271-encode-and-decode-strings](https://github.com/liver121888/leetcode/tree/master/0271-encode-and-decode-strings) |
 | [0283-move-zeroes](https://github.com/liver121888/leetcode/tree/master/0283-move-zeroes) |
 | [0286-walls-and-gates](https://github.com/liver121888/leetcode/tree/master/0286-walls-and-gates) |
+| [0287-find-the-duplicate-number](https://github.com/liver121888/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0289-game-of-life](https://github.com/liver121888/leetcode/tree/master/0289-game-of-life) |
 | [0296-best-meeting-point](https://github.com/liver121888/leetcode/tree/master/0296-best-meeting-point) |
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
@@ -228,6 +229,7 @@
 | [0234-palindrome-linked-list](https://github.com/liver121888/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0259-3sum-smaller](https://github.com/liver121888/leetcode/tree/master/0259-3sum-smaller) |
 | [0283-move-zeroes](https://github.com/liver121888/leetcode/tree/master/0283-move-zeroes) |
+| [0287-find-the-duplicate-number](https://github.com/liver121888/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0295-find-median-from-data-stream](https://github.com/liver121888/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0360-sort-transformed-array](https://github.com/liver121888/leetcode/tree/master/0360-sort-transformed-array) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
@@ -525,6 +527,7 @@
 | [0259-3sum-smaller](https://github.com/liver121888/leetcode/tree/master/0259-3sum-smaller) |
 | [0268-missing-number](https://github.com/liver121888/leetcode/tree/master/0268-missing-number) |
 | [0278-first-bad-version](https://github.com/liver121888/leetcode/tree/master/0278-first-bad-version) |
+| [0287-find-the-duplicate-number](https://github.com/liver121888/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/liver121888/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0362-design-hit-counter](https://github.com/liver121888/leetcode/tree/master/0362-design-hit-counter) |
 | [0363-max-sum-of-rectangle-no-larger-than-k](https://github.com/liver121888/leetcode/tree/master/0363-max-sum-of-rectangle-no-larger-than-k) |
@@ -831,6 +834,7 @@
 | [0191-number-of-1-bits](https://github.com/liver121888/leetcode/tree/master/0191-number-of-1-bits) |
 | [0266-palindrome-permutation](https://github.com/liver121888/leetcode/tree/master/0266-palindrome-permutation) |
 | [0268-missing-number](https://github.com/liver121888/leetcode/tree/master/0268-missing-number) |
+| [0287-find-the-duplicate-number](https://github.com/liver121888/leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0338-counting-bits](https://github.com/liver121888/leetcode/tree/master/0338-counting-bits) |
 | [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
 ## Breadth-First Search
