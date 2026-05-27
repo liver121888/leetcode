@@ -37,36 +37,58 @@
 // time O(nlogn)
 // space O(n) -> O(1)
 
+// class Solution {
+// public:
+//     vector<vector<int>> merge(vector<vector<int>>& intervals) {
+
+//         sort(intervals.begin(), intervals.end());
+
+//         int takePtr = 1;
+//         int writePtr = 0;
+//         while (takePtr < intervals.size()) {
+//             // check if overlap
+//             if (intervals[takePtr][0] <= intervals[writePtr][1]) {
+//                intervals[writePtr][1] = max(intervals[writePtr][1], intervals[takePtr][1]);
+//                // merged a interval, move the takePtr
+//                takePtr++;
+//             } else {
+//                 writePtr++;
+//                 intervals[writePtr][0] = intervals[takePtr][0];
+//                 intervals[writePtr][1] = intervals[takePtr][1];
+//                 takePtr++;
+//             }
+//         }
+
+
+//         // the final size of the array
+//         writePtr++;
+//         while (intervals.size() != writePtr) {
+//             intervals.pop_back();
+//         }
+        
+//         return intervals;
+//     }
+// };
 
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
+        int n = intervals.size();
+        if (n <= 1)
+            return intervals;
 
         sort(intervals.begin(), intervals.end());
 
-        int takePtr = 1;
-        int writePtr = 0;
-        while (takePtr < intervals.size()) {
-            // check if overlap
-            if (intervals[takePtr][0] <= intervals[writePtr][1]) {
-               intervals[writePtr][1] = max(intervals[writePtr][1], intervals[takePtr][1]);
-               // merged a interval, move the takePtr
-               takePtr++;
+        vector<vector<int>> ans;
+        ans.push_back(intervals[0]);
+        // vector<int> currInterval = intervals[0];
+        for (int i = 1; i < intervals.size(); i++) {
+            if (intervals[i][0] <= ans.back()[1]) {
+                ans.back()[1] = max(ans.back()[1], intervals[i][1]);
             } else {
-                writePtr++;
-                intervals[writePtr][0] = intervals[takePtr][0];
-                intervals[writePtr][1] = intervals[takePtr][1];
-                takePtr++;
+                ans.push_back(intervals[i]);
             }
         }
-
-
-        // the final size of the array
-        writePtr++;
-        while (intervals.size() != writePtr) {
-            intervals.pop_back();
-        }
-        
-        return intervals;
-    }
+        return ans;
+    } 
 };
