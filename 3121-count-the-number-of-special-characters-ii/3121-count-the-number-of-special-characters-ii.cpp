@@ -15,7 +15,7 @@ public:
         for (int i = 0; i < word.size(); i++) {
             int charLowerCaseId = word[i] - 'a';
             int charUpperCaseId = word[i] - 'A';
-            if (charLowerCaseId >= 0 && charLowerCaseId <= 26) {
+            if (charLowerCaseId >= 0 && charLowerCaseId < 26) {
                 lowerCaseIdx[charLowerCaseId] = i;
             } else {
                 if (upperCaseIdx[charUpperCaseId] == -1)
@@ -25,7 +25,8 @@ public:
 
         int cnt = 0;
         for (int i = 0; i < 26; i++) {
-            if (lowerCaseIdx[i] < upperCaseIdx[i] && lowerCaseIdx[i] != -1 && upperCaseIdx[i] != -1)
+            if (lowerCaseIdx[i] != -1 && upperCaseIdx[i] != -1 && 
+                lowerCaseIdx[i] < upperCaseIdx[i])
                 cnt++;
         }
         return cnt;
