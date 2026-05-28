@@ -453,6 +453,7 @@
 | [2615-sum-of-distances](https://github.com/liver121888/leetcode/tree/master/2615-sum-of-distances) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
 | [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
+| [3121-count-the-number-of-special-characters-ii](https://github.com/liver121888/leetcode/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3488-closest-equal-element-queries](https://github.com/liver121888/leetcode/tree/master/3488-closest-equal-element-queries) |
@@ -828,6 +829,7 @@
 | [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/liver121888/leetcode/tree/master/2515-shortest-distance-to-target-string-in-a-circular-array) |
 | [2833-furthest-point-from-origin](https://github.com/liver121888/leetcode/tree/master/2833-furthest-point-from-origin) |
 | [2887-sort-vowels-in-a-string](https://github.com/liver121888/leetcode/tree/master/2887-sort-vowels-in-a-string) |
+| [3121-count-the-number-of-special-characters-ii](https://github.com/liver121888/leetcode/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3396-valid-word](https://github.com/liver121888/leetcode/tree/master/3396-valid-word) |
 | [3462-vowels-game-in-a-string](https://github.com/liver121888/leetcode/tree/master/3462-vowels-game-in-a-string) |
 | [3797-design-spreadsheet](https://github.com/liver121888/leetcode/tree/master/3797-design-spreadsheet) |
