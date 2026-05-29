@@ -17,6 +17,7 @@ public:
         // }
         // return vector<int>(ans.begin(), ans.end());
 
+        // 省去多開一個set
         unordered_set<int> set1(nums1.begin(), nums1.end());
         vector<int> ans;
         for (int num : nums2) {
