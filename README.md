@@ -109,6 +109,7 @@
 | [0525-contiguous-array](https://github.com/liver121888/leetcode/tree/master/0525-contiguous-array) |
 | [0528-random-pick-with-weight](https://github.com/liver121888/leetcode/tree/master/0528-random-pick-with-weight) |
 | [0529-minesweeper](https://github.com/liver121888/leetcode/tree/master/0529-minesweeper) |
+| [0532-k-diff-pairs-in-an-array](https://github.com/liver121888/leetcode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0542-01-matrix](https://github.com/liver121888/leetcode/tree/master/0542-01-matrix) |
 | [0560-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0587-erect-the-fence](https://github.com/liver121888/leetcode/tree/master/0587-erect-the-fence) |
@@ -238,6 +239,7 @@
 | [0295-find-median-from-data-stream](https://github.com/liver121888/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0349-intersection-of-two-arrays](https://github.com/liver121888/leetcode/tree/master/0349-intersection-of-two-arrays) |
 | [0360-sort-transformed-array](https://github.com/liver121888/leetcode/tree/master/0360-sort-transformed-array) |
+| [0532-k-diff-pairs-in-an-array](https://github.com/liver121888/leetcode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
 | [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0696-count-binary-substrings](https://github.com/liver121888/leetcode/tree/master/0696-count-binary-substrings) |
@@ -296,6 +298,7 @@
 | [0368-largest-divisible-subset](https://github.com/liver121888/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0435-non-overlapping-intervals](https://github.com/liver121888/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0532-k-diff-pairs-in-an-array](https://github.com/liver121888/leetcode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
 | [0621-task-scheduler](https://github.com/liver121888/leetcode/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/liver121888/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
@@ -430,6 +433,7 @@
 | [0424-longest-repeating-character-replacement](https://github.com/liver121888/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/liver121888/leetcode/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0525-contiguous-array](https://github.com/liver121888/leetcode/tree/master/0525-contiguous-array) |
+| [0532-k-diff-pairs-in-an-array](https://github.com/liver121888/leetcode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0560-subarray-sum-equals-k](https://github.com/liver121888/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0609-find-duplicate-file-in-system](https://github.com/liver121888/leetcode/tree/master/0609-find-duplicate-file-in-system) |
 | [0621-task-scheduler](https://github.com/liver121888/leetcode/tree/master/0621-task-scheduler) |
@@ -545,6 +549,7 @@
 | [0363-max-sum-of-rectangle-no-larger-than-k](https://github.com/liver121888/leetcode/tree/master/0363-max-sum-of-rectangle-no-larger-than-k) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/liver121888/leetcode/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0528-random-pick-with-weight](https://github.com/liver121888/leetcode/tree/master/0528-random-pick-with-weight) |
+| [0532-k-diff-pairs-in-an-array](https://github.com/liver121888/leetcode/tree/master/0532-k-diff-pairs-in-an-array) |
 | [0611-valid-triangle-number](https://github.com/liver121888/leetcode/tree/master/0611-valid-triangle-number) |
 | [0658-find-k-closest-elements](https://github.com/liver121888/leetcode/tree/master/0658-find-k-closest-elements) |
 | [0704-binary-search](https://github.com/liver121888/leetcode/tree/master/0704-binary-search) |
