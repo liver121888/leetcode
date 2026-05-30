@@ -233,6 +233,7 @@
 | [0151-reverse-words-in-a-string](https://github.com/liver121888/leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0165-compare-version-numbers](https://github.com/liver121888/leetcode/tree/master/0165-compare-version-numbers) |
 | [0189-rotate-array](https://github.com/liver121888/leetcode/tree/master/0189-rotate-array) |
+| [0202-happy-number](https://github.com/liver121888/leetcode/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/liver121888/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0259-3sum-smaller](https://github.com/liver121888/leetcode/tree/master/0259-3sum-smaller) |
 | [0283-move-zeroes](https://github.com/liver121888/leetcode/tree/master/0283-move-zeroes) |
@@ -349,6 +350,7 @@
 | [0150-evaluate-reverse-polish-notation](https://github.com/liver121888/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0189-rotate-array](https://github.com/liver121888/leetcode/tree/master/0189-rotate-array) |
+| [0202-happy-number](https://github.com/liver121888/leetcode/tree/master/0202-happy-number) |
 | [0204-count-primes](https://github.com/liver121888/leetcode/tree/master/0204-count-primes) |
 | [0223-rectangle-area](https://github.com/liver121888/leetcode/tree/master/0223-rectangle-area) |
 | [0224-basic-calculator](https://github.com/liver121888/leetcode/tree/master/0224-basic-calculator) |
@@ -416,6 +418,7 @@
 | [0149-max-points-on-a-line](https://github.com/liver121888/leetcode/tree/master/0149-max-points-on-a-line) |
 | [0166-fraction-to-recurring-decimal](https://github.com/liver121888/leetcode/tree/master/0166-fraction-to-recurring-decimal) |
 | [0169-majority-element](https://github.com/liver121888/leetcode/tree/master/0169-majority-element) |
+| [0202-happy-number](https://github.com/liver121888/leetcode/tree/master/0202-happy-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/liver121888/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/liver121888/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/liver121888/leetcode/tree/master/0242-valid-anagram) |
