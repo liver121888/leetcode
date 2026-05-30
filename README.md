@@ -196,6 +196,7 @@
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3242-count-elements-with-maximum-frequency](https://github.com/liver121888/leetcode/tree/master/3242-count-elements-with-maximum-frequency) |
 | [3251-maximum-area-of-longest-diagonal-rectangle](https://github.com/liver121888/leetcode/tree/master/3251-maximum-area-of-longest-diagonal-rectangle) |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/liver121888/leetcode/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3430-count-days-without-meetings](https://github.com/liver121888/leetcode/tree/master/3430-count-days-without-meetings) |
 | [3453-separate-squares-i](https://github.com/liver121888/leetcode/tree/master/3453-separate-squares-i) |
 | [3461-find-the-minimum-area-to-cover-all-ones-i](https://github.com/liver121888/leetcode/tree/master/3461-find-the-minimum-area-to-cover-all-ones-i) |
@@ -386,6 +387,7 @@
 | [3102-minimize-manhattan-distances](https://github.com/liver121888/leetcode/tree/master/3102-minimize-manhattan-distances) |
 | [3227-find-missing-and-repeated-values](https://github.com/liver121888/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3279-alice-and-bob-playing-flower-game](https://github.com/liver121888/leetcode/tree/master/3279-alice-and-bob-playing-flower-game) |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/liver121888/leetcode/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3462-vowels-game-in-a-string](https://github.com/liver121888/leetcode/tree/master/3462-vowels-game-in-a-string) |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/liver121888/leetcode/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
 | [3783-mirror-distance-of-an-integer](https://github.com/liver121888/leetcode/tree/master/3783-mirror-distance-of-an-integer) |
