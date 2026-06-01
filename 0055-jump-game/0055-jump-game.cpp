@@ -53,7 +53,8 @@ public:
     //     }
     //     return lastPos == 0;
     // }
-
+    
+    // view from the front
     bool canJump(vector<int>& nums) {
         int n = nums.size();
         int currRight = 0;
