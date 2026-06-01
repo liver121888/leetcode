@@ -44,15 +44,27 @@ public:
     // Not only that, but we can stop using the array altogether.
 
     // clever as fk
+    // bool canJump(vector<int>& nums) {
+    //     int lastPos = nums.size() - 1;
+    //     for (int i = nums.size() - 1; i >= 0; i--) {
+    //         if (i + nums[i] >= lastPos) {
+    //             lastPos = i;
+    //         }
+    //     }
+    //     return lastPos == 0;
+    // }
+
     bool canJump(vector<int>& nums) {
-        int lastPos = nums.size() - 1;
-        for (int i = nums.size() - 1; i >= 0; i--) {
-            if (i + nums[i] >= lastPos) {
-                lastPos = i;
+        int n = nums.size();
+        int currRight = 0;
+        for (int i = 0; i < n; i++) {
+            if (i <= currRight) {
+                currRight = max(currRight, i + nums[i]);
             }
         }
-        return lastPos == 0;
+        return currRight >= n - 1;
     }
+
 
     // bool bt(vector<int>& nums, vector<bool>& visited, int cur) {
 
@@ -80,5 +92,3 @@ public:
     //     return bt(nums, visited, 0);
     // }
 };
-
-// [2,3,1,1,4]
