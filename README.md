@@ -208,6 +208,7 @@
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/liver121888/leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/liver121888/leetcode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 | [3660-jump-game-ix](https://github.com/liver121888/leetcode/tree/master/3660-jump-game-ix) |
+| [3689-maximum-total-subarray-value-i](https://github.com/liver121888/leetcode/tree/master/3689-maximum-total-subarray-value-i) |
 | [3742-maximum-path-score-in-a-grid](https://github.com/liver121888/leetcode/tree/master/3742-maximum-path-score-in-a-grid) |
 | [3748-sort-matrix-by-diagonals](https://github.com/liver121888/leetcode/tree/master/3748-sort-matrix-by-diagonals) |
 | [3761-minimum-absolute-distance-between-mirror-pairs](https://github.com/liver121888/leetcode/tree/master/3761-minimum-absolute-distance-between-mirror-pairs) |
@@ -972,6 +973,7 @@
 | [2078-two-furthest-houses-with-different-colors](https://github.com/liver121888/leetcode/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2592-maximize-greatness-of-an-array](https://github.com/liver121888/leetcode/tree/master/2592-maximize-greatness-of-an-array) |
 | [2661-smallest-missing-non-negative-integer-after-operations](https://github.com/liver121888/leetcode/tree/master/2661-smallest-missing-non-negative-integer-after-operations) |
+| [3689-maximum-total-subarray-value-i](https://github.com/liver121888/leetcode/tree/master/3689-maximum-total-subarray-value-i) |
 ## Backtracking
 |  |
 | ------- |
