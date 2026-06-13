@@ -13,64 +13,8 @@
 // dijkstra
 
 // u only need bfs
-// class Solution {
-// public:
-//     pair<int, int> getPos(int square, int n) {
-//         int rowFromBottom = (square - 1) / n;
-//         int r = n - 1 - rowFromBottom;
-//         int c = (square - 1) % n;
-
-//         // odd row from bottom goes right to left
-//         if (rowFromBottom % 2 == 1) {
-//             c = n - 1 - c;
-//         }
-
-//         return {r, c};
-//     }
-
-//     int snakesAndLadders(vector<vector<int>>& board) {
-//         int n = board.size();
-//         int target = n * n;
-
-//         vector<int> dist(target + 1, -1);
-//         queue<int> q;
-
-//         dist[1] = 0;
-//         q.push(1);
-
-//         while (!q.empty()) {
-//             int curr = q.front();
-//             q.pop();
-
-//             if (curr == target) {
-//                 return dist[curr];
-//             }
-
-//             for (int dice = 1; dice <= 6; dice++) {
-//                 int next = curr + dice;
-//                 if (next > target) break;
-
-//                 auto [r, c] = getPos(next, n);
-
-//                 int dest = next;
-//                 if (board[r][c] != -1) {
-//                     dest = board[r][c];
-//                 }
-
-//                 if (dist[dest] == -1) {
-//                     dist[dest] = dist[curr] + 1;
-//                     q.push(dest);
-//                 }
-//             }
-//         }
-
-//         return -1;
-//     }
-// };
-
 class Solution {
 public:
-
     pair<int, int> getPos(int square, int n) {
         int rowFromBottom = (square - 1) / n;
         int r = n - 1 - rowFromBottom;
@@ -85,62 +29,118 @@ public:
     }
 
     int snakesAndLadders(vector<vector<int>>& board) {
-
-        // label from 1 to n^2
         int n = board.size();
-        priority_queue<pair<int,int>, vector<pair<int,int>>, greater<>> pq;
-        vector<int> minDist(n*n+1, INT_MAX/2);
-        pq.push({0,1});
-        minDist[1] = 0;
+        int target = n * n;
 
-        // start bfs
-        while (!pq.empty()) {
+        vector<int> dist(target + 1, -1);
+        queue<int> q;
 
-            auto [dist, curr] = pq.top();
-            pq.pop();
+        dist[1] = 0;
+        q.push(1);
 
-            if (dist != minDist[curr])
-                continue;
+        while (!q.empty()) {
+            int curr = q.front();
+            q.pop();
 
-            cout << dist << " " << curr << endl;
-
-
-            // check indexing here
-            // curr = 1 -> n-1, 0 r = 5, 
-            // curr = 6 -> n-1, n-1
-            // curr = 7 -> n-2, n-1 r = 4 c = 0
-            // curr = 15
-            // curr = 14 -> 3
-            // n = 6
-
-            auto [r, c] = getPos(curr, n);
-
-            for (int i = 1; i <= 6; i++) {
-                // in bound and not visited
-                int neighbor = curr + i;
-                if (neighbor <= n*n) {
-                    auto [nr, nc] = getPos(neighbor, n);
-                    // must take the ladder or the snake
-                    if (board[nr][nc] != -1)
-                        neighbor = board[nr][nc];
-
-                    if (dist + 1 < minDist[neighbor]) {
-                        minDist[neighbor] = dist + 1;
-                        pq.push({minDist[neighbor], neighbor});
-                    }
-                }
-
+            if (curr == target) {
+                return dist[curr];
             }
 
+            for (int dice = 1; dice <= 6; dice++) {
+                int next = curr + dice;
+                if (next > target) break;
 
-            // int teleport = board[r][c];
-            // if (teleport != -1) {
+                auto [r, c] = getPos(next, n);
 
-            // } else {
+                int dest = next;
+                if (board[r][c] != -1) {
+                    dest = board[r][c];
+                }
 
-            // }
+                if (dist[dest] == -1) {
+                    dist[dest] = dist[curr] + 1;
+                    q.push(dest);
+                }
+            }
         }
 
-        return minDist[n*n] == INT_MAX/2 ? -1 : minDist[n*n];
+        return -1;
     }
 };
+
+// class Solution {
+// public:
+
+//     pair<int, int> getPos(int square, int n) {
+//         int rowFromBottom = (square - 1) / n;
+//         int r = n - 1 - rowFromBottom;
+//         int c = (square - 1) % n;
+
+//         // odd row from bottom goes right to left
+//         if (rowFromBottom % 2 == 1) {
+//             c = n - 1 - c;
+//         }
+
+//         return {r, c};
+//     }
+
+//     int snakesAndLadders(vector<vector<int>>& board) {
+
+//         // label from 1 to n^2
+//         int n = board.size();
+//         priority_queue<pair<int,int>, vector<pair<int,int>>, greater<>> pq;
+//         vector<int> minDist(n*n+1, INT_MAX/2);
+//         pq.push({0,1});
+//         minDist[1] = 0;
+
+//         // start bfs
+//         while (!pq.empty()) {
+
+//             auto [dist, curr] = pq.top();
+//             pq.pop();
+
+//             if (dist != minDist[curr])
+//                 continue;
+
+//             cout << dist << " " << curr << endl;
+
+
+//             // check indexing here
+//             // curr = 1 -> n-1, 0 r = 5, 
+//             // curr = 6 -> n-1, n-1
+//             // curr = 7 -> n-2, n-1 r = 4 c = 0
+//             // curr = 15
+//             // curr = 14 -> 3
+//             // n = 6
+
+//             auto [r, c] = getPos(curr, n);
+
+//             for (int i = 1; i <= 6; i++) {
+//                 // in bound and not visited
+//                 int neighbor = curr + i;
+//                 if (neighbor <= n*n) {
+//                     auto [nr, nc] = getPos(neighbor, n);
+//                     // must take the ladder or the snake
+//                     if (board[nr][nc] != -1)
+//                         neighbor = board[nr][nc];
+
+//                     if (dist + 1 < minDist[neighbor]) {
+//                         minDist[neighbor] = dist + 1;
+//                         pq.push({minDist[neighbor], neighbor});
+//                     }
+//                 }
+
+//             }
+
+
+//             // int teleport = board[r][c];
+//             // if (teleport != -1) {
+
+//             // } else {
+
+//             // }
+//         }
+
+//         return minDist[n*n] == INT_MAX/2 ? -1 : minDist[n*n];
+//     }
+// };
