@@ -27,27 +27,54 @@
 // [[1,4],[2,8],[2,9],[3,6],[3,7]]
 
 class Solution {
-public:
-    int removeCoveredIntervals(vector<vector<int>>& intervals) {
+  public:
+  int removeCoveredIntervals(vector<vector<int>>& intervals) {
+    // If two intervals share the same start point,
+    // put the longer one to be the first.
+    sort(intervals.begin(), intervals.end(),
+      [](const vector<int> &o1, const vector<int> &o2) {
+      return o1[0] == o2[0] ? o2[1] < o1[1] : o1[0] < o2[0];
+    });
 
-        int n = intervals.size();
-        sort(intervals.begin(), intervals.end());
-        int ans = n;
-        int currStart = intervals[0][0];
-        int currEnd = intervals[0][1];
-
-        for (int i = 1; i < n; i++) {
-            if (intervals[i][1] <= currEnd) {
-                ans--;
-            } else {
-                if (currStart == intervals[i][0]) {
-                    ans--;
-                }
-                currStart = intervals[i][0];
-                currEnd = intervals[i][1];
-            }
-        }
-        
-        return ans;
+    int count = 0;
+    int end, prev_end = 0;
+    for (auto curr : intervals) {
+      end = curr[1];
+      // if current interval is not covered
+      // by the previous one
+      if (prev_end < end) {
+        ++count;
+        prev_end = end;
+      }
     }
+    return count;
+  }
 };
+
+
+
+// class Solution {
+// public:
+//     int removeCoveredIntervals(vector<vector<int>>& intervals) {
+
+//         int n = intervals.size();
+//         sort(intervals.begin(), intervals.end());
+//         int ans = n;
+//         int currStart = intervals[0][0];
+//         int currEnd = intervals[0][1];
+
+//         for (int i = 1; i < n; i++) {
+//             if (intervals[i][1] <= currEnd) {
+//                 ans--;
+//             } else {
+//                 if (currStart == intervals[i][0]) {
+//                     ans--;
+//                 }
+//                 currStart = intervals[i][0];
+//                 currEnd = intervals[i][1];
+//             }
+//         }
+        
+//         return ans;
+//     }
+// };
