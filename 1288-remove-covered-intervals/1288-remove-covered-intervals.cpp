@@ -5,8 +5,8 @@
 // if coverered, remove
 // if not, update to new interval and keeps compare
 // only need to counts
-// time: O(n)
-// space: O(1)
+// time: O(nlogn)
+// space: O(logn)
 
 // edge cases: []
 // [[0, 1]]
@@ -38,7 +38,7 @@ class Solution {
 
     int count = 0;
     int end, prev_end = 0;
-    for (auto curr : intervals) {
+    for (const auto& curr : intervals) {
       end = curr[1];
       // if current interval is not covered
       // by the previous one
