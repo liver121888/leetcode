@@ -207,6 +207,7 @@
 | [3488-closest-equal-element-queries](https://github.com/liver121888/leetcode/tree/master/3488-closest-equal-element-queries) |
 | [3592-inverse-coin-change](https://github.com/liver121888/leetcode/tree/master/3592-inverse-coin-change) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/liver121888/leetcode/tree/master/3616-make-array-elements-equal-to-zero) |
+| [3620-network-recovery-pathways](https://github.com/liver121888/leetcode/tree/master/3620-network-recovery-pathways) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/liver121888/leetcode/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/liver121888/leetcode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 | [3660-jump-game-ix](https://github.com/liver121888/leetcode/tree/master/3660-jump-game-ix) |
@@ -577,6 +578,7 @@
 | [2779-maximum-beauty-of-an-array-after-applying-operation](https://github.com/liver121888/leetcode/tree/master/2779-maximum-beauty-of-an-array-after-applying-operation) |
 | [3453-separate-squares-i](https://github.com/liver121888/leetcode/tree/master/3453-separate-squares-i) |
 | [3488-closest-equal-element-queries](https://github.com/liver121888/leetcode/tree/master/3488-closest-equal-element-queries) |
+| [3620-network-recovery-pathways](https://github.com/liver121888/leetcode/tree/master/3620-network-recovery-pathways) |
 | [3827-implement-router](https://github.com/liver121888/leetcode/tree/master/3827-implement-router) |
 ## Matrix
 |  |
@@ -712,6 +714,7 @@
 | [2791-count-paths-that-can-form-a-palindrome-in-a-tree](https://github.com/liver121888/leetcode/tree/master/2791-count-paths-that-can-form-a-palindrome-in-a-tree) |
 | [2869-longest-non-decreasing-subarray-from-two-arrays](https://github.com/liver121888/leetcode/tree/master/2869-longest-non-decreasing-subarray-from-two-arrays) |
 | [3592-inverse-coin-change](https://github.com/liver121888/leetcode/tree/master/3592-inverse-coin-change) |
+| [3620-network-recovery-pathways](https://github.com/liver121888/leetcode/tree/master/3620-network-recovery-pathways) |
 | [3660-jump-game-ix](https://github.com/liver121888/leetcode/tree/master/3660-jump-game-ix) |
 | [3742-maximum-path-score-in-a-grid](https://github.com/liver121888/leetcode/tree/master/3742-maximum-path-score-in-a-grid) |
 ## Divide and Conquer
@@ -777,6 +780,7 @@
 | [1631-path-with-minimum-effort](https://github.com/liver121888/leetcode/tree/master/1631-path-with-minimum-effort) |
 | [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 | [3123-find-edges-in-shortest-paths](https://github.com/liver121888/leetcode/tree/master/3123-find-edges-in-shortest-paths) |
+| [3620-network-recovery-pathways](https://github.com/liver121888/leetcode/tree/master/3620-network-recovery-pathways) |
 | [3678-design-task-manager](https://github.com/liver121888/leetcode/tree/master/3678-design-task-manager) |
 ## Quickselect
 |  |
@@ -947,6 +951,7 @@
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/liver121888/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0631-design-excel-sum-formula](https://github.com/liver121888/leetcode/tree/master/0631-design-excel-sum-formula) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/liver121888/leetcode/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+| [3620-network-recovery-pathways](https://github.com/liver121888/leetcode/tree/master/3620-network-recovery-pathways) |
 ## Shortest Path
 |  |
 | ------- |
@@ -955,6 +960,7 @@
 | [0787-cheapest-flights-within-k-stops](https://github.com/liver121888/leetcode/tree/master/0787-cheapest-flights-within-k-stops) |
 | [2880-find-the-closest-marked-node](https://github.com/liver121888/leetcode/tree/master/2880-find-the-closest-marked-node) |
 | [3123-find-edges-in-shortest-paths](https://github.com/liver121888/leetcode/tree/master/3123-find-edges-in-shortest-paths) |
+| [3620-network-recovery-pathways](https://github.com/liver121888/leetcode/tree/master/3620-network-recovery-pathways) |
 ## Greedy
 |  |
 | ------- |
@@ -1261,6 +1267,7 @@
 | [1584-min-cost-to-connect-all-points](https://github.com/liver121888/leetcode/tree/master/1584-min-cost-to-connect-all-points) |
 | [2101-detonate-the-maximum-bombs](https://github.com/liver121888/leetcode/tree/master/2101-detonate-the-maximum-bombs) |
 | [3123-find-edges-in-shortest-paths](https://github.com/liver121888/leetcode/tree/master/3123-find-edges-in-shortest-paths) |
+| [3620-network-recovery-pathways](https://github.com/liver121888/leetcode/tree/master/3620-network-recovery-pathways) |
 ## Monotonic Stack
 |  |
 | ------- |
